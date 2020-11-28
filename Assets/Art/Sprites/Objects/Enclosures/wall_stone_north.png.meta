@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: acaccfb646a31f244a0f59a30d99c675
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7142652669051468298
+    second: town stone wall back_0
+  - first:
+      213: -3369503609409225777
+    second: town stone wall back_1
+  - first:
+      213: 890508570410767685
+    second: town stone wall back_2
+  - first:
+      213: -3918251116173869503
+    second: town stone wall back_3
+  - first:
+      213: 8839616373277895281
+    second: town stone wall back_4
+  - first:
+      213: -5483081918120568032
+    second: town stone wall back_5
+  - first:
+      213: -4437450127929475431
+    second: town stone wall back_6
+  - first:
+      213: 331937134705509538
+    second: town stone wall back_7
+  - first:
+      213: 7769452160690787934
+    second: town stone wall back_8
+  - first:
+      213: 418846555290084232
+    second: town stone wall back_9
+  - first:
+      213: -6264357250206999453
+    second: town stone wall back_10
+  - first:
+      213: -8350505530342040754
+    second: town stone wall back_11
+  - first:
+      213: 60910777315883928
+    second: town stone wall back_12
+  - first:
+      213: 5138024733315578590
+    second: town stone wall back_13
+  - first:
+      213: -2214766245178064370
+    second: town stone wall back_14
+  - first:
+      213: -4565070870086752195
+    second: town stone wall back_15
+  - first:
+      213: -3992864611614982312
+    second: town stone wall back_16
+  - first:
+      213: 783216031060502259
+    second: town stone wall back_17
+  - first:
+      213: 8773345743853262103
+    second: town stone wall back_18
+  - first:
+      213: -131484261127301184
+    second: town stone wall back_19
+  - first:
+      213: 365935683939416807
+    second: town stone wall back_20
+  - first:
+      213: 3930403141594427651
+    second: town stone wall back_21
+  - first:
+      213: -1704162582581239205
+    second: town stone wall back_22
+  - first:
+      213: -6384101813119337042
+    second: town stone wall back_23
+  - first:
+      213: 7869016060692668779
+    second: town stone wall back_24
+  - first:
+      213: -8525369926951811436
+    second: town stone wall back_25
+  - first:
+      213: 8701521455100721724
+    second: town stone wall back_26
+  - first:
+      213: 6102579884051707656
+    second: town stone wall back_27
+  - first:
+      213: -5670173365769212492
+    second: town stone wall back_28
+  - first:
+      213: 8828654483425200220
+    second: town stone wall back_29
+  - first:
+      213: 3156209693799632087
+    second: town stone wall back_30
+  - first:
+      213: 8719850197879239806
+    second: town stone wall back_31
+  - first:
+      213: 5678112673462118394
+    second: town stone wall back_32
+  - first:
+      213: -2691286016753056
+    second: town stone wall back_33
+  - first:
+      213: 2440897728886798827
+    second: town stone wall back_34
+  - first:
+      213: 5024149302061217201
+    second: town stone wall back_35
+  - first:
+      213: 2653222489993699522
+    second: town stone wall back_36
+  - first:
+      213: -2454652137685583744
+    second: town stone wall back_37
+  - first:
+      213: 6354235166111926472
+    second: town stone wall back_38
+  - first:
+      213: 4407271846929098146
+    second: town stone wall back_39
+  - first:
+      213: -6119308304569547829
+    second: town stone wall back_40
+  - first:
+      213: -8816174852178074813
+    second: town stone wall back_41
+  - first:
+      213: 8342406362890060219
+    second: town stone wall back_42
+  - first:
+      213: 973784707276058607
+    second: town stone wall back_43
+  - first:
+      213: -3666528825081141785
+    second: town stone wall back_44
+  - first:
+      213: 2767204925959162956
+    second: town stone wall back_45
+  - first:
+      213: -3689729500376714153
+    second: town stone wall back_46
+  - first:
+      213: 6253805788172188250
+    second: town stone wall back_47
+  - first:
+      213: -5803828128781847884
+    second: wall_stone_north_0
+  - first:
+      213: 8423393711634078682
+    second: wall_stone_north_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall_stone_north_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb5531a3f7e5e470800000000000000
+      internalID: 8423393711634078682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
