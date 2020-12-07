@@ -9,4 +9,4 @@ To see what needs to happen in any scene or any part of the story, check out the
 ## Project plan
 
 _Last updated: Sunday, Dec 6_
-<img src="http://solidgold.games/images/help/Project-Plan.png" alt="" />
+<img src="http://solidgold.games/images/help/Project-Plan-2.png" alt="" />
