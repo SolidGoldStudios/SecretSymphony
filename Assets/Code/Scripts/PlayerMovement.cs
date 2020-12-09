@@ -4,30 +4,13 @@ using System.Collections.Specialized;
 using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
-    public float walkSpeed = 6.5f;
-    public float sprintSpeed = 20f;
-    private SpriteRenderer sr;
-    private Rigidbody2D rb;
-    private Vector3 velocity;
-
-
-    // Combat Variables
-    private GameObject weapon;
+    private NavMeshAgent navMeshAgent;
     private Animator animator;
-    private Animator attackAnimator;
-
-    // Silhouette Variable
-    private GameObject playerSilhouette;
-    private SpriteRenderer silRenderer;
-
-    // Dash Mechanic Variables
-    private bool running = false;
-    public int maxStamina = 100;
-    public int stamina = 100;
+    private GameObject interactionTarget = null;
 
     // Dialog variables
     public bool immobilized = false;
@@ -38,15 +21,15 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sceneName = SceneManager.GetActiveScene().name;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.updateRotation = false;
+        navMeshAgent.updateUpAxis = false;
 
-        weapon = GameObject.Find("Weapon");
         //attackAnimator = weapon.GetComponent<Animator>();
-        playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
-        silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
+        //playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
+        //silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
 
         if (GameManager.Instance.wearingNightgown)
         {
@@ -61,27 +44,16 @@ public class PlayerMovement : MonoBehaviour
         if (immobilized)
         {
             animator.SetBool("moving", false);
-            running = false;
             return;
         }
 
-        // Keeps silhouette and sprite on same animation frame.
-        silRenderer.sprite = sr.sprite;
+        //// Keeps silhouette and sprite on same animation frame.
+        //silRenderer.sprite = sr.sprite;
 
-        if (running)
-            moveSpeed = sprintSpeed;
-        else
-            moveSpeed = walkSpeed;
-
-        velocity = Vector3.zero;
-
-        velocity.x = Input.GetAxisRaw("Horizontal");
-        velocity.y = Input.GetAxisRaw("Vertical");
+        Vector3 velocity = navMeshAgent.steeringTarget - transform.position;
 
         if (velocity != Vector3.zero)
         {
-            rb.MovePosition(transform.position + velocity.normalized * moveSpeed * Time.fixedDeltaTime);
-
             animator.SetFloat("moveX", velocity.x);
             animator.SetFloat("moveY", velocity.y);
             animator.SetBool("moving", true);
@@ -90,26 +62,17 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetBool("moving", false);
-        }
 
-        // Sprint stamina drain
-        if (running == true)
-        {
-            if (stamina >= 2)
+            if (!navMeshAgent.pathPending && interactionTarget != null)
             {
-                stamina -= 10;
-            }
-            else
-            {
-                running = false;
-            }
-        }
-        //Sprint stamina regen
-        else
-        {
-            if (stamina < maxStamina)
-            {
-                stamina += 2;
+                EnvironmentalItem environmentalItem = interactionTarget.transform.GetComponent<EnvironmentalItem>();
+
+                if (environmentalItem != null)
+                {
+                    environmentalItem.PlayerInteract();
+                }
+
+                interactionTarget = null;
             }
         }
     }
@@ -176,7 +139,6 @@ public class PlayerMovement : MonoBehaviour
         if (immobilized)
         {
             animator.SetBool("moving", false);
-            running = false;
             return;
         }
 
@@ -185,26 +147,40 @@ public class PlayerMovement : MonoBehaviour
         {
             // Check to make sure we're not inside the house or bedroom
             // TODO: Check against an array of indoor scene names?
-            if (sceneName != "Bedroom" && sceneName != "LivingRoom") {
-              StartCoroutine(AttackCo());
+            if (sceneName != "Bedroom" && sceneName != "LivingRoom")
+            {
+                StartCoroutine(AttackCo());
             }
             // attackAnimator.SetFloat("moveX", velocity.x);
             // attackAnimator.SetFloat("moveY", velocity.y);
             // attackAnimator.SetTrigger("Attack");
         }
 
-        // Sprint Input
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetMouseButtonDown(0))
         {
-            if (this.stamina == maxStamina)
-            {
-                running = true;
-            }
-        }
+            Debug.Log("mouse button 0 down " + Input.mousePosition);
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            running = false;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Debug.Log("ray " + ray);
+
+            Vector3 dest = ray.origin;
+            dest.z = 0;
+            navMeshAgent.destination = dest;
+
+            RaycastHit2D hit;
+
+            hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
+                interactionTarget = hit.transform.gameObject;
+            }
+            else
+            {
+                Debug.Log("interactionTarget is now null");
+                interactionTarget = null;
+            }
         }
     }
 

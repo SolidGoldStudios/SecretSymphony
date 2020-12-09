@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4763911869046995603}
   - component: {fileID: 4763911869046995565}
-  - component: {fileID: 4763911869046995602}
+  - component: {fileID: 1306017646}
   m_Layer: 0
   m_Name: Chair_green
   m_TagString: Untagged
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4763911869046995600}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.16, y: -1.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -82,38 +82,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!68 &4763911869046995602
-EdgeCollider2D:
+--- !u!114 &1306017646
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4763911869046995600}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.046876192, y: 1.7626514}
-  - {x: -0.051440477, y: 1.6557055}
-  - {x: -0.12651658, y: 1.6968098}
-  - {x: -0.31549287, y: 1.643508}
-  - {x: -0.63289714, y: 1.377923}
-  - {x: -0.5615618, y: 1.3717613}
-  - {x: -0.6365359, y: 1.2759562}
-  - {x: -0.63681626, y: 0.8651657}
-  - {x: -0.6240847, y: 0.21396637}
-  - {x: 0.0870235, y: 0.0136966705}
-  - {x: 0.039533854, y: 0.5667486}
-  - {x: 0.576905, y: 0.43870544}
-  - {x: 0.581578, y: 0.77610016}
-  - {x: 0.60472846, y: 1.7119751}
-  - {x: 0.43133473, y: 1.7298174}
-  - {x: 0.06319785, y: 1.86693}
-  - {x: -0.008817434, y: 2.0090113}
-  - {x: -0.03320098, y: 1.8354654}
-  - {x: -0.14276528, y: 1.7793665}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.29998136, y: 0.9524174, z: 4}
+  m_Center: {x: -0.21553433, y: 0.8203869, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
