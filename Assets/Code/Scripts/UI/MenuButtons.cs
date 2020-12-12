@@ -9,4 +9,10 @@ public class MenuButtons : MonoBehaviour
         GameManager.Instance.ToggleInventory();
         Debug.Log("Toggling inventory!");
     }
+
+    public void MenuToggleQuestLog()
+    {
+        GameManager.Instance.ToggleQuestLog();
+        Debug.Log("Toggling quest log!");
+    }
 }
