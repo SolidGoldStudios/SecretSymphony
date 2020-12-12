@@ -9,7 +9,6 @@ public class GameManager : Singleton<GameManager>
 {
     // Defining the state at game start
     public bool wearingNightgown = true;
-    public bool hasBackpack = false;
 
     // Ink story
     public TextAsset inkAsset;
@@ -252,27 +251,23 @@ public class GameManager : Singleton<GameManager>
     }
 
     public void ToggleInventory()
-    {
-        // Check to make sure we have the backpack first...
-        if (hasBackpack) {
+    {       
 
-            // Hide dialog and tooltip
-            HideTooltip();
-            HideDialog();
+        // Hide dialog and tooltip
+        HideTooltip();
+        HideDialog();
 
-            // Hide other overlay views
-            HideQuestLog();
+        // Hide other overlay views
+        HideQuestLog();
 
-            // Toggle the visibility of the inventory
-            if (viewingInventory)
-            {
-                HideInventory();
-            }
-            else
-            {
-                ShowInventory();
-            }
-
+        // Toggle the visibility of the inventory
+        if (viewingInventory)
+        {
+            HideInventory();
+        }
+        else
+        {
+            ShowInventory();
         }
     }
 
