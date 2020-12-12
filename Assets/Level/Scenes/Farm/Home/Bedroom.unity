@@ -4934,7 +4934,7 @@ SpriteRenderer:
   m_Size: {x: 2.75, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1513655744
@@ -6973,10 +6973,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 789343138, guid: 59a222df298964682a8ab1f42945c798, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
@@ -7085,22 +7081,6 @@ PrefabInstance:
     - target: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653300660375307121, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: questLogItem
-      value: 
-      objectReference: {fileID: 4239517371585392377, guid: d34b44f518c3d44a8986cd28e3748c4d,
-        type: 3}
-    - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
