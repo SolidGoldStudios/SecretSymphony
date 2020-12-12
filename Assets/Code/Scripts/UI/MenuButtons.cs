@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuToggleInventory : MonoBehaviour
+public class MenuButtons : MonoBehaviour
 {
-    public void doMenuToggleInventory()
+    public void MenuToggleInventory()
     {
         GameManager.Instance.ToggleInventory();
         Debug.Log("Toggling inventory!");

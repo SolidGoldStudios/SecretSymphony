@@ -30,11 +30,6 @@ public class OutfitCheck : MonoBehaviour
                 dialogueText.text = "Wouldn't want to leave without getting dressed first!";
                 dialogBox.SetActive(true);
             }
-            else if (!GameManager.Instance.hasBackpack)
-            {
-                dialogueText.text = "Better take a knapsack with! Now, where was that?";
-                dialogBox.SetActive(true);
-            }
             else
             {
                 nightgownBarrier.SetActive(false);
