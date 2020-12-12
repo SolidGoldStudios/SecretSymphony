@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animations.meta
+guid: c1ffbd48c096043c29e5c9a5e5890470
+folderAsset: yes
+=======
 guid: 30ebc8faaf09d2c47913f77384cfd74e
+>>>>>>> da4b85219101b98ec0672476a4da860be400d1e2:Assets/Level/Scenes/Town/Indoor/Present/SchoolIndoor.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -9,13 +9,11 @@ public class WardrobeChange : MonoBehaviour
     public bool playerInRange;
 
     private Animator playerAnimator;
-    private Text tooltipText;
 
     // Start is called before the first frame update
     void Start()
     {
         playerAnimator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
-        tooltipText = tooltip.transform.Find("TooltipText").gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame

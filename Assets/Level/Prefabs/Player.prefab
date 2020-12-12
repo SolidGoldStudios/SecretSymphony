@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 8705268416411252316}
   - component: {fileID: 8705268416411252315}
   - component: {fileID: 4883675272232504980}
+  - component: {fileID: 2054559834}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -264,7 +265,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -312,9 +313,7 @@ MonoBehaviour:
   moveSpeed: 0
   walkSpeed: 4.5
   sprintSpeed: 15
-  maxStamina: 100
-  stamina: 100
-  inDialogue: 0
+  immobilized: 0
 --- !u!95 &8705268416411252315
 Animator:
   serializedVersion: 3
@@ -342,3 +341,25 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8705268416411252314}
   m_Enabled: 1
+--- !u!195 &2054559834
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8705268416411252314}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.2
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
