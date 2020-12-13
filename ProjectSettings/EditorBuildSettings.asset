@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/Farm/Outdoor/Present/FarmMorning.unity
     guid: aefe587112b0646da860c9aad0f18a82
-  - enabled: 1
+  - enabled: 0
     path: Assets/Level/Scenes/RoadToTown/Present/RoadMorning.unity
     guid: 7d085e89de2c41043a7bf7ff74d3986c
   - enabled: 1
@@ -38,9 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/Town/Indoor/Present/TavernIndoor.unity
     guid: 1cfaee5daa4a2ce4986aa8359ec8f18e
-  - enabled: 1
-    path: Assets/Level/Scenes/Town/Indoor/Present/SchoolIndoor.unity
-    guid: 30ebc8faaf09d2c47913f77384cfd74e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
