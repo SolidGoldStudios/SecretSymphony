@@ -21,9 +21,6 @@ public class NPCDialogue : MonoBehaviour
     Button choiceOneButton;
     Button choiceTwoButton;
     Button choiceThreeButton;
-    //Image choiceOneImage;
-    //Image choiceTwoImage;
-    //Image choiceThreeImage;
     GameObject dialogOk;
     Button dialogOkButton;
 
@@ -31,7 +28,7 @@ public class NPCDialogue : MonoBehaviour
     int currentChoice;
     string currentName;
 
-    void Awake()
+    private void Awake()
     {
         playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
 
@@ -61,24 +58,10 @@ public class NPCDialogue : MonoBehaviour
         choiceThreeButton = choiceThree.GetComponent<Button>();
         choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
 
-        //choiceOneImage = choiceOne.transform.Find("Image").gameObject.GetComponent<Image>();
-        //choiceTwoImage = choiceTwo.transform.Find("Image").gameObject.GetComponent<Image>();
-        //choiceThreeImage = choiceThree.transform.Find("Image").gameObject.GetComponent<Image>();
-
         dialogOk = transform.Find("DialogOk").gameObject;
         dialogOkButton = dialogOk.GetComponent<Button>();
         dialogOkButton.onClick.AddListener(ClickedOk);
     }
-
-    //public override void Interact()
-    //{
-    //    Debug.Log(GameManager.Instance.inkStory.variablesState["first_engagement"]);
-
-    //    if (!dialogBox.activeInHierarchy)
-    //    {
-    //        ShowDialog();
-    //    }
-    //}
 
     void ClickedOk()
     {
@@ -131,54 +114,6 @@ public class NPCDialogue : MonoBehaviour
             HideDialog();
         }
     }
-
-    //else
-    //{
-    //    if (showingChoices)
-    //    {
-    //        GameManager.Instance.inkStory.ChooseChoiceIndex(currentChoice);
-
-    //        HideChoices();
-
-    //        if (GameManager.Instance.inkStory.canContinue)
-    //        {
-    //            StoryContinue();
-    //        }
-    //    }
-    //    else if (GameManager.Instance.inkStory.currentChoices.Count > 0)
-    //    {
-    //        ShowChoices();
-    //    }
-    //    else if (GameManager.Instance.inkStory.canContinue)
-    //    {
-    //        StoryContinue();
-    //    }
-    //    else
-    //    {
-    //        HideDialog();
-    //    }
-    //}
-
-    //if (showingChoices)
-    //{
-    //    if (Input.GetKeyDown(KeyCode.S) && playerInRange)
-    //    {
-    //        if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
-
-    //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
-    //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-    //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
-    //    }
-
-    //    if (Input.GetKeyDown(KeyCode.W) && playerInRange)
-    //    {
-    //        if (currentChoice > 0) currentChoice--;
-
-    //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
-    //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-    //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
-    //    }
-    //}
 
     public void ShowDialog(string knotName)
     {
@@ -252,32 +187,6 @@ public class NPCDialogue : MonoBehaviour
                 //GameManager.Instance.AddInventoryItem()
             }
         }
-
-        //if (GameManager.Instance.inkStory.currentTags.Count > 0)
-        //{
-        //    portraitObject.SetActive(true);
-        //    dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
-
-        //    if (GameManager.Instance.inkStory.currentTags.Count > 1) {
-        //      Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
-        //      portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
-        //    }
-        //    else
-        //    {
-        //      Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
-        //      portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
-        //    }
-
-        //    nameplate.SetActive(true);
-        //    nameplateText.text = GameManager.Instance.inkStory.currentTags[0];
-        //}
-        //else
-        //{
-        //    portraitObject.SetActive(false);
-        //    dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
-
-        //    nameplate.SetActive(false);
-        //}
     }
 
     private void HideDialog()
@@ -324,10 +233,6 @@ public class NPCDialogue : MonoBehaviour
                     break;
             }
         }
-
-        //choiceOneImage.gameObject.SetActive(currentChoice == 0);
-        //choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-        //choiceThreeImage.gameObject.SetActive(currentChoice == 2);
     }
 
     private void HideChoices()
