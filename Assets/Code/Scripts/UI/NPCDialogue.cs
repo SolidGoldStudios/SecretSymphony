@@ -5,12 +5,8 @@ using System.Collections;
 using System.Reflection;
 using Ink.Runtime;
 
-public class NPCDialogue : Interaction
+public class NPCDialogue : MonoBehaviour
 {
-    public GameObject dialogBox;
-    public string knotName;
-    public AudioSource audio;
-
     PlayerMovement playerMovement;
     GameObject portraitObject;
     GameObject nameplate;
@@ -22,97 +18,169 @@ public class NPCDialogue : Interaction
     Text choiceOneText;
     Text choiceTwoText;
     Text choiceThreeText;
-    Image choiceOneImage;
-    Image choiceTwoImage;
-    Image choiceThreeImage;
+    Button choiceOneButton;
+    Button choiceTwoButton;
+    Button choiceThreeButton;
+    //Image choiceOneImage;
+    //Image choiceTwoImage;
+    //Image choiceThreeImage;
+    GameObject dialogOk;
+    Button dialogOkButton;
+
     bool showingChoices;
     int currentChoice;
     string currentName;
 
-    void Start()
+    void Awake()
     {
         playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
 
         HideDialog();
 
-        portraitObject = dialogBox.transform.Find("Portrait").gameObject;
+        portraitObject = transform.Find("Portrait").gameObject;
 
-        nameplate = dialogBox.transform.Find("Nameplate").gameObject;
+        nameplate = transform.Find("Nameplate").gameObject;
         nameplateText = nameplate.transform.Find("NameLabel").gameObject.GetComponent<Text>();
 
-        dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
+        dialogueText = transform.Find("Dialogue").gameObject.GetComponent<Text>();
 
-        choiceOne = dialogBox.transform.Find("ChoiceOne").gameObject;
-        choiceTwo = dialogBox.transform.Find("ChoiceTwo").gameObject;
-        choiceThree = dialogBox.transform.Find("ChoiceThree").gameObject;
+        choiceOne = transform.Find("ChoiceOne").gameObject;
+        choiceTwo = transform.Find("ChoiceTwo").gameObject;
+        choiceThree = transform.Find("ChoiceThree").gameObject;
 
         choiceOneText = choiceOne.transform.Find("Text").gameObject.GetComponent<Text>();
         choiceTwoText = choiceTwo.transform.Find("Text").gameObject.GetComponent<Text>();
         choiceThreeText = choiceThree.transform.Find("Text").gameObject.GetComponent<Text>();
 
-        choiceOneImage = choiceOne.transform.Find("Image").gameObject.GetComponent<Image>();
-        choiceTwoImage = choiceTwo.transform.Find("Image").gameObject.GetComponent<Image>();
-        choiceThreeImage = choiceThree.transform.Find("Image").gameObject.GetComponent<Image>();
+        choiceOneButton = choiceOne.GetComponent<Button>();
+        choiceOneButton.onClick.AddListener(ClickedChoiceOne);
+
+        choiceTwoButton = choiceTwo.GetComponent<Button>();
+        choiceTwoButton.onClick.AddListener(ClickedChoiceTwo);
+
+        choiceThreeButton = choiceThree.GetComponent<Button>();
+        choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
+
+        //choiceOneImage = choiceOne.transform.Find("Image").gameObject.GetComponent<Image>();
+        //choiceTwoImage = choiceTwo.transform.Find("Image").gameObject.GetComponent<Image>();
+        //choiceThreeImage = choiceThree.transform.Find("Image").gameObject.GetComponent<Image>();
+
+        dialogOk = transform.Find("DialogOk").gameObject;
+        dialogOkButton = dialogOk.GetComponent<Button>();
+        dialogOkButton.onClick.AddListener(ClickedOk);
     }
 
-    public override void Interact()
-    {
-        Debug.Log(GameManager.Instance.inkStory.variablesState["first_engagement"]);
+    //public override void Interact()
+    //{
+    //    Debug.Log(GameManager.Instance.inkStory.variablesState["first_engagement"]);
 
-        if (!dialogBox.activeInHierarchy)
+    //    if (!dialogBox.activeInHierarchy)
+    //    {
+    //        ShowDialog();
+    //    }
+    //}
+
+    void ClickedOk()
+    {
+        Debug.Log("ok clicked, currentChoices.Count " + GameManager.Instance.inkStory.currentChoices.Count + " canContinue " + GameManager.Instance.inkStory.canContinue);
+
+        if (GameManager.Instance.inkStory.currentChoices.Count > 0)
         {
-            ShowDialog();
+            ShowChoices();
+        }
+        else if (GameManager.Instance.inkStory.canContinue)
+        {
+            StoryContinue();
         }
         else
         {
-            if (showingChoices)
-            {
-                GameManager.Instance.inkStory.ChooseChoiceIndex(currentChoice);
-
-                HideChoices();
-
-                if (GameManager.Instance.inkStory.canContinue)
-                {
-                    StoryContinue();
-                }
-            }
-            else if (GameManager.Instance.inkStory.currentChoices.Count > 0)
-            {
-                ShowChoices();
-            }
-            else if (GameManager.Instance.inkStory.canContinue)
-            {
-                StoryContinue();
-            }
-            else
-            {
-                HideDialog();
-            }
+            HideDialog();
         }
-
-        //if (showingChoices)
-        //{
-        //    if (Input.GetKeyDown(KeyCode.S) && playerInRange)
-        //    {
-        //        if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
-
-        //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
-        //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-        //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
-        //    }
-
-        //    if (Input.GetKeyDown(KeyCode.W) && playerInRange)
-        //    {
-        //        if (currentChoice > 0) currentChoice--;
-
-        //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
-        //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-        //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
-        //    }
-        //}
     }
 
-    private void ShowDialog()
+    void ClickedChoiceOne()
+    {
+        ClickedChoice(0);
+    }
+
+    void ClickedChoiceTwo()
+    {
+        ClickedChoice(1);
+    }
+
+    void ClickedChoiceThree()
+    {
+        ClickedChoice(2);
+    }
+
+    void ClickedChoice(int i)
+    {
+        if (i >= GameManager.Instance.inkStory.currentChoices.Count) return;
+
+        Debug.Log("picked choice " + i);
+        GameManager.Instance.inkStory.ChooseChoiceIndex(i);
+
+        HideChoices();
+
+        if (GameManager.Instance.inkStory.canContinue)
+        {
+            StoryContinue();
+        }
+        else
+        {
+            HideDialog();
+        }
+    }
+
+    //else
+    //{
+    //    if (showingChoices)
+    //    {
+    //        GameManager.Instance.inkStory.ChooseChoiceIndex(currentChoice);
+
+    //        HideChoices();
+
+    //        if (GameManager.Instance.inkStory.canContinue)
+    //        {
+    //            StoryContinue();
+    //        }
+    //    }
+    //    else if (GameManager.Instance.inkStory.currentChoices.Count > 0)
+    //    {
+    //        ShowChoices();
+    //    }
+    //    else if (GameManager.Instance.inkStory.canContinue)
+    //    {
+    //        StoryContinue();
+    //    }
+    //    else
+    //    {
+    //        HideDialog();
+    //    }
+    //}
+
+    //if (showingChoices)
+    //{
+    //    if (Input.GetKeyDown(KeyCode.S) && playerInRange)
+    //    {
+    //        if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
+
+    //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
+    //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+    //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+    //    }
+
+    //    if (Input.GetKeyDown(KeyCode.W) && playerInRange)
+    //    {
+    //        if (currentChoice > 0) currentChoice--;
+
+    //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
+    //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+    //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+    //    }
+    //}
+
+    public void ShowDialog(string knotName)
     {
         playerMovement.immobilized = true;
 
@@ -121,7 +189,7 @@ public class NPCDialogue : Interaction
         //GameManager.Instance.inkStory.ResetState();
         GameManager.Instance.inkStory.ChoosePathString(knotName);
 
-        dialogBox.SetActive(true);
+        transform.gameObject.SetActive(true);
 
         StoryContinue();
     }
@@ -129,6 +197,7 @@ public class NPCDialogue : Interaction
     private void StoryContinue()
     {
         dialogueText.text = GameManager.Instance.inkStory.Continue();
+        dialogOk.SetActive(true);
 
         portraitObject.SetActive(false);
         dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
@@ -156,7 +225,7 @@ public class NPCDialogue : Interaction
 
             if (tag.StartsWith("sound"))
             {
-                audio.clip = Resources.Load<AudioClip>("Audio/" + tag.Substring(6));
+                GetComponent<AudioSource>().clip = Resources.Load<AudioClip>("Audio/" + tag.Substring(6));
             }
 
             if (tag.StartsWith("quest"))
@@ -214,11 +283,13 @@ public class NPCDialogue : Interaction
     private void HideDialog()
     {
         playerMovement.immobilized = false;
-        dialogBox.SetActive(false);
+        transform.gameObject.SetActive(false);
     }
 
     private void ShowChoices()
     {
+        dialogOk.SetActive(false);
+
         // Update portrait and nameplate
         nameplate.SetActive(true);
         nameplateText.text = "Kay";
@@ -254,9 +325,9 @@ public class NPCDialogue : Interaction
             }
         }
 
-        choiceOneImage.gameObject.SetActive(currentChoice == 0);
-        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+        //choiceOneImage.gameObject.SetActive(currentChoice == 0);
+        //choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+        //choiceThreeImage.gameObject.SetActive(currentChoice == 2);
     }
 
     private void HideChoices()

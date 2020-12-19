@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1338,11 +1338,10 @@ GameObject:
   m_Component:
   - component: {fileID: 452259448}
   - component: {fileID: 452259447}
-  - component: {fileID: 452259446}
   - component: {fileID: 452259450}
-  - component: {fileID: 452259449}
   - component: {fileID: 452259451}
   - component: {fileID: 452259452}
+  - component: {fileID: 452259446}
   m_Layer: 0
   m_Name: Brother
   m_TagString: Untagged
@@ -1350,32 +1349,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &452259446
-BoxCollider2D:
+--- !u!114 &452259446
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452259445}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.14099169}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.75, y: 1.6875}
-    newSize: {x: 0.75, y: 1.6875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6019516, y: 0.3020258}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1745254813}
+  knotName: start_farm_family_brother
 --- !u!212 &452259447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1441,21 +1428,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &452259449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452259445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c474a8d70d91e4bddb5ba9c82f133257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1745254813}
-  knotName: start_birthday_breakfast_brother
-  audio: {fileID: 0}
 --- !u!61 &452259450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1469,7 +1441,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04125738, y: 0.90587175}
+  m_Offset: {x: -0.010380745, y: 0.83357924}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -1480,7 +1452,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6498194, y: 1.9375}
+  m_Size: {x: 0.8442707, y: 1.792915}
   m_EdgeRadius: 0
 --- !u!95 &452259451
 Animator:
@@ -3759,10 +3731,10 @@ GameObject:
   m_Component:
   - component: {fileID: 628461828}
   - component: {fileID: 628461827}
-  - component: {fileID: 628461830}
   - component: {fileID: 628461829}
   - component: {fileID: 628461831}
   - component: {fileID: 628461832}
+  - component: {fileID: 628461826}
   m_Layer: 0
   m_Name: Father
   m_TagString: Untagged
@@ -3770,6 +3742,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &628461826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628461825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1745254813}
+  knotName: start_farm_family_father
 --- !u!212 &628461827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3861,21 +3847,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.215107, y: 2.2634592}
   m_EdgeRadius: 0
---- !u!114 &628461830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628461825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c474a8d70d91e4bddb5ba9c82f133257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1745254813}
-  knotName: start_farm_family_father
-  audio: {fileID: 0}
 --- !u!95 &628461831
 Animator:
   serializedVersion: 3
@@ -4478,12 +4449,10 @@ GameObject:
   m_Component:
   - component: {fileID: 862051889}
   - component: {fileID: 862051888}
-  - component: {fileID: 862051887}
   - component: {fileID: 862051891}
-  - component: {fileID: 862051890}
   - component: {fileID: 862051892}
   - component: {fileID: 862051893}
-  - component: {fileID: 862051894}
+  - component: {fileID: 862051887}
   m_Layer: 0
   m_Name: Mother
   m_TagString: Untagged
@@ -4491,32 +4460,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &862051887
-BoxCollider2D:
+--- !u!114 &862051887
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862051886}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.14099169}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.875, y: 1.875}
-    newSize: {x: 0.875, y: 1.875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6019516, y: 0.3020258}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1745254813}
+  knotName: start_farm_family_mother
 --- !u!212 &862051888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4582,21 +4539,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &862051890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862051886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c474a8d70d91e4bddb5ba9c82f133257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1745254813}
-  knotName: start_birthday_breakfast_mother
-  audio: {fileID: 0}
 --- !u!61 &862051891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4610,7 +4552,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03255987, y: 0.782323}
+  m_Offset: {x: -0.032559633, y: 0.9785466}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -4621,7 +4563,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6498194, y: 2.6591494}
+  m_Size: {x: 0.9475455, y: 2.1014643}
   m_EdgeRadius: 0
 --- !u!95 &862051892
 Animator:
@@ -4739,22 +4681,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &862051894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862051886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &889797211
 GameObject:
   m_ObjectHideFlags: 0

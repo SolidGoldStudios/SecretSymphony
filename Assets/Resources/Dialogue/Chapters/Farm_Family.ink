@@ -7,7 +7,14 @@
         -> END
     - else:
         WTF is this thing? We've never seen it before. #name:Father
-        -> END
+        + [Lol.]
+            Lol. #name:Kay
+            Be serious! #name:Father
+            ->END
+        + [What?]
+            What? #name:Kay
+            The giant thing right there! #name:Father
+            -> END
 }
 
 ==start_farm_family_mother==
@@ -15,5 +22,5 @@ That strange device has buttons to press, but it doesn't do anything. #name:Moth
 -> END
 
 ==start_farm_family_brother==
-Have you pet the chickens yet today? #name:Brother #mood:happy
+Have you pet the chickens yet today? #name:Thomas #mood:happy
 -> END
