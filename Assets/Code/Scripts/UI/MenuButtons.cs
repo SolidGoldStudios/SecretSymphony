@@ -15,4 +15,10 @@ public class MenuButtons : MonoBehaviour
         GameManager.Instance.ToggleQuestLog();
         Debug.Log("Toggling quest log!");
     }
+    
+    public void MenuHideEverything()
+    {
+        GameManager.Instance.HideInventory();
+        GameManager.Instance.HideQuestLog();
+    }
 }
