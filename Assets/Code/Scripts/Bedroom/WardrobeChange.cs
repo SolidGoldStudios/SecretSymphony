@@ -3,46 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WardrobeChange : MonoBehaviour
+public class WardrobeChange : Interaction
 {
-    public GameObject tooltip;
-    public bool playerInRange;
-
-    private Animator playerAnimator;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerAnimator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
+        animator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
+        if (GameManager.Instance.wearingNightgown)
         {
-            if (GameManager.Instance.wearingNightgown)
-            {
-                GameManager.Instance.wearingNightgown = false;
-                playerAnimator.SetBool("wearingNightgown", false);
-                GameManager.Instance.ShowTooltipWithTimeout("All dressed!");
-            }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = true;
-        }
-
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = false;
+            GameManager.Instance.wearingNightgown = false;
+            animator.SetBool("wearingNightgown", false);
+            GameManager.Instance.ShowTooltipWithTimeout("All dressed!");
         }
     }
 }

@@ -5,11 +5,10 @@ using System.Collections;
 using System.Reflection;
 using Ink.Runtime;
 
-public class NPCDialogue : MonoBehaviour
+public class NPCDialogue : Interaction
 {
     public GameObject dialogBox;
     public string knotName;
-    public bool playerInRange;
     public AudioSource audio;
 
     PlayerMovement playerMovement;
@@ -56,63 +55,61 @@ public class NPCDialogue : MonoBehaviour
         choiceThreeImage = choiceThree.transform.Find("Image").gameObject.GetComponent<Image>();
     }
 
-    void Update()
+    public override void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
+        Debug.Log(GameManager.Instance.inkStory.variablesState["first_engagement"]);
+
+        if (!dialogBox.activeInHierarchy)
         {
-            Debug.Log(GameManager.Instance.inkStory.variablesState["first_engagement"]);
-            if (!dialogBox.activeInHierarchy)
+            ShowDialog();
+        }
+        else
+        {
+            if (showingChoices)
             {
-                ShowDialog();
-            }
-            else
-            {
-                if (showingChoices)
-                {
-                    GameManager.Instance.inkStory.ChooseChoiceIndex(currentChoice);
+                GameManager.Instance.inkStory.ChooseChoiceIndex(currentChoice);
 
-                    HideChoices();
+                HideChoices();
 
-                    if (GameManager.Instance.inkStory.canContinue)
-                    {
-                        StoryContinue();
-                    }
-                }
-                else if (GameManager.Instance.inkStory.currentChoices.Count > 0)
-                {
-                    ShowChoices();
-                }
-                else if (GameManager.Instance.inkStory.canContinue)
+                if (GameManager.Instance.inkStory.canContinue)
                 {
                     StoryContinue();
                 }
-                else
-                {
-                    HideDialog();
-                }
+            }
+            else if (GameManager.Instance.inkStory.currentChoices.Count > 0)
+            {
+                ShowChoices();
+            }
+            else if (GameManager.Instance.inkStory.canContinue)
+            {
+                StoryContinue();
+            }
+            else
+            {
+                HideDialog();
             }
         }
 
-        if (showingChoices)
-        {
-            if (Input.GetKeyDown(KeyCode.S) && playerInRange)
-            {
-                if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
+        //if (showingChoices)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.S) && playerInRange)
+        //    {
+        //        if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
 
-                choiceOneImage.gameObject.SetActive(currentChoice == 0);
-                choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-                choiceThreeImage.gameObject.SetActive(currentChoice == 2);
-            }
+        //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
+        //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+        //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+        //    }
 
-            if (Input.GetKeyDown(KeyCode.W) && playerInRange)
-            {
-                if (currentChoice > 0) currentChoice--;
+        //    if (Input.GetKeyDown(KeyCode.W) && playerInRange)
+        //    {
+        //        if (currentChoice > 0) currentChoice--;
 
-                choiceOneImage.gameObject.SetActive(currentChoice == 0);
-                choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-                choiceThreeImage.gameObject.SetActive(currentChoice == 2);
-            }
-        }
+        //        choiceOneImage.gameObject.SetActive(currentChoice == 0);
+        //        choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+        //        choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+        //    }
+        //}
     }
 
     private void ShowDialog()
@@ -269,22 +266,5 @@ public class NPCDialogue : MonoBehaviour
         choiceOne.SetActive(false);
         choiceTwo.SetActive(false);
         choiceThree.SetActive(false);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = true;
-        }
-
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = false;
-            HideDialog();
-        }
     }
 }

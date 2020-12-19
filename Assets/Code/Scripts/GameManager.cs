@@ -46,6 +46,7 @@ public class GameManager : Singleton<GameManager>
     {
         inventorySlot = Resources.Load<Sprite>("UI/ui_inventory_slot");
         inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
+        UpdateInventory();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
         inkAsset = Resources.Load<TextAsset>("Dialogue/MainStory");
@@ -282,10 +283,13 @@ public class GameManager : Singleton<GameManager>
         Image inventoryImage = inventoryView.GetComponent<Image>();
         GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
         Canvas inventoryCanvas = inventoryContents.GetComponent<Canvas>();
+        GameObject inventoryClose = inventoryView.transform.Find("InventoryClose").gameObject;
+        Image inventoryCloseImage = inventoryClose.GetComponent<Image>();
 
         // Show bag image and inventory contents
         inventoryImage.enabled = true;
         inventoryCanvas.enabled = true;
+        inventoryCloseImage.enabled = true;
 
         // Find the Backdrop object in the scene
         GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
@@ -308,10 +312,13 @@ public class GameManager : Singleton<GameManager>
         Image inventoryImage = inventoryView.GetComponent<Image>();
         GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
         Canvas inventoryCanvas = inventoryContents.GetComponent<Canvas>();
+        GameObject inventoryClose = inventoryView.transform.Find("InventoryClose").gameObject;
+        Image inventoryCloseImage = inventoryClose.GetComponent<Image>();
 
         // Hide bag image and inventory contents
         inventoryImage.enabled = false;
         inventoryCanvas.enabled = false;
+        inventoryCloseImage.enabled = false;
 
         // Find the Backdrop object in the scene
         GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;

@@ -1147,7 +1147,7 @@ GameObject:
   - component: {fileID: 608962024}
   - component: {fileID: 608962021}
   - component: {fileID: 608962025}
-  - component: {fileID: 608962026}
+  - component: {fileID: 608962022}
   - component: {fileID: 608962029}
   m_Layer: 0
   m_Name: Wardrobe
@@ -1196,6 +1196,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.810313, y: 2.3893166}
   m_EdgeRadius: 0
+--- !u!114 &608962022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608962019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93d64acd973b474fbb00346442f2082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionSwitch: 0
 --- !u!212 &608962024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1266,19 +1279,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &608962026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608962019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9432028c78ffe904abe8fd7a565a5d44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionSwitch: 0
 --- !u!114 &608962029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,8 +1291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca7473287f904d48ac941a74225c0f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltip: {fileID: 789343138}
-  playerInRange: 0
 --- !u!4 &669858084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
@@ -1400,12 +1398,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &789343138 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 789343138, guid: 59a222df298964682a8ab1f42945c798,
-    type: 3}
-  m_PrefabInstance: {fileID: 2048496466}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &889554008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,8 +1409,8 @@ GameObject:
   - component: {fileID: 889554009}
   - component: {fileID: 889554010}
   - component: {fileID: 889554012}
-  - component: {fileID: 889554013}
   - component: {fileID: 889554014}
+  - component: {fileID: 889554011}
   m_Layer: 0
   m_Name: Curtains
   m_TagString: Untagged
@@ -1492,6 +1484,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &889554011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889554008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93d64acd973b474fbb00346442f2082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionSwitch: 0
 --- !u!61 &889554012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1518,19 +1523,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6766974, y: 2.1616516}
   m_EdgeRadius: 0
---- !u!114 &889554013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889554008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9432028c78ffe904abe8fd7a565a5d44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionSwitch: 0
 --- !u!95 &889554014
 Animator:
   serializedVersion: 3
@@ -3283,6 +3275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405031457}
   - component: {fileID: 1405031456}
+  - component: {fileID: 1405031458}
   m_Layer: 0
   m_Name: NightgownBarrier
   m_TagString: Untagged
@@ -3297,7 +3290,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405031455}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3330,6 +3323,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1405031458
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405031455}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.46, y: 1.35, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 1.46, y: -1.5, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1409645883
 GameObject:
   m_ObjectHideFlags: 0

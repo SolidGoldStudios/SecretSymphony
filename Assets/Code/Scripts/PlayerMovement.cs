@@ -66,12 +66,19 @@ public class PlayerMovement : MonoBehaviour
 
             if (!navMeshAgent.pathPending && interactionTarget != null)
             {
-                EnvironmentalItem environmentalItem = interactionTarget.transform.GetComponent<EnvironmentalItem>();
+                Interaction[] interactions = interactionTarget.transform.GetComponents<Interaction>();
 
-                if (environmentalItem != null)
+                foreach (Interaction interaction in interactions)
                 {
-                    environmentalItem.PlayerInteract();
+                    interaction.Interact();
                 }
+
+                //EnvironmentalItem environmentalItem = interactionTarget.transform.GetComponent<EnvironmentalItem>();
+
+                //if (environmentalItem != null)
+                //{
+                //    environmentalItem.PlayerInteract();
+                //}
 
                 interactionTarget = null;
             }

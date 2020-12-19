@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1455,7 +1455,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
   knotName: start_birthday_breakfast_brother
-  playerInRange: 0
   audio: {fileID: 0}
 --- !u!61 &452259450
 BoxCollider2D:
@@ -3760,12 +3759,10 @@ GameObject:
   m_Component:
   - component: {fileID: 628461828}
   - component: {fileID: 628461827}
-  - component: {fileID: 628461826}
   - component: {fileID: 628461830}
   - component: {fileID: 628461829}
   - component: {fileID: 628461831}
   - component: {fileID: 628461832}
-  - component: {fileID: 628461833}
   m_Layer: 0
   m_Name: Father
   m_TagString: Untagged
@@ -3773,32 +3770,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &628461826
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628461825}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0019004345, y: 0.12686539}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.375, y: 2.3125}
-    newSize: {x: 1.375, y: 2.3125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8803344, y: 0.26319885}
-  m_EdgeRadius: 0
 --- !u!212 &628461827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3877,7 +3848,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4510646}
+  m_Offset: {x: 0.061965227, y: 1.122354}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -3888,7 +3859,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.8710146}
+  m_Size: {x: 1.215107, y: 2.2634592}
   m_EdgeRadius: 0
 --- !u!114 &628461830
 MonoBehaviour:
@@ -3904,7 +3875,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
   knotName: start_farm_family_father
-  playerInRange: 0
   audio: {fileID: 0}
 --- !u!95 &628461831
 Animator:
@@ -4022,22 +3992,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &628461833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628461825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &705617769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4642,7 +4596,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
   knotName: start_birthday_breakfast_mother
-  playerInRange: 0
   audio: {fileID: 0}
 --- !u!61 &862051891
 BoxCollider2D:
@@ -7121,8 +7074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: Level/Scenes/Farm/Home/Bedroom
-  toPosition: {x: -2.4, y: -2.8}
-  toCameraPosition: {x: -1.65, y: 0.12, z: -10}
+  toPosition: {x: -1.48, y: -4.67}
+  toCameraPosition: {x: -1.65, y: -2.72, z: -10}
   toDirection: {x: 0, y: 1}
 --- !u!1 &1489685909
 GameObject:
@@ -10060,11 +10013,6 @@ PrefabInstance:
     - target: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
