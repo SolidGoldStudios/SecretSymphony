@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3957976347904752915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.0039983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Name
+      value: Brass Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069178, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1555911350213759836, guid: edd720566b0ee644fb5eb25e32bd9ccc,
+        type: 3}
+    - target: {fileID: 4083633433047508349, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083633433047508349, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.21333215
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083633433047508349, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7296796
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
