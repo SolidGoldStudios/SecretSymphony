@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class Collectable : MonoBehaviour
+public class Collectable : Interaction
 {
     public string itemName;
     public string description;
     public Sprite icon;
     public int weight;
     public int value;
-    public bool playerInRange;
+    //public bool playerInRange;
     public bool disabled = false;
 
     bool collected = false;
@@ -24,38 +24,39 @@ public class Collectable : MonoBehaviour
         myLight = GetComponent<Light2D>();
     }
 
-    void Update()
+    public override void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange && !collected && !disabled)
+        if (!collected && !disabled)
         {
             GameManager.Instance.ShowTooltipWithTimeout("Collected " + itemName + "!");
             GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value);
             GameManager.Instance.DebugInventory();
             myRenderer.enabled = false;
-            if (myLight) {
+            if (myLight)
+            {
                 myLight.enabled = false;
             }
             collected = true;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = true;
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player"))
+    //    {
+    //        playerInRange = true;
 
-            if (!collected && !disabled) GameManager.Instance.ShowTooltip("Press E to collect");
-        }
-    }
+    //        if (!collected && !disabled) GameManager.Instance.ShowTooltip("Press E to collect");
+    //    }
+    //}
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = false;
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player"))
+    //    {
+    //        playerInRange = false;
 
-            if (!collected) GameManager.Instance.HideTooltip();
-        }
-    }
+    //        if (!collected) GameManager.Instance.HideTooltip();
+    //    }
+    //}
 }

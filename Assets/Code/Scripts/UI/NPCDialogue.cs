@@ -145,7 +145,7 @@ public class NPCDialogue : MonoBehaviour
                 currentName = tag.Substring(5);
 
                 nameplate.SetActive(true);
-                nameplateText.text = currentName;
+                nameplateText.text = currentName.Replace("+", " ");
 
                 portraitObject.SetActive(true);
                 dialogueText.rectTransform.offsetMin = new Vector2(80, 16);

@@ -1,3 +1,4 @@
+INCLUDE Chapters/FaeryAppears.ink
 INCLUDE Chapters/Farm_Family.ink
 /** 
  * Triggers
