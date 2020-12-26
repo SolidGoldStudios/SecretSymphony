@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7997656039609544666}
   - component: {fileID: 316155008808057221}
   - component: {fileID: 3783082277345693180}
+  - component: {fileID: 3191125393191289177}
   m_Layer: 0
   m_Name: Tree Large DarkGreen Flipped
   m_TagString: Plantlife
@@ -174,7 +175,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6261491732060897521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -193,3 +194,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0944369, y: 0.80372524}
   m_EdgeRadius: 0
+--- !u!114 &3191125393191289177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261491732060897521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.0408659, y: 0.27295303, z: 4}
+  m_Center: {x: -0.11604452, y: 0.24571037, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff

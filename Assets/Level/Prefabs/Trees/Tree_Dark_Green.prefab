@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 870815708932725956}
   - component: {fileID: 870815708932725955}
   - component: {fileID: 870815708932725954}
+  - component: {fileID: 391378946839405610}
   m_Layer: 0
   m_Name: Tree_Dark_Green
   m_TagString: Plantlife
@@ -174,7 +175,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870815708932725953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -193,3 +194,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1520666, y: 0.80372524}
   m_EdgeRadius: 0
+--- !u!114 &391378946839405610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870815708932725953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.83778954, y: 0.30196476, z: 4}
+  m_Center: {x: 0.15956044, y: 0.28922606, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff

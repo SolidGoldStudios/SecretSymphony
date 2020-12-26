@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5918854337051123136}
   - component: {fileID: 7638737819155068088}
   - component: {fileID: 5851254542859684164}
+  - component: {fileID: 1946244278702247427}
   m_Layer: 0
   m_Name: Tree Large Aspen
   m_TagString: Plantlife
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5918854337051123137}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -193,3 +194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a614356c3f33ed409f49806eb02665a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1946244278702247427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5918854337051123137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.1943665, y: 0.5540619, z: 4}
+  m_Center: {x: 0.035969734, y: 0.316576, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff

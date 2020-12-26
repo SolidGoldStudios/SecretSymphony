@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 5538560283675119952}
   - component: {fileID: 7920867454206185375}
   - component: {fileID: 8975275693540507052}
+  - component: {fileID: 3530140923994899868}
   m_Layer: 0
-  m_Name: Medium Tree
+  m_Name: Tree Medium Vines 01
   m_TagString: Plantlife
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +113,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5538560283675119954}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -193,3 +194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a614356c3f33ed409f49806eb02665a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3530140923994899868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538560283675119954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.87625885, y: 0.40924072, z: 4}
+  m_Center: {x: -0.27534103, y: 0.39553452, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff

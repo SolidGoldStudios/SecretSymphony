@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5281864705269020495}
   - component: {fileID: 1342585974245895296}
   - component: {fileID: 2676445875898543987}
+  - component: {fileID: 3446540923135585382}
   m_Layer: 0
   m_Name: Tree Medium Vines 02
   m_TagString: Plantlife
@@ -42,7 +43,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601733416000862976}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -192,3 +193,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a614356c3f33ed409f49806eb02665a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3446540923135585382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601733416000862976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.3918529, y: 0.9507427, z: 4}
+  m_Center: {x: -0.34930658, y: 0.2548151, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
