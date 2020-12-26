@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3990,6 +3990,56 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &684282728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2358108530324411626, guid: ee2c5da188910f642abbbc85190bf724,
+    type: 3}
+  m_PrefabInstance: {fileID: 3957976348457755017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &684282731
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684282728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &684282732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684282728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Brass Book
+  description: Brass is nice.
+  icon: {fileID: -1555911350213759836, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
+  weight: 0
+  value: 0
+  disabled: 0
 --- !u!1 &705617769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5017,6 +5067,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &978204055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7211052053694676421, guid: 735ffdf2914bfa541950950073263f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 8234528526719423924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &978204058
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978204055}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &978204059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978204055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Woodwinds Book
+  description: Wind lol.
+  icon: {fileID: -9207711496574423817, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
+  weight: 0
+  value: 0
+  disabled: 0
 --- !u!1 &1004894021
 GameObject:
   m_ObjectHideFlags: 0
@@ -7584,6 +7684,56 @@ MonoBehaviour:
   m_Center: {x: -0.01969099, y: 0.2320466, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
+--- !u!1 &1592693417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5647174022539513526, guid: b26e4fe8a4664a5478c265c317e55d09,
+    type: 3}
+  m_PrefabInstance: {fileID: 6344141858621023955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1592693420
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592693417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1592693421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592693417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Percussion Book
+  description: Yay percussion!
+  icon: {fileID: 1932116897343216958, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
+  weight: 0
+  value: 0
+  disabled: 0
 --- !u!1 &1594948124
 GameObject:
   m_ObjectHideFlags: 0
@@ -9735,6 +9885,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -0.75000006, y: -0.377, z: 0.77300006}
+--- !u!1 &1976242399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 125533276782717944, guid: caed02530eb2f4444a933adea1b46dbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1723148489601301417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1976242402
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976242399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1976242403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976242399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Strings Book
+  description: Strings rule!
+  icon: {fileID: 3852567039572876607, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
+  weight: 0
+  value: 0
+  disabled: 0
 --- !u!1001 &2054559832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9967,6 +10167,32 @@ MonoBehaviour:
   weight: 0
   value: 0
   disabled: 0
+--- !u!61 &1608948016131031006
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608948016131031002}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1723148489601301417
 PrefabInstance:
   m_ObjectHideFlags: 0
