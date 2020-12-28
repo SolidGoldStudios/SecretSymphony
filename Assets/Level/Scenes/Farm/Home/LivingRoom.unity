@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 184888824}
   m_Layer: 0
   m_Name: Piano
-  m_TagString: Untagged
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 452259446}
   m_Layer: 0
   m_Name: Brother
-  m_TagString: Untagged
+  m_TagString: Speak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3764,7 +3764,7 @@ GameObject:
   - component: {fileID: 628461826}
   m_Layer: 0
   m_Name: Father
-  m_TagString: Untagged
+  m_TagString: Speak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4056,7 +4056,7 @@ GameObject:
   - component: {fileID: 705617775}
   m_Layer: 0
   m_Name: Bookshelf
-  m_TagString: Untagged
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4532,7 +4532,7 @@ GameObject:
   - component: {fileID: 862051887}
   m_Layer: 0
   m_Name: Mother
-  m_TagString: Untagged
+  m_TagString: Speak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10141,6 +10141,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keyboards Book
       objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
 --- !u!1 &1608948016131031002 stripped
@@ -10204,6 +10209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Strings Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 125533276782717944, guid: caed02530eb2f4444a933adea1b46dbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
       objectReference: {fileID: 0}
     - target: {fileID: 125533276782717945, guid: caed02530eb2f4444a933adea1b46dbc,
         type: 3}
@@ -10398,6 +10408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brass Book
       objectReference: {fileID: 0}
+    - target: {fileID: 2358108530324411626, guid: ee2c5da188910f642abbbc85190bf724,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
+      objectReference: {fileID: 0}
     - target: {fileID: 2358108530324411627, guid: ee2c5da188910f642abbbc85190bf724,
         type: 3}
       propertyPath: m_RootOrder
@@ -10588,6 +10603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Percussion Book
       objectReference: {fileID: 0}
+    - target: {fileID: 5647174022539513526, guid: b26e4fe8a4664a5478c265c317e55d09,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
+      objectReference: {fileID: 0}
     - target: {fileID: 5647174022539513527, guid: b26e4fe8a4664a5478c265c317e55d09,
         type: 3}
       propertyPath: m_RootOrder
@@ -10711,6 +10731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Woodwinds Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211052053694676421, guid: 735ffdf2914bfa541950950073263f27,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interact
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735ffdf2914bfa541950950073263f27, type: 3}
