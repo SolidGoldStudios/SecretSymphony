@@ -6,6 +6,8 @@ TagManager:
   tags:
   - PlayerAlt
   - Plantlife
+  - Speak
+  - Interact
   layers:
   - Default
   - TransparentFX
