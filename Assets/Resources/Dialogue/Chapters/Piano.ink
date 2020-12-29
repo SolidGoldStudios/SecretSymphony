@@ -26,8 +26,11 @@
     ->END
 }
 
-->DONE
-
 ==goodmorningchores_brother==
-Are you doing chores today? I'm not! #name:Thomas # mood:happy
-->DONE
+{
+    - has_piano_quest:
+        Aww, Father's letting you use the scythe? #name:Thomas #mood:sad
+    - else:
+        Are you doing chores today? I'm not! #name:Thomas # mood:happy
+    ->END
+}

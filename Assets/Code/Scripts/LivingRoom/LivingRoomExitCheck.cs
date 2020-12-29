@@ -30,9 +30,9 @@ public class LivingRoomExitCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (GameManager.Instance.quests.Find(q => q.questName == "Thomas' Birthday Breakfast!") == null)
+            if (GameManager.Instance.quests.Find(q => q.questName == "Chop Up Firewood") == null)
             {
-                dialogueText.text = "I should talk to Father before I head out.";
+                dialogueText.text = "I should talk to Mother before I head out.";
                 portraitObject.SetActive(false);
                 dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
                 nameplate.SetActive(false);

@@ -8,7 +8,7 @@ public class InstrumentPiano : Quest
     {
         questName = "Chop Up Firewood";
         description = "A strange lump of firewood showed up in the living room. I should get my scythe from the barn outside and chop it up for kindling.";
-        requirements = "Get the scythe, and make some firewood.";
+        requirements = "Get the scythe, and use it on the big wood thing in the living room.";
 
         GameManager.Instance.itemAddDelegate += ItemAdded;
         GameManager.Instance.itemRemoveDelegate += ItemRemoved;
