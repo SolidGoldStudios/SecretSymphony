@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1360,6 +1360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: goodmorningchores_brother
 --- !u!212 &452259447
@@ -3683,6 +3684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: goodmorningchores_father
 --- !u!212 &628461827
@@ -3936,6 +3938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 21300000, guid: b35ecc86e2d4b4225adce09d18203d8a, type: 3}
   itemName: Brass Book
   description: Brass is nice.
   icon: {fileID: -1555911350213759836, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
@@ -4451,6 +4454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: goodmorningchores_mother
 --- !u!212 &862051888
@@ -5030,6 +5034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 21300000, guid: b35ecc86e2d4b4225adce09d18203d8a, type: 3}
   itemName: Woodwinds Book
   description: Wind lol.
   icon: {fileID: -9207711496574423817, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
@@ -7647,6 +7652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 21300000, guid: b35ecc86e2d4b4225adce09d18203d8a, type: 3}
   itemName: Percussion Book
   description: Yay percussion!
   icon: {fileID: 1932116897343216958, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
@@ -9848,6 +9854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 21300000, guid: b35ecc86e2d4b4225adce09d18203d8a, type: 3}
   itemName: Strings Book
   description: Strings rule!
   icon: {fileID: 3852567039572876607, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
@@ -10085,6 +10092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 21300000, guid: b35ecc86e2d4b4225adce09d18203d8a, type: 3}
   itemName: Keyboards Book
   description: Keyboards rock!
   icon: {fileID: -3748638602223188105, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}

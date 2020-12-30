@@ -4,5 +4,7 @@ using UnityEngine;
 
 public abstract class Interaction : MonoBehaviour
 {
+    public Sprite interactionIcon;
+
     public abstract void Interact();
 }

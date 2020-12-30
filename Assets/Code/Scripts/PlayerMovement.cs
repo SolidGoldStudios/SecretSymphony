@@ -5,6 +5,7 @@ using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private Animator animator;
     private GameObject interactionTarget = null;
+    private Image interactionIcon;
 
     // Dialog variables
     public bool immobilized = false;
@@ -27,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
+
+        interactionIcon = GameObject.Find("InteractionIcon").GetComponent<Image>();
 
         //attackAnimator = weapon.GetComponent<Animator>();
         //playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
@@ -63,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetBool("moving", false);
+            interactionIcon.sprite = null;
+            interactionIcon.enabled = false;
 
             if (!navMeshAgent.pathPending && interactionTarget != null)
             {
@@ -181,15 +187,24 @@ public class PlayerMovement : MonoBehaviour
 
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
+            interactionIcon.transform.position = Input.mousePosition;
+            interactionIcon.enabled = true;
+            
             if (hit.collider != null)
             {
                 Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
                 interactionTarget = hit.transform.gameObject;
+                interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIcon;
             }
             else
             {
                 Debug.Log("interactionTarget is now null");
                 interactionTarget = null;
+            }
+
+            if (interactionIcon.sprite == null)
+            {
+                interactionIcon.sprite = Resources.Load<Sprite>("UI/cursor_active");
             }
         }
     }
