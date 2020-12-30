@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &4875934113602464317
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358108530324411626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1d5b176315160f439c223ac4f1a9aab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3957976347904752915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65,7 +84,7 @@ PrefabInstance:
     - target: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_Name
-      value: Brass Book
+      value: Book_Brass
       objectReference: {fileID: 0}
     - target: {fileID: 1608948016567069178, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
@@ -73,6 +92,92 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1555911350213759836, guid: edd720566b0ee644fb5eb25e32bd9ccc,
         type: 3}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.31933072
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.5758184
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LightType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LightOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LightCookieSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+        type: 3}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: -2067120717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[2]
+      value: 1453100591
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[3]
+      value: 1921723319
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[4]
+      value: 1455833423
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[5]
+      value: -923580717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[6]
+      value: -1199363769
+      objectReference: {fileID: 0}
     - target: {fileID: 4083633433047508349, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_Color.b
@@ -90,3 +195,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
+--- !u!1 &2358108530324411626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3957976347904752915}
+  m_PrefabAsset: {fileID: 0}

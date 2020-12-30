@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_Name
-      value: Woodwinds Book
+      value: Book_Woodwinds
       objectReference: {fileID: 0}
     - target: {fileID: 1608948016567069178, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
@@ -73,6 +73,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -9207711496574423817, guid: edd720566b0ee644fb5eb25e32bd9ccc,
         type: 3}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.04705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.79425496
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 4083633433047508349, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_Color.b
