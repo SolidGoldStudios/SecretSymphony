@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_Name
-      value: Percussion Book
+      value: Book_Percussion
       objectReference: {fileID: 0}
     - target: {fileID: 1608948016567069178, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
@@ -73,6 +73,92 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1932116897343216958, guid: edd720566b0ee644fb5eb25e32bd9ccc,
         type: 3}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.027450979
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5176424
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.85882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LightType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LightOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_LightCookieSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+        type: 3}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: -2067120717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[2]
+      value: 1453100591
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[3]
+      value: 1921723319
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[4]
+      value: 1455833423
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[5]
+      value: -923580717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[6]
+      value: -1199363769
+      objectReference: {fileID: 0}
     - target: {fileID: 4083633433047508349, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_Color.b
