@@ -13,7 +13,7 @@ public class InstrumentPiano : Quest
         GameManager.Instance.itemAddDelegate += ItemAdded;
         GameManager.Instance.itemRemoveDelegate += ItemRemoved;
 
-        GameManager.Instance.inkStory.ObserveVariable("piano_complete", (string varName, object newValue) => {
+        GameManager.Instance.inkStory.ObserveVariable("has_hit_piano", (string varName, object newValue) => {
             if (newValue.ToString().Equals("true"))
             {
                 Complete();
@@ -31,7 +31,7 @@ public class InstrumentPiano : Quest
     {
         if (!IsReadyToComplete() || isComplete) return;
 
-        GameManager.Instance.inkStory.RemoveVariableObserver(null, "piano_complete");
+        GameManager.Instance.inkStory.RemoveVariableObserver(null, "has_hit_piano");
 
         GameManager.Instance.itemAddDelegate -= ItemAdded;
         GameManager.Instance.itemRemoveDelegate -= ItemRemoved;
@@ -43,17 +43,14 @@ public class InstrumentPiano : Quest
     {
         Debug.Log("InstrumentPiano quest saw item added: " + name);
 
-        if (IsReadyToComplete()) Debug.Log("InstrumentPiano is ready to complete!");
-
-        GameManager.Instance.inkStory.variablesState["piano_ready"] = IsReadyToComplete();
+        if (name == "Piano Key")
+        {
+            GameManager.Instance.inkStory.variablesState["has_piano_key"] = true;
+        }
     }
 
     void ItemRemoved(string name)
     {
         Debug.Log("InstrumentPiano saw item removed: " + name);
-
-        if (IsReadyToComplete()) Debug.Log("InstrumentPiano is ready to complete!");
-
-        GameManager.Instance.inkStory.variablesState["piano_ready"] = IsReadyToComplete();
     }
 }
