@@ -1,19 +1,24 @@
 ==pianoquest_father==
 {
-    - has_piano_quest:
+    - has_piano_quest && !has_scythe:
         The <b>scythe</b> is outside by the barn. #name:Father
+        ->END
+    - has_piano_quest && has_scythe:
+        Good, you found it! Give this big lumber pile a whack. #name:Father #mood:happy
+        ->END
     - else:
         Good morning, Melody! #name:Father #mood:happy
         Good morning, father! #name:Melody #mood:happy
         How are you? #name:Melody
         Very well. #name:Father
-    ->END
+        ->END
 }
         
 ==pianoquest_mother==
 {
     - has_piano_quest:
         Please do something about this unsightly lump of lumber! #name:Mother # mood:sad
+        ->END
     - else:
         Ready for your morning chores, Melody? #name:Mother # mood:happy
         Oh, as ready as I'll ever be! What's first? #name:Melody 
@@ -23,16 +28,17 @@
         Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #quest:InstrumentPiano
         ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
-    ->END
+        ->END
 }
 
 ==pianoquest_brother==
 {
     - has_piano_quest:
-        Aww, Father's letting you use the scythe? #name:Thomas #mood:sad
+        Aww, Father let you use the scythe? #name:Thomas #mood:sad
+        ->END
     - else:
-        Are you doing chores today? I'm not! #name:Thomas # mood:happy
-    ->END
+        Are you doing chores today? I'm not! #name:Thomas #mood:happy
+        ->END
 }
 
 ==pianoquest_piano==
@@ -43,6 +49,8 @@
         
     - has_scythe && !has_spoken_to_spirit_piano:
         I'm the Spirit of Music. Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad
+        ~ has_hit_piano = true
+        ~ has_spoken_to_spirit_piano = true
         The Spirit of Music, huh? But this is just a bunch of kindling. #name:Melody #mood:skeptical
         It most certainly is not. It's a piano. And by the looks of it, a lovely one. #name:Spirit+of+Music #mood:mad
         A piano? What's a piano? #name:Melody #mood:neutral
@@ -59,17 +67,15 @@
         Yes! But in order to remember, you have to help me collect all the instruments, learn about them, and assemble them into an orchestra. Then you'll be able to hear your beautiful song! #name:Spirit+of+Music #mood:happy
         Okay! I'll do it! #name:Melody #mood:happy
         Great! Hooray! The lid of the piano is closed and locked right now. I was going to open it up, but I dropped the key in your wheat field. #name:Spirit+of+Music #mood:left
-        Don't worry, I'll get it. # melody
-        You'll have to hurry though. I can freeze your family for a short amount of time, but not forever. You'll need to scythe all the wheat in fifteen seconds. #name:Spirit+of+Music
         Okay. But...I haven't used the scythe before. #name:Melody # mood:sad
         It's easy, as long as you're safe. Just click the area that you'd like to scythe. #name:Spirit+of+Music #mood:happy
-        Here goes nothing! #name:Melody #mood:skeptical
+        Here goes nothing! #name:Melody #mood:happy
         One last thing: there was a book about pianos around here somewhere. Have you seen it? #name:Spirit+of+Music #mood:right
         *[Yes, I found it!]
             Good! You can find it in your Inventory and read it, to jog your memory on pianos! #name:Spirit+of+Music #mood:happy
             ->END
         *[No, I haven't seen it.]
-            It should be around here on the floor. Please find it and read it, to jog your memory on pianos! #faery
+            It should be around here on the floor. Please find it and read it, to jog your memory on pianos! #name:Spirit+of+Music #mood:happy
             ->END
         
     - has_spoken_to_spirit_piano && !has_piano_key:

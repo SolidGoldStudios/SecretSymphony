@@ -201,12 +201,12 @@ public class NPCDialogue : MonoBehaviour
 
         // Update portrait and nameplate
         nameplate.SetActive(true);
-        nameplateText.text = "Kay";
+        nameplateText.text = "Melody";
 
         portraitObject.SetActive(true);
         dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
 
-        portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Kay/Kay_thinking");
+        portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
 
         // Display the choices
         showingChoices = true;
