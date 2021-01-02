@@ -553,8 +553,9 @@ GameObject:
   - component: {fileID: 184888817}
   - component: {fileID: 184888818}
   - component: {fileID: 184888819}
-  - component: {fileID: 184888824}
   - component: {fileID: 184888822}
+  - component: {fileID: 184888823}
+  - component: {fileID: 184888824}
   m_Layer: 0
   m_Name: Piano
   m_TagString: Interact
@@ -704,11 +705,107 @@ MonoBehaviour:
   m_GameObject: {fileID: 184888816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Script: {fileID: 11500000, guid: bb9768fe6dff149e3bc90e9a798fbc9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1745254813}
-  knotName: pianoquest_piano
+  playerInRange: 0
+--- !u!82 &184888823
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184888816}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -7208326509089310467, guid: f124907fb987c95458b81ad73451f300,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &184888824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,7 +1363,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   dialogBox: {fileID: 1745254813}
-  knotName: pianoquest_brother
+  knotName: goodmorningchores_brother
 --- !u!212 &452259447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3567,6 +3664,7 @@ GameObject:
   - component: {fileID: 628461827}
   - component: {fileID: 628461829}
   - component: {fileID: 628461831}
+  - component: {fileID: 628461832}
   - component: {fileID: 628461826}
   m_Layer: 0
   m_Name: Father
@@ -3590,7 +3688,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   dialogBox: {fileID: 1745254813}
-  knotName: pianoquest_father
+  knotName: goodmorningchores_father
 --- !u!212 &628461827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3701,6 +3799,103 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &628461832
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628461825}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -1493993637489879043, guid: f124907fb987c95458b81ad73451f300,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8bfecacd97af0774ab0694d428333a21, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &684282728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2358108530324411626, guid: ee2c5da188910f642abbbc85190bf724,
@@ -4243,6 +4438,7 @@ GameObject:
   - component: {fileID: 862051888}
   - component: {fileID: 862051891}
   - component: {fileID: 862051892}
+  - component: {fileID: 862051893}
   - component: {fileID: 862051887}
   m_Layer: 0
   m_Name: Mother
@@ -4266,7 +4462,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   dialogBox: {fileID: 1745254813}
-  knotName: pianoquest_mother
+  knotName: goodmorningchores_mother
 --- !u!212 &862051888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4377,6 +4573,103 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &862051893
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862051886}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -1493993637489879043, guid: f124907fb987c95458b81ad73451f300,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 341983f7244a78641821dd36406bcb3f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &889797211
 GameObject:
   m_ObjectHideFlags: 0
@@ -9785,173 +10078,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keyboards Book
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
-=======
-    - target: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Interact
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.028346404
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.028346404
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8584906
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_LightType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_LightOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_FalloffIntensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_LightCookieSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
-        type: 3}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_AlphaBlendOnOverlap
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 5.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: -2067120717
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[2]
-      value: 1453100591
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[3]
-      value: 1921723319
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[4]
-      value: 1455833423
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[5]
-      value: -923580717
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608948016567069179, guid: 97ccdf99caea48b489eb4dd2974584e8,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[6]
-      value: -1199363769
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
---- !u!1 &1608948016131031002 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1608948016567069177, guid: 97ccdf99caea48b489eb4dd2974584e8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1608948016131031001}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1608948016131031003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608948016131031002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Keyboards Book
-  description: Keyboards rock!
-  icon: {fileID: -3748638602223188105, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
-  weight: 0
-  value: 0
-  disabled: 0
---- !u!95 &1608948016131031004
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608948016131031002}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c1d5b176315160f439c223ac4f1a9aab, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &1608948016131031006
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608948016131031002}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 1}
-    newSize: {x: 0.75, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.75, y: 1}
-  m_EdgeRadius: 0
->>>>>>> master
 --- !u!1001 &1723148489601301417
 PrefabInstance:
   m_ObjectHideFlags: 0
