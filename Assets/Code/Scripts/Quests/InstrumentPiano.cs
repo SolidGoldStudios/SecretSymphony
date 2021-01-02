@@ -43,17 +43,14 @@ public class InstrumentPiano : Quest
     {
         Debug.Log("InstrumentPiano quest saw item added: " + name);
 
-        if (IsReadyToComplete()) Debug.Log("InstrumentPiano is ready to complete!");
-
-        GameManager.Instance.inkStory.variablesState["has_scythe"] = IsReadyToComplete();
+        if (name == "Piano Key")
+        {
+            GameManager.Instance.inkStory.variablesState["has_piano_key"] = true;
+        }
     }
 
     void ItemRemoved(string name)
     {
         Debug.Log("InstrumentPiano saw item removed: " + name);
-
-        if (IsReadyToComplete()) Debug.Log("InstrumentPiano is ready to complete!");
-
-        GameManager.Instance.inkStory.variablesState["has_scythe"] = IsReadyToComplete();
     }
 }
