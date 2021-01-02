@@ -10,6 +10,9 @@ public class InteractionAnimation : Interaction
     public void Start()
     {
         animator = GetComponent<Animator>();
+
+        interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
     }
 
     public override void Interact()
