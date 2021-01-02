@@ -22,6 +22,9 @@ public class Collectable : Interaction
     {
         myRenderer = GetComponent<SpriteRenderer>();
         myLight = GetComponent<Light2D>();
+
+        interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
     }
 
     public override void Interact()
@@ -37,6 +40,9 @@ public class Collectable : Interaction
                 myLight.enabled = false;
             }
             collected = true;
+
+            interactionIcon = Resources.Load<Sprite>("UI/cursor");
+            interactionIconActive = Resources.Load<Sprite>("UI/cursor_active");
         }
     }
 

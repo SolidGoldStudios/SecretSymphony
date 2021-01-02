@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private GameObject interactionTarget = null;
     private Image interactionIcon;
+    private bool moving = false;
 
     // Dialog variables
     public bool immobilized = false;
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (immobilized)
         {
@@ -52,25 +53,25 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        //// Keeps silhouette and sprite on same animation frame.
-        //silRenderer.sprite = sr.sprite;
-
         Vector3 velocity = navMeshAgent.steeringTarget - transform.position;
 
-        if (velocity != Vector3.zero)
+        if (velocity != Vector3.zero || navMeshAgent.pathPending)
         {
+            //Debug.Log("moving");
+            moving = true;
             animator.SetFloat("moveX", velocity.x);
             animator.SetFloat("moveY", velocity.y);
             animator.SetBool("moving", true);
-
         }
-        else
+        else if (moving == true)
         {
+            //Debug.Log("stopped");
+            moving = false;
             animator.SetBool("moving", false);
             interactionIcon.sprite = null;
             interactionIcon.enabled = false;
 
-            if (!navMeshAgent.pathPending && interactionTarget != null)
+            if (interactionTarget != null)
             {
                 Interaction[] interactions = interactionTarget.transform.GetComponents<Interaction>();
 
@@ -79,20 +80,10 @@ public class PlayerMovement : MonoBehaviour
                     interaction.Interact();
                 }
 
-                //EnvironmentalItem environmentalItem = interactionTarget.transform.GetComponent<EnvironmentalItem>();
-
-                //if (environmentalItem != null)
-                //{
-                //    environmentalItem.PlayerInteract();
-                //}
-
                 interactionTarget = null;
             }
         }
-    }
 
-    void Update()
-    {
         if (Input.GetKeyDown(KeyCode.I))
         {
             GameManager.Instance.ToggleInventory();
@@ -150,12 +141,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (immobilized)
-        {
-            animator.SetBool("moving", false);
-            return;
-        }
-
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -172,16 +157,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (EventSystem.current.IsPointerOverGameObject()) return;
-
             Debug.Log("mouse button 0 down " + Input.mousePosition);
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.Log("ray " + ray);
-
-            Vector3 dest = ray.origin;
-            dest.z = 0;
-            navMeshAgent.destination = dest;
+            if (EventSystem.current.IsPointerOverGameObject()) return;
 
             RaycastHit2D hit;
 
@@ -192,9 +170,19 @@ public class PlayerMovement : MonoBehaviour
             
             if (hit.collider != null)
             {
-                Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
                 interactionTarget = hit.transform.gameObject;
-                interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIcon;
+                Interaction interaction = interactionTarget.transform.GetComponent<Interaction>();
+
+                if (interaction != null)
+                {
+                    Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
+                    interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIconActive;
+                }
+                else
+                {
+                    Debug.Log("interactionTarget is now null");
+                    interactionTarget = null;
+                }
             }
             else
             {
@@ -206,6 +194,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 interactionIcon.sprite = Resources.Load<Sprite>("UI/cursor_active");
             }
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Debug.Log("ray " + ray);
+
+            Vector3 dest = ray.origin;
+            dest.z = 0;
+            navMeshAgent.destination = dest;
         }
     }
 

@@ -494,17 +494,17 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        if (questCursor < quests.Count)
-        {
-            questDetailTitle.text = quests[questCursor].questName;
-            questDetailDescription.text = quests[questCursor].description;
-            questRequirementsDescription.text = quests[questCursor].requirements;
-        }
-        else
-        {
-            questDetailTitle.text = "";
-            questDetailDescription.text = "";
-            questRequirementsDescription.text = "";
-        }
+        //if (questCursor < quests.Count)
+        //{
+        //    questDetailTitle.text = quests[questCursor].questName;
+        //    questDetailDescription.text = quests[questCursor].description;
+        //    questRequirementsDescription.text = quests[questCursor].requirements;
+        //}
+        //else
+        //{
+        //    questDetailTitle.text = "";
+        //    questDetailDescription.text = "";
+        //    questRequirementsDescription.text = "";
+        //}
     }
 }
