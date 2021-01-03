@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 9524083a4aef3f34da443e05293450e6
+guid: 1c84467742ea0474dbd4ceb71a3255f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2808690005197163544
-    second: Blue Curtains_0
+      213: -4986055506333745751
+    second: familycouch_0
   - first:
-      213: -7736642960501936746
-    second: curtains_blue_0
+      213: 5667841470388542969
+    second: familycouch_1
   - first:
-      213: -6449194631463946769
-    second: curtains_blue_1
+      213: -7316180379002149884
+    second: familycouch_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,83 +92,68 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: curtains_blue_0
+      name: familycouch_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69d6149c73ce1a490800000000000000
-      internalID: -7736642960501936746
+      spriteID: 9adb89a2fe8fdcab0800000000000000
+      internalID: -4986055506333745751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtains_blue_1
+      name: familycouch_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 74
         y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe53c38e6abdf76a0800000000000000
-      internalID: -6449194631463946769
+      spriteID: 9fd9cbda9c738ae40800000000000000
+      internalID: 5667841470388542969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: familycouch_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404e4e445b4b77a90800000000000000
+      internalID: -7316180379002149884
       vertices: []
       indices: 
       edges: []
