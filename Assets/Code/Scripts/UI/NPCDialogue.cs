@@ -23,6 +23,7 @@ public class NPCDialogue : MonoBehaviour
     Button choiceThreeButton;
     GameObject dialogOk;
     Button dialogOkButton;
+    Quest quest;
 
     bool showingChoices;
     int currentChoice;
@@ -165,9 +166,14 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("quest"))
             {
-                Type type = Type.GetType(tag.Substring(6));
+                // This makes WebGL barf
+                //Type type = Type.GetType(tag.Substring(6));
+                //dynamic quest = Activator.CreateInstance(type);
 
-                dynamic quest = Activator.CreateInstance(type);
+                if (tag.Substring(6) == "InstrumentPiano")
+                {
+                    quest = new InstrumentPiano();
+                }
 
                 quest.Setup();
 
