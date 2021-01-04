@@ -113,7 +113,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 45
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -132,9 +132,9 @@ TextureImporter:
       name: player_sleeping_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 45
         y: 0
-        width: 64
+        width: 45
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,9 +153,9 @@ TextureImporter:
       name: player_sleeping_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 90
         y: 0
-        width: 64
+        width: 45
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
