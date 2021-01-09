@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AttackableItem : Interaction
 {
-    public bool interactionSwitch;
     private Animator animator;
     private Animator playerAnimator;
+    private bool interacted = false;
 
     public void Start()
     {
@@ -19,10 +19,17 @@ public class AttackableItem : Interaction
 
     public override void Interact()
     {
-        interactionSwitch = !interactionSwitch;
-        animator.SetBool("interactionSwitch", interactionSwitch);
+        if (!interacted)
+        {
+            animator.SetBool("interactionSwitch", true);
 
-        StartCoroutine(AttackCo());
+            StartCoroutine(AttackCo());
+
+            interacted = true;
+
+            interactionIcon = Resources.Load<Sprite>("UI/cursor");
+            interactionIconActive = Resources.Load<Sprite>("UI/cursor_active");
+        }
     }
 
     private IEnumerator AttackCo()
