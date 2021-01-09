@@ -1,59 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Versioning;
 using UnityEngine;
 
-public class AttackableItem : MonoBehaviour
+public class AttackableItem : Interaction
 {
-    public bool isInteractable;
     public bool interactionSwitch;
-
-    public bool playerInRange;
-
-    private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private Animator playerAnimator;
 
-    void Start()
+    public void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
+
+        interactionIcon = Resources.Load<Sprite>("UI/cursor_scythe");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_scythe_active");
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
-        {
-            Debug.Log("Attacked this thing!");
-            PlayerAttack();
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = true;
-            //spriteRenderer.material = highlightMaterial;
-        }
-
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = false;
-            //spriteRenderer.material = matDefault;
-        }
-    }
-
-    void PlayerAttack()
+    public override void Interact()
     {
         interactionSwitch = !interactionSwitch;
         animator.SetBool("interactionSwitch", interactionSwitch);
 
-        //Code for displaying dialogue goes here.
+        StartCoroutine(AttackCo());
+    }
 
+    private IEnumerator AttackCo()
+    {
+        playerAnimator.SetBool("attacking", true);
+        yield return null;
+        playerAnimator.SetBool("attacking", false);
+        yield return new WaitForSeconds(0.5f);
     }
 }
 
