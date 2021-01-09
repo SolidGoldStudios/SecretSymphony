@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private Animator animator;
     private GameObject interactionTarget = null;
-    private Image interactionIcon;
+    private SpriteRenderer interactionIcon;
     private bool moving = false;
 
     // Dialog variables
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
 
-        interactionIcon = GameObject.Find("InteractionIcon").GetComponent<Image>();
+        interactionIcon = GameObject.Find("InteractionIcon").GetComponent<SpriteRenderer>();
 
         //attackAnimator = weapon.GetComponent<Animator>();
         //playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
@@ -165,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-            interactionIcon.transform.position = Input.mousePosition;
+            interactionIcon.transform.position = Camera.main.ScreenPointToRay(Input.mousePosition).origin;
             interactionIcon.enabled = true;
             
             if (hit.collider != null)
