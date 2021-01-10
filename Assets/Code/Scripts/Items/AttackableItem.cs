@@ -1,59 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Versioning;
 using UnityEngine;
 
-public class AttackableItem : MonoBehaviour
+public class AttackableItem : Interaction
 {
-    public bool isInteractable;
-    public bool interactionSwitch;
-
-    public bool playerInRange;
-
-    private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private Animator playerAnimator;
+    private bool interacted = false;
 
-    void Start()
+    public void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
+
+        interactionIcon = Resources.Load<Sprite>("UI/cursor_scythe");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_scythe_active");
     }
 
-    void Update()
+    public override void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
+        if (!interacted)
         {
-            Debug.Log("Attacked this thing!");
-            PlayerAttack();
+            animator.SetBool("interactionSwitch", true);
+
+            StartCoroutine(AttackCo());
+
+            interacted = true;
+
+            interactionIcon = Resources.Load<Sprite>("UI/cursor");
+            interactionIconActive = Resources.Load<Sprite>("UI/cursor_active");
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private IEnumerator AttackCo()
     {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = true;
-            //spriteRenderer.material = highlightMaterial;
-        }
-
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = false;
-            //spriteRenderer.material = matDefault;
-        }
-    }
-
-    void PlayerAttack()
-    {
-        interactionSwitch = !interactionSwitch;
-        animator.SetBool("interactionSwitch", interactionSwitch);
-
-        //Code for displaying dialogue goes here.
-
+        playerAnimator.SetBool("attacking", true);
+        yield return null;
+        playerAnimator.SetBool("attacking", false);
+        yield return new WaitForSeconds(0.5f);
     }
 }
 

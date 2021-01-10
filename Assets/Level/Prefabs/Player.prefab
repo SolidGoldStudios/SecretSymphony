@@ -310,9 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a65d31e485f148c5bb6671c1c652172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  walkSpeed: 4.5
-  sprintSpeed: 15
   immobilized: 0
 --- !u!95 &8705268416411252315
 Animator:
