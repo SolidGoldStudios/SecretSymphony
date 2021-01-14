@@ -1,0 +1,920 @@
+fileFormatVersion: 2
+guid: c90be458d8b72fb40b06a31117434c98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1662686566114502006
+    second: alley-celebration_0
+  - first:
+      213: 2322174360656681247
+    second: alley-celebration_1
+  - first:
+      213: -8121502646778609113
+    second: alley-celebration_2
+  - first:
+      213: -718565955658517844
+    second: alley-celebration_3
+  - first:
+      213: -2981270261058703538
+    second: alley-celebration_4
+  - first:
+      213: 727402882801949841
+    second: alley-celebration_5
+  - first:
+      213: -6867573752848114422
+    second: alley-celebration_6
+  - first:
+      213: 168548464527968880
+    second: alley-celebration_7
+  - first:
+      213: -1491165841808402064
+    second: alley-celebration_8
+  - first:
+      213: -4672665628912439436
+    second: alley-celebration_9
+  - first:
+      213: -1543771048473924451
+    second: alley-celebration_10
+  - first:
+      213: -7454414222561556640
+    second: alley-celebration_11
+  - first:
+      213: 4740395845341536587
+    second: alley-celebration_12
+  - first:
+      213: -8088168210745979748
+    second: alley-celebration_13
+  - first:
+      213: 6714461030855155086
+    second: alley-celebration_14
+  - first:
+      213: -7045507949017984858
+    second: alley-celebration_15
+  - first:
+      213: 7834315135789865158
+    second: alley-celebration_16
+  - first:
+      213: -2575300780038283118
+    second: alley-celebration_17
+  - first:
+      213: 3590506744523279754
+    second: alley-celebration_18
+  - first:
+      213: 7323163868979895157
+    second: alley-celebration_19
+  - first:
+      213: 2838070376128294581
+    second: alley-celebration_20
+  - first:
+      213: -9183529539636417900
+    second: alley-celebration_21
+  - first:
+      213: -7006252662167772197
+    second: alley-celebration_22
+  - first:
+      213: -8426164423124036717
+    second: alley-celebration_23
+  - first:
+      213: -4841899747413986361
+    second: alley-celebration_24
+  - first:
+      213: -4798689770435525124
+    second: alley-celebration_25
+  - first:
+      213: 3380982369080417837
+    second: alley-celebration_26
+  - first:
+      213: -9032706486125979719
+    second: alley-celebration_27
+  - first:
+      213: 4245946595610900083
+    second: alley-celebration_28
+  - first:
+      213: -2347443065767584325
+    second: alley-celebration_29
+  - first:
+      213: -8377123515117392640
+    second: alley-celebration_30
+  - first:
+      213: -6766097561305075146
+    second: alley-celebration_31
+  - first:
+      213: -7532665903645030398
+    second: alley-celebration_32
+  - first:
+      213: -6427669286306778640
+    second: alley-celebration_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alley-celebration_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675a1126f9c031710800000000000000
+      internalID: 1662686566114502006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19167117450a3020800000000000000
+      internalID: 2322174360656681247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722cd505f50aa4f80800000000000000
+      internalID: -8121502646778609113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2f84902142706f0800000000000000
+      internalID: -718565955658517844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fe8263e7660a6d0800000000000000
+      internalID: -2981270261058703538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c51066111481a00800000000000000
+      internalID: 727402882801949841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d11b8ce0a71b0a0800000000000000
+      internalID: -6867573752848114422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a80ab7fedc65200800000000000000
+      internalID: 168548464527968880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07950d141905e4be0800000000000000
+      internalID: -1491165841808402064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f2f7a0e5b572fb0800000000000000
+      internalID: -4672665628912439436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ced21296c639ae0800000000000000
+      internalID: -1543771048473924451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_11
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 12
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067499f72c99c8890800000000000000
+      internalID: -7454414222561556640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_12
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41e158d7e449c140800000000000000
+      internalID: 4740395845341536587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_13
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 7
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c01e28ddd01cf80800000000000000
+      internalID: -8088168210745979748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d135a9bbe8e2d50800000000000000
+      internalID: 6714461030855155086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_15
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0979c59d3593e90800000000000000
+      internalID: -7045507949017984858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_16
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c89837ab1419bc60800000000000000
+      internalID: 7834315135789865158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_17
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2902808c591b24cd0800000000000000
+      internalID: -2575300780038283118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_18
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d44fe5cda04d130800000000000000
+      internalID: 3590506744523279754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b95823dba11a560800000000000000
+      internalID: 7323163868979895157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_20
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 6
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beafa868f9d26720800000000000000
+      internalID: 2838070376128294581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_21
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a2aa54a8c8d8080800000000000000
+      internalID: -9183529539636417900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_22
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3ead0135ac4ce90800000000000000
+      internalID: -7006252662167772197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_23
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39358a4d910401b80800000000000000
+      internalID: -8426164423124036717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_24
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 10
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3f55d45dd1eccb0800000000000000
+      internalID: -4841899747413986361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_25
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5c3ed0411a76db0800000000000000
+      internalID: -4798689770435525124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_26
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 45
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e95ec2d89abee20800000000000000
+      internalID: 3380982369080417837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_27
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 4
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b71816ee4165a280800000000000000
+      internalID: -9032706486125979719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_28
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376baa6cee1acea30800000000000000
+      internalID: 4245946595610900083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_29
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd187e08f43c6fd0800000000000000
+      internalID: -2347443065767584325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_30
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d2bd10c8a7ebb80800000000000000
+      internalID: -8377123515117392640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_31
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 3
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63236c6cd1ef912a0800000000000000
+      internalID: -6766097561305075146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_32
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 0
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2088a893548967790800000000000000
+      internalID: -7532665903645030398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alley-celebration_33
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 3
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1feffd6d45cc6a0800000000000000
+      internalID: -6427669286306778640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
