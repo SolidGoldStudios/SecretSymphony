@@ -192,6 +192,11 @@ public class NPCDialogue : MonoBehaviour
 
                 //GameManager.Instance.AddInventoryItem()
             }
+
+            if (tag.StartsWith("play"))
+            {
+                GameManager.Instance.ShowMusicPlayer();
+            }
         }
     }
 

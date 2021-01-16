@@ -39,6 +39,7 @@ public class GameManager : Singleton<GameManager>
 
     public bool viewingInventory = false;
     public bool viewingQuestLog = false;
+    public bool viewingMusicPlayer = false;
 
     protected GameManager() { }
 
@@ -56,6 +57,12 @@ public class GameManager : Singleton<GameManager>
         // When it changes, display a tooltip with the new value
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
+        });
+
+        // Listen for a change to the "music_player" variable in an Ink script
+        // When it changes, launch the MusicPlayer screen in the new mode
+        inkStory.ObserveVariable("music_player", (string varName, object newValue) => {
+            ShowMusicPlayer();
         });
 
         TestQuest quest = new TestQuest();
@@ -506,5 +513,54 @@ public class GameManager : Singleton<GameManager>
         //    questDetailDescription.text = "";
         //    questRequirementsDescription.text = "";
         //}
+    }
+
+    /**
+     * Music-player stuff
+     **/
+    public void ShowMusicPlayer()
+    {
+        viewingMusicPlayer = true;
+
+        // Find the MusicPlayer layer
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject musicPlayerView = uiCanvas.transform.Find("MusicPlayer").gameObject;
+        Canvas musicPlayerCanvas = musicPlayerView.GetComponent<Canvas>();
+
+        // Reveal MusicPlayer
+        musicPlayerCanvas.enabled = true;
+
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+        // Toggle the visibility of the backdrop based on Inventory state
+        backdrop.SetActive(true);
+
+        // Prevent player from moving
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = true;
+    }
+
+    public void HideMusicPlayer()
+    {
+        viewingMusicPlayer = false;
+
+        // Find the MusicPlayer layer
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject musicPlayerView = uiCanvas.transform.Find("MusicPlayer").gameObject;
+        Canvas musicPlayerCanvas = musicPlayerView.GetComponent<Canvas>();
+
+        // Hide MusicPlayer
+        musicPlayerCanvas.enabled = false;
+
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+        // Toggle the visibility of the backdrop based on Inventory state
+        backdrop.SetActive(false);
+
+        // Allow Player to move again
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = false;
     }
 }
