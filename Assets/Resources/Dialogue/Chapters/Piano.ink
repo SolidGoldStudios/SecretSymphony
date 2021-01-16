@@ -75,10 +75,10 @@
         Beautiful! #name:Spirit+of+Music #mood:happy 
         I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy
         Yes! And this is a piano, not firewood. #name:Melody #mood:happy
-        I can't believe I forgot! I must have been out of my mind. Hooray! # father #mood:happy
+        I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy
         Hooray! We saved the piano! #name:Melody #mood:happy
-        We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you finish finding the rest of the musical instruments and saving them? # faery 
-        You can count on me! # melody #mood:happy
+        We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
+        You can count on me! #name:Melody #mood:happy
         /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
         ->END
     
