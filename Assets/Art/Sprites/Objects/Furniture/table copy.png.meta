@@ -96,10 +96,10 @@ TextureImporter:
       name: table copy_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 41
+        x: 15
+        y: 64
         width: 26
-        height: 21
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,12 +117,12 @@ TextureImporter:
       name: table copy_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 53
-        height: 29
-      alignment: 9
-      pivot: {x: 0.5109299, y: 0.07190755}
+        x: 6
+        y: 12
+        width: 54
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -167,7 +167,14 @@ public class PlayerMovement : MonoBehaviour
 
             interactionIcon.transform.position = Camera.main.ScreenPointToRay(Input.mousePosition).origin;
             interactionIcon.enabled = true;
-            
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Debug.Log("ray " + ray);
+
+            Vector3 dest = ray.origin;
+            dest.z = 0;
+            navMeshAgent.destination = dest;
+
             if (hit.collider != null)
             {
                 interactionTarget = hit.transform.gameObject;
@@ -177,6 +184,8 @@ public class PlayerMovement : MonoBehaviour
                 {
                     Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
                     interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIconActive;
+
+                    StartCoroutine(MoveCheckCo());
                 }
                 else
                 {
@@ -194,13 +203,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 interactionIcon.sprite = Resources.Load<Sprite>("UI/cursor_active");
             }
-
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.Log("ray " + ray);
-
-            Vector3 dest = ray.origin;
-            dest.z = 0;
-            navMeshAgent.destination = dest;
         }
     }
 
@@ -210,5 +212,35 @@ public class PlayerMovement : MonoBehaviour
         yield return null;
         animator.SetBool("attacking", false);
         yield return new WaitForSeconds(0.5f);
+    }
+
+    private IEnumerator MoveCheckCo()
+    {
+//        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(0.05f);
+
+        Vector3 velocity = navMeshAgent.steeringTarget - transform.position;
+
+        if (velocity == Vector3.zero && !navMeshAgent.pathPending)
+        {
+            Debug.Log("clicked same spot twice i think");
+
+            interactionIcon.sprite = null;
+            interactionIcon.enabled = false;
+
+            if (interactionTarget != null)
+            {
+                Interaction[] interactions = interactionTarget.transform.GetComponents<Interaction>();
+
+                foreach (Interaction interaction in interactions)
+                {
+                    interaction.Interact();
+                }
+
+                interactionTarget = null;
+            }
+        }
+
+        yield return null;
     }
 }
