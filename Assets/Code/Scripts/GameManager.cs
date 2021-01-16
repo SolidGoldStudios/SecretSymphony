@@ -59,6 +59,12 @@ public class GameManager : Singleton<GameManager>
             ShowTooltipWithTimeout(newValue.ToString());
         });
 
+        // Listen for a change to the "music_player" variable in an Ink script
+        // When it changes, launch the MusicPlayer screen in the new mode
+        inkStory.ObserveVariable("music_player", (string varName, object newValue) => {
+            ShowMusicPlayer();
+        });
+
         TestQuest quest = new TestQuest();
         quest.Setup();
         quests.Add(quest);

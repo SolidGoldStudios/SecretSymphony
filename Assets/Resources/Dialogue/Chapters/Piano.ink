@@ -71,8 +71,8 @@
         You did it! You got the key! I knew you could do it! #name:Spirit+of+Music #mood:happy
         Let me just try this key in the lock... Done! #name:Melody #timeline:PianoUnlock
         Play "Ode to Joy!" You'll see the notes on the screen. That's your dad's favorite tune. He'll hear it and remember what music is!  #name:Spirit+of+Music #mood:happy
-        Beautiful! #name:Spirit+of+Music #mood:happy 
         ~ music_player = "piano"
+        Beautiful! #name:Spirit+of+Music #mood:happy 
         I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy
         Yes! And this is a piano, not firewood. #name:Melody #mood:happy
         I can't believe I forgot! I must have been out of my mind. Hooray! # father #mood:happy
