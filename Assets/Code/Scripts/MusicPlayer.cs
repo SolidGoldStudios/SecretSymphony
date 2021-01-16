@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour
 {
     private string song = "";
-    private string OdeToJoy = "EEFGFEDDEFED";
+    private string OdeToJoy = "EEFGGFED";
 
     public void PressKey(string key)
     {
