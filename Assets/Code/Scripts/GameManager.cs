@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
@@ -87,9 +88,12 @@ public class GameManager : Singleton<GameManager>
     {
         // Find the player in the scene
         GameObject player = GameObject.Find("Player").gameObject;
+        NavMeshAgent navMeshAgent = player.GetComponent<NavMeshAgent>();
 
         // Move her to the position defined in ChangeScene
-        player.transform.position = nextPosition;
+        navMeshAgent.Warp(nextPosition);
+        //player.transform.position = nextPosition;
+        Debug.Log("player moved to " + nextPosition);
 
         // Get the player's Animator
         Animator animator = player.transform.GetComponent<Animator>();
