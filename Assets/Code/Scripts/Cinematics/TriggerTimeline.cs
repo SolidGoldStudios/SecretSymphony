@@ -6,6 +6,7 @@ using UnityEngine.Playables;
 public class TriggerTimeline : Interaction
 {
     public PlayableDirector timeline;
+    public Animator animator;
 
     public void Start()
     {
@@ -16,5 +17,7 @@ public class TriggerTimeline : Interaction
     public override void Interact()
     {
         timeline.Play();
+
+        if (animator != null) animator.SetBool("interactionSwitch", true);
     }
 }
