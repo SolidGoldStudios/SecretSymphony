@@ -97,3 +97,26 @@ I finally get to use the scythe! Father never let me because it's sharp. #name:M
 I had better see if I can use it on that pile of kindling in the house. #name:Melody
 ~ has_scythe = true
 ->END
+
+==pianoquest_scarecrow==
+    Ha-ha! #name:Scarecrow
+    Who said that? #name:Melody #mood:sad 
+    Me! The scarecrow! Looking for something? #name:scarecrow
+    My key! #name:Melody #mood:sad 
+    If you want it back, you'll have to answer my questions! Are you ready? #name:Scarecrow
+    *[Yes] 
+        Let's do it! #name:Melody #mood:happy
+        -> END
+    *[No] 
+        I need more time to study. #name:Melody #mood:thinking
+        -> END
+        
+==pianoquest_trivia==
+    TRIVIA!! #name:Baby+Goat
+->pianoquest_trivia_success
+
+
+==pianoquest_trivia_success==
+Good work! You passed. Here you go. #name:Scarecrow #item:piano_key
+Hooray! Thanks, scarecrow! #name:Melody #mood:happy
+->DONE
