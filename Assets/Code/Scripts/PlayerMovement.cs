@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
                 foreach (Interaction interaction in interactions)
                 {
-                    interaction.Interact();
+                    if (interaction.enabled) interaction.Interact();
                 }
 
                 interactionTarget = null;
@@ -180,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
                 interactionTarget = hit.transform.gameObject;
                 Interaction interaction = interactionTarget.transform.GetComponent<Interaction>();
 
-                if (interaction != null)
+                if (interaction != null && interaction.enabled)
                 {
                     Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
                     interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIconActive;
@@ -234,7 +234,7 @@ public class PlayerMovement : MonoBehaviour
 
                 foreach (Interaction interaction in interactions)
                 {
-                    interaction.Interact();
+                    if (interaction.enabled) interaction.Interact();
                 }
 
                 interactionTarget = null;
