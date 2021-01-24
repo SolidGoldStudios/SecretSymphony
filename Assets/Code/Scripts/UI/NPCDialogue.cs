@@ -183,14 +183,9 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("item"))
             {
-                //string[] itemAttributes = tag.Substring(5).Split(',');
+                InventoryItem item = GameManager.Instance.inventoryCatalog.Find(i => i.itemName == tag.Substring(5).Replace("+", " "));
 
-                //string itemName = itemAttributes[0];
-                //string description = itemAttributes[1];
-                //string iconName = itemAttributes[2];
-                //string 
-
-                //GameManager.Instance.AddInventoryItem()
+                GameManager.Instance.AddInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value);
             }
 
             if (tag.StartsWith("play"))

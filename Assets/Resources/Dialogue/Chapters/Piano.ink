@@ -28,6 +28,7 @@
         I'll get to it. #name:Melody #mood:happy
         Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #quest:InstrumentPiano
         ~ tooltip = "Added to Quest Log!"
+        ~ has_piano_quest = true
         ->END
 }
 
@@ -104,19 +105,20 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
     Me! The scarecrow! Looking for something? #name:scarecrow
     My key! #name:Melody #mood:sad 
     If you want it back, you'll have to answer my questions! Are you ready? #name:Scarecrow
-    *[Yes] 
+    * [Yes] 
         Let's do it! #name:Melody #mood:happy
-        -> END
-    *[No] 
+        -> pianoquest_trivia
+    * [No] 
         I need more time to study. #name:Melody #mood:thinking
         -> END
         
 ==pianoquest_trivia==
-    TRIVIA!! #name:Baby+Goat
-->pianoquest_trivia_success
+    TRIVIA!! #name:Goat
+    ->pianoquest_trivia_success
 
 
 ==pianoquest_trivia_success==
-Good work! You passed. Here you go. #name:Scarecrow #item:piano_key
+Good work! You passed. Here you go. #name:Scarecrow #item:Piano+Key
+~ has_piano_key = true
 Hooray! Thanks, scarecrow! #name:Melody #mood:happy
 ->DONE
