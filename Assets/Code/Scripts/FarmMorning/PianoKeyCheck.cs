@@ -12,7 +12,7 @@ public class PianoKeyCheck : MonoBehaviour
 
     private IEnumerator CheckCo()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.5f);
 
         Interaction interaction = GetComponent<Interaction>();
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();

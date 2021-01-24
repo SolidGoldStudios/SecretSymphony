@@ -17,6 +17,7 @@ public class GameManager : Singleton<GameManager>
 
     // Our persistent inventory
     List<InventoryItem> inventory = new List<InventoryItem>();
+    public List<InventoryItem> inventoryCatalog;
     public int inventoryCursor = 0;
     Sprite inventorySlot;
     Sprite inventorySlotHighlight;
@@ -29,9 +30,6 @@ public class GameManager : Singleton<GameManager>
 
     // Quests
     public List<Quest> quests = new List<Quest>();
-    public int questCursor = 0;
-    Sprite questLogSlot;
-    Sprite questLogSlotHighlight;
 
     // Used for the ChangeScene script
     Vector2 nextPosition;
@@ -46,6 +44,8 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
+        inventoryCatalog = InventoryItemCatalog.GetInventoryItemCatalog();
+
         inventorySlot = Resources.Load<Sprite>("UI/ui_inventory_slot");
         inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
         UpdateInventory();
@@ -419,7 +419,6 @@ public class GameManager : Singleton<GameManager>
     public void ShowQuestLog()
     {
         viewingQuestLog = true;
-        questCursor = 0;
 
         // Find the Quest Log layer
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
@@ -491,7 +490,7 @@ public class GameManager : Singleton<GameManager>
                 questTitle.text = quests[i].questName;
                 questTitle.enabled = true;
 
-                questSelected.enabled = (i == questCursor);
+                //questSelected.enabled = (i == questCursor);
 
                 if (quests[i].isComplete)
                 {
