@@ -105,11 +105,9 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
     Me! The scarecrow! Looking for something? #name:scarecrow
     My key! #name:Melody #mood:sad 
     If you want it back, you'll have to answer my questions! Are you ready? #name:Scarecrow
-    * [Yes] 
-        Let's do it! #name:Melody #mood:happy
+    * [Yes] Let's do it! #name:Melody #mood:happy
         -> pianoquest_trivia
-    * [No] 
-        I need more time to study. #name:Melody #mood:thinking
+    * [No] I need more time to study. #name:Melody #mood:thinking
         -> END
         
 ==pianoquest_trivia==
@@ -120,5 +118,7 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
 ==pianoquest_trivia_success==
 Good work! You passed. Here you go. #name:Scarecrow #item:Piano+Key
 ~ has_piano_key = true
+~ tooltip = "Got the piano key!"
 Hooray! Thanks, scarecrow! #name:Melody #mood:happy
+I should go back to the house and try this on that "piano" thing. #name:Melody #mood:thinking
 ->DONE
