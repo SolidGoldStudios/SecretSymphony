@@ -12,14 +12,20 @@ public class AttackableItem : Interaction
     {
         animator = GetComponent<Animator>();
         playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
+    }
 
-        interactionIcon = Resources.Load<Sprite>("UI/cursor_scythe");
-        interactionIconActive = Resources.Load<Sprite>("UI/cursor_scythe_active");
+    public void Update()
+    {
+        if ((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1)
+        {
+            interactionIcon = Resources.Load<Sprite>("UI/cursor_scythe");
+            interactionIconActive = Resources.Load<Sprite>("UI/cursor_scythe_active");
+        }
     }
 
     public override void Interact()
     {
-        if (!interacted)
+        if (!interacted && ((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1))
         {
             animator.SetBool("interactionSwitch", true);
 
