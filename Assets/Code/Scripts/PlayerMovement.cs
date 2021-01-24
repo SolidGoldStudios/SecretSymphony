@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
                 foreach (Interaction interaction in interactions)
                 {
-                    interaction.Interact();
+                    if (interaction.enabled) interaction.Interact();
                 }
 
                 interactionTarget = null;
@@ -126,21 +126,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (GameManager.Instance.viewingQuestLog)
-        {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                if (GameManager.Instance.questCursor > 0) GameManager.Instance.questCursor -= 1;
-                GameManager.Instance.UpdateQuestLog();
-            }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                if (GameManager.Instance.questCursor < GameManager.Instance.quests.Count - 1) GameManager.Instance.questCursor += 1;
-                GameManager.Instance.UpdateQuestLog();
-            }
-        }
-
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -180,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
                 interactionTarget = hit.transform.gameObject;
                 Interaction interaction = interactionTarget.transform.GetComponent<Interaction>();
 
-                if (interaction != null)
+                if (interaction != null && interaction.enabled)
                 {
                     Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
                     interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIconActive;
@@ -234,7 +219,7 @@ public class PlayerMovement : MonoBehaviour
 
                 foreach (Interaction interaction in interactions)
                 {
-                    interaction.Interact();
+                    if (interaction.enabled) interaction.Interact();
                 }
 
                 interactionTarget = null;

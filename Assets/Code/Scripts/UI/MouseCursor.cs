@@ -37,7 +37,7 @@ public class MouseCursor : MonoBehaviour
         {
             Interaction interaction = hit.collider.gameObject.GetComponent<Interaction>();
 
-            if (interaction != null && interaction.interactionIcon != null)
+            if (interaction != null && interaction.interactionIcon != null && interaction.enabled)
             {
                 cursorImage.sprite = interaction.interactionIcon;
             }
