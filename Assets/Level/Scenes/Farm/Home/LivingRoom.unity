@@ -575,6 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_piano
 --- !u!82 &184888818
@@ -686,7 +687,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.20208883, y: 1.1143732}
+  m_Offset: {x: 0.20208883, y: 1.1769066}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.45, y: 0.12}
@@ -697,7 +698,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2009134, y: 2.513115}
+  m_Size: {x: 3.2009134, y: 2.6381817}
   m_EdgeRadius: 0
 --- !u!212 &184888820
 SpriteRenderer:
@@ -1417,6 +1418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_brother
 --- !u!212 &452259447
@@ -3708,6 +3710,7 @@ GameObject:
   - component: {fileID: 628461829}
   - component: {fileID: 628461831}
   - component: {fileID: 628461826}
+  - component: {fileID: 628461830}
   m_Layer: 0
   m_Name: Father
   m_TagString: Speak
@@ -3729,6 +3732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_father
 --- !u!212 &628461827
@@ -3822,6 +3826,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.215107, y: 2.2634592}
   m_EdgeRadius: 0
+--- !u!114 &628461830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628461825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.5190277, y: 0.14434624, z: 4}
+  m_Center: {x: 0.010421991, y: 0.44763088, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!95 &628461831
 Animator:
   serializedVersion: 3
@@ -4070,6 +4090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   toScene: Level/Scenes/Farm/Outdoor/Present/FarmMorning
   toPosition: {x: -8.944, y: 15.015}
   toCameraPosition: {x: -9.15, y: 15.46, z: -10}
@@ -4413,6 +4434,7 @@ GameObject:
   - component: {fileID: 862051891}
   - component: {fileID: 862051892}
   - component: {fileID: 862051887}
+  - component: {fileID: 862051890}
   m_Layer: 0
   m_Name: Mother
   m_TagString: Speak
@@ -4434,6 +4456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_mother
 --- !u!212 &862051888
@@ -4501,6 +4524,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &862051890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862051886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.22719955, y: 0.3319435, z: 4}
+  m_Center: {x: -0.01042223, y: 0.41636276, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!61 &862051891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6883,6 +6922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   toScene: Level/Scenes/Farm/Home/Bedroom
   toPosition: {x: -1.48, y: -4.67}
   toCameraPosition: {x: -1.65, y: -2.72, z: -10}
