@@ -6,6 +6,7 @@ public class InteractionAnimation : Interaction
 {
     public bool interactionSwitch;
     private Animator animator;
+    AudioSource audioSource;
 
     public void Start()
     {
@@ -13,6 +14,12 @@ public class InteractionAnimation : Interaction
 
         interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
         interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
     }
 
     public override void Interact()
