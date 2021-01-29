@@ -26,7 +26,7 @@
         We found this big pile of firewood in the living room. #name:Father
         But it's all stuck together. Can you chop it into smaller pieces? #name:Mother #mood:sad
         I'll get to it. #name:Melody #mood:happy
-        Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #quest:InstrumentPiano
+        Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #quest:InstrumentPiano #audio:quest_added
         ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
         ->END
