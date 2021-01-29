@@ -11,6 +11,7 @@ public class StartDialogue : Interaction
     {
         interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
         interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
+        moveToTarget = true;
     }
 
     public override void Interact()

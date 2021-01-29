@@ -170,6 +170,16 @@ public class PlayerMovement : MonoBehaviour
                     Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
                     interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIconActive;
 
+                    if (interactionTarget.GetComponent<Interaction>().moveToTarget)
+                    {
+                        Bounds bounds = interactionTarget.GetComponent<SpriteRenderer>().bounds;
+
+                        dest.x = bounds.center.x;
+                        dest.y = bounds.center.y - (bounds.extents.y + 0.25f);
+                        navMeshAgent.destination = dest;
+                        Debug.Log("moveToTarget: " + dest);
+                    }
+
                     StartCoroutine(MoveCheckCo());
                 }
                 else
