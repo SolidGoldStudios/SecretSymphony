@@ -12,6 +12,7 @@ public class Collectable : Interaction
     public int value;
     //public bool playerInRange;
     public bool disabled = false;
+    AudioSource audioSource;
 
     bool collected = false;
 
@@ -32,6 +33,11 @@ public class Collectable : Interaction
         if (!collected && !disabled)
         {
             GameManager.Instance.ShowTooltipWithTimeout("Collected " + itemName + "!");
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
             GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value);
             GameManager.Instance.DebugInventory();
             myRenderer.enabled = false;
