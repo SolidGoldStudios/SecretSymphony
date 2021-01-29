@@ -24,6 +24,7 @@ public class NPCDialogue : MonoBehaviour
     GameObject dialogOk;
     Button dialogOkButton;
     Quest quest;
+    AudioSource audioSource;
 
     bool showingChoices;
     int currentChoice;
@@ -66,8 +67,6 @@ public class NPCDialogue : MonoBehaviour
 
     void ClickedOk()
     {
-        Debug.Log("ok clicked, currentChoices.Count " + GameManager.Instance.inkStory.currentChoices.Count + " canContinue " + GameManager.Instance.inkStory.canContinue);
-
         if (GameManager.Instance.inkStory.currentChoices.Count > 0)
         {
             ShowChoices();
@@ -101,7 +100,6 @@ public class NPCDialogue : MonoBehaviour
     {
         if (i >= GameManager.Instance.inkStory.currentChoices.Count) return;
 
-        Debug.Log("picked choice " + i);
         GameManager.Instance.inkStory.ChooseChoiceIndex(i);
 
         HideChoices();
@@ -159,9 +157,11 @@ public class NPCDialogue : MonoBehaviour
                 portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + currentName + "/" + currentName + "_" + tag.Substring(5));
             }
 
-            if (tag.StartsWith("sound"))
+            if (tag.StartsWith("audio"))
             {
-                GetComponent<AudioSource>().clip = Resources.Load<AudioClip>("Audio/" + tag.Substring(6));
+                audioSource = GetComponent<AudioSource>();
+                audioSource.clip = Resources.Load<AudioClip>("Audio/" + tag.Substring(6));
+                audioSource.Play();
             }
 
             if (tag.StartsWith("quest"))
