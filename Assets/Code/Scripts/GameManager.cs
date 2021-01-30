@@ -35,6 +35,7 @@ public class GameManager : Singleton<GameManager>
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
+    string nextKnot;
 
     public bool viewingInventory = false;
     public bool viewingQuestLog = false;
@@ -75,7 +76,7 @@ public class GameManager : Singleton<GameManager>
     /**
      * Handling Scenes
      **/
-    public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
+    public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection, string toKnot = null)
     {
         nextPosition = toPosition;
         nextCameraPosition = toCameraPosition;
@@ -104,6 +105,22 @@ public class GameManager : Singleton<GameManager>
 
         // Set the camera to the position defined in ChangeScene
         Camera.main.transform.position = nextCameraPosition;
+
+        // Launch dialog at the correct knot, if set
+        if (nextKnot != null)
+        {
+            // Find the Dialog object in the scene
+            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+            GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+
+            // Tell NPCDialog to jump to the knot
+            if (!dialogBox.activeInHierarchy)
+            {
+                NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+
+                npcDialogue.ShowDialog(nextKnot);
+            }
+        }
     }
 
     /**
