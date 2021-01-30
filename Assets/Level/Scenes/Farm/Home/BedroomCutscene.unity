@@ -1038,6 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   interactionSwitch: 0
 --- !u!212 &608962024
 SpriteRenderer:
@@ -1123,6 +1124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
 --- !u!4 &669858084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
@@ -1330,6 +1332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   interactionSwitch: 0
 --- !u!61 &889554012
 BoxCollider2D:
@@ -3310,6 +3313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   toScene: Level/Scenes/Farm/Home/LivingRoom
   toPosition: {x: -1.98, y: -9.79}
   toCameraPosition: {x: -4.6, y: -11.68, z: -10}
@@ -5028,6 +5032,102 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4526855452124483492}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1938687409
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938687408}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 50aba6735ceb07c44bd7221ef8ddbf23, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &1938687411 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4526855452954561047, guid: fb935ec1462dc0c429b01e99ca70ccf0,
@@ -5156,6 +5256,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1681579442162909643, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.099976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681579442162909643, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76.099976
+      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
