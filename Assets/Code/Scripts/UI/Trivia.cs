@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class Trivia : MonoBehaviour
 {
     PlayerMovement playerMovement;
-    GameObject nameplate;
     Image topPortrait;
     Image bottomPortrait;
+    GameObject nameplate;
     Text nameplateText;
     Text dialogueText;
     GameObject choiceOne;
@@ -20,19 +20,21 @@ public class Trivia : MonoBehaviour
     Button choiceOneButton;
     Button choiceTwoButton;
     Button choiceThreeButton;
-    GameObject dialogOk;
-    Button dialogOkButton;
-    AudioSource audioSource;
+    Text scoreText;
 
-    bool showingChoices;
-    int currentChoice;
-    string currentName;
+    List<TriviaQuestion> triviaQuestions;
+    int currentQuestion;
+    int correctAnswer;
+    int score;
+
+    string failKnot;
+    string successKnot;
 
     private void Awake()
     {
         playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
 
-        //HideDialog();
+        HideTrivia();
 
         topPortrait = transform.Find("TopPortrait").gameObject.GetComponent<Image>();
         bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>();
@@ -59,13 +61,10 @@ public class Trivia : MonoBehaviour
         choiceThreeButton = choiceThree.GetComponent<Button>();
         choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
 
-        dialogOk = transform.Find("DialogOk").gameObject;
-        dialogOkButton = dialogOk.GetComponent<Button>();
-        dialogOkButton.onClick.AddListener(ClickedOk);
-    }
+        GameObject score = transform.Find("Score").gameObject;
+        scoreText = score.GetComponent<Text>();
 
-    void ClickedOk()
-    {
+        //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "Trivia/piano", null, null);
     }
 
     void ClickedChoiceOne()
@@ -85,13 +84,76 @@ public class Trivia : MonoBehaviour
 
     void ClickedChoice(int i)
     {
+        if (i == correctAnswer)
+        {
+            score += 1;
+            Debug.Log("correct");
+        }
+        else
+        {
+            Debug.Log("wrong answer");
+        }
+
+        scoreText.text = "Score: " + score;
+
+        if (score == 3)
+        {
+            HideTrivia();
+
+            if (successKnot != null)
+            {
+                GameObject uiCanvas = GameObject.Find("UICanvas");
+                GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+                NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+
+                npcDialogue.ShowDialog(successKnot);
+
+                return;
+            }
+        }
+
+        currentQuestion += 1;
+
+        if (currentQuestion == triviaQuestions.Count)
+        {
+            HideTrivia();
+
+            if (failKnot != null)
+            {
+                GameObject uiCanvas = GameObject.Find("UICanvas");
+                GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+                NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+
+                npcDialogue.ShowDialog(failKnot);
+
+                return;
+            }
+        }
+        else
+        {
+            ShowQuestion();
+        }
     }
 
-    public void ShowTrivia()
+    public void ShowTrivia(string name, Sprite portrait, string questionFile, string toSuccessKnot, string toFailKnot)
     {
         playerMovement.immobilized = true;
 
         transform.gameObject.SetActive(true);
+
+        nameplateText.text = name;
+        topPortrait.sprite = portrait;
+
+        string triviaJson = Resources.Load<TextAsset>("Trivia/" + questionFile).ToString();
+        TriviaQuestionContainer triviaQuestionContainer = JsonUtility.FromJson<TriviaQuestionContainer>(triviaJson);
+        triviaQuestions = triviaQuestionContainer.triviaQuestions;
+
+        currentQuestion = 0;
+        score = 0;
+        successKnot = toSuccessKnot;
+        failKnot = toFailKnot;
+
+        ShowQuestion();
     }
 
     private void HideTrivia()
@@ -99,5 +161,33 @@ public class Trivia : MonoBehaviour
         playerMovement.immobilized = false;
 
         transform.gameObject.SetActive(false);
+    }
+
+    private void ShowQuestion()
+    {
+        TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
+        dialogueText.text = triviaQuestion.question;
+
+        switch (Random.Range(0, 3))
+        {
+            case 0:
+                correctAnswer = 0;
+                choiceOneText.text = triviaQuestion.correctAnswer;
+                choiceTwoText.text = triviaQuestion.wrongAnswer1;
+                choiceThreeText.text = triviaQuestion.wrongAnswer2;
+                break;
+            case 1:
+                correctAnswer = 1;
+                choiceOneText.text = triviaQuestion.wrongAnswer1;
+                choiceTwoText.text = triviaQuestion.correctAnswer;
+                choiceThreeText.text = triviaQuestion.wrongAnswer2;
+                break;
+            case 2:
+                correctAnswer = 2;
+                choiceOneText.text = triviaQuestion.wrongAnswer1;
+                choiceTwoText.text = triviaQuestion.wrongAnswer2;
+                choiceThreeText.text = triviaQuestion.correctAnswer;
+                break;
+        }
     }
 }

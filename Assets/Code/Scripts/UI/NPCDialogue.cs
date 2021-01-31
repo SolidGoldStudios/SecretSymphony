@@ -192,6 +192,20 @@ public class NPCDialogue : MonoBehaviour
             {
                 GameManager.Instance.ShowMusicPlayer();
             }
+
+            if (tag.StartsWith("trivia"))
+            {
+                Debug.Log("trivia tag!  args: " + tag.Substring(7));
+                string[] args = tag.Substring(7).Replace("+", " ").Split(',');
+
+                GameObject uicanvas = GameObject.Find("UICanvas");
+                GameObject triviaBox = uicanvas.transform.Find("TriviaBox").gameObject;
+                Trivia trivia = triviaBox.GetComponent<Trivia>();
+
+                HideDialog();
+
+                trivia.ShowTrivia(args[0], Resources.Load<Sprite>("Portraits_Characters/" + args[0] + "/" + args[0] + "_neutral"), args[1], args[2], args[3]);
+            }
         }
     }
 
