@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Level/Scenes/Cutscenes/Title Screen.unity
     guid: 874bc22fbc90cc04a9db67a04f194b6d
   - enabled: 1
-    path: Assets/Level/Scenes/Farm/Home/BedroomCutscene.unity
+    path: Assets/Level/Scenes/Cutscenes/BedroomCutscene.unity
     guid: 04bd0642c72e34df1a0e7d946bbdd829
   - enabled: 1
     path: Assets/Level/Scenes/Farm/Home/Bedroom.unity

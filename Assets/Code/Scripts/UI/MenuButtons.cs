@@ -25,7 +25,6 @@ public class MenuButtons : MonoBehaviour
 
     public void MenuStartGame()
     {
-        //SceneManager.LoadScene("Level/Scenes/Farm/Home/BedroomCutscene");
-        GameManager.Instance.LoadScene("Level/Scenes/Farm/Home/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.65f, -2.72f, -10f), new Vector2(0f, 1f));
+        GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.65f, -2.72f, -10f), new Vector2(0f, 1f));
     }
 }
