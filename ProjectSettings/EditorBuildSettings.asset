@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/Town/Indoor/Present/SchoolIndoor.unity
     guid: c1ffbd48c096043c29e5c9a5e5890470
+  - enabled: 1
+    path: Assets/Level/Scenes/Cutscenes/TownEarwormCutscene.unity
+    guid: 8cc536d9c9c044b758827eb92ca9d457
   m_configObjects: {}

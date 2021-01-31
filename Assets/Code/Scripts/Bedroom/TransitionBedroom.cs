@@ -7,6 +7,6 @@ public class TransitionBedroom : MonoBehaviour
 {
     private void OnDisable()
     {
-        //GameManager.Instance.LoadScene("Level/Scenes/Farm/Home/Bedroom", new Vector2(-0.68f, -0.36f), new Vector3(-1.65f, -1f, -10), new Vector2(0, -1));
+        GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/TownEarwormCutscene", new Vector2(-2.64f, -1.5f), new Vector3(-100f, 100f, -10f), new Vector2(0, -1));
     }
 }

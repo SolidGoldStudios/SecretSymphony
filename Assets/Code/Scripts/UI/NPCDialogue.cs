@@ -193,11 +193,11 @@ public class NPCDialogue : MonoBehaviour
                 GameManager.Instance.ShowMusicPlayer();
             }
 
-            if (tag.StartsWith("scene"))
-            {
-                Debug.Log("Moving to scene");
-                GameManager.Instance.LoadScene("Level/Scenes/Town/Outdoor/Present/TownAfternoon", new Vector2(16.64f, 12.17f), new Vector3(-2.571f, -57.92f, -44.1205f), new Vector2(0, -1), "fairy_earworm_scene");
-            }
+            //if (tag.StartsWith("scene"))
+            //{
+            //    Debug.Log("Moving to scene");
+            //    GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/TownEarwormCutscene", new Vector2(-2.64f, -1.5f), new Vector3(-2.4f, 3.6f, -44.1f), new Vector2(0, -1), "fairy_earworm_scene");
+            //}
         }
     }
 

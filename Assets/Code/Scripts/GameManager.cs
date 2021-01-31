@@ -35,7 +35,7 @@ public class GameManager : Singleton<GameManager>
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
-    string nextKnot;
+    //string nextKnot;
 
     public bool viewingInventory = false;
     public bool viewingQuestLog = false;
@@ -76,11 +76,12 @@ public class GameManager : Singleton<GameManager>
     /**
      * Handling Scenes
      **/
-    public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection, string toKnot = null)
+    public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
     {
         nextPosition = toPosition;
         nextCameraPosition = toCameraPosition;
         nextDirection = toDirection;
+        //nextKnot = toKnot;
 
         SceneManager.LoadScene(scene);
     }
@@ -107,20 +108,19 @@ public class GameManager : Singleton<GameManager>
         Camera.main.transform.position = nextCameraPosition;
 
         // Launch dialog at the correct knot, if set
-        if (nextKnot != null)
-        {
-            // Find the Dialog object in the scene
-            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-            GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+        //if (nextKnot != null)
+        //{
+        //    Debug.Log("Going to next knot:" + nextKnot);
+        //    // Find the Dialog object in the scene
+        //    GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        //    GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
 
-            // Tell NPCDialog to jump to the knot
-            if (!dialogBox.activeInHierarchy)
-            {
-                NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+        //    // Tell NPCDialog to jump to the knot
+        //    NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+        //    npcDialogue.ShowDialog(nextKnot);
 
-                npcDialogue.ShowDialog(nextKnot);
-            }
-        }
+        //    dialogBox.SetActive(true);
+        //}
     }
 
     /**

@@ -3,12 +3,12 @@
     
     Everyone's forgotten all about music! And they don't even know they forgot! #name:Spirit+of+Music #mood:mad  #audio:fairy_speak_medium_1 #scene:bedroom
 
-->END
+->fairy_earworm_scene
 
 ==fairy_earworm_scene==
     The Evil EarWorm has stolen their music memories right out of their heads! #name:Spirit+of+Music #mood:right
     
-    -> END
+-> end_fairy_cutscene
 
 ==end_fairy_cutscene==
 
