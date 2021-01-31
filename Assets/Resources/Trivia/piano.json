@@ -1,0 +1,22 @@
+{
+    "triviaQuestions": [
+        {
+            "question": "The \"buttons\" you press on a piano to make music are called what?",
+            "correctAnswer": "Keys",
+            "wrongAnswer1": "Hammers",
+            "wrongAnswer2": "Sticks"
+        },
+        {
+            "question": "The keys of a piano are usually what two colors?",
+            "correctAnswer": "Black & White",
+            "wrongAnswer1": "Black & Blue",
+            "wrongAnswer2": "Gold & White"
+        },
+        {
+            "question": "Just like on your bike, what is the part of the piano where you put your feet called?",
+            "correctAnswer": "Pedals",
+            "wrongAnswer1": "Shoes",
+            "wrongAnswer2": "Feet"
+        }
+    ]
+}
