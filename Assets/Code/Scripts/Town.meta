@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Code/Scripts/Town.meta
 guid: 798d4e2e06a7d4c44b081ccf0d8b4cc2
+=======
+guid: c0429172fd3571848b742598e96a8c29
+>>>>>>> master:Assets/Resources/Trivia.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

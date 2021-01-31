@@ -193,11 +193,19 @@ public class NPCDialogue : MonoBehaviour
                 GameManager.Instance.ShowMusicPlayer();
             }
 
-            //if (tag.StartsWith("scene"))
-            //{
-            //    Debug.Log("Moving to scene");
-            //    GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/TownEarwormCutscene", new Vector2(-2.64f, -1.5f), new Vector3(-2.4f, 3.6f, -44.1f), new Vector2(0, -1), "fairy_earworm_scene");
-            //}
+            if (tag.StartsWith("trivia"))
+            {
+                Debug.Log("trivia tag!  args: " + tag.Substring(7));
+                string[] args = tag.Substring(7).Replace("+", " ").Split(',');
+
+                GameObject uicanvas = GameObject.Find("UICanvas");
+                GameObject triviaBox = uicanvas.transform.Find("TriviaBox").gameObject;
+                Trivia trivia = triviaBox.GetComponent<Trivia>();
+
+                HideDialog();
+
+                trivia.ShowTrivia(args[0], Resources.Load<Sprite>("Portraits_Characters/" + args[0] + "/" + args[0] + "_neutral"), args[1], args[2], args[3]);
+            }
         }
     }
 
