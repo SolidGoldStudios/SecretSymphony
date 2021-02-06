@@ -25,6 +25,7 @@ public class NPCDialogue : MonoBehaviour
     Button dialogOkButton;
     Quest quest;
     AudioSource audioSource;
+    string nextScene;
 
     bool showingChoices;
     int currentChoice;
@@ -116,7 +117,10 @@ public class NPCDialogue : MonoBehaviour
 
     public void ShowDialog(string knotName)
     {
-        playerMovement.immobilized = true;
+        if (playerMovement != null)
+        {
+            playerMovement.immobilized = true;
+        }
 
         HideChoices();
 
@@ -206,13 +210,38 @@ public class NPCDialogue : MonoBehaviour
 
                 trivia.ShowTrivia(args[0], Resources.Load<Sprite>("Portraits_Characters/" + args[0] + "/" + args[0] + "_neutral"), args[1], args[2], args[3]);
             }
+
+            if (tag.StartsWith("scene"))
+            {
+                // Save the nextScene info
+                nextScene = tag.Substring(6);
+            }
         }
     }
 
     private void HideDialog()
     {
-        playerMovement.immobilized = false;
         transform.gameObject.SetActive(false);
+
+        // Check for a nextScene, parse the info, and move there
+        // This is set with the "#scene" tag in dialog
+        if (nextScene != null)
+        {
+            Debug.Log("scene tag!  args: " + nextScene);
+            string[] args = nextScene.Split('|');
+            string[] playerPos = args[1].Split(',');
+            string[] cameraPos = args[2].Split(',');
+            string[] playerDir = args[3].Split(',');
+
+            GameManager.Instance.LoadScene(args[0], new Vector2(float.Parse(playerPos[0]), float.Parse(playerPos[1])), new Vector3(float.Parse(cameraPos[0]), float.Parse(cameraPos[1]), float.Parse(cameraPos[2])), new Vector2(float.Parse(playerDir[0]), float.Parse(playerDir[1])));
+
+            // Clear the nextScene variable
+            nextScene = null;
+        }        
+
+        // Allow the player to move again
+        playerMovement.immobilized = false;
+        
     }
 
     private void ShowChoices()
