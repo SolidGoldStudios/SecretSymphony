@@ -48,7 +48,10 @@ public class NPCOneLiner : MonoBehaviour
 
     private void ShowDialog()
     {
-        playerMovement.immobilized = true;
+        if (playerMovement != null)
+        {
+            playerMovement.immobilized = true;
+        }
 
         dialogueText.text = dialogue;
 
