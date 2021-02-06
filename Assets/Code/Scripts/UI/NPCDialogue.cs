@@ -116,7 +116,10 @@ public class NPCDialogue : MonoBehaviour
 
     public void ShowDialog(string knotName)
     {
-        playerMovement.immobilized = true;
+        if (playerMovement != null)
+        {
+            playerMovement.immobilized = true;
+        }
 
         HideChoices();
 
