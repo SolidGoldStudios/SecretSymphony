@@ -30,7 +30,8 @@ public class EnvironmentManager : Singleton<EnvironmentManager>
 
         // Global light has to start as disabled and be enabled after singleton or there will be a 
         // "multiple global lights" crash on scene change.
-        globalLight = gameObject.AddComponent<Light2D>();
+        /*
+		globalLight = gameObject.AddComponent<Light2D>();
         globalLight.enabled = true;
 
         globalLight.lightType = Light2D.LightType.Global;
@@ -45,7 +46,7 @@ public class EnvironmentManager : Singleton<EnvironmentManager>
             SortingLayer.NameToID("Collision"),
             SortingLayer.NameToID("Foreground")
         });
-
+		*/
         animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Global Light 2D");
     }
 
