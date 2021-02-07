@@ -7,6 +7,11 @@ public class MusicPlayer : MonoBehaviour
     private string song = "";
     private string OdeToJoy = "EEFGGFED";
 
+    public void Start()
+    {
+        Debug.Log("Music player start!");
+    }
+
     public void PressKey(string key)
     {
         Debug.Log("Pressed the " + key + " key!");
