@@ -144,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("mouse button 0 down " + Input.mousePosition);
 
-            if (EventSystem.current.IsPointerOverGameObject()) return;
+            if (EventSystem.current.IsPointerOverGameObject() || immobilized) return;
 
             RaycastHit2D hit;
 

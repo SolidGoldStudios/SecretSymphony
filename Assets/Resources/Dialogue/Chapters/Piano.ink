@@ -71,21 +71,11 @@
     - has_piano_key && !has_played_piano:
         You did it! You got the key! I knew you could do it! #name:Spirit+of+Music #mood:happy
         Let me just try this key in the lock... Done! #name:Melody #audio:piano_lid
-        Play "Ode to Joy!" You'll see the notes on the screen. That's your dad's favorite tune!  #name:Spirit+of+Music #mood:happy
-        ~ music_player = "piano"
-        Beautiful! #name:Spirit+of+Music #mood:happy 
-        I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy
-        Yes! And this is a piano, not firewood. #name:Melody #mood:happy
-        I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy
-        Hooray! We saved the piano! #name:Melody #mood:happy
-        We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
-        You can count on me! #name:Melody #mood:happy
-        /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
+        Play "Ode to Joy!" You'll see the notes on the screen. That's your dad's favorite tune!  #name:Spirit+of+Music #mood:happy #play:piano|Ode+To+Joy|EEFGGFED|ode_to_joy|pianoquest_played_song
         ->END
     
     - piano_complete:
         Let's play the piano! #name:Melody #mood:happy
-        ~ music_player = "piano"
         ->END
         
     - else:
@@ -126,3 +116,14 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
 ==pianoquest_trivia_fail==
 Not quite, try again. #name:Scarecrow
 ->DONE
+
+==pianoquest_played_song==
+    Beautiful! #name:Spirit+of+Music #mood:happy 
+    I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy
+    Yes! And this is a piano, not firewood. #name:Melody #mood:happy
+    I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy
+    Hooray! We saved the piano! #name:Melody #mood:happy
+    We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
+    You can count on me! #name:Melody #mood:happy
+    /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
+-> DONE
