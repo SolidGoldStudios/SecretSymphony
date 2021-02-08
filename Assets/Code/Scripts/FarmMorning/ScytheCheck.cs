@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class ScytheCheck : MonoBehaviour
 {
@@ -16,16 +17,19 @@ public class ScytheCheck : MonoBehaviour
 
         Interaction interaction = GetComponent<Interaction>();
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+		Light2D light = GetComponent<Light2D>();
 
         if ((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 0)
         {
             interaction.enabled = true;
             sprite.enabled = true;
+			light.enabled = true;
         }
         else
         {
             interaction.enabled = false;
             sprite.enabled = false;
+			light.enabled = false;
         }
 
         yield return null;
