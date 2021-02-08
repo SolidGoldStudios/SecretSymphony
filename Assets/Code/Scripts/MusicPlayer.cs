@@ -67,17 +67,12 @@ public class MusicPlayer : MonoBehaviour
         }
         else if (songInProgress.Equals(songNotes.Substring(0, songInProgress.Length)))
         {
-            Debug.Log("Playing it right!");
-
             // Get the current note in the prefab and make it opaque
             Image noteImage = musicSheetContent.transform.GetChild(songInProgress.Length - 1).Find("Note" + songInProgress.Substring(songInProgress.Length - 1)).GetComponent<Image>();
             noteImage.color = new Color(255, 255, 255, 1);
-
         }
         else
         {
-            Debug.Log("You fucked up!");
-
             Populate();
 
             // TODO Play a negative "bzzt" or "donk" sound
