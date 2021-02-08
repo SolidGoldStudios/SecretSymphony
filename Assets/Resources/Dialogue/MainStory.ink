@@ -4,7 +4,6 @@ INCLUDE Chapters/Piano.ink
  * Triggers
  **/
 VAR tooltip = ""
-VAR music_player = ""
 
 
 /**

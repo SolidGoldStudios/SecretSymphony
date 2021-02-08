@@ -26,6 +26,7 @@ public class NPCDialogue : MonoBehaviour
     Quest quest;
     AudioSource audioSource;
     string nextScene;
+    string nextMusicPlayer;
 
     bool showingChoices;
     int currentChoice;
@@ -194,7 +195,7 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("play"))
             {
-                GameManager.Instance.ShowMusicPlayer();
+                nextMusicPlayer = tag.Substring(5);
             }
 
             if (tag.StartsWith("trivia"))
@@ -223,11 +224,20 @@ public class NPCDialogue : MonoBehaviour
     {
         transform.gameObject.SetActive(false);
 
+        // Check for music player info, set with the #play tag
+        if (nextMusicPlayer != null) {
+
+            string[] args = nextMusicPlayer.Replace("+", " ").Split('|');
+            GameManager.Instance.ShowMusicPlayer(args[0], args[1], args[2], args[3], args[4]);
+
+            // Clear the var
+            nextMusicPlayer = null;
+        }
+
         // Check for a nextScene, parse the info, and move there
         // This is set with the "#scene" tag in dialog
         if (nextScene != null)
         {
-            Debug.Log("scene tag!  args: " + nextScene);
             string[] args = nextScene.Split('|');
             string[] playerPos = args[1].Split(',');
             string[] cameraPos = args[2].Split(',');

@@ -63,9 +63,9 @@ public class GameManager : Singleton<GameManager>
 
         // Listen for a change to the "music_player" variable in an Ink script
         // When it changes, launch the MusicPlayer screen in the new mode
-        inkStory.ObserveVariable("music_player", (string varName, object newValue) => {
-            ShowMusicPlayer();
-        });
+        //inkStory.ObserveVariable("music_player", (string varName, object newValue) => {
+        //    ShowMusicPlayer();
+        //});
 
         TestQuest quest = new TestQuest();
         quest.Setup();
@@ -261,7 +261,7 @@ public class GameManager : Singleton<GameManager>
         return inventory.Exists(i => i.itemName == itemName) ? inventory.Find(i => i.itemName == itemName).count : 0;
     }
 
-    IEnumerator RaiseArms(GameObject player, Sprite icon)
+    public IEnumerator RaiseArms(GameObject player, Sprite icon)
     {
         PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
         Animator animator = player.transform.GetComponent<Animator>();
@@ -270,10 +270,20 @@ public class GameManager : Singleton<GameManager>
 
         playerMovement.immobilized = true;
         animator.SetBool("collecting", true);
-        itemIcon.sprite = icon;
-        itemSprite.SetActive(true);
+
+        if (icon != null)
+        {
+            itemIcon.sprite = icon;
+            itemSprite.SetActive(true);
+        }
+
         yield return new WaitForSeconds(0.6f);
-        itemSprite.SetActive(false);
+
+        if (icon != null)
+        {
+            itemSprite.SetActive(false);
+        }
+
         animator.SetBool("collecting", false);
         playerMovement.immobilized = false;
         yield return null;
@@ -488,7 +498,7 @@ public class GameManager : Singleton<GameManager>
 
     public void UpdateQuestLog()
     {
-        Debug.Log("UpdateQuestLog called with " + quests.Count + " quests");
+        //Debug.Log("UpdateQuestLog called with " + quests.Count + " quests");
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
         GameObject questLogContents = questLogView.transform.Find("QuestLogContents").gameObject;
@@ -538,7 +548,7 @@ public class GameManager : Singleton<GameManager>
     /**
      * Music-player stuff
      **/
-    public void ShowMusicPlayer()
+    public void ShowMusicPlayer(string instrument, string songName, string songNotes, string songFile, string knot)
     {
         viewingMusicPlayer = true;
 
@@ -546,15 +556,13 @@ public class GameManager : Singleton<GameManager>
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject musicPlayerView = uiCanvas.transform.Find("MusicPlayer").gameObject;
         Canvas musicPlayerCanvas = musicPlayerView.GetComponent<Canvas>();
+        MusicPlayer musicPlayer = musicPlayerView.GetComponent<MusicPlayer>();
+
+        // Set up the song
+        musicPlayer.StartSong(instrument, songName, songNotes, songFile, knot);
 
         // Reveal MusicPlayer
         musicPlayerCanvas.enabled = true;
-
-        // Find the Backdrop object in the scene
-        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
-
-        // Toggle the visibility of the backdrop based on Inventory state
-        backdrop.SetActive(true);
 
         // Prevent player from moving
         PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
@@ -572,12 +580,6 @@ public class GameManager : Singleton<GameManager>
 
         // Hide MusicPlayer
         musicPlayerCanvas.enabled = false;
-
-        // Find the Backdrop object in the scene
-        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
-
-        // Toggle the visibility of the backdrop based on Inventory state
-        backdrop.SetActive(false);
 
         // Allow Player to move again
         PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
