@@ -7632,10 +7632,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   toScene: TownAfternoon
   toPosition: {x: -48, y: 33.09}
   toCameraPosition: {x: -48, y: 33.09, z: 0}
   toDirection: {x: 0, y: 0}
+  fadeSceneScript: {fileID: 2022132912}
 --- !u!61 &1875579383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8582,6 +8584,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+--- !u!114 &2022132912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8898164536183165596, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 2022132911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab297bfdca0ecf4bb4d4ae58aff8de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2039981622
 GameObject:
   m_ObjectHideFlags: 0

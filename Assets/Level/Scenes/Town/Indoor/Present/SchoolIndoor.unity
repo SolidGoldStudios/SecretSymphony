@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -829,6 +829,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+--- !u!114 &197158569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8898164536183165596, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 197158568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab297bfdca0ecf4bb4d4ae58aff8de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &211675721
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,10 +874,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   toScene: TownAfternoon
   toPosition: {x: -16, y: 31.785}
   toCameraPosition: {x: -16, y: 31.785, z: -10}
   toDirection: {x: 0, y: -1}
+  fadeSceneScript: {fileID: 197158569}
 --- !u!61 &211675723
 BoxCollider2D:
   m_ObjectHideFlags: 0

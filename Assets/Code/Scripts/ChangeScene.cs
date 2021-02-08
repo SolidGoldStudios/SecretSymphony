@@ -6,6 +6,8 @@ public class ChangeScene : Interaction
     public Vector2 toPosition;
     public Vector3 toCameraPosition;
     public Vector2 toDirection;
+	
+	public SceneTransitionFade fadeSceneScript;
 
     public override void Interact()
     {
@@ -15,7 +17,14 @@ public class ChangeScene : Interaction
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.Instance.LoadScene(toScene, toPosition, toCameraPosition, toDirection);
+			if (fadeSceneScript != null)
+			{
+				fadeSceneScript.FadeOut(toScene, toPosition, toCameraPosition, toDirection);
+			}
+			else
+			{
+				GameManager.Instance.LoadScene(toScene, toPosition, toCameraPosition, toDirection);
+			}
         }
     }
 }
