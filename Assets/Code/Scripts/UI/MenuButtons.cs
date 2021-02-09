@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
+	public SceneTransitionFade fadeSceneScript;
+	
     public void MenuToggleInventory()
     {
         GameManager.Instance.ToggleInventory();
@@ -25,6 +27,13 @@ public class MenuButtons : MonoBehaviour
 
     public void MenuStartGame()
     {
-        GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.4f, -1.03f, -10f), new Vector2(0f, 1f));
+		if (fadeSceneScript != null)
+		{
+			fadeSceneScript.FadeOut("Level/Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.4f, -1.03f, -10f), new Vector2(0f, 1f));
+		}
+		else
+		{
+			GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.4f, -1.03f, -10f), new Vector2(0f, 1f));
+		}
     }
 }

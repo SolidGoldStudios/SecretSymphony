@@ -43,13 +43,13 @@ public class GameManager : Singleton<GameManager>
 
     protected GameManager() { }
 
-    void Start()
+    void Awake()
     {
         inventoryCatalog = InventoryItemCatalog.GetInventoryItemCatalog();
 
         inventorySlot = Resources.Load<Sprite>("UI/ui_inventory_slot");
         inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
-        UpdateInventory();
+        //UpdateInventory();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
         inkAsset = Resources.Load<TextAsset>("Dialogue/MainStory");
@@ -70,8 +70,14 @@ public class GameManager : Singleton<GameManager>
         TestQuest quest = new TestQuest();
         quest.Setup();
         quests.Add(quest);
-        UpdateQuestLog();
+        //UpdateQuestLog();
     }
+	
+	void Start()
+	{
+		UpdateInventory();
+		UpdateQuestLog();
+	}
 
     /**
      * Handling Scenes
