@@ -4353,6 +4353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c474a8d70d91e4bddb5ba9c82f133257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSceneScript: {fileID: 8898164536183165596}
 --- !u!82 &2110246656130503297
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4926,6 +4927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ce8c670c81448c9ba491e675882a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSceneScript: {fileID: 8898164536183165596}
 --- !u!1 &2593452735479485746
 GameObject:
   m_ObjectHideFlags: 0

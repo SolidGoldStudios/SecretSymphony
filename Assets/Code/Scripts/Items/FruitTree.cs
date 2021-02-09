@@ -10,7 +10,7 @@ public class FruitTree : EnvironmentalItem
     private Transform singleFruit;
     private Transform ground;
 
-    void Start()
+    new void Start()
     {
         base.Start();
         fruit = transform.Find("Fruit");

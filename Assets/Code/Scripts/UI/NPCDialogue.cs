@@ -7,6 +7,8 @@ using Ink.Runtime;
 
 public class NPCDialogue : MonoBehaviour
 {
+	public SceneTransitionFade fadeSceneScript;
+	
     PlayerMovement playerMovement;
     GameObject portraitObject;
     GameObject nameplate;
@@ -28,8 +30,8 @@ public class NPCDialogue : MonoBehaviour
     string nextScene;
     string nextMusicPlayer;
 
-    bool showingChoices;
-    int currentChoice;
+    //bool showingChoices;
+    //int currentChoice;
     string currentName;
 
     private void Awake()
@@ -243,7 +245,14 @@ public class NPCDialogue : MonoBehaviour
             string[] cameraPos = args[2].Split(',');
             string[] playerDir = args[3].Split(',');
 
-            GameManager.Instance.LoadScene(args[0], new Vector2(float.Parse(playerPos[0]), float.Parse(playerPos[1])), new Vector3(float.Parse(cameraPos[0]), float.Parse(cameraPos[1]), float.Parse(cameraPos[2])), new Vector2(float.Parse(playerDir[0]), float.Parse(playerDir[1])));
+			if (fadeSceneScript != null)
+			{
+				fadeSceneScript.FadeOut(args[0], new Vector2(float.Parse(playerPos[0]), float.Parse(playerPos[1])), new Vector3(float.Parse(cameraPos[0]), float.Parse(cameraPos[1]), float.Parse(cameraPos[2])), new Vector2(float.Parse(playerDir[0]), float.Parse(playerDir[1])));
+			}
+			else
+			{
+				GameManager.Instance.LoadScene(args[0], new Vector2(float.Parse(playerPos[0]), float.Parse(playerPos[1])), new Vector3(float.Parse(cameraPos[0]), float.Parse(cameraPos[1]), float.Parse(cameraPos[2])), new Vector2(float.Parse(playerDir[0]), float.Parse(playerDir[1])));
+			}
 
             // Clear the nextScene variable
             nextScene = null;
@@ -268,8 +277,8 @@ public class NPCDialogue : MonoBehaviour
         portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
 
         // Display the choices
-        showingChoices = true;
-        currentChoice = 0;
+        //showingChoices = true;
+        //currentChoice = 0;
 
         dialogueText.text = "";
 
@@ -296,7 +305,7 @@ public class NPCDialogue : MonoBehaviour
 
     private void HideChoices()
     {
-        showingChoices = false;
+        //showingChoices = false;
 
         choiceOne.SetActive(false);
         choiceTwo.SetActive(false);
