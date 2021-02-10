@@ -12,6 +12,7 @@ public class Collectable : Interaction
     public int value;
     //public bool playerInRange;
     public bool disabled = false;
+	public bool unique;
     AudioSource audioSource;
 
     bool collected = false;
@@ -21,6 +22,10 @@ public class Collectable : Interaction
 
     private void Start()
     {
+		if (GameManager.Instance.CheckForInventoryItem(itemName))
+		{
+			gameObject.SetActive(false);
+		}
         myRenderer = GetComponent<SpriteRenderer>();
         myLight = GetComponent<Light2D>();
 
@@ -38,7 +43,7 @@ public class Collectable : Interaction
             {
                 audioSource.Play();
             }
-            GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value);
+            GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value, unique);
             GameManager.Instance.DebugInventory();
             myRenderer.enabled = false;
             if (myLight)

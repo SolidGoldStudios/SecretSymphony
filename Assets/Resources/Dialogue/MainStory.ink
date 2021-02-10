@@ -11,6 +11,7 @@ VAR tooltip = ""
  **/
 
 /* Piano quest */
+VAR ready_for_piano_quest = true
 VAR has_piano_quest = false
 VAR has_scythe = false
 VAR has_hit_piano = false

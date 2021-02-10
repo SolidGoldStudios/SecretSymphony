@@ -11,6 +11,7 @@ public class InventoryItem : IEquatable<InventoryItem>
     public int weight;
     public int value;
     public int count;
+	public bool unique;
 
     public bool Equals(InventoryItem other)
     {

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
-public class NPCOneLiner : MonoBehaviour
+public class NPCOneLiner : Interaction
 {
     public GameObject dialogBox;
     public Sprite npcPortrait;
@@ -15,6 +16,7 @@ public class NPCOneLiner : MonoBehaviour
     GameObject nameplate;
     Text nameplateText;
     Text dialogueText;
+	
     private AudioSource source;
 
     void Start()
@@ -28,18 +30,18 @@ public class NPCOneLiner : MonoBehaviour
 
         dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
 
+		interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
+		moveToTarget = true;
+		
         source = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
+		if (Input.GetMouseButtonDown(0))
         {
-            if (!dialogBox.activeInHierarchy)
-            {
-                ShowDialog();
-            }
-            else
+            if (dialogBox.activeInHierarchy)
             {
                 HideDialog();
             }
@@ -85,6 +87,7 @@ public class NPCOneLiner : MonoBehaviour
         dialogBox.SetActive(false);
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -101,4 +104,10 @@ public class NPCOneLiner : MonoBehaviour
             HideDialog();
         }
     }
+	*/
+	
+	public override void Interact()
+	{
+		ShowDialog();
+	}
 }

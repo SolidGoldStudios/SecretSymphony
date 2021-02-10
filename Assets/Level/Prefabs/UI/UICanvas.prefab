@@ -2294,7 +2294,7 @@ GameObject:
   - component: {fileID: 3754594658718929449}
   - component: {fileID: 1561472133834703655}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ChoiceOne Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3445,7 +3445,7 @@ GameObject:
   - component: {fileID: 2257383733172534568}
   - component: {fileID: 2257383733172534571}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ChoiceTwo Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3523,7 +3523,7 @@ GameObject:
   - component: {fileID: 2257383733224230515}
   - component: {fileID: 2257383733224230514}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ChoiceThree Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4354,6 +4354,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeSceneScript: {fileID: 8898164536183165596}
+  portraitObject: {fileID: 2257383733517441958}
+  nameplate: {fileID: 2257383734746006566}
+  nameplateText: {fileID: 2257383733625903500}
+  dialogueText: {fileID: 2257383734186331053}
+  choiceOne: {fileID: 2257383734306363170}
+  choiceTwo: {fileID: 2257383733635262879}
+  choiceThree: {fileID: 2257383734522372912}
+  choiceOneText: {fileID: 1561472133834703655}
+  choiceTwoText: {fileID: 2257383733172534571}
+  choiceThreeText: {fileID: 2257383733224230514}
+  dialogOk: {fileID: 7862613151496751433}
+  dialogOkButton: {fileID: 0}
 --- !u!82 &2110246656130503297
 AudioSource:
   m_ObjectHideFlags: 0

@@ -208,7 +208,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value)
+    public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value, bool unique)
     {
         InventoryItem item = new InventoryItem
         {
@@ -217,7 +217,8 @@ public class GameManager : Singleton<GameManager>
             icon = icon,
             weight = weight,
             value = value,
-            count = 1
+            count = 1,
+			unique = unique
         };
 
         if (inventory.Contains(item))
@@ -237,6 +238,16 @@ public class GameManager : Singleton<GameManager>
 
         StartCoroutine(RaiseArms(player, icon));
     }
+	
+	public bool CheckForInventoryItem(string itemName)
+	{
+		InventoryItem item = inventory.Find(i => i.itemName.Equals(itemName));
+		if (item != null && item.unique)
+        {
+			return true;
+		}
+		return false;
+	}
 
     public void RemoveInventoryItem(string itemName, int count = 1)
     {
