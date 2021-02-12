@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4017779517115619014}
   - component: {fileID: 444110496049108017}
   - component: {fileID: 1065678356586356341}
-  - component: {fileID: 3670337673310129737}
   m_Layer: 0
   m_Name: Book_Keyboards
   m_TagString: Untagged
@@ -196,15 +195,3 @@ MonoBehaviour:
   value: 0
   disabled: 0
   unique: 1
---- !u!114 &3670337673310129737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608948016567069177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e57c81ff94eb2f44c99160c1e0d40c02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

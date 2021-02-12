@@ -6,6 +6,7 @@ public class StartDialogue : Interaction
 {
     public GameObject dialogBox;
     public string knotName;
+	public bool questGiver = false;
 	public string questName;
 	
 	private GameObject questIcon;
@@ -16,16 +17,72 @@ public class StartDialogue : Interaction
         interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
         moveToTarget = true;
 		
-		//Adding the QuestIcon through code if it matches quest name.
-		if (questName != "" && (int)GameManager.Instance.inkStory.variablesState["ready_for_" + questName] == 1)
+		if (questGiver)
 		{
-			GameObject questIconPrefab = Resources.Load("Prefabs/Quest Icon") as GameObject;
-			questIcon = Instantiate(questIconPrefab);
-			Vector3 pos = questIcon.transform.position;
-			questIcon.transform.parent = this.gameObject.transform;
-			questIcon.transform.localPosition = pos;
+			SetQuestIcon();
+			SetQuestObservers();
 		}
-    }
+	}
+
+	public void SetQuestIcon()
+	{
+		if (questGiver)
+		{
+			if ((int)GameManager.Instance.inkStory.variablesState["completed_" + questName] == 1)
+			{
+				foreach (Transform child in gameObject.transform) 
+				{
+					GameObject.Destroy(child.gameObject);
+				}
+			}
+			else if ((int)GameManager.Instance.inkStory.variablesState["has_" + questName] == 1)
+			{
+				CreateQuestIcon("Quest Questionmark");
+			}
+			else if ((int)GameManager.Instance.inkStory.variablesState["ready_for_" + questName] == 1)
+			{
+				CreateQuestIcon("Quest Icon");
+			}
+		}
+	}
+	
+	public void CreateQuestIcon(string type)
+	{
+		foreach (Transform child in gameObject.transform) 
+		{
+			GameObject.Destroy(child.gameObject);
+		}
+		GameObject questIconPrefab = Resources.Load("Prefabs/" + type) as GameObject;
+		questIcon = Instantiate(questIconPrefab);
+		Vector3 pos = questIcon.transform.position;
+		questIcon.transform.parent = this.gameObject.transform;
+		questIcon.transform.localPosition = pos;
+	}
+	
+	public void SetQuestObservers()
+	{
+		GameManager.Instance.inkStory.ObserveVariable("has_" + questName, (string varName, object newValue) => 
+		{
+            if ((int)newValue == 1)
+            {
+                SetQuestIcon();
+            }
+		});
+		GameManager.Instance.inkStory.ObserveVariable("completed_" + questName, (string varName, object newValue) => 
+		{
+            if ((int)newValue == 1)
+            {
+                SetQuestIcon();
+            }
+		});
+		GameManager.Instance.inkStory.ObserveVariable("ready_for_" + questName, (string varName, object newValue) => 
+		{
+            if ((int)newValue == 1)
+            {
+                SetQuestIcon();
+            }
+		});
+	}
 
     public override void Interact()
     {
