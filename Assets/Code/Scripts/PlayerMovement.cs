@@ -142,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("mouse button 0 down " + Input.mousePosition);
+            //Debug.Log("mouse button 0 down " + Input.mousePosition);
 
             if (EventSystem.current.IsPointerOverGameObject() || immobilized) return;
 
@@ -154,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
             interactionIcon.enabled = true;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.Log("ray " + ray);
+            //Debug.Log("ray " + ray);
 
             Vector3 dest = ray.origin;
             dest.z = 0;
