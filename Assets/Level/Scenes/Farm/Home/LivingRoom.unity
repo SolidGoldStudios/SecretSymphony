@@ -578,6 +578,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_piano
+  questGiver: 0
   questName: 
 --- !u!82 &184888818
 AudioSource:
@@ -1425,6 +1426,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_brother
+  questGiver: 0
   questName: 
 --- !u!212 &452259447
 SpriteRenderer:
@@ -3740,6 +3742,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_father
+  questGiver: 0
   questName: 
 --- !u!212 &628461827
 SpriteRenderer:
@@ -4469,6 +4472,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_mother
+  questGiver: 1
   questName: piano_quest
 --- !u!212 &862051888
 SpriteRenderer:
