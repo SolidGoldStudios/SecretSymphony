@@ -9,22 +9,24 @@ public class NPCDialogue : MonoBehaviour
 {
 	public SceneTransitionFade fadeSceneScript;
 	
+	public GameObject portraitObject;
+	
     PlayerMovement playerMovement;
-    GameObject portraitObject;
-    GameObject nameplate;
-    Text nameplateText;
-    Text dialogueText;
-    GameObject choiceOne;
-    GameObject choiceTwo;
-    GameObject choiceThree;
-    Text choiceOneText;
-    Text choiceTwoText;
-    Text choiceThreeText;
+    public GameObject nameplate;
+    public Text nameplateText;
+    public Text dialogueText;
+    public GameObject choiceOne;
+    public GameObject choiceTwo;
+    public GameObject choiceThree;
+    public Text choiceOneText;
+    public Text choiceTwoText;
+    public Text choiceThreeText;
     Button choiceOneButton;
     Button choiceTwoButton;
     Button choiceThreeButton;
-    GameObject dialogOk;
+    public GameObject dialogOk;
     Button dialogOkButton;
+	
     Quest quest;
     AudioSource audioSource;
     string nextScene;
@@ -36,10 +38,9 @@ public class NPCDialogue : MonoBehaviour
 
     private void Awake()
     {
-        playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
-
-        HideDialog();
-
+        
+		playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+		/*
         portraitObject = transform.Find("Portrait").gameObject;
 
         nameplate = transform.Find("Nameplate").gameObject;
@@ -55,7 +56,10 @@ public class NPCDialogue : MonoBehaviour
         choiceTwoText = choiceTwo.transform.Find("Text").gameObject.GetComponent<Text>();
         choiceThreeText = choiceThree.transform.Find("Text").gameObject.GetComponent<Text>();
 
-        choiceOneButton = choiceOne.GetComponent<Button>();
+        dialogOk = transform.Find("DialogOk").gameObject;
+		*/
+		
+		choiceOneButton = choiceOne.GetComponent<Button>();
         choiceOneButton.onClick.AddListener(ClickedChoiceOne);
 
         choiceTwoButton = choiceTwo.GetComponent<Button>();
@@ -63,10 +67,11 @@ public class NPCDialogue : MonoBehaviour
 
         choiceThreeButton = choiceThree.GetComponent<Button>();
         choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
-
-        dialogOk = transform.Find("DialogOk").gameObject;
-        dialogOkButton = dialogOk.GetComponent<Button>();
+		
+		dialogOkButton = dialogOk.GetComponent<Button>();
         dialogOkButton.onClick.AddListener(ClickedOk);
+		
+		HideDialog();
     }
 
     void ClickedOk()
@@ -192,7 +197,7 @@ public class NPCDialogue : MonoBehaviour
             {
                 InventoryItem item = GameManager.Instance.inventoryCatalog.Find(i => i.itemName == tag.Substring(5).Replace("+", " "));
 
-                GameManager.Instance.AddInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value);
+                GameManager.Instance.AddInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value, item.unique);
             }
 
             if (tag.StartsWith("play"))

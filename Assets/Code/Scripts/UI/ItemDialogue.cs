@@ -10,17 +10,17 @@ public class ItemDialogue : MonoBehaviour
     public string dialogue;
     public bool playerInRange;
 
-    GameObject portraitObject;
-    Text dialogueText;
-    GameObject nameplate;
+    public GameObject portraitObject;
+    public Text dialogueText;
+    public GameObject nameplate;
 
     void Start()
     {
         HideDialog();
 
-        portraitObject = dialogBox.transform.Find("Portrait").gameObject;
-        dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
-        nameplate = dialogBox.transform.Find("Nameplate").gameObject;
+        //portraitObject = dialogBox.transform.Find("Portrait").gameObject;
+        //dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
+        //nameplate = dialogBox.transform.Find("Nameplate").gameObject;
     }
 
     void Update()

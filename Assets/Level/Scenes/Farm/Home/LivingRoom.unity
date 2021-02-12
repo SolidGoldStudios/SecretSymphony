@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -578,6 +578,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_piano
+  questName: 
 --- !u!82 &184888818
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1227,6 +1228,9 @@ MonoBehaviour:
     keeps it precise during the coldest months, cylindrical pendulums rise up and
     down, et cetera. It has a beautiful, resonant tone.'
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!61 &449214381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1421,6 +1425,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_brother
+  questName: 
 --- !u!212 &452259447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3735,6 +3740,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_father
+  questName: 
 --- !u!212 &628461827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3989,6 +3995,9 @@ MonoBehaviour:
   dialogue: "The pride of the household: close to two hundred beautifully bound volumes.
     And it\u2019s no set piece: mother and father prize reading above all."
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!61 &705617774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4460,6 +4469,7 @@ MonoBehaviour:
   moveToTarget: 0
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_mother
+  questName: piano_quest
 --- !u!212 &862051888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9926,7 +9936,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keyboards Book
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3670337673310129737, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 97ccdf99caea48b489eb4dd2974584e8, type: 3}
 --- !u!1001 &2257383733766677170
 PrefabInstance:
