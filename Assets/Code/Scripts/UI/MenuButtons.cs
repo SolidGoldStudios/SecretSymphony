@@ -27,8 +27,8 @@ public class MenuButtons : MonoBehaviour
         // Hide the books layer
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject books = uiCanvas.transform.Find("Books").gameObject;
-        Canvas booksCanvas = books.GetComponent<Canvas>();
-        booksCanvas.enabled = false;
+        GameObject keyboardBook = books.transform.Find("KeyboardBook").gameObject;
+        keyboardBook.SetActive(false);
     }
 
     public void MenuStartGame()

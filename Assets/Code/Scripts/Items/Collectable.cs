@@ -13,6 +13,7 @@ public class Collectable : Interaction
     //public bool playerInRange;
     public bool disabled = false;
 	public bool unique;
+    public string clickAction;
     AudioSource audioSource;
 
     bool collected = false;
@@ -43,7 +44,7 @@ public class Collectable : Interaction
             {
                 audioSource.Play();
             }
-            GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value, unique);
+            GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value, unique, clickAction);
             GameManager.Instance.DebugInventory();
             myRenderer.enabled = false;
             if (myLight)
