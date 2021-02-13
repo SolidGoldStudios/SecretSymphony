@@ -30,6 +30,7 @@ public class NPCDialogue : MonoBehaviour
     Quest quest;
     AudioSource audioSource;
     string nextScene;
+    string nextBook;
     string nextMusicPlayer;
 
     //bool showingChoices;
@@ -224,6 +225,12 @@ public class NPCDialogue : MonoBehaviour
                 // Save the nextScene info
                 nextScene = tag.Substring(6);
             }
+
+            if (tag.StartsWith("book"))
+            {
+                // Save the nextBook info
+                nextBook = tag.Substring(5);
+            }
         }
     }
 
@@ -239,6 +246,27 @@ public class NPCDialogue : MonoBehaviour
 
             // Clear the var
             nextMusicPlayer = null;
+        }
+
+        // Check for a book to display, set with the #book tag
+        if (nextBook != null)
+        {
+
+            // Enable the backdrop
+            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+            GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+            backdrop.SetActive(true);
+
+            // Show the selected book
+            GameObject books = uiCanvas.transform.Find("Books").gameObject;
+            if (nextBook == "piano")
+            {
+                GameObject pianoBook = books.transform.Find("KeyboardBook").gameObject;
+                pianoBook.SetActive(true);
+            }
+
+            // Clear the var
+            nextBook = null;
         }
 
         // Check for a nextScene, parse the info, and move there
