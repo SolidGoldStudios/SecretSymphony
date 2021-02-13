@@ -12,6 +12,7 @@ public class InventoryItem : IEquatable<InventoryItem>
     public int value;
     public int count;
 	public bool unique;
+    public string clickAction;
 
     public bool Equals(InventoryItem other)
     {

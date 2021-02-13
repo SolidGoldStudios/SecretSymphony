@@ -19,8 +19,7 @@ public class GameManager : Singleton<GameManager>
     List<InventoryItem> inventory = new List<InventoryItem>();
     public List<InventoryItem> inventoryCatalog;
     public int inventoryCursor = 0;
-    Sprite inventorySlot;
-    Sprite inventorySlotHighlight;
+    Sprite inventorySlotSprite;
 
     public delegate void ItemAddDelegate(string name);
     public ItemAddDelegate itemAddDelegate;
@@ -47,8 +46,7 @@ public class GameManager : Singleton<GameManager>
     {
         inventoryCatalog = InventoryItemCatalog.GetInventoryItemCatalog();
 
-        inventorySlot = Resources.Load<Sprite>("UI/ui_inventory_slot");
-        inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
+        inventorySlotSprite = Resources.Load<Sprite>("UI/ui_inventory_slot");
         //UpdateInventory();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -208,7 +206,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value, bool unique)
+    public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value, bool unique, string clickAction)
     {
         InventoryItem item = new InventoryItem
         {
@@ -218,7 +216,8 @@ public class GameManager : Singleton<GameManager>
             weight = weight,
             value = value,
             count = 1,
-			unique = unique
+			unique = unique,
+            clickAction = clickAction
         };
 
         if (inventory.Contains(item))
@@ -397,31 +396,12 @@ public class GameManager : Singleton<GameManager>
 
         for (int i = 0; i < 32; i++)
         {
-            Image slot = inventoryContents.transform.GetChild(i).GetComponent<Image>();
-            Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
-            Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();
+            GameObject inventorySlot = inventoryContents.transform.GetChild(i).gameObject;
+            Image slot = inventorySlot.GetComponent<Image>();
+            Image icon = inventorySlot.transform.GetChild(0).GetComponent<Image>();
+            Text count = inventorySlot.transform.GetChild(0).GetChild(0).GetComponent<Text>();
 
-            if (i == inventoryCursor && viewingInventory)
-            {
-                slot.sprite = inventorySlotHighlight;
-
-                GameObject itemDescription = uiCanvas.transform.Find("ItemDescription").gameObject;
-                Text itemDescriptionText = itemDescription.transform.GetChild(0).GetComponent<Text>();
-
-                if (i < inventory.Count)
-                {
-                    itemDescriptionText.text = inventory[i].description;
-                    itemDescription.SetActive(true);
-                }
-                else
-                {
-                    itemDescription.SetActive(false);
-                }
-            }
-            else
-            {
-                slot.sprite = inventorySlot;
-            }
+            slot.sprite = inventorySlotSprite;
 
             if (i < inventory.Count)
             {
@@ -430,6 +410,11 @@ public class GameManager : Singleton<GameManager>
 
                 icon.enabled = true;
                 count.enabled = true;
+
+                Button button = inventorySlot.GetComponent<Button>();
+                button.onClick.RemoveAllListeners();
+                int index = i;
+                button.onClick.AddListener(() => ClickedInventoryItem(index));
             }
             else
             {
@@ -438,6 +423,35 @@ public class GameManager : Singleton<GameManager>
             }
         }
     }
+
+    void ClickedInventoryItem(int index)
+    {
+        Debug.Log("inventory item clickAction: " + inventory[index].clickAction);
+        string clickAction = inventory[index].clickAction;
+
+        if (clickAction.StartsWith("book"))
+        {
+            HideInventory();
+
+            string book = clickAction.Substring(5);
+
+            // Enable the backdrop
+            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+            GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+            backdrop.SetActive(true);
+
+            // Show the selected book
+            GameObject books = uiCanvas.transform.Find("Books").gameObject;
+            if (book == "piano")
+            {
+                Debug.Log("clicked piano book");
+                GameObject pianoBook = books.transform.Find("KeyboardBook").gameObject;
+                pianoBook.SetActive(true);
+            }
+
+        }
+    }
+
     /**
      * Quest stuff
      **/
