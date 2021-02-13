@@ -1657,10 +1657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortSize: {x: 0, y: 0}
-  viewPortFactor: 0
-  followDuration: 0
-  maximumFollowSpeed: 0
   maxPosition: {x: 0, y: 0}
   minPosition: {x: 0, y: 0}
   player: {fileID: 0}
@@ -5028,6 +5024,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &971920593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971920591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  dialogBox: {fileID: 1745254813}
+  knotName: pianoquest_book
+  questGiver: 0
+  questName: 
 --- !u!1 &1004894021
 GameObject:
   m_ObjectHideFlags: 0
@@ -9950,6 +9965,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1681579442162909643, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.100098
+      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
