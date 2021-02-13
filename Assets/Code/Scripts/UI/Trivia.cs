@@ -32,8 +32,6 @@ public class Trivia : MonoBehaviour
 
     private void Awake()
     {
-        playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
-
         HideTrivia();
 
         topPortrait = transform.Find("TopPortrait").gameObject.GetComponent<Image>();
@@ -137,6 +135,8 @@ public class Trivia : MonoBehaviour
 
     public void ShowTrivia(string name, Sprite portrait, string questionFile, string toSuccessKnot, string toFailKnot)
     {
+        Debug.Log("show trivia: " + name);
+        playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
         playerMovement.immobilized = true;
 
         transform.gameObject.SetActive(true);
@@ -158,6 +158,7 @@ public class Trivia : MonoBehaviour
 
     private void HideTrivia()
     {
+        playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
         playerMovement.immobilized = false;
 
         transform.gameObject.SetActive(false);
