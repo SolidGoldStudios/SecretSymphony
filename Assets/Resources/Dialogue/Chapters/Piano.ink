@@ -130,5 +130,5 @@ Not quite, try again. #name:Scarecrow
 
 ==pianoquest_book==
     What's that? Hmm.... #name:Melody #mood:concerned
-    "All About Pianos! by C. Czerny." #name:Book #mood:piano #book:piano
+    "<b><i>All About Pianos!</i></b> by Clara Schumann." #name:Book #mood:piano #book:piano
 ->DONE
