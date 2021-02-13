@@ -129,6 +129,6 @@ Not quite, try again. #name:Scarecrow
 -> DONE
 
 ==pianoquest_book==
-    What's that? Hmm... #name:Melody #mood:concerned
+    What's that? Hmm.... #name:Melody #mood:concerned
     "All About Pianos! by C. Czerny." #name:Book #mood:piano #book:piano
 ->DONE
