@@ -6,7 +6,7 @@ public class PianoKeyCheck : MonoBehaviour
 {
     void Start()
     {
-        if ((int)GameManager.Instance.inkStory.variablesState["has_spoken_to_spirit_piano"] != 0)
+        if ((int)GameManager.Instance.inkStory.variablesState["has_spoken_to_spirit_piano"] == 0)
         {
             gameObject.SetActive(false);
         }
