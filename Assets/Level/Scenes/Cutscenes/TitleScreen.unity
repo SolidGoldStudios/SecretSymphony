@@ -226,6 +226,9 @@ MonoBehaviour:
     keeps it precise during the coldest months, cylindrical pendulums rise up and
     down, et cetera. It has a beautiful, resonant tone.'
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!61 &32088703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -760,10 +763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortSize: {x: 0, y: 0}
-  viewPortFactor: 0
-  followDuration: 0
-  maximumFollowSpeed: 0
   maxPosition: {x: 0, y: 0}
   minPosition: {x: 0, y: 0}
   player: {fileID: 0}
@@ -5026,6 +5025,9 @@ MonoBehaviour:
   dialogue: "The pride of the household: close to two hundred beautifully bound volumes.
     And it\u2019s no set piece: mother and father prize reading above all."
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!61 &1491310194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5768,6 +5770,9 @@ MonoBehaviour:
   initialPortrait: {fileID: 0}
   dialogue: Hmm, it appears to be locked. There must be a key around here somewhere!
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!212 &1711494397
 SpriteRenderer:
   m_ObjectHideFlags: 0
