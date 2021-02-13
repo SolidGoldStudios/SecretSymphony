@@ -16,6 +16,7 @@ public class NPCOneLiner : Interaction
     GameObject nameplate;
     Text nameplateText;
     Text dialogueText;
+	bool OneLinerActive = false;
 	
     private AudioSource source;
 
@@ -39,7 +40,7 @@ public class NPCOneLiner : Interaction
 
     void Update()
     {
-		if (Input.GetMouseButtonDown(0))
+		if (OneLinerActive && Input.GetMouseButtonDown(0))
         {
             if (dialogBox.activeInHierarchy)
             {
@@ -76,6 +77,7 @@ public class NPCOneLiner : Interaction
             nameplate.SetActive(false);
         }
 
+		OneLinerActive = true;
         dialogBox.SetActive(true);
 
         if (source) source.Play();
@@ -83,7 +85,11 @@ public class NPCOneLiner : Interaction
 
     private void HideDialog()
     {
-        playerMovement.immobilized = false;
+		if (playerMovement != null)
+        {
+			playerMovement.immobilized = false;
+		}
+		OneLinerActive = false;
         dialogBox.SetActive(false);
     }
 
