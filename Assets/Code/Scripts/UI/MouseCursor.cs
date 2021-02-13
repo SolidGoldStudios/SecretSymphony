@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MouseCursor : MonoBehaviour
 {
@@ -26,7 +27,14 @@ public class MouseCursor : MonoBehaviour
 
         transform.position = Input.mousePosition;
 
-        CastRay();
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            cursorImage.sprite = defaultCursor;
+        }
+        else
+        {
+            CastRay();
+        }
     }
 
     void CastRay()
