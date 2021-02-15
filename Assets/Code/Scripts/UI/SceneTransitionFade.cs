@@ -7,6 +7,7 @@ public class SceneTransitionFade : MonoBehaviour
 {
 	public float fadeTime;
 	
+	private bool restartScene = false;
 	private bool fadingIn = true;
 	private bool fadingOut = false;
 	private  Image fadeScreen;
@@ -26,7 +27,7 @@ public class SceneTransitionFade : MonoBehaviour
 
     void Update()
     {
-        if (fadingIn)
+        if (fadingIn && !fadingOut)
 		{
 			timer += Time.deltaTime;
 			if (fadeTime > timer)
@@ -55,7 +56,14 @@ public class SceneTransitionFade : MonoBehaviour
 				fadeColor.a = 1.0f;
 				fadeScreen.color = fadeColor;
 				timer = 0.0f;
-				GameManager.Instance.LoadScene(toScene, toPosition, toCameraPosition, toDirection);
+				if (!restartScene)
+				{
+					GameManager.Instance.LoadScene(toScene, toPosition, toCameraPosition, toDirection);
+				}
+				else
+				{
+					GameManager.Instance.LoadScene(toScene);
+				}
 			}
 		}
     }
@@ -67,5 +75,12 @@ public class SceneTransitionFade : MonoBehaviour
 		toCameraPosition = cameraPosition;
 		toDirection = direction;
 		fadingOut = true;
+	}
+	
+	public void FadeOut(string scene)
+	{
+		toScene = scene;
+		fadingOut = true;
+		restartScene = true;
 	}
 }

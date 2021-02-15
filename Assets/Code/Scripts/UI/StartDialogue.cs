@@ -28,16 +28,12 @@ public class StartDialogue : Interaction
 	{
 		if (questGiver)
 		{
-			if ((int)GameManager.Instance.inkStory.variablesState["completed_" + questName] == 1)
+			if ((int)GameManager.Instance.inkStory.variablesState["has_" + questName] == 1)
 			{
 				foreach (Transform child in gameObject.transform) 
 				{
 					GameObject.Destroy(child.gameObject);
 				}
-			}
-			else if ((int)GameManager.Instance.inkStory.variablesState["has_" + questName] == 1)
-			{
-				CreateQuestIcon("Quest Questionmark");
 			}
 			else if ((int)GameManager.Instance.inkStory.variablesState["ready_for_" + questName] == 1)
 			{
@@ -62,13 +58,6 @@ public class StartDialogue : Interaction
 	public void SetQuestObservers()
 	{
 		GameManager.Instance.inkStory.ObserveVariable("has_" + questName, (string varName, object newValue) => 
-		{
-            if ((int)newValue == 1)
-            {
-                SetQuestIcon();
-            }
-		});
-		GameManager.Instance.inkStory.ObserveVariable("completed_" + questName, (string varName, object newValue) => 
 		{
             if ((int)newValue == 1)
             {

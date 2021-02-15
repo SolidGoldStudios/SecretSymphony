@@ -39,6 +39,8 @@ public class GameManager : Singleton<GameManager>
     public bool viewingInventory = false;
     public bool viewingQuestLog = false;
     public bool viewingMusicPlayer = false;
+	
+	public bool loadingFromSave = false;
 
     protected GameManager() { }
 
@@ -73,6 +75,11 @@ public class GameManager : Singleton<GameManager>
 	
 	void Start()
 	{
+		if(PlayerData.Instance.SaveFileExists())
+		{
+			Debug.Log("saved data found");
+		}
+		
 		UpdateInventory();
 		UpdateQuestLog();
 	}
@@ -89,28 +96,42 @@ public class GameManager : Singleton<GameManager>
 
         SceneManager.LoadScene(scene);
     }
+	
+	public void LoadScene(string scene)
+	{
+		SceneManager.LoadScene(scene);
+	}
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+		
         // Find the player in the scene
-        GameObject player = GameObject.Find("Player").gameObject;
-        NavMeshAgent navMeshAgent = player.GetComponent<NavMeshAgent>();
+		if (!loadingFromSave && SceneManager.GetActiveScene().name != "TitleScreen")
+		{
+			GameObject player = GameObject.Find("Player").gameObject;
+			NavMeshAgent navMeshAgent = player.GetComponent<NavMeshAgent>();
 
-        // Move her to the position defined in ChangeScene
-        navMeshAgent.Warp(nextPosition);
-        //player.transform.position = nextPosition;
-        Debug.Log("player moved to " + nextPosition);
+			// Move her to the position defined in ChangeScene
+			navMeshAgent.Warp(nextPosition);
+			//player.transform.position = nextPosition;
+			Debug.Log("player moved to " + nextPosition);
 
-        // Get the player's Animator
-        Animator animator = player.transform.GetComponent<Animator>();
+			// Get the player's Animator
+			Animator animator = player.transform.GetComponent<Animator>();
 
-        // Update her orientation to match ChangeScene
-        animator.SetFloat("moveX", nextDirection.x);
-        animator.SetFloat("moveY", nextDirection.y);
+			// Update her orientation to match ChangeScene
+			animator.SetFloat("moveX", nextDirection.x);
+			animator.SetFloat("moveY", nextDirection.y);
 
-        // Set the camera to the position defined in ChangeScene
-        Camera.main.transform.position = nextCameraPosition;
-
+			// Set the camera to the position defined in ChangeScene
+			Camera.main.transform.position = nextCameraPosition;
+		}
+		else
+		{
+			loadingFromSave = false;
+		}
+		
+		
         // Launch dialog at the correct knot, if set
         //if (nextKnot != null)
         //{
@@ -125,6 +146,7 @@ public class GameManager : Singleton<GameManager>
 
         //    dialogBox.SetActive(true);
         //}
+		
     }
 
     /**
@@ -276,6 +298,16 @@ public class GameManager : Singleton<GameManager>
     {
         return inventory.Exists(i => i.itemName == itemName) ? inventory.Find(i => i.itemName == itemName).count : 0;
     }
+	
+	public List<InventoryItem> GetInventory()
+	{
+		return inventory;
+	}
+	
+	public void SetInventory(List<InventoryItem> loadInventory)
+	{
+		inventory = loadInventory;
+	}
 
     public IEnumerator RaiseArms(GameObject player, Sprite icon)
     {
@@ -575,6 +607,11 @@ public class GameManager : Singleton<GameManager>
         //    questRequirementsDescription.text = "";
         //}
     }
+	
+	public List<Quest> GetQuests()
+	{
+		return quests;
+	}
 
     /**
      * Music-player stuff
