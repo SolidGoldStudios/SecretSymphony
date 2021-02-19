@@ -9977,6 +9977,11 @@ PrefabInstance:
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1745254813}
+    - target: {fileID: 1065678356586356341, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: icon
+      value: Items/books_12
+      objectReference: {fileID: 0}
     - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_RootOrder
@@ -10046,6 +10051,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1202311285330392983, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1681579442162909643, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10161,17 +10171,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2301759317784848773, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653300660375307121, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4013202893470041799, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.7999878
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013202893470041799, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5221099992815441930, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_ChildForceExpandHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032989251567104919, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609325498102538685, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609325498102538685, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3653300660375307121, guid: 59a222df298964682a8ab1f42945c798, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
 --- !u!114 &2257383733766677171 stripped
 MonoBehaviour:

@@ -1,13 +1,14 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Runtime.Serialization.Formatters.Binary;
 
-[System.Serializable]
+[Serializable]
 public class InventoryItem : IEquatable<InventoryItem>
 {
     public string itemName;
     public string description;
-    public Sprite icon;
+    public string icon;
     public int weight;
     public int value;
     public int count;

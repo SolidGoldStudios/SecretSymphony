@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 181185241702673315}
   - component: {fileID: 3715385227129349929}
   - component: {fileID: 5027130879601719758}
-  - component: {fileID: 1170346995553465334}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -120,7 +119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1170346995553465334}
+      - m_Target: {fileID: 7280901095768519854}
         m_MethodName: UpdateQuestIndex
         m_Mode: 1
         m_Arguments:
@@ -131,18 +130,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1170346995553465334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243591262574831783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d45b383b8c36405e9468b4a5f9d824a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2305317623409111990
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4332540726296906729
 RectTransform:
   m_ObjectHideFlags: 0
@@ -351,7 +338,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2847386144756278154}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -383,6 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364299004769772674}
   - component: {fileID: 8635045233425783896}
+  - component: {fileID: 7280901095768519854}
   m_Layer: 5
   m_Name: QuestLogItem
   m_TagString: Untagged
@@ -420,3 +408,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4239517371585392377}
   m_CullTransparentMesh: 0
+--- !u!114 &7280901095768519854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4239517371585392377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d45b383b8c36405e9468b4a5f9d824a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questLogController: {fileID: 0}
+  cursor: {fileID: 2847386144756278154}
+  questTitle: {fileID: 6599503158028484440}

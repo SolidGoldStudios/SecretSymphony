@@ -12,7 +12,7 @@ public class InventoryItemCatalog : MonoBehaviour
         {
             itemName = "Piano Key",
             description = "A piano key.",
-            icon = Resources.Load<Sprite>("Items/key"),
+            icon = "Items/key",
             weight = 1,
             value = 5,
             count = 1

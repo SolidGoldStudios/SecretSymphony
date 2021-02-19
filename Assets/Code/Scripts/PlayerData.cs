@@ -14,17 +14,13 @@ public class PlayerData : MonoBehaviour
 	private bool startAutoSaving = false;
 	private bool saveDataExist = false;
 	private float timer = 0.0f;
-	private float autoSaveDelay = 3.0f;
+	private float autoSaveDelay = 10.0f;
 	
     void Awake()
     {
 		if(Instance == null)
 		{
 			Instance = this;
-		}
-		else if (Instance != this)
-		{
-			Destroy(gameObject);
 		}
 		DontDestroyOnLoad(this.gameObject);
 		
@@ -63,7 +59,7 @@ public class PlayerData : MonoBehaviour
 		data.SetInkJson(GameManager.Instance.inkStory.state.ToJson());
 		data.SetNightGown(GameManager.Instance.wearingNightgown);
 		data.SetInventory(GameManager.Instance.GetInventory());
-		//data.SetQuests(GameManager.Instance.GetQuests());
+		data.SetQuests(GameManager.Instance.GetQuests());
 		
 		bf.Serialize(file, data);
 		file.Close();
@@ -81,6 +77,7 @@ public class PlayerData : MonoBehaviour
 			GameManager.Instance.inkStory.state.LoadJson(saveData.GetInkJson());
 			GameManager.Instance.wearingNightgown = saveData.GetNightGown();
 			GameManager.Instance.SetInventory(saveData.GetInventory());
+			GameManager.Instance.SetQuests(saveData.GetQuests());
 			file.Close();
 		}
 	}
@@ -99,7 +96,7 @@ public class PlayerSaveData
 	private string inkJson;
 	private bool nightGown;
 	private List<InventoryItem> inventory;
-	//private List<Quest> quests;
+	private List<QuestData> quests;
 	
 	public void SetSceneName(string sceneName)
 	{
@@ -141,15 +138,15 @@ public class PlayerSaveData
 		return this.inventory;
 	}
 	
-	/*
-	public void SetQuests(List<Quest> quests)
+	
+	public void SetQuests(List<QuestData> quests)
 	{
 		this.quests = quests;
 	}
 	
-	public List<Quest> GetQuests()
+	public List<QuestData> GetQuests()
 	{
 		return this.quests;
 	}
-	*/
+	
 }

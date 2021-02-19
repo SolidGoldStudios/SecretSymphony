@@ -192,7 +192,7 @@ MonoBehaviour:
   moveToTarget: 0
   itemName: Keyboards Book
   description: Keyboards rule
-  icon: {fileID: -3748638602223188105, guid: edd720566b0ee644fb5eb25e32bd9ccc, type: 3}
+  icon: Items/books
   weight: 0
   value: 0
   disabled: 0

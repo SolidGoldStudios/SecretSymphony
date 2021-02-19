@@ -13,6 +13,7 @@ public class StartDialogue : Interaction
 
     public void Start()
     {
+		Debug.Log("running StartDialogue Start");
         interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
         interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
         moveToTarget = true;
@@ -72,6 +73,20 @@ public class StartDialogue : Interaction
             }
 		});
 	}
+	
+	void OnApplicationQuit()
+	{
+		questGiver = false;
+	}
+	
+	void OnDestroy()
+    {
+		if (questGiver)
+		{
+			GameManager.Instance.inkStory.RemoveVariableObserver(null, "has_" + questName);
+			GameManager.Instance.inkStory.RemoveVariableObserver(null, "ready_for_" + questName);
+		}
+    }
 
     public override void Interact()
     {

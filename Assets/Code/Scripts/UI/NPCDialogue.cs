@@ -27,7 +27,7 @@ public class NPCDialogue : MonoBehaviour
     public GameObject dialogOk;
     Button dialogOkButton;
 	
-    Quest quest;
+	IQuest quest;
     AudioSource audioSource;
     string nextScene;
     string nextBook;
@@ -179,19 +179,14 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("quest"))
             {
-                // This makes WebGL barf
-                //Type type = Type.GetType(tag.Substring(6));
-                //dynamic quest = Activator.CreateInstance(type);
-
-                if (tag.Substring(6) == "InstrumentPiano")
+                if (tag.Substring(6) == "InstrumentPianoPartOne")
                 {
-                    quest = new InstrumentPiano();
+                    quest = new InstrumentPianoPartOne();
+					quest.Setup();
+					quest.Progress();
                 }
 
-                quest.Setup();
-
                 GameManager.Instance.quests.Add(quest);
-                GameManager.Instance.UpdateQuestLog();
             }
 
             if (tag.StartsWith("item"))

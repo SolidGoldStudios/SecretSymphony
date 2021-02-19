@@ -122,10 +122,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   itemName: Gold Apple
   description: A golden apple
-  icon: {fileID: -4797300601723185329, guid: a76bc3fe9f68e684c9189509e957c9bb, type: 3}
+  icon: Items/foodstuffs_30
   weight: 0
   value: 0
-  playerInRange: 0
   disabled: 1
+  unique: 0
+  clickAction: 
