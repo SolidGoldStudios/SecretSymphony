@@ -48,6 +48,11 @@ public class PlayerData : MonoBehaviour
 		}
     }
 	
+	public void ClearData()
+	{
+		saveData = new PlayerSaveData();
+	}
+	
 	public void Save()
 	{
 		BinaryFormatter bf = new BinaryFormatter();
@@ -74,12 +79,16 @@ public class PlayerData : MonoBehaviour
 			FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
 			PlayerSaveData data = (PlayerSaveData)bf.Deserialize(file);
 			saveData = data;
-			GameManager.Instance.inkStory.state.LoadJson(saveData.GetInkJson());
-			GameManager.Instance.wearingNightgown = saveData.GetNightGown();
-			GameManager.Instance.SetInventory(saveData.GetInventory());
-			GameManager.Instance.SetQuests(saveData.GetQuests());
 			file.Close();
 		}
+	}
+	
+	public void SetLoad()
+	{
+		GameManager.Instance.inkStory.state.LoadJson(saveData.GetInkJson());
+		GameManager.Instance.wearingNightgown = saveData.GetNightGown();
+		GameManager.Instance.SetInventory(saveData.GetInventory());
+		GameManager.Instance.SetQuests(saveData.GetQuests());
 	}
 	
 	public bool SaveFileExists()

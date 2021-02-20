@@ -44,6 +44,7 @@ public class MenuButtons : MonoBehaviour
 
     public void MenuStartGame()
     {
+		PlayerData.Instance.ClearData();
 		if (fadeSceneScript != null)
 		{
 			fadeSceneScript.FadeOut("Level/Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.4f, -1.03f, -10f), new Vector2(0f, 1f));
@@ -56,12 +57,11 @@ public class MenuButtons : MonoBehaviour
 	
 	public void MenuResumeGame()
 	{
+		PlayerData.Instance.SetLoad();
 		if (fadeSceneScript != null)
 		{
 			GameManager.Instance.loadingFromSave = true;
 			fadeSceneScript.FadeOut(PlayerData.Instance.saveData.GetSceneName());
-			Debug.Log(PlayerData.Instance.saveData.GetSceneName());
 		}
-		
 	}
 }
