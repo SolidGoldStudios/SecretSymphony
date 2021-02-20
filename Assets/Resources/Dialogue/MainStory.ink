@@ -1,5 +1,7 @@
 INCLUDE Chapters/FaeryAppears.ink
 INCLUDE Chapters/Piano.ink
+INCLUDE Chapters/Trombone.ink
+
 /** 
  * Triggers
  **/
@@ -21,3 +23,6 @@ VAR has_read_piano_book = false
 VAR has_piano_key = false
 VAR has_played_piano = false
 VAR piano_complete = false
+
+/* Trombone quest */
+VAR has_trombone_quest = false
