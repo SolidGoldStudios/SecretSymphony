@@ -6,6 +6,10 @@
     - has_piano_quest && has_scythe:
         Good, you found it! Give this big lumber pile a whack. #name:Father #mood:happy
         ->END
+    - piano_complete:
+        Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Mother #mood:happy #quest:get_flute
+        You bet! #name:Melody #mood:happy
+        ->END
     - else:
         Good morning, Melody! #name:Father #mood:happy
         Good morning, father! #name:Melody #mood:happy
