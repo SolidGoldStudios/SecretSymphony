@@ -3,36 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioInteraction : MonoBehaviour
+public class AudioInteraction : Interaction
 { 
-    public bool playerInRange;
     private AudioSource source;
 
     void Start()
     {
+        interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
+        moveToTarget = true;
+
         source = GetComponent<AudioSource>();
     }
 
-    void Update()
+    public override void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
-        {
-            source.Play();
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerInRange = false;
-        }
+        if (source) source.Play();
     }
 }
