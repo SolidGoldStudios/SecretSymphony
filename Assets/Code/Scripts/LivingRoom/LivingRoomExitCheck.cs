@@ -30,7 +30,7 @@ public class LivingRoomExitCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (GameManager.Instance.quests.Find(q => q.questName == "Chop Up Firewood") == null)
+            /*if (GameManager.Instance.quests.Find(q => q.questName == "Chop Up Firewood") == null)
             {
                 dialogueText.text = "I should talk to Mother before I head out.";
                 portraitObject.SetActive(false);
@@ -39,9 +39,9 @@ public class LivingRoomExitCheck : MonoBehaviour
                 dialogBox.SetActive(true);
             }
             else
-            {
+            {*/
                 exitBarrier.SetActive(false);
-            }
+            //}
         }
     }
 

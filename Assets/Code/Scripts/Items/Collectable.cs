@@ -7,7 +7,7 @@ public class Collectable : Interaction
 {
     public string itemName;
     public string description;
-    public Sprite icon;
+    public string icon;
     public int weight;
     public int value;
     //public bool playerInRange;

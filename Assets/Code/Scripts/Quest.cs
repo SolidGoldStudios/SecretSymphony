@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public abstract class Quest : IEquatable<Quest>
 {

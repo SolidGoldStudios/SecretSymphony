@@ -7,6 +7,17 @@ public class MenuButtons : MonoBehaviour
 {
 	public SceneTransitionFade fadeSceneScript;
 	
+	public GameObject resumeButtonObject;
+	
+	void Start()
+	{
+		if(PlayerData.Instance.SaveFileExists() && SceneManager.GetActiveScene().name == "TitleScreen")
+		{
+			Debug.Log("saved data found");
+			resumeButtonObject.SetActive(true);
+		}
+	}
+	
     public void MenuToggleInventory()
     {
         GameManager.Instance.ToggleInventory();
@@ -42,4 +53,15 @@ public class MenuButtons : MonoBehaviour
 			GameManager.Instance.LoadScene("Level/Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.4f, -1.03f, -10f), new Vector2(0f, 1f));
 		}
     }
+	
+	public void MenuResumeGame()
+	{
+		if (fadeSceneScript != null)
+		{
+			GameManager.Instance.loadingFromSave = true;
+			fadeSceneScript.FadeOut(PlayerData.Instance.saveData.GetSceneName());
+			Debug.Log(PlayerData.Instance.saveData.GetSceneName());
+		}
+		
+	}
 }
