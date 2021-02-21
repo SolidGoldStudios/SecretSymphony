@@ -91,11 +91,7 @@ public class StartDialogue : Interaction
     public override void Interact()
     {
 		dialogBox.SetActive(true);
-        if (!dialogBox.activeInHierarchy)
-        {
-            NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
-
-            npcDialogue.ShowDialog(knotName);
-        }
+        NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+        npcDialogue.ShowDialog(knotName);
     }
 }
