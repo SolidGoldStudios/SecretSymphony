@@ -7,41 +7,27 @@ public class LivingRoomExitCheck : MonoBehaviour
 {
     public GameObject dialogBox;
     public GameObject exitBarrier;
-    Text dialogueText;
+    public Text dialogueText;
 
-    GameObject portraitObject;
-    GameObject nameplate;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
-        portraitObject = dialogBox.transform.Find("Portrait").gameObject;
-        nameplate = dialogBox.transform.Find("Nameplate").gameObject;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public GameObject portraitObject;
+    public GameObject nameplate;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            /*if (GameManager.Instance.quests.Find(q => q.questName == "Chop Up Firewood") == null)
+            if (!GameManager.Instance.HaveQuest("InstrumentPianoPartOne"))
             {
-                dialogueText.text = "I should talk to Mother before I head out.";
-                portraitObject.SetActive(false);
-                dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
-                nameplate.SetActive(false);
-                dialogBox.SetActive(true);
+				dialogueText.text = "I should talk to Mother before I head out.";
+				dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
+				portraitObject.SetActive(false);
+				nameplate.SetActive(false);
+				dialogBox.SetActive(true);
             }
             else
-            {*/
-                exitBarrier.SetActive(false);
-            //}
+            {
+				exitBarrier.SetActive(false);
+            }
         }
     }
 

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -236,6 +236,9 @@ MonoBehaviour:
     to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
     you think?"
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!212 &62414912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1118,6 +1121,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &514872189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2257383734186331053, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 2048496466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &608962019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1392,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  animator: {fileID: 1726730430}
 --- !u!4 &669858084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
@@ -1434,6 +1450,9 @@ MonoBehaviour:
     to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
     you think?"
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!212 &785528722
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2177,6 +2196,9 @@ MonoBehaviour:
   dialogue: A handsome desk. It's cluttered with your papers, writing implements,
     and various electrical components.
   playerInRange: 0
+  portraitObject: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameplate: {fileID: 0}
 --- !u!114 &1046307612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3992,6 +4014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 322951456}
   nightgownBarrier: {fileID: 1405031455}
+  dialogueText: {fileID: 514872189}
 --- !u!4 &1611613874
 Transform:
   m_ObjectHideFlags: 0
@@ -4327,6 +4350,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1726730430 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8705268416411252315, guid: a67f5587a56c39c4c9ea8d059677ae36,
+    type: 3}
+  m_PrefabInstance: {fileID: 403037949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1727994127
 GameObject:
   m_ObjectHideFlags: 0

@@ -526,6 +526,19 @@ public class GameManager : Singleton<GameManager>
 		
     }
 	
+	public bool HaveQuest(string checkQuest)
+	{
+		Debug.Log("running this");
+		for (int q = 0; q < quests.Count; q++)
+		{
+			if (quests[q].questData.questName == checkQuest)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public List<QuestData> GetQuests()
 	{
 		List<QuestData> questData = new List<QuestData>();
