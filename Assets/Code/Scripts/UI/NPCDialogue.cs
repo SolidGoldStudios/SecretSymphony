@@ -72,7 +72,7 @@ public class NPCDialogue : MonoBehaviour
 		dialogOkButton = dialogOk.GetComponent<Button>();
         dialogOkButton.onClick.AddListener(ClickedOk);
 		
-		HideDialog();
+		//HideDialog();
     }
 
     void ClickedOk()

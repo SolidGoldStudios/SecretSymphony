@@ -7,20 +7,8 @@ public class OutfitCheck : MonoBehaviour
 {
     public GameObject dialogBox;
     public GameObject nightgownBarrier;
-    Text dialogueText;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    public Text dialogueText;
+	
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

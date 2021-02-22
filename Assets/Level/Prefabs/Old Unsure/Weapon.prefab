@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7520831598108259770}
   - component: {fileID: 7520831598108259768}
   - component: {fileID: 7520831598108259769}
+  - component: {fileID: 8164833440906138019}
   - component: {fileID: 668307153}
-  - component: {fileID: 668307152}
   m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
@@ -103,6 +103,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8164833440906138019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520831598108259771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5d4a7b1a16cc94aa91d71f981cb058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &668307153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -200,16 +212,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &668307152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7520831598108259771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 896a4a90f79c75c408b05ba58a367002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  someSound: {fileID: 668307153}
