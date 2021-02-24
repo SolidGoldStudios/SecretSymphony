@@ -53,7 +53,7 @@ public class MusicPlayer : MonoBehaviour
 
             // Show the victory pose and show the tooltip
             GameObject player = GameObject.Find("Player").gameObject;
-            StartCoroutine(GameManager.Instance.RaiseArms(player, null));
+            GameManager.Instance.playerMovement.RunRaiseArms(null);
             GameManager.Instance.ShowTooltipWithTimeout("You played the song!");
 
             // Play the full song

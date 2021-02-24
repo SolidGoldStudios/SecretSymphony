@@ -305,7 +305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -80, y: -26}
+  m_AnchoredPosition: {x: -180, y: -20}
   m_SizeDelta: {x: 122.86389, y: 21.436726}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &789343141
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4882047498430207643}
+      - m_Target: {fileID: 5172586651195263774}
         m_MethodName: MenuStartGame
         m_Mode: 1
         m_Arguments:
@@ -2319,13 +2319,14 @@ GameObject:
   - component: {fileID: 1285302386088358791}
   - component: {fileID: 6316519346489724055}
   - component: {fileID: 4282716303333458216}
+  - component: {fileID: 2229883236136840141}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1285302386088358791
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2362,7 +2363,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257105820679812701}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2384,6 +2385,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2229883236136840141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257105820679812701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec213c11c3ded0468e1e72e785e4e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiCanvas: {fileID: 2257383734577309878}
+  inventoryView: {fileID: 1257105820679812701}
+  inventoryContents: {fileID: 6906744714404900191}
+  inventorySlotSprite: {fileID: 0}
 --- !u!1 &1463249659429438998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4803,8 +4820,8 @@ RectTransform:
   - {fileID: 2257383734438140716}
   - {fileID: 755138387089914851}
   - {fileID: 1967483148}
-  - {fileID: 4013202893470041799}
   - {fileID: 7027671142300314426}
+  - {fileID: 4013202893470041799}
   - {fileID: 825125799667212629}
   - {fileID: 789343139}
   - {fileID: 1285302386088358791}
@@ -5062,7 +5079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985051277864837708}
-  - component: {fileID: 4882047498430207643}
+  - component: {fileID: 5172586651195263774}
   m_Layer: 5
   m_Name: MenuButtons
   m_TagString: Untagged
@@ -5091,7 +5108,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2, y: 209}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4882047498430207643
+--- !u!114 &5172586651195263774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5100,7 +5117,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2301759317784848773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ce8c670c81448c9ba491e675882a79, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3132b29348f4f4ca69c7b32e9e0a33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fadeSceneScript: {fileID: 8898164536183165596}
@@ -5589,6 +5606,7 @@ GameObject:
   - component: {fileID: 2916224008254377647}
   - component: {fileID: 142791767068071236}
   - component: {fileID: 7239532899444872263}
+  - component: {fileID: 5027963140545024533}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5644,6 +5662,21 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &5027963140545024533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2988475525935585962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d1feb5dd9754457b78233256b1f304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryContents: {fileID: 6906744714404900191}
+  inventorySlot: {fileID: 5188826431361919549, guid: e2840cc5bf9154086844bdca3e4a70d8,
+    type: 3}
 --- !u!1 &3014847746439971524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5841,7 +5874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25.100128, y: -76.09985}
+  m_AnchoredPosition: {x: -25.100098, y: -76.09985}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &713644018272242195
@@ -6328,30 +6361,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 201071633646516897}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1202311285330392983}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 616641738849851029}
-        m_MethodName: UpdateQuestLog
+      - m_Target: {fileID: 0}
+        m_MethodName: MenuToggleQuestLog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6359,7 +6370,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3609014629170346242
 GameObject:
@@ -6684,7 +6695,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4882047498430207643}
+      - m_Target: {fileID: 0}
         m_MethodName: MenuHideEverything
         m_Mode: 1
         m_Arguments:
@@ -6712,7 +6723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &825125799667212629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7002,7 +7013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4342292771114237036}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7068,19 +7079,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4533016321914949521}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4882047498430207643}
-        m_MethodName: MenuHideEverything
+      - m_Target: {fileID: 4712437387485969413}
+        m_MethodName: MenuClose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7199,7 +7199,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2257383734577309882}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7221,7 +7221,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4533016321914949521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7286,17 +7286,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 201071633646516897}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4533016321914949521}
         m_MethodName: SetActive
         m_Mode: 6
@@ -7308,9 +7297,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4882047498430207643}
-        m_MethodName: MenuHideEverything
-        m_Mode: 1
+      - m_Target: {fileID: 201071633646516897}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7975,7 +7964,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4882047498430207643}
+      - m_Target: {fileID: 0}
         m_MethodName: MenuToggleInventory
         m_Mode: 1
         m_Arguments:
@@ -9151,7 +9140,6 @@ GameObject:
   - component: {fileID: 8127651687852772294}
   - component: {fileID: 2074262964959054720}
   - component: {fileID: 8278125280406490513}
-  - component: {fileID: 9092477135424562078}
   m_Layer: 5
   m_Name: InventoryContents
   m_TagString: Untagged
@@ -9176,7 +9164,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6204109662271021204
 Canvas:
@@ -9185,7 +9173,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6906744714404900191}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -9284,20 +9272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!114 &9092477135424562078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6906744714404900191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64d1feb5dd9754457b78233256b1f304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventorySlot: {fileID: 5188826431361919549, guid: e2840cc5bf9154086844bdca3e4a70d8,
-    type: 3}
 --- !u!1 &6912419082628342547
 GameObject:
   m_ObjectHideFlags: 0
@@ -11132,6 +11106,7 @@ GameObject:
   - component: {fileID: 3730362407166838146}
   - component: {fileID: 7726148294904649070}
   - component: {fileID: 7196384312759071243}
+  - component: {fileID: 4712437387485969413}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -11151,7 +11126,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2257383734577309882}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -11239,9 +11214,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 201071633646516897}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 4712437387485969413}
+        m_MethodName: MainMenuOpen
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11250,17 +11225,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4533016321914949521}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+--- !u!114 &4712437387485969413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597659841374529754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ce8c670c81448c9ba491e675882a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenu: {fileID: 201071633646516897}
+  Inventory: {fileID: 1257105820679812701}
+  QuestLog: {fileID: 1202311285330392983}
+  BookView: {fileID: 3888925502056574109}
+  Backdrop: {fileID: 4533016321914949521}
 --- !u!1 &8652170572263797909
 GameObject:
   m_ObjectHideFlags: 0
@@ -12160,7 +12141,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4882047498430207643}
+      - m_Target: {fileID: 5172586651195263774}
         m_MethodName: MenuResumeGame
         m_Mode: 1
         m_Arguments:

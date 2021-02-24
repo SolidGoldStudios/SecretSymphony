@@ -22,7 +22,7 @@ public class InstrumentPianoPartOne : IQuest
 	
 	public void Progress()
 	{
-		if (GameManager.Instance.CheckForInventoryItem("Scythe"))
+		if (InventoryController.CheckForInventoryItem("Scythe"))
 		{
 			questData.progress["ScytheAcquired"] = true;
 		}

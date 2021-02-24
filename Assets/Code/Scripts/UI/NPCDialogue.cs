@@ -193,7 +193,7 @@ public class NPCDialogue : MonoBehaviour
             {
                 InventoryItem item = GameManager.Instance.inventoryCatalog.Find(i => i.itemName == tag.Substring(5).Replace("+", " "));
 
-                GameManager.Instance.AddInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value, item.unique, item.clickAction);
+                ItemCreator.CreateInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value, item.unique, item.clickAction);
             }
 
             if (tag.StartsWith("play"))

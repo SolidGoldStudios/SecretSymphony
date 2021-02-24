@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PopulateInventory : MonoBehaviour
 {
+	public GameObject inventoryContents;
     public GameObject inventorySlot;
 
-    // Start is called before the first frame update
     void Start()
     {
         Populate();
@@ -18,9 +18,7 @@ public class PopulateInventory : MonoBehaviour
 
         for (int i = 0; i < 32; i++)
         {
-            newSlot = (GameObject)Instantiate(inventorySlot, transform);
+            newSlot = (GameObject)Instantiate(inventorySlot, inventoryContents.transform);
         }
-
-        GameManager.Instance.UpdateInventory();
     }
 }
