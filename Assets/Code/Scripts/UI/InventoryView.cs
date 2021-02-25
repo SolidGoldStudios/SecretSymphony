@@ -9,7 +9,6 @@ public class InventoryView : MonoBehaviour
 	public GameObject inventoryView;
 	public GameObject inventoryContents;
 	
-    // Start is called before the first frame update
     void OnEnable()
 	{
 		UpdateInventory();
@@ -17,13 +16,11 @@ public class InventoryView : MonoBehaviour
 	
 	public void UpdateInventory()
 	{
-		Debug.Log(GameManager.Instance.inventory.Count);
         for (int i = 0; i < 32; i++)
         {
             GameObject inventorySlot = inventoryContents.transform.GetChild(i).gameObject;
             Image icon = inventorySlot.transform.GetChild(0).GetComponent<Image>();
             Text count = inventorySlot.transform.GetChild(0).GetChild(0).GetComponent<Text>();
-
 
             if (i < GameManager.Instance.inventory.Count)
             {

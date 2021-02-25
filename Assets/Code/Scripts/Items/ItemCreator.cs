@@ -8,16 +8,16 @@ public static class ItemCreator
     {
         InventoryItem item = new InventoryItem
         {
-            itemName = itemName,
-            description = description,
-            icon = icon,
-            weight = weight,
-            value = value,
-            count = 1,
+			itemName = itemName,
+			description = description,
+			icon = icon,
+			weight = weight,
+			value = value,
+			count = 1,
 			unique = unique,
-            clickAction = clickAction
+			clickAction = clickAction
         };
 		
-		return item;
+        return item;
     }
 }

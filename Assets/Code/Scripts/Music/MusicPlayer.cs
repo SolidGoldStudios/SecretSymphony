@@ -7,13 +7,11 @@ public class MusicPlayer : MonoBehaviour
 {
     public GameObject noteSlot;
     AudioSource audioSource;
-    GameObject uiCanvas;
-    GameObject dialogBox;
-    NPCDialogue npcDialogue;
-    GameObject musicPlayerView;
-    GameObject musicSheetView;
-    GameObject musicSheetContent;
-    Text musicSheetTitle;
+    public NPCDialogue npcDialogue;
+    public GameObject musicSheetContent;
+    public Text musicSheetTitle;
+	
+	public MusicPlayerView musicPlayerView;
 
     private string songInProgress = "";
     private string instrument;
@@ -30,14 +28,6 @@ public class MusicPlayer : MonoBehaviour
         songFile = selectedSongFile;
         resumeKnot = selectedKnot;
 
-        uiCanvas = GameObject.Find("UICanvas").gameObject;
-        dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
-        npcDialogue = dialogBox.GetComponent<NPCDialogue>();
-        musicPlayerView = uiCanvas.transform.Find("MusicPlayer").gameObject;
-        musicSheetView = musicPlayerView.transform.Find("MusicSheet").gameObject;
-        musicSheetContent = musicSheetView.transform.Find("NotesLayout").gameObject;
-        musicSheetTitle = musicSheetView.transform.Find("SongTitle").gameObject.GetComponent<Text>();
-
         Populate();
     }
 
@@ -49,7 +39,7 @@ public class MusicPlayer : MonoBehaviour
         {
             songInProgress = "";
             GameManager.Instance.inkStory.variablesState["has_played_piano"] = true;
-            GameManager.Instance.HideMusicPlayer();
+            musicPlayerView.HideMusicPlayer();
 
             // Show the victory pose and show the tooltip
             GameObject player = GameObject.Find("Player").gameObject;

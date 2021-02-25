@@ -58,8 +58,11 @@ public class GameManager : Singleton<GameManager>
 	
 	void Start()
 	{
-		player = GameObject.Find("Player").gameObject;
-		playerMovement = player.GetComponent<PlayerMovement>();
+		if (SceneManager.GetActiveScene().name != "TitleScreen")
+		{
+			player = GameObject.Find("Player").gameObject;
+			playerMovement = player.GetComponent<PlayerMovement>();
+		}
 	}
 
     /**
@@ -186,7 +189,6 @@ public class GameManager : Singleton<GameManager>
 	
 	public bool HaveQuest(string checkQuest)
 	{
-		Debug.Log("running this");
 		for (int q = 0; q < quests.Count; q++)
 		{
 			if (quests[q].questData.questName == checkQuest)
@@ -216,41 +218,4 @@ public class GameManager : Singleton<GameManager>
 			quests.Add(quest);
 		}
 	}
-
-    /**
-     * Music-player stuff
-     **/
-    public void ShowMusicPlayer(string instrument, string songName, string songNotes, string songFile, string knot)
-    {
-
-        // Find the MusicPlayer layer
-        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-        GameObject musicPlayerView = uiCanvas.transform.Find("MusicPlayer").gameObject;
-        Canvas musicPlayerCanvas = musicPlayerView.GetComponent<Canvas>();
-        MusicPlayer musicPlayer = musicPlayerView.GetComponent<MusicPlayer>();
-
-        // Set up the song
-        musicPlayer.StartSong(instrument, songName, songNotes, songFile, knot);
-
-        // Reveal MusicPlayer
-        musicPlayerCanvas.enabled = true;
-
-        // Prevent player from moving
-        playerMovement.immobilized = true;
-    }
-
-    public void HideMusicPlayer()
-    {
-
-        // Find the MusicPlayer layer
-        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-        GameObject musicPlayerView = uiCanvas.transform.Find("MusicPlayer").gameObject;
-        Canvas musicPlayerCanvas = musicPlayerView.GetComponent<Canvas>();
-
-        // Hide MusicPlayer
-        musicPlayerCanvas.enabled = false;
-
-        // Allow Player to move again
-        playerMovement.immobilized = false;
-    }
 }

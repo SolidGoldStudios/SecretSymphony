@@ -32,33 +32,15 @@ public class NPCDialogue : MonoBehaviour
     string nextScene;
     string nextBook;
     string nextMusicPlayer;
+	public MusicPlayerView musicPlayerView;
 
     //bool showingChoices;
     //int currentChoice;
     string currentName;
 
-    private void Awake()
+    private void Start()
     {
-        
-		playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
-		/*
-        portraitObject = transform.Find("Portrait").gameObject;
-
-        nameplate = transform.Find("Nameplate").gameObject;
-        nameplateText = nameplate.transform.Find("NameLabel").gameObject.GetComponent<Text>();
-
-        dialogueText = transform.Find("Dialogue").gameObject.GetComponent<Text>();
-
-        choiceOne = transform.Find("ChoiceOne").gameObject;
-        choiceTwo = transform.Find("ChoiceTwo").gameObject;
-        choiceThree = transform.Find("ChoiceThree").gameObject;
-
-        choiceOneText = choiceOne.transform.Find("Text").gameObject.GetComponent<Text>();
-        choiceTwoText = choiceTwo.transform.Find("Text").gameObject.GetComponent<Text>();
-        choiceThreeText = choiceThree.transform.Find("Text").gameObject.GetComponent<Text>();
-
-        dialogOk = transform.Find("DialogOk").gameObject;
-		*/
+		playerMovement = GameManager.Instance.playerMovement;
 		
 		choiceOneButton = choiceOne.GetComponent<Button>();
         choiceOneButton.onClick.AddListener(ClickedChoiceOne);
@@ -71,8 +53,6 @@ public class NPCDialogue : MonoBehaviour
 		
 		dialogOkButton = dialogOk.GetComponent<Button>();
         dialogOkButton.onClick.AddListener(ClickedOk);
-		
-		//HideDialog();
     }
 
     void ClickedOk()
@@ -193,7 +173,8 @@ public class NPCDialogue : MonoBehaviour
             {
                 InventoryItem item = GameManager.Instance.inventoryCatalog.Find(i => i.itemName == tag.Substring(5).Replace("+", " "));
 
-                ItemCreator.CreateInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value, item.unique, item.clickAction);
+                InventoryItem itemCreated = ItemCreator.CreateInventoryItem(item.itemName, item.description, item.icon, item.weight, item.value, item.unique, item.clickAction);
+				InventoryController.AddInventoryItem(itemCreated);
             }
 
             if (tag.StartsWith("play"))
@@ -237,7 +218,7 @@ public class NPCDialogue : MonoBehaviour
         if (nextMusicPlayer != null) {
 
             string[] args = nextMusicPlayer.Replace("+", " ").Split('|');
-            GameManager.Instance.ShowMusicPlayer(args[0], args[1], args[2], args[3], args[4]);
+            musicPlayerView.ShowMusicPlayer(args[0], args[1], args[2], args[3], args[4]);
 
             // Clear the var
             nextMusicPlayer = null;

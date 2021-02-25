@@ -69,7 +69,6 @@ public static class InventoryController
                 GameObject pianoBook = books.transform.Find("KeyboardBook").gameObject;
                 pianoBook.SetActive(true);
             }
-
         }
     }
 }
