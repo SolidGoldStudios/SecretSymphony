@@ -63,6 +63,12 @@ public class GameManager : Singleton<GameManager>
 			player = GameObject.Find("Player").gameObject;
 			playerMovement = player.GetComponent<PlayerMovement>();
 		}
+		
+		if (SceneManager.GetActiveScene().name != "Bedroom")
+		{
+			wearingNightgown = false;
+			player.GetComponent<Animator>().SetBool("wearingNightgown", false);
+		}
 	}
 
     /**
