@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -195,7 +195,6 @@ GameObject:
   m_Component:
   - component: {fileID: 62414910}
   - component: {fileID: 62414912}
-  - component: {fileID: 62414911}
   m_Layer: 0
   m_Name: Lamp (2)
   m_TagString: Untagged
@@ -218,27 +217,6 @@ Transform:
   m_Father: {fileID: 513161831}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &62414911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62414909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 322951456}
-  initialPortrait: {fileID: 0}
-  dialogue: "A cold-blast kerosene lamp. It burns paraffin oil and uses cold air
-    to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
-    you think?"
-  playerInRange: 0
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameplate: {fileID: 0}
 --- !u!212 &62414912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1409,7 +1387,6 @@ GameObject:
   m_Component:
   - component: {fileID: 785528720}
   - component: {fileID: 785528722}
-  - component: {fileID: 785528721}
   m_Layer: 0
   m_Name: Lamp (1)
   m_TagString: Untagged
@@ -1432,27 +1409,6 @@ Transform:
   m_Father: {fileID: 513161831}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &785528721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785528719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 322951456}
-  initialPortrait: {fileID: 0}
-  dialogue: "A cold-blast kerosene lamp. It burns paraffin oil and uses cold air
-    to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
-    you think?"
-  playerInRange: 0
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameplate: {fileID: 0}
 --- !u!212 &785528722
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2080,7 +2036,6 @@ GameObject:
   - component: {fileID: 1046307607}
   - component: {fileID: 1046307609}
   - component: {fileID: 1046307608}
-  - component: {fileID: 1046307610}
   - component: {fileID: 1046307612}
   m_Layer: 0
   m_Name: Desk
@@ -2179,26 +2134,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1046307610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046307606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 322951456}
-  initialPortrait: {fileID: 0}
-  dialogue: A handsome desk. It's cluttered with your papers, writing implements,
-    and various electrical components.
-  playerInRange: 0
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameplate: {fileID: 0}
 --- !u!114 &1046307612
 MonoBehaviour:
   m_ObjectHideFlags: 0
