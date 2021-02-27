@@ -6,9 +6,12 @@
     - has_piano_quest && has_scythe:
         Good, you found it! Give this big lumber pile a whack. #name:Father #mood:happy
         ->END
-    - piano_complete:
-        Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Mother #mood:happy #quest:get_flute
+    - piano_complete && !has_trombone_quest:
+        Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Father #mood:happy
         You bet! #name:Melody #mood:happy
+        ->END
+    - piano_complete && has_trombone_quest:
+        Did you help your uncle? #name:Father
         ->END
     - else:
         Good morning, Melody! #name:Father #mood:happy
@@ -21,8 +24,11 @@
         
 ==pianoquest_mother==
 {
+    - piano_complete:
+        I just can't believe we forgot about our own piano! #name:Mother #mood:happy
+        ->END
     - has_piano_quest:
-        Please do something about this unsightly lump of lumber! #name:Mother # mood:sad
+        Please do something about this unsightly lump of lumber! #name:Mother #mood:sad
         ->END
     - ready_for_piano_quest:
         Ready for your morning chores, Melody? #name:Mother # mood:happy

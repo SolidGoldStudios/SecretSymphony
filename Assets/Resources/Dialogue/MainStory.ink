@@ -26,3 +26,4 @@ VAR piano_complete = false
 
 /* Trombone quest */
 VAR has_trombone_quest = false
+VAR trombone_complete = false
