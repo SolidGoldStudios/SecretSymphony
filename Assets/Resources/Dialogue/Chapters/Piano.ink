@@ -6,9 +6,12 @@
     - has_piano_quest && has_scythe:
         Good, you found it! Give this big lumber pile a whack. #name:Father #mood:happy
         ->END
-    - piano_complete:
-        Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Mother #mood:happy #quest:get_flute
+    - piano_complete && !has_trombone_quest:
+        Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Father #mood:happy
         You bet! #name:Melody #mood:happy
+        ->END
+    - piano_complete && has_trombone_quest:
+        Did you help your uncle? #name:Father
         ->END
     - else:
         Good morning, Melody! #name:Father #mood:happy
@@ -21,8 +24,11 @@
         
 ==pianoquest_mother==
 {
+    - piano_complete:
+        I just can't believe we forgot about our own piano! #name:Mother #mood:happy
+        ->END
     - has_piano_quest:
-        Please do something about this unsightly lump of lumber! #name:Mother # mood:sad
+        Please do something about this unsightly lump of lumber! #name:Mother #mood:sad
         ->END
     - ready_for_piano_quest:
         Ready for your morning chores, Melody? #name:Mother # mood:happy
@@ -53,23 +59,26 @@
         ->END
         
     - has_scythe && !has_spoken_to_spirit_piano:
-        I'm the Spirit of Music. Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad
+        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1
+        Who's that? #name:Melody #mood:concerned
+        I'm the Spirit of Music. Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
         ~ has_hit_piano = true
         ~ has_spoken_to_spirit_piano = true
-        A piano? What's a piano? #name:Melody #mood:neutral
-        A piano is a musical instrument. #name:Spirit+of+Music
+        Don't hurt what? This kindling? #name:Melody
+        That's no kindling. It's a piano! A piano is a musical instrument. #name:Spirit+of+Music #mood:right #audio:fairy_speak_long_1
         Musical instrument? What's that? #name:Melody #mood:concerned
-        The Ear Worm has erased your memory too! /*crying sound and animation?*/ #name:Spirit+of+Music #mood: #mood:sad
+        Oh no! It seems the Ear Worm has erased your memory too. /*crying sound and animation?*/ #name:Spirit+of+Music #mood: #mood:sad #audio:fairy_speak_medium_2
         Don't cry. I won't hurt this piano if it means that much to you. #name:Melody #mood:sad
-        Oh, thank you! Can you help me save the rest of the musical instruments? #name:Spirit+of+Music #mood:happy
-        Okay! I'll do it! #name:Melody #mood:happy
-        Great! Hooray! The lid of the piano is closed and locked right now. #name:Spirit+of+Music #mood:right
-        I was going to open it up, but I dropped the key in your wheat field. Will you find it? #name:Spirit+of+Music #mood:left
+        Oh, thank you! Can you help me save the rest of the musical instruments? #name:Spirit+of+Music #mood:happy #audio:fairy_speak_medium_1
+        Yes! Let's do it. #name:Melody #mood:happy
+        Great! Hooray! The lid of the piano is closed and locked right now. #name:Spirit+of+Music #mood:right  #audio:fairy_speak_medium_2
+        I was going to open it up, but I dropped the key in your wheat field. #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1
+        Will you find it? #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_2
         Here goes nothing! #name:Melody #mood:happy
         ->END
         
     - has_spoken_to_spirit_piano && !has_piano_key:
-        Well? Did you get the key? #name:Spirit+of+Music
+        Well? Did you get the key? #name:Spirit+of+Music #audio:fairy_speak_short_1
         ->END
          
     - has_piano_key && !has_played_piano:
