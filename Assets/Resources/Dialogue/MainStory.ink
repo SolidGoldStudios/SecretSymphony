@@ -27,3 +27,11 @@ VAR piano_complete = false
 /* Trombone quest */
 VAR has_trombone_quest = false
 VAR trombone_complete = false
+
+/* Cow quest */
+VAR has_cow_quest = false
+VAR cow_complete = false
+
+/* Fishing quest */
+VAR has_fishing_quest = false
+VAR fishing_complete = false
