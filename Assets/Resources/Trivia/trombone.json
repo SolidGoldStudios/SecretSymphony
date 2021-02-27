@@ -1,0 +1,76 @@
+{
+    "triviaQuestions": [
+        {
+            "question": "The trombone is a member of what family of musical instruments?",
+            "correctAnswer": "Brass",
+            "wrongAnswer1": "Woodwind",
+            "wrongAnswer2": "Percussion",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "Because a trombone looks like a larger version of another instrument, the name \"trombone\" means big WHAT?",
+            "correctAnswer": "Trumpet",
+            "wrongAnswer1": "Clarinet",
+            "wrongAnswer2": "Tuba",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "Just like something you'd see at the playground, the part of a trombone that you move to change the sound is called WHAT?",
+            "correctAnswer": "Slide",
+            "wrongAnswer1": "Swing",
+            "wrongAnswer2": "Monkey Bar",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "What is the word for the big, wide end piece of a trombone, where the sound comes out?",
+            "correctAnswer": "Bell",
+            "wrongAnswer1": "Hat",
+            "wrongAnswer2": "Cone",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "What is the word for a person who plays a trombone?",
+            "correctAnswer": "Trombonist",
+            "wrongAnswer1": "Tromboni",
+            "wrongAnswer2": "Tromboney",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "What are the two most common types of trombone?",
+            "correctAnswer": "Tenor and Bass",
+            "wrongAnswer1": "Alto and Basso",
+            "wrongAnswer2": "Soprano and Tony",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "Hehe, this kind of mute - a tool that can change a trombone's sound - has the name of a bathroom tool.",
+            "correctAnswer": "Plunger",
+            "wrongAnswer1": "Brush",
+            "wrongAnswer2": "Mop",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "Usually, there are how many trombones in an orchestra?",
+            "correctAnswer": "Three",
+            "wrongAnswer1": "Five",
+            "wrongAnswer2": "Seven",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "A trombone's slide can be moved away from the player into how many \"positions\" - the same number of days in the week?",
+            "correctAnswer": "Seven",
+            "wrongAnswer1": "Five",
+            "wrongAnswer2": "Ten",
+            "hint": "",
+            "followupFact": ""
+        }
+    ]
+}
