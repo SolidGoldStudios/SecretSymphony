@@ -141,7 +141,11 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
 ->DONE
 
 ==pianoquest_trivia_fail==
-Not quite, try again. #name:Scarecrow
+    Not quite. Want to try again? #name:Scarecrow
+    + [Yes] Let's do it! #name:Melody #mood:happy
+        -> pianoquest_trivia
+    + [No] I need more time to study. #name:Melody #mood:thinking
+        -> END
 ->DONE
 
 ==pianoquest_played_song==
