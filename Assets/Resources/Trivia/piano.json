@@ -1,22 +1,68 @@
 {
     "triviaQuestions": [
         {
+            "question": "What kind of piano plays songs all by itself off of a big roll of paper?",
+            "correctAnswer": "Player Piano",
+            "wrongAnswer1": "Paper Piano",
+            "wrongAnswer2": "Smart Piano",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "The word \"piano\" comes from what language?",
+            "correctAnswer": "Italian",
+            "wrongAnswer1": "Japanese",
+            "wrongAnswer2": "German",
+            "hint": "",
+            "followupFact": "The word piano comes from the Italian word \"pianoforte\" which means \"soft\" and \"loud.\""
+        },
+        {
+            "question": "What piano part has storage for sheet music?",
+            "correctAnswer": "Bench",
+            "wrongAnswer1": "Keyboard",
+            "wrongAnswer2": "Bass Bridge",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "What is the biggest kind of piano called?",
+            "correctAnswer": "Grand Piano",
+            "wrongAnswer1": "Upright",
+            "wrongAnswer2": "Spinet",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
+            "question": "There are three main kinds of piano:  Grand, Electric, and what?",
+            "correctAnswer": "Upright",
+            "wrongAnswer1": "Digital",
+            "wrongAnswer2": "Wheeled",
+            "hint": "",
+            "followupFact": ""
+        },
+        {
             "question": "The \"buttons\" you press on a piano to make music are called what?",
             "correctAnswer": "Keys",
             "wrongAnswer1": "Hammers",
-            "wrongAnswer2": "Sticks"
+            "wrongAnswer2": "Sticks",
+            "hint": "",
+            "followupFact": ""
         },
         {
             "question": "The keys of a piano are usually what two colors?",
             "correctAnswer": "Black & White",
             "wrongAnswer1": "Black & Blue",
-            "wrongAnswer2": "Gold & White"
+            "wrongAnswer2": "Gold & White",
+            "hint": "This might be a zebra's favorite instrument.",
+            "followupFact": ""
         },
         {
-            "question": "Just like on your bike, what is the part of the piano where you put your feet called?",
+            "question": "What is the name of the part of the piano where your feet are placed?",
             "correctAnswer": "Pedals",
             "wrongAnswer1": "Shoes",
-            "wrongAnswer2": "Feet"
+            "wrongAnswer2": "Feet",
+            "hint": "You also use these when riding your bike!",
+            "followupFact": ""
         }
     ]
 }
