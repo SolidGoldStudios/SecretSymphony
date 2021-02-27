@@ -13,17 +13,17 @@
 ==trombonequest_horse==
 {
     - has_trombone_quest:
-        Good morning, Melody! #name:Horse
+        Good morning, Melody! #name:Horse #audio_horsesound
         Good morning, Horse! #name:Melody #mood:happy
         ...wait a minute. You can talk? #name:Melody #mood:skeptical
         Of course I can. Say, could you do me a favor? #name:Horse
         What do you need me to do? #name:Melody #mood:concerned
-        Can you help your Uncle remember this tune? ... #name:Horse #audio:horse_hotcrossbuns
+        Can you help your Uncle remember this tune? ... #name:Horse #audio:horse_hot_cross_buns
         I remember that! It's... Hot Cross Buns, of course! #name:Melody #mood:happy
         Yep! Uncle used to play it on his trombone all the time. #name:Horse
         Now he seems to think his trombone is a wheel spoke. Silly human... #name:horse
         I can try to help. What should I do? #name:Melody #mood:concerned
-        Maybe if you play the melody for him, he'll remember! Try it! #name:Horse #play:piano|Hot+Cross+Buns|EDCEDCCCCCDDDDEDC|hot_cross_buns|trombonequest_played_song
+        Maybe if you play the melody for him, he'll remember! Try it! #name:Horse #play:piano|Hot+Cross+Buns|CCCCDDDDEDC|hot_cross_buns|trombonequest_played_song
         ->END
     - else:
         Neigh! #name:Horse #audio_horseneigh
