@@ -1,23 +1,25 @@
 ==pianoquest_father==
 {
+    - !has_piano_quest:
+        Good morning, Melody! #name:Father #mood:happy
+        Good morning, father! #name:Melody #mood:happy
+        How are you? #name:Melody
+        Very well. #name:Father
+        ->END
     - has_piano_quest && !has_scythe:
         The <b>scythe</b> is outside by the barn. #name:Father
         ->END
     - has_piano_quest && has_scythe && !piano_complete:
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy
         ->END
-    - piano_complete && !has_trombone_quest:
-        Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Father #mood:happy
-        You bet! #name:Melody #mood:happy
+    - piano_complete && !has_cow_quest:
+        Melody, would you mind checking on the cows? #name:Father
         ->END
-    - piano_complete && has_trombone_quest && !trombone_complete:
-        Did you help your uncle? #name:Father
+    - piano_complete && has_cow_quest && !cow_complete:
+        Did you check on the cows? #name:Father
         ->END
-    - else:
-        Good morning, Melody! #name:Father #mood:happy
-        Good morning, father! #name:Melody #mood:happy
-        How are you? #name:Melody
-        Very well. #name:Father
+    - else: 
+        Looks like it'll be a sunny one today. #name:Father #mood:happy
         ->END
         
 }
@@ -37,16 +39,15 @@
         ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
         ->END
-    - piano_complete && !has_cow_quest:
-        Melody, could you check on the cows? #name:Mother
-        They're acting funny when I speak to them... #name:Mother #mood:sad
+    - piano_complete && !has_trombone_quest:
+       Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Mother
         Sure! #name:Melody #mood:happy
         ->END
-    - piano_complete && has_cow_quest && !cow_complete:
-        Did you visit the cows? #name:Mother
+    - piano_complete && has_trombone_quest && !trombone_complete:
+        Did you speak to your uncle? #name:Mother
         ->END
     - else:
-        Listen to the lovely sounds of the farm! #name:Mother #mood:happy
+        Thanks for doing your chores, Melody! #name:Mother #mood:happy
         ->END
 }
 
@@ -56,13 +57,13 @@
         Aww, Father let you use the scythe? #name:Thomas #mood:sad
         ->END
     - piano_complete && !has_fishing_quest:
-        I was going to go down to the pond to fish, but I heard scary noises! #name:Thomas #mood:sad
+        Could you catch a trumpetfish from the pond? Let's have fish for dinner tonight! #name:Thomas #mood:happy
         ->END
     - piano_complete && has_fishing_quest && !fishing_complete:
-        I'm too scared to go fishing at the pond! #name:Thomas #mood:sad
+        Well? Did you get the trumpetfish? #name:Thomas #mood:sad
         ->END
     - else:
-        Are you doing chores today? I'm not! #name:Thomas #mood:happy
+        You seem peppy today. #name:Thomas
         ->END
 }
 
