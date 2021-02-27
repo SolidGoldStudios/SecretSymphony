@@ -112,7 +112,7 @@ public class Trivia : MonoBehaviour
 
         currentQuestion += 1;
 
-        if (currentQuestion == triviaQuestions.Count)
+        if (currentQuestion == 5 || currentQuestion == triviaQuestions.Count)
         {
             HideTrivia();
 
@@ -147,6 +147,7 @@ public class Trivia : MonoBehaviour
         string triviaJson = Resources.Load<TextAsset>("Trivia/" + questionFile).ToString();
         TriviaQuestionContainer triviaQuestionContainer = JsonUtility.FromJson<TriviaQuestionContainer>(triviaJson);
         triviaQuestions = triviaQuestionContainer.triviaQuestions;
+        triviaQuestions.Shuffle();
 
         currentQuestion = 0;
         score = 0;
@@ -189,6 +190,22 @@ public class Trivia : MonoBehaviour
                 choiceTwoText.text = triviaQuestion.wrongAnswer2;
                 choiceThreeText.text = triviaQuestion.correctAnswer;
                 break;
+        }
+    }
+}
+
+static class MyExtensions
+{
+    public static void Shuffle<T>(this IList<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = Random.Range(0, n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
         }
     }
 }
