@@ -3,14 +3,14 @@
     - has_piano_quest && !has_scythe:
         The <b>scythe</b> is outside by the barn. #name:Father
         ->END
-    - has_piano_quest && has_scythe:
-        Good, you found it! Give this big lumber pile a whack. #name:Father #mood:happy
+    - has_piano_quest && has_scythe && !piano_complete:
+        Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy
         ->END
     - piano_complete && !has_trombone_quest:
         Melody, Uncle is out in the yard trying to fix his carriage. Could you go and see if he needs help? #name:Father #mood:happy
         You bet! #name:Melody #mood:happy
         ->END
-    - piano_complete && has_trombone_quest:
+    - piano_complete && has_trombone_quest && !trombone_complete:
         Did you help your uncle? #name:Father
         ->END
     - else:
@@ -24,13 +24,10 @@
         
 ==pianoquest_mother==
 {
-    - piano_complete:
-        I just can't believe we forgot about our own piano! #name:Mother #mood:happy
-        ->END
-    - has_piano_quest:
+    - has_piano_quest && !piano_complete:
         Please do something about this unsightly lump of lumber! #name:Mother #mood:sad
         ->END
-    - ready_for_piano_quest:
+    - !has_piano_quest:
         Ready for your morning chores, Melody? #name:Mother # mood:happy
         Oh, as ready as I'll ever be! What's first? #name:Melody 
         We found this big pile of firewood in the living room. #name:Father
@@ -40,12 +37,29 @@
         ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
         ->END
+    - piano_complete && !has_cow_quest:
+        Melody, could you check on the cows? #name:Mother
+        They're acting funny when I speak to them... #name:Mother #mood:sad
+        Sure! #name:Melody #mood:happy
+        ->END
+    - piano_complete && has_cow_quest && !cow_complete:
+        Did you visit the cows? #name:Mother
+        ->END
+    - else:
+        Listen to the lovely sounds of the farm! #name:Mother #mood:happy
+        ->END
 }
 
 ==pianoquest_brother==
 {
-    - has_piano_quest:
+    - has_piano_quest && !piano_complete:
         Aww, Father let you use the scythe? #name:Thomas #mood:sad
+        ->END
+    - piano_complete && !has_fishing_quest:
+        I was going to go down to the pond to fish, but I heard scary noises! #name:Thomas #mood:sad
+        ->END
+    - piano_complete && has_fishing_quest && !fishing_complete:
+        I'm too scared to go fishing at the pond! #name:Thomas #mood:sad
         ->END
     - else:
         Are you doing chores today? I'm not! #name:Thomas #mood:happy
@@ -137,7 +151,8 @@ Not quite, try again. #name:Scarecrow
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy
     Hooray! We saved the piano! #name:Melody #mood:happy
     We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
-    You can count on me! #name:Melody #mood:happy
+    You can count on me! #name:Melody #mood:happy #audio:quest_added
+    ~ tooltip = "Quest completed!"
     ~ piano_complete = true
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
 -> DONE
