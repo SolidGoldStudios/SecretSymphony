@@ -84,48 +84,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            GameManager.Instance.ToggleInventory();
-        }
-
-        // Show/hide quest log
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            GameManager.Instance.ToggleQuestLog();
-        }
-
-        if (GameManager.Instance.viewingInventory)
-        {
-            //if (Input.GetAxisRaw("Horizontal") < 0)
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                if (GameManager.Instance.inventoryCursor > 0) GameManager.Instance.inventoryCursor -= 1;
-                GameManager.Instance.UpdateInventory();
-            }
-
-            //if (Input.GetAxisRaw("Horizontal") > 0)
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                if (GameManager.Instance.inventoryCursor < 31) GameManager.Instance.inventoryCursor += 1;
-                GameManager.Instance.UpdateInventory();
-            }
-
-            //if (Input.GetAxisRaw("Vertical") > 0)
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                if (GameManager.Instance.inventoryCursor - 8 >= 0) GameManager.Instance.inventoryCursor -= 8;
-                GameManager.Instance.UpdateInventory();
-            }
-
-            //if (Input.GetAxisRaw("Vertical") < 0)
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                if (GameManager.Instance.inventoryCursor + 8 <= 31) GameManager.Instance.inventoryCursor += 8;
-                GameManager.Instance.UpdateInventory();
-            }
-        }
-
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -135,9 +93,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 StartCoroutine(AttackCo());
             }
-            // attackAnimator.SetFloat("moveX", velocity.x);
-            // attackAnimator.SetFloat("moveY", velocity.y);
-            // attackAnimator.SetTrigger("Attack");
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -236,6 +191,38 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        yield return null;
+    }
+	
+	public void RunRaiseArms(Sprite icon)
+	{
+		StartCoroutine(RaiseArms(icon));
+	}
+	
+	public IEnumerator RaiseArms(Sprite icon)
+    {
+        PlayerMovement playerMovement = this.GetComponent<PlayerMovement>();
+        GameObject itemSprite = this.transform.Find("ItemSprite").gameObject;
+        SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
+
+        playerMovement.immobilized = true;
+        animator.SetBool("collecting", true);
+
+        if (icon != null)
+        {
+            itemIcon.sprite = icon;
+            itemSprite.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(0.6f);
+
+        if (icon != null)
+        {
+            itemSprite.SetActive(false);
+        }
+
+        animator.SetBool("collecting", false);
+        playerMovement.immobilized = false;
         yield return null;
     }
 }

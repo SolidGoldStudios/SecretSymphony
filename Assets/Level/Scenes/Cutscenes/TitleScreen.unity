@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 32088698}
   - component: {fileID: 32088704}
   - component: {fileID: 32088703}
-  - component: {fileID: 32088702}
   - component: {fileID: 32088701}
   - component: {fileID: 32088700}
   - component: {fileID: 32088699}
@@ -208,27 +207,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &32088702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32088697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1250816329}
-  initialPortrait: {fileID: 0}
-  dialogue: 'A charming clock. Father could prattle on about the specs: a grid pendulum
-    keeps it precise during the coldest months, cylindrical pendulums rise up and
-    down, et cetera. It has a beautiful, resonant tone.'
-  playerInRange: 0
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameplate: {fileID: 0}
 --- !u!61 &32088703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -506,6 +484,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3158218870687527897, guid: a67f5587a56c39c4c9ea8d059677ae36,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883675272232504980, guid: a67f5587a56c39c4c9ea8d059677ae36,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8705268416411252288, guid: a67f5587a56c39c4c9ea8d059677ae36,
         type: 3}
       propertyPath: m_RootOrder
@@ -3757,6 +3745,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1719740449, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1967483147, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3949,7 +3941,7 @@ PrefabInstance:
     - target: {fileID: 4124928608456335616, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
@@ -3983,12 +3975,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
---- !u!1 &1250816329 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2257383734438140719, guid: 59a222df298964682a8ab1f42945c798,
-    type: 3}
-  m_PrefabInstance: {fileID: 1250816328}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1254796027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,7 +5043,6 @@ GameObject:
   - component: {fileID: 1491310196}
   - component: {fileID: 1491310195}
   - component: {fileID: 1491310194}
-  - component: {fileID: 1491310193}
   - component: {fileID: 1491310192}
   m_Layer: 0
   m_Name: Bookshelf
@@ -5096,26 +5081,6 @@ MonoBehaviour:
   m_Center: {x: -0.100289226, y: 0.24582672, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
---- !u!114 &1491310193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491310190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1250816329}
-  initialPortrait: {fileID: 0}
-  dialogue: "The pride of the household: close to two hundred beautifully bound volumes.
-    And it\u2019s no set piece: mother and father prize reading above all."
-  playerInRange: 0
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameplate: {fileID: 0}
 --- !u!61 &1491310194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5636,7 +5601,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1711494390}
   - component: {fileID: 1711494397}
-  - component: {fileID: 1711494396}
   - component: {fileID: 1711494395}
   - component: {fileID: 1711494394}
   - component: {fileID: 1711494393}
@@ -5842,25 +5806,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8954068, y: 0.48453206}
   m_EdgeRadius: 0
---- !u!114 &1711494396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711494389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1250816329}
-  initialPortrait: {fileID: 0}
-  dialogue: Hmm, it appears to be locked. There must be a key around here somewhere!
-  playerInRange: 0
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameplate: {fileID: 0}
 --- !u!212 &1711494397
 SpriteRenderer:
   m_ObjectHideFlags: 0
