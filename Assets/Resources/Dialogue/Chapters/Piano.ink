@@ -29,7 +29,7 @@
     - has_piano_quest && !piano_complete:
         Please do something about this unsightly lump of lumber! #name:Mother #mood:sad
         ->END
-    - !has_piano_quest:
+    - ready_for_piano_quest && !has_piano_quest:
         Ready for your morning chores, Melody? #name:Mother # mood:happy
         Oh, as ready as I'll ever be! What's first? #name:Melody 
         We found this big pile of firewood in the living room. #name:Father
