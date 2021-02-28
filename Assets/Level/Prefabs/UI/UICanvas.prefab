@@ -9422,7 +9422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicPlayerViewer: {fileID: 4525834959866663622}
   musicPlayer: {fileID: 9157012263346041413}
-  playerMovement: {fileID: 0}
 --- !u!82 &1131198225864173229
 AudioSource:
   m_ObjectHideFlags: 0
