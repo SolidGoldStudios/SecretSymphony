@@ -1,6 +1,6 @@
 ==trombonequest_uncle==
 {
-    - has_trombone_quest && has_played_trombone_song && !trombone_complete:
+    - has_trombone_quest && has_played_trombone_song && !completed_trombone_quest:
         Are you here to try my trivia again? #name:Uncle
         ->trombonequest_trivia
     - else:
@@ -11,7 +11,7 @@
 
 ==trombonequest_horse==
 {
-    - !has_trombone_quest:
+    - !has_trombone_quest && ready_for_trombone_quest:
         Good morning, Melody! #name:Horse #audio:horsesound
         Good morning, Horse! #name:Melody #mood:happy
         ...wait a minute. You can talk? #name:Melody #mood:skeptical

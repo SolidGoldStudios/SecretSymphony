@@ -9,13 +9,13 @@
     - has_piano_quest && !has_scythe:
         The <b>scythe</b> is outside by the barn. #name:Father
         ->END
-    - has_piano_quest && has_scythe && !piano_complete:
+    - has_piano_quest && has_scythe && !completed_piano_quest:
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy
         ->END
-    - piano_complete && !has_cow_quest:
+    - completed_piano_quest && !has_cow_quest:
         Melody, would you mind checking on the cows? #name:Father
         ->END
-    - piano_complete && has_cow_quest && !cow_complete:
+    - completed_piano_quest && has_cow_quest && !completed_cow_quest:
         Did you check on the cows? #name:Father
         ->END
     - else: 
@@ -26,7 +26,7 @@
         
 ==pianoquest_mother==
 {
-    - has_piano_quest && !piano_complete:
+    - has_piano_quest && !completed_piano_quest:
         Please do something about this unsightly lump of lumber! #name:Mother #mood:sad
         ->END
     - ready_for_piano_quest && !has_piano_quest:
@@ -39,11 +39,11 @@
         ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
         ->END
-    - piano_complete && !has_trombone_quest:
+    - completed_piano_quest && !has_trombone_quest:
        Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Mother
         Sure! #name:Melody #mood:happy
         ->END
-    - piano_complete && has_trombone_quest && !trombone_complete:
+    - completed_piano_quest && has_trombone_quest && !completed_trombone_quest:
         Did you speak to your uncle? #name:Mother
         ->END
     - else:
@@ -53,13 +53,13 @@
 
 ==pianoquest_brother==
 {
-    - has_piano_quest && !piano_complete:
+    - has_piano_quest && !completed_piano_quest:
         Aww, Father let you use the scythe? #name:Thomas #mood:sad
         ->END
-    - piano_complete && !has_fishing_quest:
+    - completed_piano_quest && !has_fishing_quest:
         Could you catch a trumpetfish from the pond? Let's have fish for dinner tonight! #name:Thomas #mood:happy
         ->END
-    - piano_complete && has_fishing_quest && !fishing_complete:
+    - completed_piano_quest && has_fishing_quest && !completed_fishing_quest:
         Well? Did you get the trumpetfish? #name:Thomas #mood:sad
         ->END
     - else:
@@ -102,7 +102,7 @@
         Play "Ode to Joy!" You'll see the notes on the screen. That's your dad's favorite tune!  #name:Spirit+of+Music #mood:happy #play:piano|Ode+To+Joy|EEFGGFED|ode_to_joy|pianoquest_played_song
         ->END
     
-    - piano_complete:
+    - completed_piano_quest:
         Let's play the piano! #name:Melody #mood:happy
         ->END
         
@@ -158,7 +158,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
     You can count on me! #name:Melody #mood:happy #audio:quest_added
     ~ tooltip = "Quest completed!"
-    ~ piano_complete = true
+    ~ completed_piano_quest = true
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
 -> DONE
 

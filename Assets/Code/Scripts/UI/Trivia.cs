@@ -30,9 +30,9 @@ public class Trivia : MonoBehaviour
     string failKnot;
     string successKnot;
 
-    private void Awake()
+    void OnEnable()
     {
-        HideTrivia();
+        //HideTrivia();
 
         topPortrait = transform.Find("TopPortrait").gameObject.GetComponent<Image>();
         bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>();
