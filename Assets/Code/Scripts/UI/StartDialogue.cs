@@ -13,7 +13,6 @@ public class StartDialogue : Interaction
 
     public void Start()
     {
-		Debug.Log("running StartDialogue Start");
         interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
         interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
         moveToTarget = true;

@@ -4532,6 +4532,7 @@ MonoBehaviour:
   choiceTwoText: {fileID: 2257383733172534571}
   choiceThreeText: {fileID: 2257383733224230514}
   dialogOk: {fileID: 7862613151496751433}
+  triviaBox: {fileID: 854864832400576676}
   musicPlayerView: {fileID: 2039415436571677074}
 --- !u!82 &2110246656130503297
 AudioSource:

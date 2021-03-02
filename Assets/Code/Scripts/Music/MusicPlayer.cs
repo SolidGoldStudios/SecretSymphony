@@ -37,20 +37,8 @@ public class MusicPlayer : MonoBehaviour
 
         if (songInProgress.Equals(songNotes))
         {
-            songInProgress = "";
-            GameManager.Instance.inkStory.variablesState["has_played_piano"] = true;
-            musicPlayerView.HideMusicPlayer();
-
-            // Show the victory pose and show the tooltip
-            GameObject player = GameObject.Find("Player").gameObject;
-            GameManager.Instance.playerMovement.RunRaiseArms(null);
-            GameManager.Instance.ShowTooltipWithTimeout("You played the song!");
-
-            // Play the full song
-            audioSource = GetComponent<AudioSource>();
-            audioSource.clip = Resources.Load<AudioClip>("Audio/" + songFile);
-            audioSource.Play();
-
+			StartCoroutine(PlayFullSong());
+			
             // Resume dialog
             StartCoroutine(ResumeDialog());
 
@@ -141,6 +129,23 @@ public class MusicPlayer : MonoBehaviour
             }
         }
     }
+
+	IEnumerator PlayFullSong()
+	{
+		yield return new WaitForSeconds(2);
+		audioSource = GetComponent<AudioSource>();
+		audioSource.clip = Resources.Load<AudioClip>("Audio/" + songFile);
+		audioSource.Play();
+		
+		songInProgress = "";
+        GameManager.Instance.inkStory.variablesState["has_played_piano"] = true;
+        musicPlayerView.HideMusicPlayer();
+
+            // Show the victory pose and show the tooltip
+        GameObject player = GameObject.Find("Player").gameObject;
+        GameManager.Instance.playerMovement.RunRaiseArms(null);
+        GameManager.Instance.ShowTooltipWithTimeout("You played the song!");
+	}
 
     IEnumerator ResumeDialog()
     {

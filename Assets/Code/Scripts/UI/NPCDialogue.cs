@@ -27,6 +27,8 @@ public class NPCDialogue : MonoBehaviour
     public GameObject dialogOk;
     Button dialogOkButton;
 	
+	public GameObject triviaBox;
+	
 	IQuest quest;
     AudioSource audioSource;
     string nextScene;
@@ -159,8 +161,10 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("quest"))
             {
+				Debug.Log("1");
                 if (tag.Substring(6) == "InstrumentPianoPartOne")
                 {
+					Debug.Log("2");
                     quest = new InstrumentPianoPartOne();
 					quest.Setup();
 					quest.Progress();
@@ -187,8 +191,6 @@ public class NPCDialogue : MonoBehaviour
                 Debug.Log("trivia tag!  args: " + tag.Substring(7));
                 string[] args = tag.Substring(7).Replace("+", " ").Split(',');
 
-                GameObject uicanvas = GameObject.Find("UICanvas");
-                GameObject triviaBox = uicanvas.transform.Find("TriviaBox").gameObject;
                 Trivia trivia = triviaBox.GetComponent<Trivia>();
 
                 HideDialog();

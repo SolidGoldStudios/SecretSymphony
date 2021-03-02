@@ -18,6 +18,11 @@ public class QuestLogController : MonoBehaviour
 	
 	private int currentIndex = 0;
 
+	void OnEnable()
+	{
+		UpdateQuestLog();
+	}
+
 	public void UpdateQuestLog()
 	{	
 		if (GameManager.Instance.quests.Count > 0)
