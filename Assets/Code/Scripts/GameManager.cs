@@ -22,6 +22,9 @@ public class GameManager : Singleton<GameManager>
 
     // Quests
 	public List<IQuest> quests = new List<IQuest>();
+	
+	public Hashtable books = new Hashtable();
+	public Hashtable pages = new Hashtable();
 
     // Used for the ChangeScene script
     Vector2 nextPosition;
@@ -48,12 +51,6 @@ public class GameManager : Singleton<GameManager>
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
         });
-
-        // Listen for a change to the "music_player" variable in an Ink script
-        // When it changes, launch the MusicPlayer screen in the new mode
-        //inkStory.ObserveVariable("music_player", (string varName, object newValue) => {
-        //    ShowMusicPlayer();
-        //});
     }
 	
 	void Start()
@@ -62,12 +59,6 @@ public class GameManager : Singleton<GameManager>
 		{
 			player = GameObject.Find("Player").gameObject;
 			playerMovement = player.GetComponent<PlayerMovement>();
-		}
-		
-		if (SceneManager.GetActiveScene().name != "Bedroom")
-		{
-			wearingNightgown = false;
-			player.GetComponent<Animator>().SetBool("wearingNightgown", false);
 		}
 	}
 
@@ -223,5 +214,30 @@ public class GameManager : Singleton<GameManager>
 			quest.questData = questData[q];
 			quests.Add(quest);
 		}
+	}
+	
+	public void SetPlayerImmobilized(bool state)
+	{
+		playerMovement.immobilized = state;
+	}
+	
+	public void SetBooks(Hashtable bookData)
+	{
+		books = bookData;
+	}
+	
+	public Hashtable GetBooks()
+	{
+		return books;
+	}
+	
+	public void SetPages(Hashtable pageData)
+	{
+		pages = pageData;
+	}
+	
+	public Hashtable GetPages()
+	{
+		return pages;
 	}
 }

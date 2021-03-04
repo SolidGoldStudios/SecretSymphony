@@ -19,6 +19,7 @@ public class PopulateInventory : MonoBehaviour
         for (int i = 0; i < 32; i++)
         {
             newSlot = (GameObject)Instantiate(inventorySlot, inventoryContents.transform);
+			newSlot.GetComponent<InventorySlotClick>().index = i;
         }
     }
 }

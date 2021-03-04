@@ -56,19 +56,12 @@ public static class InventoryController
         {
             string book = clickAction.Substring(5);
 
-            // Enable the backdrop
             GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-            GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
-            backdrop.SetActive(true);
-
-            // Show the selected book
-            GameObject books = uiCanvas.transform.Find("Books").gameObject;
-            if (book == "piano")
-            {
-                Debug.Log("clicked piano book");
-                GameObject pianoBook = books.transform.Find("KeyboardBook").gameObject;
-                pianoBook.SetActive(true);
-            }
+            GameObject menu = uiCanvas.transform.Find("MenuButton").gameObject;
+			GameObject books = uiCanvas.transform.Find("Books").gameObject;
+			
+            menu.GetComponent<MenuButtons>().MenuToggleBook(); 
+			books.GetComponent<PageCreator>().SetBook(book);			
         }
     }
 }

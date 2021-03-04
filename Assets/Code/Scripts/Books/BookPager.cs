@@ -11,18 +11,12 @@ public class BookPager : MonoBehaviour
     public GameObject totalPages;
     public GameObject facts;
 
-    private int numPages;
+    private int numPages = 0;
     private int i = 1;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        // Count the number of Facts
-        numPages = facts.transform.childCount;
-
-        // Update the totalPages text
-        Text totalPagesText = totalPages.gameObject.GetComponent<Text>();
-        totalPagesText.text = numPages.ToString();
+		i = 1;
     }
 
     public void NextPage()
@@ -46,6 +40,13 @@ public class BookPager : MonoBehaviour
         // Show the child of Facts at new index
         ShowFact(i);
     }
+	
+	public void PageCount(int num)
+	{
+		numPages = num;
+		Text totalPagesText = totalPages.gameObject.GetComponent<Text>();
+        totalPagesText.text = numPages.ToString();
+	}
 
     public void PrevPage()
     {

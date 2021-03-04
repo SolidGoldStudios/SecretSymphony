@@ -12,6 +12,7 @@ public class Collectable : Interaction
     public int value;
     public bool disabled = false;
 	public bool unique;
+	public bool book;
     public string clickAction;
 	
     AudioSource audioSource;
@@ -21,6 +22,10 @@ public class Collectable : Interaction
     {
 		if (InventoryController.CheckForInventoryItem(itemName))
 		{
+			if (book)
+			{
+				gameObject.GetComponent<BookCollected>().ActivePages();
+			}
 			gameObject.SetActive(false);
 		}
 
@@ -41,6 +46,11 @@ public class Collectable : Interaction
 			
             InventoryItem item = ItemCreator.CreateInventoryItem(itemName, description, icon, weight, value, unique, clickAction);
 			InventoryController.AddInventoryItem(item);
+			
+			if (book)
+			{
+				gameObject.GetComponent<BookCollected>().ActivePages();
+			}
 			
             gameObject.SetActive(false);
 

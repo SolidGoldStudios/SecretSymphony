@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 6436824746620410695}
   - component: {fileID: 2747441702695121406}
   - component: {fileID: 5938768561121099890}
+  - component: {fileID: 2691780760038196902}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -288,14 +289,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: dc602437aa61e954a8b540b8ae7c2ed7, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 2691780760038196902}
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2691780760038196902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5188826431361919549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d8a4b8f7a75c144a892d7d12458fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0

@@ -38,6 +38,12 @@ public class MenuButtons : MonoBehaviour
         QuestLog.SetActive(true);
     }
 	
+	public void MenuToggleBook()
+	{
+		MenuHideAll();
+        BookView.SetActive(true);
+	}
+	
 	public void MenuHideAll()
 	{
 		MainMenu.SetActive(false);
