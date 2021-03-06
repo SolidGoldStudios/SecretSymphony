@@ -65,6 +65,8 @@ public class PlayerData : MonoBehaviour
 		data.SetNightGown(GameManager.Instance.wearingNightgown);
 		data.SetInventory(GameManager.Instance.GetInventory());
 		data.SetQuests(GameManager.Instance.GetQuests());
+		data.SetBooks(GameManager.Instance.GetBooks());
+		data.SetPages(GameManager.Instance.GetPages());
 		
 		bf.Serialize(file, data);
 		file.Close();
@@ -89,6 +91,8 @@ public class PlayerData : MonoBehaviour
 		GameManager.Instance.wearingNightgown = saveData.GetNightGown();
 		GameManager.Instance.SetInventory(saveData.GetInventory());
 		GameManager.Instance.SetQuests(saveData.GetQuests());
+		GameManager.Instance.SetBooks(saveData.GetBooks());
+		GameManager.Instance.SetPages(saveData.GetPages());
 	}
 	
 	public bool SaveFileExists()
@@ -106,6 +110,8 @@ public class PlayerSaveData
 	private bool nightGown;
 	private List<InventoryItem> inventory;
 	private List<QuestData> quests;
+	private Hashtable books;
+	private Hashtable pages;
 	
 	public void SetSceneName(string sceneName)
 	{
@@ -147,7 +153,6 @@ public class PlayerSaveData
 		return this.inventory;
 	}
 	
-	
 	public void SetQuests(List<QuestData> quests)
 	{
 		this.quests = quests;
@@ -156,6 +161,26 @@ public class PlayerSaveData
 	public List<QuestData> GetQuests()
 	{
 		return this.quests;
+	}
+	
+	public void SetBooks(Hashtable books)
+	{
+		this.books = books;
+	}
+	
+	public Hashtable GetBooks()
+	{
+		return this.books;
+	}
+	
+	public void SetPages(Hashtable pages)
+	{
+		this.pages = pages;
+	}
+	
+	public Hashtable GetPages()
+	{
+		return this.pages;
 	}
 	
 }

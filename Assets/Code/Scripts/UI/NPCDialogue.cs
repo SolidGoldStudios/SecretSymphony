@@ -11,7 +11,6 @@ public class NPCDialogue : MonoBehaviour
 	
 	public GameObject portraitObject;
 	
-    PlayerMovement playerMovement;
     public GameObject nameplate;
     public Text nameplateText;
     public Text dialogueText;
@@ -28,6 +27,7 @@ public class NPCDialogue : MonoBehaviour
     Button dialogOkButton;
 	
 	public GameObject triviaBox;
+	public GameObject books;
 	
 	IQuest quest;
     AudioSource audioSource;
@@ -42,8 +42,6 @@ public class NPCDialogue : MonoBehaviour
 
     private void Start()
     {
-		playerMovement = GameManager.Instance.playerMovement;
-		
 		choiceOneButton = choiceOne.GetComponent<Button>();
         choiceOneButton.onClick.AddListener(ClickedChoiceOne);
 
@@ -108,10 +106,7 @@ public class NPCDialogue : MonoBehaviour
 
     public void ShowDialog(string knotName)
     {
-        if (playerMovement != null)
-        {
-            playerMovement.immobilized = true;
-        }
+        GameManager.Instance.SetPlayerImmobilized(true);
 
         HideChoices();
 
@@ -208,6 +203,9 @@ public class NPCDialogue : MonoBehaviour
             {
                 // Save the nextBook info
                 nextBook = tag.Substring(5);
+				GameManager.Instance.books.Add(nextBook, 1);
+				books.SetActive(true);
+				books.GetComponent<PageCreator>().SetBook(nextBook);
             }
         }
     }
@@ -270,7 +268,7 @@ public class NPCDialogue : MonoBehaviour
         }        
 
         // Allow the player to move again
-        playerMovement.immobilized = false;
+        GameManager.Instance.SetPlayerImmobilized(false);
         
     }
 
