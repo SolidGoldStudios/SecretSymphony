@@ -164,6 +164,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
 
 ==pianoquest_book==
     What's that? Hmm.... #name:Melody #mood:concerned
-    "<b><i>All About Pianos!</i></b> by Clara Schumann." #name:Book #mood:piano #book:piano
+    "<b><i>All About Pianos!</i></b> by Clara Schumann." #name:Book #mood:piano 
+	#book:piano
     This book is missing some pages. Maybe I can find them nearby. #name:Melody #mood:neutral
 ->DONE
