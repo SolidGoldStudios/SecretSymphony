@@ -178,6 +178,7 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("play"))
             {
+                // We'll show the music player after dialog is closed
                 nextMusicPlayer = tag.Substring(5);
             }
 
@@ -196,16 +197,16 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("scene"))
             {
                 // Save the nextScene info
+                // We'll handle the scene change after dialog is closed
                 nextScene = tag.Substring(6);
             }
 
             if (tag.StartsWith("book"))
             {
                 // Save the nextBook info
+                // We'll show the book after dialog is closed
                 nextBook = tag.Substring(5);
-				GameManager.Instance.books.Add(nextBook, 1);
-				books.SetActive(true);
-				books.GetComponent<PageCreator>().SetBook(nextBook);
+				
             }
         }
     }
@@ -234,12 +235,9 @@ public class NPCDialogue : MonoBehaviour
             backdrop.SetActive(true);
 
             // Show the selected book
-            GameObject books = uiCanvas.transform.Find("Books").gameObject;
-            if (nextBook == "piano")
-            {
-                GameObject pianoBook = books.transform.Find("KeyboardBook").gameObject;
-                pianoBook.SetActive(true);
-            }
+            GameManager.Instance.books.Add(nextBook, 1);
+            books.SetActive(true);
+            books.GetComponent<PageCreator>().SetBook(nextBook);
 
             // Clear the var
             nextBook = null;
