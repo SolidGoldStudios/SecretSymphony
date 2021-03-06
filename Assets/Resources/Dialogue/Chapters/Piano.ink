@@ -82,7 +82,7 @@
         Don't hurt what? This kindling? #name:Melody
         That's no kindling. It's a piano! A piano is a musical instrument. #name:Spirit+of+Music #mood:right #audio:fairy_speak_long_1
         Musical instrument? What's that? #name:Melody #mood:concerned
-        Oh no! It seems the Ear Worm has erased your memory too. /*crying sound and animation?*/ #name:Spirit+of+Music #mood: #mood:sad #audio:fairy_speak_medium_2
+        Oh no! It seems the Ear Worm has erased your memory too. /*crying sound and animation?*/ #name:Spirit+of+Music #mood: #mood:cry #audio:fairy_speak_medium_2
         Don't cry. I won't hurt this piano if it means that much to you. #name:Melody #mood:sad
         Oh, thank you! Can you help me save the rest of the musical instruments? #name:Spirit+of+Music #mood:happy #audio:fairy_speak_medium_1
         Yes! Let's do it. #name:Melody #mood:happy
