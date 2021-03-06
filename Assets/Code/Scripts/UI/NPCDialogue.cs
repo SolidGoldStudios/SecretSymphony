@@ -239,13 +239,6 @@ public class NPCDialogue : MonoBehaviour
             books.SetActive(true);
             books.GetComponent<PageCreator>().SetBook(nextBook);
 
-            //GameObject books = uiCanvas.transform.Find("Books").gameObject;
-            //if (nextBook == "piano")
-            //{
-            //    GameObject pianoBook = books.transform.Find("KeyboardBook").gameObject;
-            //    pianoBook.SetActive(true);
-            //}
-
             // Clear the var
             nextBook = null;
         }
