@@ -51,6 +51,15 @@ public class MenuButtons : MonoBehaviour
 		QuestLog.SetActive(false);
 		BookView.SetActive(false);
 	}
+
+	public void MenuQuit()
+    {
+		MenuHideAll();
+		Backdrop.SetActive(false);
+
+		Debug.Log("I should be returning to the Title Screen now");
+		// GameManager.Instance.LoadScene("TitleScreen", new Vector2(-1.98f, -9.79f), new Vector3(-8.09f, -8.17f, -10f), new Vector2(1f, 1f));
+	}
     
     public void MenuClose()
     {
