@@ -218,7 +218,10 @@ public class GameManager : Singleton<GameManager>
 	
 	public void SetPlayerImmobilized(bool state)
 	{
-		playerMovement.immobilized = state;
+		if (playerMovement != null)
+		{
+			playerMovement.immobilized = state;
+		}
 	}
 	
 	public void SetBooks(Hashtable bookData)
