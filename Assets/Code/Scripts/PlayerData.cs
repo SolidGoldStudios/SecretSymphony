@@ -22,6 +22,10 @@ public class PlayerData : MonoBehaviour
 		{
 			Instance = this;
 		}
+		else
+		{
+			Destroy(gameObject);
+		}
 		DontDestroyOnLoad(this.gameObject);
 		
 		Load();
@@ -87,6 +91,7 @@ public class PlayerData : MonoBehaviour
 	
 	public void SetLoad()
 	{
+		Load();
 		GameManager.Instance.inkStory.state.LoadJson(saveData.GetInkJson());
 		GameManager.Instance.wearingNightgown = saveData.GetNightGown();
 		GameManager.Instance.SetInventory(saveData.GetInventory());
