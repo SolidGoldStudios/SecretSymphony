@@ -27,6 +27,7 @@ public class GameManager : Singleton<GameManager>
 	public Hashtable pages = new Hashtable();
 
     // Used for the ChangeScene script
+	bool setDefaultPos = false;
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
@@ -77,6 +78,7 @@ public class GameManager : Singleton<GameManager>
 	
 	public void LoadScene(string scene)
 	{
+		setDefaultPos = true;
 		SceneManager.LoadScene(scene);
 	}
 
@@ -91,23 +93,26 @@ public class GameManager : Singleton<GameManager>
 			NavMeshAgent navMeshAgent = player.GetComponent<NavMeshAgent>();
 
 			// Move her to the position defined in ChangeScene
-			navMeshAgent.Warp(nextPosition);
-			
-			//player.transform.position = nextPosition;
-			//Debug.Log("player moved to " + nextPosition);
-
-			// Get the player's Animator
-			Animator animator = player.transform.GetComponent<Animator>();
-
-			// Update her orientation to match ChangeScene
-			animator.SetFloat("moveX", nextDirection.x);
-			animator.SetFloat("moveY", nextDirection.y);
-
-			// Set the camera to the position defined in ChangeScene
-			Camera.main.transform.position = nextCameraPosition;
+			if (!setDefaultPos)
+			{
+				navMeshAgent.Warp(nextPosition);
+				
+				Animator animator = player.transform.GetComponent<Animator>();
+				
+				animator.SetFloat("moveX", nextDirection.x);
+				animator.SetFloat("moveY", nextDirection.y);
+				
+				Camera.main.transform.position = nextCameraPosition;
+			}
+			else
+			{
+				setDefaultPos = false;
+			}
 		}
 		else
 		{
+			Awake();
+			playerMovement = null;
 			loadingFromSave = false;
 		}
     }
