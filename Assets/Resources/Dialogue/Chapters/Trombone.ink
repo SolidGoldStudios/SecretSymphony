@@ -1,5 +1,9 @@
 ==trombonequest_uncle==
 {
+    - completed_trombone_quest:
+        Quick, kid! The fuzz is hot on my tail! #name:Uncle #mood:mad
+        Get in the carriage if you want to live! #name:Uncle #mood:mad #scene:FarmToTownCutscene|8.6,-25.9|15.8,-24.1,-2.2|0,-1
+        ->END
     - has_trombone_quest && has_played_trombone_song && !completed_trombone_quest:
         Are you here to try my trivia again? #name:Uncle
         ->trombonequest_trivia
@@ -51,6 +55,8 @@
 
 ==trombonequest_trivia_success==
     Congratulations! Here's the trombone. #name:Uncle #item:Trombone
+    ~ tooltip = "You saved the trombone!"
+    ~ completed_trombone_quest = true
     -> END
     
 ==trombonequest_trivia_fail==
