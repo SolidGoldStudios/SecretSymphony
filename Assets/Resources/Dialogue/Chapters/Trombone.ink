@@ -16,22 +16,22 @@
 ==trombonequest_horse==
 {
     - !has_trombone_quest && ready_for_trombone_quest:
-        Good morning, Melody! #name:Horse #audio:horsesound
+        Good morning, Melody! #name:Horace #audio:horsesound
         Good morning, Horse! #name:Melody #mood:happy
         ...wait a minute. You can talk? #name:Melody #mood:skeptical
-        Of course I can. Say, could you do me a favor? #name:Horse
+        Of course I can. Say, could you do me a favor? #name:Horace
         What do you need me to do? #name:Melody #mood:concerned
-        Can you help your Uncle remember this tune? ... #name:Horse #audio:horse_hot_cross_buns #audio:quest_added
+        Can you help your Uncle remember this tune? ... #name:Horace #audio:horse_hot_cross_buns #audio:quest_added
         ~ tooltip = "Added to Quest Log!"
         ~ has_trombone_quest = true
         I remember that! It's... Hot Cross Buns, of course! #name:Melody #mood:happy
-        Yep! Uncle used to play it on his trombone all the time. #name:Horse
-        Now he seems to think his trombone is a wheel spoke. Silly human... #name:horse
+        Yep! Uncle used to play it on his trombone all the time. #name:Horace
+        Now he seems to think his trombone is a wheel spoke. Silly human... #name:Horace
         I can try to help. What should I do? #name:Melody #mood:concerned
-        Maybe if you play the melody for him, he'll remember! Try it! #name:Horse #play:piano|Hot+Cross+Buns|CCCCDDDDEDC|song_hot_cross_buns|trombonequest_played_song
+        Maybe if you play the melody for him, he'll remember! Try it! #name:Horace #play:piano|Hot+Cross+Buns|CCCCDDDDEDC|song_hot_cross_buns|trombonequest_played_song
         ->END
     - else:
-        Neigh! #name:Horse #audio:horsesound
+        Neigh! #name:Horace #audio:horsesound
         ->END
         
         
