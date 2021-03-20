@@ -10,10 +10,6 @@ public static class QuestType
 		{
 			return new InstrumentPianoPartOne();
 		}
-		else if (questName == "ThomasBirthdayBreakfestPartOne")
-		{
-			return new ThomasBirthdayBreakfestPartOne();
-		}
 		return null;
 	}
 }
