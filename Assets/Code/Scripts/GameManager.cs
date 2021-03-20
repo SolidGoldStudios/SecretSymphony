@@ -52,6 +52,9 @@ public class GameManager : Singleton<GameManager>
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
         });
+		
+		Debug.Log(PlayerPrefs.GetFloat("gameVolume"));
+		AudioListener.volume = PlayerPrefs.GetFloat("gameVolume");
     }
 	
 	void Start()
