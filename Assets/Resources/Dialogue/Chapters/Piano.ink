@@ -159,6 +159,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     You can count on me! #name:Melody #mood:happy #audio:quest_added
     ~ tooltip = "Quest completed!"
     ~ completed_piano_quest = true
+    ~ ready_for_trombone_quest = true
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
 -> DONE
 
