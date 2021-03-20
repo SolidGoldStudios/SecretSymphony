@@ -74,7 +74,7 @@
         ->END
         
     - has_scythe && !has_spoken_to_spirit_piano:
-        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1
+        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1 #showSparkles
         Who's that? #name:Melody #mood:concerned
         I'm the Spirit of Music. Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
         ~ has_hit_piano = true
@@ -89,15 +89,15 @@
         Great! Hooray! The lid of the piano is closed and locked right now. #name:Spirit+of+Music #mood:right  #audio:fairy_speak_medium_2
         I was going to open it up, but I dropped the key in your wheat field. #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1
         Will you find it? #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_2
-        Here goes nothing! #name:Melody #mood:happy
+        Here goes nothing! #name:Melody #mood:happy #hideSparkles
         ->END
         
     - has_spoken_to_spirit_piano && !has_piano_key:
-        Well? Did you get the key? #name:Spirit+of+Music #audio:fairy_speak_short_1
+        Well? Did you get the key? #name:Spirit+of+Music #audio:fairy_speak_short_1 #showSparkles
         ->END
          
     - has_piano_key && !has_played_piano:
-        You did it! You got the key! I knew you could do it! #name:Spirit+of+Music #mood:happy
+        You did it! You got the key! I knew you could do it! #name:Spirit+of+Music #mood:happy #showSparkles
         Let me just try this key in the lock... Done! #name:Melody #audio:piano_lid
         Play "Ode to Joy!" You'll see the notes on the screen. That's your dad's favorite tune!  #name:Spirit+of+Music #mood:happy #play:piano|Ode+To+Joy|EEFGGFED|ode_to_joy|pianoquest_played_song
         ->END
@@ -156,7 +156,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy
     Hooray! We saved the piano! #name:Melody #mood:happy
     We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
-    You can count on me! #name:Melody #mood:happy #audio:quest_added
+    You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles
     ~ tooltip = "Quest completed!"
     ~ completed_piano_quest = true
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/

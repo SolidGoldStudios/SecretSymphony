@@ -718,7 +718,7 @@ PrefabInstance:
     - target: {fileID: 8295969230036320392, guid: b511a6c2a02a3c04e97cca0ef64e5826,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8295969230036320392, guid: b511a6c2a02a3c04e97cca0ef64e5826,
         type: 3}
@@ -16371,7 +16371,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &565185718
 PrefabInstance:
@@ -16442,6 +16442,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e632f87084d0424f80d9c53634b0a5b, type: 3}
+--- !u!1001 &589818727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8859102699093097930, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_Name
+      value: FairyFollower
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010474619}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8126841
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2c7d8c09ec4197409dbfe94774da61c, type: 3}
 --- !u!1001 &593403974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16626,7 +16700,7 @@ Transform:
   - {fileID: 1921436564}
   - {fileID: 1720048966}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &596528799
 PrefabInstance:
@@ -17165,6 +17239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
   dialogBox: {fileID: 1029837969}
   npcPortrait: {fileID: 21300000, guid: 66094e39fb37d474784fe6b12860c192, type: 3}
   npcName: Frog King
@@ -17329,7 +17406,7 @@ Transform:
   m_Children:
   - {fileID: 219093488}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &764984744
 BoxCollider2D:
@@ -17577,7 +17654,7 @@ Transform:
   - {fileID: 956844028}
   - {fileID: 1832556173}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &809223887 stripped
 Transform:
@@ -22495,7 +22572,7 @@ Transform:
   - {fileID: 1760058995}
   - {fileID: 1985161289}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &913001332
 AudioSource:
@@ -23137,7 +23214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &967811321 stripped
 Transform:
@@ -29087,7 +29164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1468490064
 SpriteRenderer:
@@ -29287,7 +29364,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1571938925
 PrefabInstance:
@@ -30061,7 +30138,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1738013817 stripped
 Transform:
@@ -70950,7 +71027,7 @@ Transform:
   - {fileID: 1166731022}
   - {fileID: 1602345606}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1880709650
 PrefabInstance:
@@ -74668,10 +74745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortSize: {x: 3, y: 3}
-  viewPortFactor: 0.5
-  followDuration: 0.5
-  maximumFollowSpeed: 64
   maxPosition: {x: 20, y: -36}
   minPosition: {x: -17, y: -75}
   player: {fileID: 2010474619}
@@ -74994,7 +75067,7 @@ PrefabInstance:
     - target: {fileID: 5918854337051123141, guid: 0e143a34cd20b0a43a0eff95e420997d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5918854337051123141, guid: 0e143a34cd20b0a43a0eff95e420997d,
         type: 3}
