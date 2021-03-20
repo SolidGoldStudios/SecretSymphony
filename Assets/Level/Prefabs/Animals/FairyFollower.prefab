@@ -4989,7 +4989,7 @@ GameObject:
   - component: {fileID: 8859102699552322562}
   - component: {fileID: 8859102699552322561}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Fairy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5091,7 +5091,7 @@ GameObject:
   - component: {fileID: 8859102700268586024}
   - component: {fileID: 8859102700268586007}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
