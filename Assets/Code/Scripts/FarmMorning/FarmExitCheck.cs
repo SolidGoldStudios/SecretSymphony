@@ -18,8 +18,9 @@ public class FarmExitCheck : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             int finishedPiano = (int)GameManager.Instance.inkStory.variablesState["completed_piano_quest"];
+            int finishedTrombone = (int)GameManager.Instance.inkStory.variablesState["completed_trombone_quest"];
 
-            if (finishedPiano == 0)
+            if ((finishedPiano == 0) && (finishedTrombone == 0))
             {
                 dialogueText.text = "Wait! There are more instruments to save here!";
                 dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
@@ -31,7 +32,13 @@ public class FarmExitCheck : MonoBehaviour
             }
             else
             {
-                exitBarrier.SetActive(false);
+                dialogueText.text = "It's a long way to town. Maybe I could ride in the carriage?";
+                dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+                portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
+                portraitObject.SetActive(true);
+                nameplateText.text = "Melody";
+                nameplate.SetActive(true);
+                dialogBox.SetActive(true);
             }
         }
     }

@@ -157,7 +157,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     Hooray! We saved the piano! #name:Melody #mood:happy
     We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music 
     You can count on me! #name:Melody #mood:happy #audio:quest_added
-    ~ tooltip = "Quest completed!"
+    ~ tooltip = "You saved the piano!"
     ~ completed_piano_quest = true
     ~ ready_for_trombone_quest = true
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
