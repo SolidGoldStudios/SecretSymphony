@@ -5108,6 +5108,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2c7d8c09ec4197409dbfe94774da61c, type: 3}
+--- !u!1 &930460081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8859102700583355311, guid: e2c7d8c09ec4197409dbfe94774da61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 930460080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &930460082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8859102699144367425, guid: e2c7d8c09ec4197409dbfe94774da61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 930460080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &930460083 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8859102700268586024, guid: e2c7d8c09ec4197409dbfe94774da61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 930460080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &968360735
 GameObject:
   m_ObjectHideFlags: 0
@@ -10363,6 +10381,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7145464645674046166, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: orbRenderer
+      value: 
+      objectReference: {fileID: 930460083}
+    - target: {fileID: 7145464645674046166, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: fairyMusicParticles
+      value: 
+      objectReference: {fileID: 930460082}
+    - target: {fileID: 7145464645674046166, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: fairySparkleParticles
+      value: 
+      objectReference: {fileID: 930460081}
     - target: {fileID: 7609325498102538685, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_ChildControlWidth

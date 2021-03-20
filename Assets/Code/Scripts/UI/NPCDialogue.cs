@@ -28,6 +28,10 @@ public class NPCDialogue : MonoBehaviour
 	
 	public GameObject triviaBox;
 	public GameObject books;
+
+    public SpriteRenderer orbRenderer;
+    public GameObject fairyMusicParticles;
+    public GameObject fairySparkleParticles;
 	
 	IQuest quest;
     AudioSource audioSource;
@@ -206,13 +210,30 @@ public class NPCDialogue : MonoBehaviour
                 // Save the nextBook info
                 // We'll show the book after dialog is closed
                 nextBook = tag.Substring(5);
-				
+            }
+
+            if (tag.StartsWith("showSparkles"))
+            {
+                if (orbRenderer) orbRenderer.enabled = true;
+                if (fairyMusicParticles) fairyMusicParticles.SetActive(true);
+                if (fairySparkleParticles) fairySparkleParticles.SetActive(true);
+            }
+
+            if (tag.StartsWith("hideSparkles"))
+            {
+                if (orbRenderer) orbRenderer.enabled = false;
+                if (fairyMusicParticles) fairyMusicParticles.SetActive(false);
+                if (fairySparkleParticles) fairySparkleParticles.SetActive(false);
             }
         }
     }
 
     private void HideDialog()
     {
+        if (orbRenderer) orbRenderer.enabled = false;
+        if (fairyMusicParticles) fairyMusicParticles.SetActive(false);
+        if (fairySparkleParticles) fairySparkleParticles.SetActive(false);
+
         transform.gameObject.SetActive(false);
 
         // Check for music player info, set with the #play tag

@@ -1465,6 +1465,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 403037949}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &880223332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8859102700583355311, guid: e2c7d8c09ec4197409dbfe94774da61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8859102700597316488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &889554008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2305,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4763911869046995603, guid: 69597401b4216c24093fc50c5b789f1a,
     type: 3}
   m_PrefabInstance: {fileID: 1306017643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1307478156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8859102699144367425, guid: e2c7d8c09ec4197409dbfe94774da61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8859102700597316488}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1331626579
 GameObject:
@@ -3314,6 +3326,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!212 &1355901565 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8859102700268586024, guid: e2c7d8c09ec4197409dbfe94774da61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8859102700597316488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384412191
 GameObject:
   m_ObjectHideFlags: 0
@@ -5602,6 +5620,21 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7145464645674046166, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: orbRenderer
+      value: 
+      objectReference: {fileID: 1355901565}
+    - target: {fileID: 7145464645674046166, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: fairyMusicParticles
+      value: 
+      objectReference: {fileID: 1307478156}
+    - target: {fileID: 7145464645674046166, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: fairySparkleParticles
+      value: 
+      objectReference: {fileID: 880223332}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
 --- !u!114 &2048496467 stripped
