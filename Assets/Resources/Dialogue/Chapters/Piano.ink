@@ -63,7 +63,7 @@
         Well? Did you get the trumpetfish? #name:Thomas #mood:sad
         ->END
     - else:
-        You seem peppy today. #name:Thomas
+        You seem peppy today. #name:Thomas #mood_happy
         ->END
 }
 
