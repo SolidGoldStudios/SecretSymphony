@@ -7,6 +7,7 @@ public class AttackableItem : Interaction
     private Animator animator;
     private Animator playerAnimator;
     private bool interacted = false;
+    public bool removeAfterDestroy = false;
 
     public void Start()
     {
@@ -44,6 +45,11 @@ public class AttackableItem : Interaction
         yield return null;
         playerAnimator.SetBool("attacking", false);
         yield return new WaitForSeconds(0.5f);
+
+        if (removeAfterDestroy)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
 

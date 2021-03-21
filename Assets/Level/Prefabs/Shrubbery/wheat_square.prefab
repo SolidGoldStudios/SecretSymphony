@@ -144,4 +144,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
-  interactionSwitch: 0
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  removeAfterDestroy: 1
