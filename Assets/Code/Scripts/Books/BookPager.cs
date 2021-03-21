@@ -45,8 +45,9 @@ public class BookPager : MonoBehaviour
 	{
 		numPages = num;
 		Text totalPagesText = totalPages.gameObject.GetComponent<Text>();
-        totalPagesText.text = numPages.ToString();
-	}
+        //totalPagesText.text = numPages.ToString();
+        totalPagesText.text = facts.transform.childCount.ToString();
+    }
 
     public void PrevPage()
     {
