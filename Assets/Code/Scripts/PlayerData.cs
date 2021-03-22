@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class PlayerData : MonoBehaviour
 {
 	public static PlayerData Instance = null;
-	public PlayerSaveData  saveData = null;
+	public PlayerSaveData saveData = null;
 	
 	private bool startAutoSaving = false;
 	private bool saveDataExist = false;
@@ -91,7 +91,7 @@ public class PlayerData : MonoBehaviour
 	
 	public void SetLoad()
 	{
-		Load();
+		//Load();
 		GameManager.Instance.inkStory.state.LoadJson(saveData.GetInkJson());
 		GameManager.Instance.wearingNightgown = saveData.GetNightGown();
 		GameManager.Instance.SetInventory(saveData.GetInventory());
