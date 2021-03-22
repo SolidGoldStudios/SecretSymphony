@@ -10,14 +10,28 @@ public class TriggerTimeline : Interaction
 
     public void Start()
     {
-        interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
-        interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
+        if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
+        {
+            interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
+            interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
+        }
+    }
+
+    public void Update()
+    {
+        if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
+        {
+            interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
+            interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
+        }
     }
 
     public override void Interact()
     {
-        timeline.Play();
+        if ((blockedBy == null) || (!blockedBy.activeInHierarchy)) {
+            timeline.Play();
 
-        if (animator != null) animator.SetBool("interactionSwitch", true);
+            if (animator != null) animator.SetBool("interactionSwitch", true);
+        }
     }
 }

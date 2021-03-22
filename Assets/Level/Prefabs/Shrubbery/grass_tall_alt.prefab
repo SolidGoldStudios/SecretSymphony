@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6180015406407841214}
   - component: {fileID: 7680654706005290549}
   - component: {fileID: 7573848659741266217}
+  - component: {fileID: 4838953906878187082}
   m_Layer: 0
   m_Name: grass_tall_alt
   m_TagString: Untagged
@@ -112,6 +113,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54195f533b124fe28354b5551b7b1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  interactionSwitch: 0
-  playerInRange: 0
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  removeAfterDestroy: 1
+--- !u!61 &4838953906878187082
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180015406407841209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5539317, y: 1.0855513}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0.8125, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 4.8125, y: 2.5}
+    newSize: {x: 4.8125, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.7046366, y: 2.1711025}
+  m_EdgeRadius: 0
