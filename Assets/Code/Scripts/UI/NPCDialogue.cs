@@ -160,10 +160,8 @@ public class NPCDialogue : MonoBehaviour
 
             if (tag.StartsWith("quest"))
             {
-				Debug.Log("1");
                 if (tag.Substring(6) == "InstrumentPianoPartOne")
                 {
-					Debug.Log("2");
                     quest = new InstrumentPianoPartOne();
 					quest.Setup();
 					quest.Progress();

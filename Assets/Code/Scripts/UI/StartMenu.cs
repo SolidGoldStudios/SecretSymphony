@@ -25,6 +25,7 @@ public class StartMenu : MonoBehaviour
 	
 	public void MenuResumeGame()
 	{
+		PlayerData.Instance.Load();
 		PlayerData.Instance.SetLoad();
 		GameManager.Instance.loadingFromSave = true;
 		fadeSceneScript.FadeOut(PlayerData.Instance.saveData.GetSceneName());
