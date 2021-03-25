@@ -15,6 +15,7 @@ public class PageCreator : MonoBehaviour
 	void Awake()
 	{
 		books.Add("piano", new PianoPages());
+		books.Add("brass", new BrassPages());
 	}
 	
 	public void CreatePages()
