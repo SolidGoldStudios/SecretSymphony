@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PageCreator : MonoBehaviour
 {
+	public Image bookBackground;
 	public GameObject pagePrefab;
 	public GameObject pages;
 	public BookPager bookPager;
@@ -43,6 +44,7 @@ public class PageCreator : MonoBehaviour
 		Debug.Log(activeBook);
 		activeBook.SetPagesFound((int)GameManager.Instance.books[key]);
 		activeBook.CreatePages();
+		bookBackground.sprite = Resources.Load<Sprite>("UI/book_" + key);
 		CreatePages();
 	}
 }
