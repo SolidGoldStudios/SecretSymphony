@@ -15,7 +15,7 @@
 -> END
 
 ==end_fairy_cutscene==
-    Wow, what a weird dream. #name:Melody #mood:thinking
-    I guess I had better get dressed and see what chores I need to do this morning for the farm. #name:Melody #mood:happy
+    Wow, what a weird dream. #name:Melody #mood:nightgown1
+    I guess I had better get dressed and see what chores I need to do this morning for the farm. #name:Melody #mood:nightgown
 
 -> END
