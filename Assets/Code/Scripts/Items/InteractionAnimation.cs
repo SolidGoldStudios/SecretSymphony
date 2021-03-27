@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractionAnimation : Interaction
 {
     public bool interactionSwitch;
+	public GameObject interactLight;
     private Animator animator;
     AudioSource audioSource;
 
@@ -27,5 +28,10 @@ public class InteractionAnimation : Interaction
         {
             audioSource.Play();
         }
+		
+		if (interactLight != null)
+		{
+			interactLight.SetActive(false);
+		}
     }
 }

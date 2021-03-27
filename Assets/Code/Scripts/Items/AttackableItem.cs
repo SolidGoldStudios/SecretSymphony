@@ -15,12 +15,12 @@ public class AttackableItem : Interaction
         playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
     }
 
-    public void Update()
+    public void OnMouseOver()
     {
         if ((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1)
         {
             interactionIcon = Resources.Load<Sprite>("UI/cursor_scythe");
-            interactionIconActive = Resources.Load<Sprite>("UI/cursor_scythe_active");
+           interactionIconActive = Resources.Load<Sprite>("UI/cursor_scythe_active");
         }
     }
 
