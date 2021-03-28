@@ -21,6 +21,7 @@ public class Trivia : MonoBehaviour
     Button choiceTwoButton;
     Button choiceThreeButton;
     Text scoreText;
+    AudioSource audioSource;
 
     List<TriviaQuestion> triviaQuestions;
     int currentQuestion;
@@ -85,10 +86,16 @@ public class Trivia : MonoBehaviour
         if (i == correctAnswer)
         {
             score += 1;
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = Resources.Load<AudioClip>("Audio/correct");
+            audioSource.Play();
             Debug.Log("correct");
         }
         else
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = Resources.Load<AudioClip>("Audio/wrong");
+            audioSource.Play();
             Debug.Log("wrong answer");
         }
 
