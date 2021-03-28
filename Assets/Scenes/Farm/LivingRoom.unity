@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -781,6 +781,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_piano
   questGiver: 0
@@ -1619,6 +1620,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_brother
   questGiver: 0
@@ -3931,6 +3933,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_father
   questGiver: 0
@@ -4273,6 +4276,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   toScene: FarmOutdoor
   toPosition: {x: -8.944, y: 15.015}
   toCameraPosition: {x: -9.15, y: 15.46, z: -10}
@@ -4640,6 +4644,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_mother
   questGiver: 1
@@ -7212,6 +7217,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   toScene: Bedroom
   toPosition: {x: -1.48, y: -4.67}
   toCameraPosition: {x: -1.65, y: -2.72, z: -10}

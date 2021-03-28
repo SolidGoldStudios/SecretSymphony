@@ -6,8 +6,8 @@ public interface IPages
 {
 	List<string> pages {get; set;}
 	int pagesFound {get; set;}
-	
-    void CreatePages();
+
+	void CreatePages();
     string GetPageText(int pageNum);
 	void SetPagesFound(int num);
 }

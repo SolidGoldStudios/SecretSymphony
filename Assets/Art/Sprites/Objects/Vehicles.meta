@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Resources/Dialogue/Chapters/Items.meta
+guid: d230e3787b91949f994d8dd077cf6657
+=======
 guid: 78ca79af5c84c42d5a04c0d108944f8b
 folderAsset: yes
+>>>>>>> master:Assets/Art/Sprites/Objects/Vehicles.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

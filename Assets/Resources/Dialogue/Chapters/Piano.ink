@@ -163,9 +163,4 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
 -> DONE
 
-==pianoquest_book==
-    What's that? Hmm.... #name:Melody #mood:concerned   #audio:female_speak_short_2
-    "<b><i>All About Pianos!</i></b> by Clara Schumann." #name:Book #mood:piano 
-	#book:piano
-    This book is missing some pages. Maybe I can find them nearby. #name:Melody #mood:neutral   #audio:female_speak_long_2
-->DONE
+

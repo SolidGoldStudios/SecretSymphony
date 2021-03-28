@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PageCreator : MonoBehaviour
 {
+	public Image bookBackground;
 	public GameObject pagePrefab;
 	public GameObject pages;
 	public BookPager bookPager;
@@ -15,6 +16,10 @@ public class PageCreator : MonoBehaviour
 	void Awake()
 	{
 		books.Add("piano", new PianoPages());
+		books.Add("brass", new BrassPages());
+		books.Add("strings", new StringsPages());
+		books.Add("winds", new WindsPages());
+		books.Add("percussion", new PercussionPages());
 	}
 	
 	public void CreatePages()
@@ -42,6 +47,7 @@ public class PageCreator : MonoBehaviour
 		Debug.Log(activeBook);
 		activeBook.SetPagesFound((int)GameManager.Instance.books[key]);
 		activeBook.CreatePages();
+		bookBackground.sprite = Resources.Load<Sprite>("UI/book_" + key);
 		CreatePages();
 	}
 }
