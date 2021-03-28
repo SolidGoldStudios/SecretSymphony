@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6180015406407841215}
   - component: {fileID: 6180015406407841214}
-  - component: {fileID: 7680654706005290549}
   - component: {fileID: 7573848659741266217}
   - component: {fileID: 4838953906878187082}
+  - component: {fileID: 2882672718252154553}
   m_Layer: 0
   m_Name: grass_tall_alt
   m_TagString: Untagged
@@ -85,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!111 &7680654706005290549
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6180015406407841209}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4e60391782f0c20408133346fce0376e, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 4e60391782f0c20408133346fce0376e, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &7573848659741266217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +128,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7046366, y: 2.1711025}
   m_EdgeRadius: 0
+--- !u!95 &2882672718252154553
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180015406407841209}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b053f31a4aff2ee409f088e42c76b305, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
