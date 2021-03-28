@@ -37,7 +37,13 @@ public class MusicPlayer : MonoBehaviour
 
         if (songInProgress.Equals(songNotes))
         {
-			StartCoroutine(PlayFullSong());
+            // Make the last note opaque
+            // Get the current note in the prefab and make it opaque
+            Image noteImage = musicSheetContent.transform.GetChild(songInProgress.Length - 1).Find("Note" + songInProgress.Substring(songInProgress.Length - 1)).GetComponent<Image>();
+            noteImage.color = new Color(255, 255, 255, 1);
+
+            // Play the full song 
+            StartCoroutine(PlayFullSong());
 			
             // Resume dialog
             StartCoroutine(ResumeDialog());
@@ -53,7 +59,8 @@ public class MusicPlayer : MonoBehaviour
         {
             Populate();
 
-            // TODO Play a negative "bzzt" or "donk" sound
+            // Play a negative "bzzt" sound
+            StartCoroutine(PlayWrongSound());
 
             // Reset the song in progress
             songInProgress = "";
@@ -132,7 +139,7 @@ public class MusicPlayer : MonoBehaviour
 
 	IEnumerator PlayFullSong()
 	{
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(1);
 		audioSource = GetComponent<AudioSource>();
 		audioSource.clip = Resources.Load<AudioClip>("Audio/" + songFile);
 		audioSource.Play();
@@ -141,7 +148,7 @@ public class MusicPlayer : MonoBehaviour
         GameManager.Instance.inkStory.variablesState["has_played_piano"] = true;
         musicPlayerView.HideMusicPlayer();
 
-            // Show the victory pose and show the tooltip
+        // Show the victory pose and show the tooltip
         GameObject player = GameObject.Find("Player").gameObject;
         GameManager.Instance.playerMovement.RunRaiseArms(null);
         GameManager.Instance.ShowTooltipWithTimeout("You played the song!");
@@ -149,7 +156,15 @@ public class MusicPlayer : MonoBehaviour
 
     IEnumerator ResumeDialog()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7.5f);
         npcDialogue.ShowDialog(resumeKnot);
+    }
+
+    IEnumerator PlayWrongSound()
+    {
+        yield return new WaitForSeconds(0.25f);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = Resources.Load<AudioClip>("Audio/wrong");
+        audioSource.Play();
     }
 }
