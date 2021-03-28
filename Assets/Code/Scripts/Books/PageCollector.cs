@@ -30,7 +30,7 @@ public class PageCollector : Interaction
     {
 		if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
 		{
-			GameManager.Instance.ShowTooltipWithTimeout("Collected lost page for the " + bookName + " book!");
+			GameManager.Instance.ShowTooltipWithTimeout("Found a lost page!");
 			AudioSource audioSource = gameObject.GetComponent<AudioSource>();
 			if (audioSource != null)
 			{
@@ -48,6 +48,16 @@ public class PageCollector : Interaction
 
 			interactionIcon = Resources.Load<Sprite>("UI/cursor");
 			interactionIconActive = Resources.Load<Sprite>("UI/cursor_active");
+
+			// Enable the backdrop
+			GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+			GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+			backdrop.SetActive(true);
+
+			// Show the selected book
+			GameObject books = uiCanvas.transform.Find("Books").gameObject;
+			books.SetActive(true);
+			books.GetComponent<PageCreator>().SetBook(bookName);
 		}
 	}
 }

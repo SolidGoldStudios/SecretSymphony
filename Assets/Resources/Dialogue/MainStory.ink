@@ -1,7 +1,7 @@
 INCLUDE Chapters/FaeryAppears.ink
 INCLUDE Chapters/Piano.ink
 INCLUDE Chapters/Trombone.ink
-INCLUDE Chapters/Items
+INCLUDE Chapters/Items.ink
 
 
 /** 

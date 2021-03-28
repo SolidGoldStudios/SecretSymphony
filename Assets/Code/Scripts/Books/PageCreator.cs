@@ -17,6 +17,9 @@ public class PageCreator : MonoBehaviour
 	{
 		books.Add("piano", new PianoPages());
 		books.Add("brass", new BrassPages());
+		books.Add("strings", new StringsPages());
+		books.Add("winds", new WindsPages());
+		books.Add("percussion", new PercussionPages());
 	}
 	
 	public void CreatePages()
