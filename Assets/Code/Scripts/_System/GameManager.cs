@@ -26,6 +26,9 @@ public class GameManager : Singleton<GameManager>
 	public Hashtable books = new Hashtable();
 	public Hashtable pages = new Hashtable();
 
+	// Background Music
+	public GameObject backgroundMusic;
+
     // Used for the ChangeScene script
 	bool setDefaultPos = false;
     Vector2 nextPosition;
@@ -52,6 +55,9 @@ public class GameManager : Singleton<GameManager>
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
         });
+
+		backgroundMusic = Instantiate(Resources.Load("Prefabs/BackgroundMusic")) as GameObject;
+		DontDestroyOnLoad(backgroundMusic);
     }
 	
 	void Start()
