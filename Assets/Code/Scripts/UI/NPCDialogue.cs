@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 using System;
 using System.Collections;
 using System.Reflection;
@@ -25,8 +26,9 @@ public class NPCDialogue : MonoBehaviour
     Button choiceThreeButton;
     public GameObject dialogOk;
     Button dialogOkButton;
-	
-	public GameObject triviaBox;
+    public PlayableDirector timeline;
+
+    public GameObject triviaBox;
 	public GameObject books;
 
     public SpriteRenderer orbRenderer;
@@ -222,6 +224,13 @@ public class NPCDialogue : MonoBehaviour
                 if (orbRenderer) orbRenderer.enabled = false;
                 if (fairyMusicParticles) fairyMusicParticles.SetActive(false);
                 if (fairySparkleParticles) fairySparkleParticles.SetActive(false);
+            }
+            if (tag.StartsWith("timeline"))
+            {
+                string timelineObject = tag.Substring(9);
+                GameObject timelineManager = GameObject.Find(timelineObject).gameObject;
+                timeline = timelineManager.GetComponent<PlayableDirector>();
+                timeline.Play();
             }
         }
     }
