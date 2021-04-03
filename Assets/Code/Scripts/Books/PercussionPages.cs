@@ -10,10 +10,11 @@ public class PercussionPages : IPages
 	public void CreatePages()
 	{
 		pages = new List<string>();
-		pages.Add("Percussion page #1");
-		pages.Add("Percussion page #2");
-		pages.Add("Percussion page #3");
-		pages.Add("Percussion page #4");
+		pages.Add("The percussion family is HUGE! There are lots of different instruments in it. Anything you can hit becomes a percussion instrument. Examples of percussion instrumentes in the orchestra are the snare drum, the bass drum, and the timpani.");
+		pages.Add("'Percussion' means making sound by hitting something. Drums are in the percussion family, and they might just be the oldest kind of instrument.");
+		pages.Add("Drums like the snare and bass drum sound best when the player strikes them on the tight flat part of the drum. This is called the drum 'head'.");
+		pages.Add("Some percussion instruments make a 'tone' or a note that your ear can figure out. Some percussion instruments don't. The concert bass drum does not make a note, but the timpani drums do.");
+		pages.Add("Because they can keep a steady rhythm, the instruments of the percussion family are typically used to keep time.");
 	}
 
 	public void SetPagesFound(int num)
