@@ -74,7 +74,7 @@
         ->END
         
     - has_scythe && !has_spoken_to_spirit_piano:
-        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1 #showSparkles
+        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1 #showSparkles #timeline:FairyEntersTimeline
         Who's that? #name:Melody #mood:concerned 
         I'm the Spirit of Music. Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
         ~ has_hit_piano = true

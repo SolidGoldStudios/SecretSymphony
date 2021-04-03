@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -12341,6 +12341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FairyFollower
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097930, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
         type: 3}
