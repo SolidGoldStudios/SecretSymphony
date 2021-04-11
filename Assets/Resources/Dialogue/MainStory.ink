@@ -42,12 +42,12 @@ VAR has_flute_quest = false
 VAR completed_flute_quest = false
 
 /* Violin quest */
-VAR ready_for_violin_quest = false
+VAR ready_for_violin_quest = true
 VAR has_violin_quest = false
 VAR completed_violin_quest = false
 
 /* Drum quest */
-VAR ready_for_drum_quest = false
+VAR ready_for_drum_quest = true
 VAR has_drum_quest = false
 VAR completed_drum_quest = false
 

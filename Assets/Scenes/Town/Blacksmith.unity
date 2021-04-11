@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1053,10 +1053,9 @@ GameObject:
   - component: {fileID: 155315916}
   - component: {fileID: 155315915}
   - component: {fileID: 155315914}
-  - component: {fileID: 155315918}
   - component: {fileID: 155315917}
   - component: {fileID: 155315920}
-  - component: {fileID: 155315921}
+  - component: {fileID: 155315918}
   m_Layer: 0
   m_Name: Whitney
   m_TagString: Untagged
@@ -1181,103 +1180,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3815494, y: 2.6015067}
   m_EdgeRadius: 0
---- !u!82 &155315918
-AudioSource:
+--- !u!114 &155315918
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155315913}
-  m_Enabled: 0
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 1771148262286494370, guid: 835b79595cf07fe47a13ceba4060a133,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: bab50e55290d69446a6aaa965d8c365c, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.3
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 0.52295685
-  MaxDistance: 1
-  Pan2D: 0
-  rolloffMode: 1
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  dialogBox: {fileID: 1455886185}
+  knotName: drumquest_blacksmith
+  questGiver: 0
+  questName: 
 --- !u!95 &155315920
 Animator:
   serializedVersion: 3
@@ -1297,26 +1219,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &155315921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155315913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionIcon: {fileID: 0}
-  interactionIconActive: {fileID: 0}
-  moveToTarget: 0
-  dialogBox: {fileID: 1455886185}
-  npcPortrait: {fileID: 21300000, guid: abfdba331c8542842aa6c165fe13c3f9, type: 3}
-  npcName: Whitney
-  dialogue: Somethin' need mending?
-  playerInRange: 0
 --- !u!1 &167050916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,6 +4247,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   toScene: TownAfternoon
   toPosition: {x: 17, y: 28}
   toCameraPosition: {x: 17, y: 28, z: 0}
@@ -4614,6 +4517,7 @@ MonoBehaviour:
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
+  blockedBy: {fileID: 0}
   dialogBox: {fileID: 1455886185}
   npcPortrait: {fileID: 21300000, guid: abfdba331c8542842aa6c165fe13c3f9, type: 3}
   npcName: Whitney
