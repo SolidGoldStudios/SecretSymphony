@@ -5,72 +5,48 @@
             "correctAnswer": "Brass",
             "wrongAnswer1": "Woodwind",
             "wrongAnswer2": "Percussion",
-            "hint": "",
-            "followupFact": ""
+            "hint": "Here's a hint: it's named after the metal it's made from...",
+            "followupFact": "Because of their construction and shape, brass instruments are some of the loudest in the orchestra!"
         },
         {
             "question": "Because a trombone looks like a larger version of another instrument, the name \"trombone\" means big WHAT?",
             "correctAnswer": "Trumpet",
-            "wrongAnswer1": "Clarinet",
+            "wrongAnswer1": "French Horn",
             "wrongAnswer2": "Tuba",
-            "hint": "",
-            "followupFact": ""
+            "hint": "Here's a hint:  \"tromba\" is the Italian word for trumpet.",
+            "followupFact": "The words we use for musical instruments are often in the language of the country where they were created."
         },
         {
-            "question": "Just like something you'd see at the playground, the part of a trombone that you move to change the sound is called WHAT?",
+            "question": "Which part of the trombone do you move when making sounds?",
             "correctAnswer": "Slide",
             "wrongAnswer1": "Swing",
             "wrongAnswer2": "Monkey Bar",
-            "hint": "",
-            "followupFact": ""
+            "hint": "Here's a hint: it can be scary going down these at the playground...",
+            "followupFact": "Moving the slide on the trombone actually changes the size of the instrument, allowing for different tones."
         },
         {
             "question": "What is the word for the big, wide end piece of a trombone, where the sound comes out?",
             "correctAnswer": "Bell",
             "wrongAnswer1": "Hat",
             "wrongAnswer2": "Cone",
-            "hint": "",
-            "followupFact": ""
+            "hint": "Ding dong!  Try again!",
+            "followupFact": "Many members of the brass and woodwind families of instruments have a \"bell\" at the end to project their sound."
         },
         {
-            "question": "What is the word for a person who plays a trombone?",
-            "correctAnswer": "Trombonist",
-            "wrongAnswer1": "Tromboni",
-            "wrongAnswer2": "Tromboney",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "What are the two most common types of trombone?",
-            "correctAnswer": "Tenor and Bass",
-            "wrongAnswer1": "Alto and Basso",
-            "wrongAnswer2": "Soprano and Tony",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "Hehe, this kind of mute - a tool that can change a trombone's sound - has the name of a bathroom tool.",
-            "correctAnswer": "Plunger",
-            "wrongAnswer1": "Brush",
-            "wrongAnswer2": "Mop",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "Usually, there are how many trombones in an orchestra?",
-            "correctAnswer": "Three",
-            "wrongAnswer1": "Five",
-            "wrongAnswer2": "Seven",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "A trombone's slide can be moved away from the player into how many \"positions\" - the same number of days in the week?",
+            "question": "A trombone's slide can be moved away from the player into how many \"positions\"?",
             "correctAnswer": "Seven",
-            "wrongAnswer1": "Five",
+            "wrongAnswer1": "Three",
             "wrongAnswer2": "Ten",
-            "hint": "",
-            "followupFact": ""
+            "hint": "Here's a hint: it's the same number as days in the week",
+            "followupFact": "The positions are counted in order from the 1st position (slide pulled toward the player) to the 7th position (slide fully extended)."
+        },
+        {
+            "question": "Embouchure is the fancy word for the shape of what body part against the trombone?",
+            "correctAnswer": "Mouth",
+            "wrongAnswer1": "Hands",
+            "wrongAnswer2": "Chin",
+            "hint": "Here's a hint:  It's where the sound orginates!",
+            "followupFact": "The more a trombone player tightens his or her lips, the higher the pitch produced."
         }
     ]
 }
