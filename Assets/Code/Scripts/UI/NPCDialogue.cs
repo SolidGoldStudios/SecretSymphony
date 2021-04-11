@@ -26,6 +26,7 @@ public class NPCDialogue : MonoBehaviour
     Button choiceThreeButton;
     public GameObject dialogOk;
     Button dialogOkButton;
+    public GameObject timelineManager;
     public PlayableDirector timeline;
 
     public GameObject triviaBox;
@@ -228,7 +229,7 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("timeline"))
             {
                 string timelineObject = tag.Substring(9);
-                GameObject timelineManager = GameObject.Find(timelineObject).gameObject;
+                timelineManager = GameObject.Find(timelineObject).gameObject;
                 timeline = timelineManager.GetComponent<PlayableDirector>();
                 timeline.Play();
             }

@@ -1,0 +1,28 @@
+{
+    "triviaQuestions": [
+        {
+            "question": "To which family does the bass drum belong?",
+            "correctAnswer": "Percussion",
+            "wrongAnswer1": "Wind",
+            "wrongAnswer2": "Brass",
+            "hint": "Here's a hint: percuss in Latin, meaning \"to strike\"...",
+            "followupFact": "The head of a bass drum can be struck with either mallets, sticks or brushes, depending on what kind of sounds you want. "
+        },
+        {
+            "question": "What is the name of the part of the Bass Drum which you're meant to hit?",
+            "correctAnswer": "The head",
+            "wrongAnswer1": "The foot",
+            "wrongAnswer2": "The arm",
+            "hint": "Close! Try using your noggin to figure this one out...",
+            "followupFact": "Snare drum heads were originally made from animal skins, but not so much these days."
+        },
+        {
+            "question": "Instruments in the Percussion family typically have what job in the Orchestra?",
+            "correctAnswer": "Keeping time",
+            "wrongAnswer1": "Staying super quiet",
+            "wrongAnswer2": "Bossing the other instruments around",
+            "hint": "Here's a hint: playing with the rhythm means keeping what?",
+            "followupFact": "While the conductor is in charge of it all, percussion instruments help everyone to play at the same speed!"
+        }
+    ]
+}

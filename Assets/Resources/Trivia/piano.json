@@ -1,68 +1,36 @@
 {
     "triviaQuestions": [
         {
-            "question": "What kind of piano plays songs all by itself off of a big roll of paper?",
-            "correctAnswer": "Player Piano",
-            "wrongAnswer1": "Paper Piano",
-            "wrongAnswer2": "Smart Piano",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "The word \"piano\" comes from what language?",
-            "correctAnswer": "Italian",
-            "wrongAnswer1": "Japanese",
-            "wrongAnswer2": "German",
-            "hint": "",
-            "followupFact": "The word piano comes from the Italian word \"pianoforte\" which means \"soft\" and \"loud.\""
-        },
-        {
-            "question": "What piano part has storage for sheet music?",
-            "correctAnswer": "Bench",
-            "wrongAnswer1": "Keyboard",
-            "wrongAnswer2": "Bass Bridge",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "What is the biggest kind of piano called?",
-            "correctAnswer": "Grand Piano",
-            "wrongAnswer1": "Upright",
-            "wrongAnswer2": "Spinet",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "There are three main kinds of piano:  Grand, Electric, and what?",
-            "correctAnswer": "Upright",
-            "wrongAnswer1": "Digital",
-            "wrongAnswer2": "Wheeled",
-            "hint": "",
-            "followupFact": ""
+            "question": "The piano is generally considered to a member of what two instrument families?",
+            "correctAnswer": "Strings & Percussion",
+            "wrongAnswer1": "Woodwinds & Brass",
+            "wrongAnswer2": "Brass & Percussion",
+            "hint": "Not quite! Here's a hint: look inside any piano and you'll see lots of strings being struck by mallets...",
+            "followupFact": "Concert pianos have 88 strings. The smallest strings can be as short as a pinky while the largest strings can be taller than you!"
         },
         {
             "question": "The \"buttons\" you press on a piano to make music are called what?",
             "correctAnswer": "Keys",
             "wrongAnswer1": "Hammers",
             "wrongAnswer2": "Sticks",
-            "hint": "",
-            "followupFact": ""
-        },
-        {
-            "question": "The keys of a piano are usually what two colors?",
-            "correctAnswer": "Black & White",
-            "wrongAnswer1": "Black & Blue",
-            "wrongAnswer2": "Gold & White",
-            "hint": "This might be a zebra's favorite instrument.",
-            "followupFact": ""
+            "hint": "Not quite! Here's a hint: how do you type things into a computer?",
+            "followupFact": "Concert pianos have 88 keys: 52 white and 36 black."
         },
         {
             "question": "What is the name of the part of the piano where your feet are placed?",
             "correctAnswer": "Pedals",
             "wrongAnswer1": "Shoes",
             "wrongAnswer2": "Feet",
-            "hint": "You also use these when riding your bike!",
-            "followupFact": ""
+            "hint": "Here's a hint: you also use these when riding a bike!",
+            "followupFact": "Piano pedals can enrich the sound in various ways, such as causing a note to play softer, or be held longer."
+        },
+        {
+            "question": "What kind of piano plays songs all by itself off of a big roll of paper?",
+            "correctAnswer": "Player Piano",
+            "wrongAnswer1": "Paper Piano",
+            "wrongAnswer2": "Smart Piano",
+            "hint": "Here's a hint:  Dont hate THIS, hate the game.",
+            "followupFact": "When a player piano is running, the keys still move up and down - even though there isn't a person pressing them!"
         }
     ]
 }

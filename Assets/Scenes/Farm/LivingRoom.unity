@@ -9635,6 +9635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fairy
       objectReference: {fileID: 0}
+    - target: {fileID: 4526855452954561044, guid: fb935ec1462dc0c429b01e99ca70ccf0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4526855452954561046, guid: fb935ec1462dc0c429b01e99ca70ccf0,
         type: 3}
       propertyPath: m_RootOrder
