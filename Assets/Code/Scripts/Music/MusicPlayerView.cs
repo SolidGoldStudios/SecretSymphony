@@ -9,7 +9,7 @@ public class MusicPlayerView : MonoBehaviour
 	
     public void ShowMusicPlayer(string instrument, string songName, string songNotes, string songFile, string knot)
     {
-		GameManager.Instance.playerMovement.immobilized = true;
+		GameManager.Instance.SetPlayerImmobilized(true);
 		
 		musicPlayerViewer.SetActive(true);
         musicPlayer.StartSong(instrument, songName, songNotes, songFile, knot);
@@ -20,6 +20,6 @@ public class MusicPlayerView : MonoBehaviour
     {
 		musicPlayerViewer.SetActive(false);
 
-		GameManager.Instance.playerMovement.immobilized = false;
+		GameManager.Instance.SetPlayerImmobilized(false);
     }
 }
