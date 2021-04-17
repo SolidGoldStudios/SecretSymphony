@@ -4,7 +4,7 @@
         Good morning, Melody! #name:Father #mood:happy #audio:male_speak_short_1
         Good morning, father! #name:Melody #mood:happy 
         How are you? #name:Melody 
-        I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_short_2
+        I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_long_1
         ->END
     - has_piano_quest && !has_scythe:
         The <b>scythe</b> is outside by the barn. #name:Father #audio:male_speak_short_1
@@ -112,8 +112,8 @@
 }
 
 ==pianoquest_scythe==
-I finally get to use the scythe! Father never let me because it's sharp. #name:Melody #mood:happy  #audio:female_speak_long_1
-I had better see if I can use it on that pile of kindling in the house. #name:Melody  #audio:female_speak_medium_2
+I finally get to use the scythe! Father never let me because it's sharp. #name:Melody #mood:happy
+I had better see if I can use it on that pile of kindling in the house. #name:Melody 
 ~ has_scythe = true
 ->END
 
