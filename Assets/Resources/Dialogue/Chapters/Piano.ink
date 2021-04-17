@@ -4,7 +4,7 @@
         Good morning, Melody! #name:Father #mood:happy #audio:male_speak_short_1
         Good morning, father! #name:Melody #mood:happy 
         How are you? #name:Melody 
-        Very well. #name:Father #audio:male_speak_short_2
+        I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_short_2
         ->END
     - has_piano_quest && !has_scythe:
         The <b>scythe</b> is outside by the barn. #name:Father #audio:male_speak_short_1
@@ -63,7 +63,7 @@
         Well? Did you get the trumpetfish? #name:Thomas #mood:sad  #audio:female_speak_short_1
         ->END
     - else:
-        You seem peppy today. #name:Thomas #mood_happy  #audio:female_speak_short_2
+        Hey Sis... I feel like there's something important that I'm forgetting to do... #name:Thomas #mood_sad  #audio:female_speak_long_2
         ->END
 }
 
