@@ -54,7 +54,7 @@
 
 
 ==trombonequest_trivia_success==
-    Congratulations! Here's the trombone. #name:Uncle #item:Trombone #audio:male_speak_medium_2
+    Congratulations! Here's the trombone. #name:Uncle #audio:male_speak_medium_2
     ~ tooltip = "You saved the trombone!"
     ~ completed_trombone_quest = true
     ~ ready_for_flute_quest = true

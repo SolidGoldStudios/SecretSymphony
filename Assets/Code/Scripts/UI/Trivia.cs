@@ -101,6 +101,7 @@ public class Trivia : MonoBehaviour
 
         if (score == 3)
         {
+            audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
             audioSource.Play();
             HideTrivia();
