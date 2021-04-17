@@ -17,9 +17,16 @@ public class StartMenu : MonoBehaviour
 		}
 	}
 
-    public void MenuStartGame()
-    {
+	public void MenuGoToCharacterSelect()
+	{
+		Debug.Log("Going to character select");
 		PlayerData.Instance.ClearData();
+		fadeSceneScript.FadeOut("Scenes/Cutscenes/CharacterSelect", new Vector2(392f, 256f), new Vector3(-8.09f, -8.17f, -10f), new Vector2(0f, 0f));
+	}
+
+	public void MenuStartGame()
+    {
+		//PlayerData.Instance.ClearData();
 		fadeSceneScript.FadeOut("Scenes/Cutscenes/BedroomCutscene", new Vector2(.96f, -.19f), new Vector3(-1.4f, -1.03f, -10f), new Vector2(0f, 1f));
     }
 	
