@@ -69,12 +69,12 @@ public class TestQuests : MonoBehaviour
 		InventoryItem scythe = ItemCreator.CreateInventoryItem("Scythe", " used for cutting wheat.", "Items/scythe", 0, 0, true, "");
 		inventory.Add(scythe);
 		
-		InventoryItem pianoBook = ItemCreator.CreateInventoryItem("Keyboards Book", "Keyboards rule", "Items/books/book_keyboards", 0, 0, true, "book:piano");
-		inventory.Add(pianoBook);
-		books.Add("piano", 4);
+		//InventoryItem pianoBook = ItemCreator.CreateInventoryItem("Keyboards Book", "Keyboards rule", "Items/books/book_keyboards", 0, 0, true, "book:piano");
+		//inventory.Add(pianoBook);
+		//books.Add("piano", 4);
 		
-		bool[] pianoPages = {true, true, true};
-		pages.Add("piano", pianoPages);
+		//bool[] pianoPages = {true, true, true};
+		//pages.Add("piano", pianoPages);
 		
 		scene = "FarmOutdoor";
 	}

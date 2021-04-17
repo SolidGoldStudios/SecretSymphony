@@ -164,7 +164,7 @@ public class MusicPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = Resources.Load<AudioClip>("Audio/wrong");
+        audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_wrong");
         audioSource.Play();
     }
 }

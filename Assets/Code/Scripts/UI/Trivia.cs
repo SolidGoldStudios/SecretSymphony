@@ -87,22 +87,23 @@ public class Trivia : MonoBehaviour
         {
             score += 1;
             audioSource = GetComponent<AudioSource>();
-            audioSource.clip = Resources.Load<AudioClip>("Audio/correct");
+            audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_correct");
             audioSource.Play();
-            Debug.Log("correct");
         }
         else
         {
             audioSource = GetComponent<AudioSource>();
-            audioSource.clip = Resources.Load<AudioClip>("Audio/wrong");
+            audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_wrong");
             audioSource.Play();
-            Debug.Log("wrong answer");
         }
 
         scoreText.text = "Score: " + score;
 
         if (score == 3)
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
+            audioSource.Play();
             HideTrivia();
 
             if (successKnot != null)
@@ -110,7 +111,6 @@ public class Trivia : MonoBehaviour
                 GameObject uiCanvas = GameObject.Find("UICanvas");
                 GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
                 NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
-
                 npcDialogue.ShowDialog(successKnot);
 
                 return;
