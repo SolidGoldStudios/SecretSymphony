@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/IdleScreen.unity
     guid: 61cc34c5e6cc1334a8a1f7754a33f8c1
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/CharacterSelect.unity
+    guid: f2b59e8b48e8a3944b4c4262fca9d235
+  - enabled: 1
     path: Assets/Scenes/Cutscenes/BedroomCutscene.unity
     guid: 04bd0642c72e34df1a0e7d946bbdd829
   - enabled: 1
