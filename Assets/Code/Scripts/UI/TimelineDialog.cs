@@ -17,8 +17,8 @@ public class TimelineDialog : MonoBehaviour
         if (!dialogBox.activeInHierarchy)
         {
 			dialogBox.SetActive(true);
-            NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
-            npcDialogue.ShowDialog(knotName);
         }
+		NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+        npcDialogue.ShowDialog(knotName);
     }
 }

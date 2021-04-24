@@ -26,4 +26,9 @@ public class PercussionPages : IPages
 	{
 		return pages[pageNum];
 	}
+	
+	public int GetMaxPages()
+	{
+		return this.pages.Count;
+	}
 }

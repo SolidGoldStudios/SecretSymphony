@@ -58,6 +58,7 @@ public class PageCollector : Interaction
 			GameObject books = uiCanvas.transform.Find("Books").gameObject;
 			books.SetActive(true);
 			books.GetComponent<PageCreator>().SetBook(bookName);
+			books.GetComponent<PageCreator>().bookPager.GoToNewestPage();
 		}
 	}
 }
