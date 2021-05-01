@@ -111,12 +111,12 @@ TextureImporter:
       name: greysquirrel-Sheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 13
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,12 +132,12 @@ TextureImporter:
       name: greysquirrel-Sheet_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 15
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: greysquirrel-Sheet_2
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 10
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: greysquirrel-Sheet_3
       rect:
         serializedVersion: 2
-        x: 51
+        x: 48
         y: 0
-        width: 9
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: greysquirrel-Sheet_4
       rect:
         serializedVersion: 2
-        x: 68
+        x: 64
         y: 0
-        width: 9
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: greysquirrel-Sheet_5
       rect:
         serializedVersion: 2
-        x: 81
+        x: 80
         y: 0
-        width: 15
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: greysquirrel-Sheet_6
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 13
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.46, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
