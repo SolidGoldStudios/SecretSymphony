@@ -155,7 +155,8 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     Yes! And this is a piano, not firewood. #name:Melody #mood:happy 
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy #audio:male_speak_medium_2
     Hooray! We saved the piano! #name:Melody #mood:happy 
-    We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #audio:fairy_speak_long_1 
+    We sure did. Nice work, Melody. But there's still a lot of work left to do! #name:Spirit+of+Music #audio:fairy_speak_long_2 
+    Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1 
     You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles 
     ~ tooltip = "You saved the piano!"
     ~ completed_piano_quest = true

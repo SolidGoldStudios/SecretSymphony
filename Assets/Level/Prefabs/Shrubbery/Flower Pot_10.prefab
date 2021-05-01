@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3492309007823944648}
   - component: {fileID: 8224387216272072979}
   - component: {fileID: 8224387216272072978}
+  - component: {fileID: 3851288929408641374}
   m_Layer: 0
   m_Name: Flower Pot_10
   m_TagString: Untagged
@@ -261,3 +262,19 @@ MonoBehaviour:
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
   blockedBy: {fileID: 0}
+--- !u!114 &3851288929408641374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8224387216272072980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.74397516, y: 0.609303, z: 4}
+  m_Center: {x: 0.06176734, y: 0.3517344, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
