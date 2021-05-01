@@ -138,7 +138,7 @@ Good work! You passed. Here you go. #name:Scarecrow #item:Piano+Key #audio:scare
 ~ has_piano_key = true
 ~ tooltip = "Got the piano key!"
 Hooray! Thanks, scarecrow! #name:Melody #mood:happy  
-I should go back to the house and try this on that "piano" thing. #name:Melody #mood:thinking  
+I should go back to the house and try this on that "piano" thing. #name:Melody #mood:thinking #scene:LivingRoom|-5.9,-15.48|-4.6,-11.68,-10|0,1  
 ->DONE
 
 ==pianoquest_trivia_fail==
