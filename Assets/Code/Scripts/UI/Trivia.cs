@@ -143,6 +143,7 @@ public class Trivia : MonoBehaviour
     private IEnumerator DelayAndHideTrivia()
     {
         yield return new WaitForSeconds(3.9f);
+        HideTrivia();
         yield return null;
     }
 
