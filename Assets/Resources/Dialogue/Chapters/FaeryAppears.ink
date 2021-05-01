@@ -8,9 +8,6 @@
 ==bard_earworm_scene==
     What's that awful sound? #name:Bard
     Give me that delicious MUSIC! #name:Earworm
--> END
-
-==fairy_earworm_scene==
     Oh dear! Oh no! I can't believe this is happening... #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1 #showSparkles
     The Evil EarWorm has stolen their music memories right out of their heads! #name:Spirit+of+Music #mood:right #audio:fairy_speak_medium_1
     Only Melody can help the village remember! Help us, Melody. You're our only hope... #name:Spirit+of+Music #mood:neutral  #audio:fairy_speak_long_1 #scene:Bedroom|-.68,-.36|-1.65,-1,-10|0,-1 
