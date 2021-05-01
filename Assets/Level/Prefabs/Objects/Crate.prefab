@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8412430396042507685}
   - component: {fileID: 8412430396042507687}
   - component: {fileID: 8412430396042507686}
-  - component: {fileID: 8412430396042507680}
   - component: {fileID: 8412430396042507692}
   - component: {fileID: 8412430396042507683}
   - component: {fileID: 8412430396042507682}
   - component: {fileID: 8412430396042507681}
+  - component: {fileID: 1345039729055924503}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -114,22 +114,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.0594835, y: 2.8664284}
   m_EdgeRadius: 0
---- !u!114 &8412430396042507680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8412430396042507684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 3.5580187, y: 2.066927, z: 4}
-  m_Center: {x: -0.22099066, y: 1.4665365, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!114 &8412430396042507692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,3 +262,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!208 &1345039729055924503
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8412430396042507684}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.6250001, y: 1.4690001, z: 0.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.4690001, z: 0}
+  m_TimeToStationary: 0.5
