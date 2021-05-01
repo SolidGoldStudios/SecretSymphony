@@ -7,7 +7,7 @@
         I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_long_1
         ->END
     - has_piano_quest && !has_scythe:
-        The <b>scythe</b> is outside by the barn. #name:Father #audio:male_speak_short_1
+        The <b>scythe</b> is just outside the house. #name:Father #audio:male_speak_short_1
         ->END
     - has_piano_quest && has_scythe && !completed_piano_quest:
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy #audio:male_speak_long_1
@@ -113,7 +113,7 @@
 
 ==pianoquest_scythe==
 I finally get to use the scythe! Father never let me because it's sharp. #name:Melody #mood:happy
-I had better see if I can use it on that pile of kindling in the house. #name:Melody 
+I had better see if I can use it on that pile of kindling in the house. #name:Melody #scene:LivingRoom|-5.9,-15.48|-4.6,-11.68,-10|0,1 
 ~ has_scythe = true
 ->END
 
