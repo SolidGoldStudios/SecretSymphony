@@ -1,7 +1,7 @@
 ==violinquest_joan==
 
  {
-	- !has_violin_quest && ready_for_violin_quest:
+	- !has_violin_quest && ready_for_violin_quest && !completed_violin_quest:
 		Hello down there! #name:Joan #audio:female_speak_short_1
 		Is that you, Joan? #name:Melody #mood:concerned
 		Yep! It's me, Joan the Village Goof! #name:Joan #mood:happy #audio:female_speak_medium_1

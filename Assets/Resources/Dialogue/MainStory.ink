@@ -32,7 +32,6 @@ VAR has_played_piano = false
 VAR ready_for_trombone_quest = false
 VAR has_trombone_quest = false
 VAR completed_trombone_quest = false
-
 VAR has_played_trombone_song = false
 
 /* Flute quest */
@@ -58,4 +57,4 @@ VAR completed_cow_quest = false
 /* Fishing quest */
 VAR ready_for_fishing_quest = false
 VAR has_fishing_quest = false
-VAR completed_fishing_quest = false
+VAR completed_fishing_quest = false 
