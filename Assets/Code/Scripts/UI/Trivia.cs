@@ -106,15 +106,7 @@ public class Trivia : MonoBehaviour
             audioSource.Play();
             StartCoroutine(DelayAndHideTrivia());
 
-            if (successKnot != null)
-            {
-                GameObject uiCanvas = GameObject.Find("UICanvas");
-                GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
-                NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
-                npcDialogue.ShowDialog(successKnot);
-
-                return;
-            }
+            
         }
 
         currentQuestion += 1;
@@ -144,6 +136,13 @@ public class Trivia : MonoBehaviour
     {
         yield return new WaitForSeconds(3.9f);
         HideTrivia();
+        if (successKnot != null)
+        {
+            GameObject uiCanvas = GameObject.Find("UICanvas");
+            GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+            NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+            npcDialogue.ShowDialog(successKnot);
+        }
         yield return null;
     }
 
