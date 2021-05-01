@@ -233,6 +233,12 @@ public class NPCDialogue : MonoBehaviour
                 timeline = timelineManager.GetComponent<PlayableDirector>();
                 timeline.Play();
             }
+            if(tag.StartsWith("victory"))
+            {
+                // Show the victory pose and show the tooltip
+                GameObject player = GameObject.Find("Player").gameObject;
+                GameManager.Instance.playerMovement.RunRaiseArms(null);
+            }
         }
     }
 
