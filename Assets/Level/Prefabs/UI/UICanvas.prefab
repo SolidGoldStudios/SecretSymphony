@@ -5020,6 +5020,8 @@ MonoBehaviour:
   choiceTwoText: {fileID: 2257383733172534571}
   choiceThreeText: {fileID: 2257383733224230514}
   dialogOk: {fileID: 7862613151496751433}
+  timelineManager: {fileID: 0}
+  timeline: {fileID: 0}
   triviaBox: {fileID: 854864832400576676}
   books: {fileID: 3888925502056574109}
   orbRenderer: {fileID: 0}
@@ -8124,6 +8126,7 @@ GameObject:
   - component: {fileID: 689619266391373557}
   - component: {fileID: 8121147070269317676}
   - component: {fileID: 2825635071991576258}
+  - component: {fileID: 9112241441621734706}
   m_Layer: 0
   m_Name: Backdrop
   m_TagString: Untagged
@@ -8296,6 +8299,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9112241441621734706}
+        m_MethodName: BackdropClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9112241441621734706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533016321914949521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d45cc475ed043c199524527c7a6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4548310595721910213
 GameObject:
   m_ObjectHideFlags: 0
