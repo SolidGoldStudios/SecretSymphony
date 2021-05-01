@@ -104,7 +104,7 @@ public class Trivia : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
             audioSource.Play();
-            HideTrivia();
+            StartCoroutine(DelayAndHideTrivia());
 
             if (successKnot != null)
             {
@@ -138,6 +138,12 @@ public class Trivia : MonoBehaviour
         {
             ShowQuestion();
         }
+    }
+
+    private IEnumerator DelayAndHideTrivia()
+    {
+        yield return new WaitForSeconds(3.9f);
+        yield return null;
     }
 
     public void ShowTrivia(string name, Sprite portrait, string questionFile, string toSuccessKnot, string toFailKnot)
