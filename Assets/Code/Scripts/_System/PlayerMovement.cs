@@ -118,14 +118,15 @@ public class PlayerMovement : MonoBehaviour
             if (hit.collider != null)
             {
                 interactionTarget = hit.transform.gameObject;
+                Debug.Log("collider hit " + interactionTarget.name);
                 Interaction interaction = interactionTarget.transform.GetComponent<Interaction>();
 
                 if (interaction != null && interaction.enabled)
                 {
-                    //Debug.Log("interactionTarget is now " + hit.transform.gameObject.name);
-                    interactionIcon.sprite = interactionTarget.transform.GetComponent<Interaction>().interactionIconActive;
+                    Debug.Log("interactionTarget is now " + interactionTarget.name);
+                    interactionIcon.sprite = interaction.interactionIconActive;
 
-                    if (interactionTarget.GetComponent<Interaction>().moveToTarget)
+                    if (interaction.moveToTarget)
                     {
                         Bounds bounds = interactionTarget.GetComponent<SpriteRenderer>().bounds;
 
@@ -139,14 +140,14 @@ public class PlayerMovement : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log("interactionTarget is now null");
+                    Debug.Log("interactionTarget is now null");
 					interactionIcon.sprite = Resources.Load<Sprite>("UI/cursor_active");
                     interactionTarget = null;
                 }
             }
             else
             {
-                //Debug.Log("interactionTarget is now null");
+                Debug.Log("interactionTarget is now null");
 				interactionIcon.sprite = Resources.Load<Sprite>("UI/cursor_active");
                 interactionTarget = null;
             }
