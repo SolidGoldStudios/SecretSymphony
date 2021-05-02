@@ -154,7 +154,7 @@ public class Trivia : MonoBehaviour
 
         transform.gameObject.SetActive(true);
 
-        nameplateText.text = name;
+        nameplateText.text = name.Replace("+", " ");
         topPortrait.sprite = portrait;
 
         string triviaJson = Resources.Load<TextAsset>("Trivia/" + questionFile).ToString();

@@ -36,7 +36,6 @@
         But it's all stuck together. Can you chop it into smaller pieces? #name:Mother #mood:sad  #audio:female_speak_long_2
         I'll get to it. #name:Melody #mood:happy 
         Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #audio:male_speak_medium_1 #quest:InstrumentPianoPartOne #audio:quest_added
-        ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
         ->END
     - completed_piano_quest && !has_trombone_quest:
@@ -157,7 +156,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     Hooray! We saved the piano! #name:Melody #mood:happy 
     We sure did. Nice work, Melody. But there's still a lot of work left to do! #name:Spirit+of+Music #audio:fairy_speak_long_2 
     Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1 
-    You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles 
+    You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles #victory
     ~ tooltip = "You saved the piano!"
     ~ completed_piano_quest = true
     ~ ready_for_trombone_quest = true

@@ -190,7 +190,7 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("trivia"))
             {
                 Debug.Log("trivia tag!  args: " + tag.Substring(7));
-                string[] args = tag.Substring(7).Replace("+", " ").Split(',');
+                string[] args = tag.Substring(7).Split(',');
 
                 Trivia trivia = triviaBox.GetComponent<Trivia>();
 
