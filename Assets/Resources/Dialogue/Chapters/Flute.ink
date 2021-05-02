@@ -27,7 +27,7 @@
     Fascinating! I still don't entirely understand, but thank you for teaching me! #name:Professor+Oze #mood:happy #audio:male_speak_medium_1
     You're welcome! #name:Melody #mood:happy
     Now that you know it's a flute, can I borrow it? #name:Melody
-    Of course you can, Melody. #name:Professor+Oze #item:Flute #audio:male_speak_short_2
+    Of course you can, Melody. #name:Professor+Oze #item:Flute #audio:male_speak_short_2 #victory
     ~ tooltip = "You saved the flute!"
     ~ completed_flute_quest = true
     Thanks! Bye! #name:Melody #mood:happy

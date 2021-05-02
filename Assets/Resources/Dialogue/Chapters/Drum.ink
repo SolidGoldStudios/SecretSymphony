@@ -30,7 +30,7 @@
 ==drumquest_trivia_success==
     YAY AWESOME I NEED DIALOG #name:Blacksmith+Whitney #mood:happy #audio:male_speak_medium_1
     You're welcome! Now gimme that drum! #name:Melody #mood:happy
-    Okay! Please don't hurt me, you maniac! #name:Blacksmith+Whitney #audio:male_speak_medium_2
+    Okay! Please don't hurt me, you maniac! #name:Blacksmith+Whitney #audio:male_speak_medium_2 :victory
     ~ tooltip = "You saved the bass drum!"
     ~ completed_drum_quest = true
     Thanks! Bye! #name:Melody #mood:happy
