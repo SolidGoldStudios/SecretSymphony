@@ -12,64 +12,78 @@ public class BookPager : MonoBehaviour
     public GameObject facts;
 
     private int numPages = 0;
-    private int i = 1;
+    private int index = 1;
 
     void OnEnable()
     {
-		i = 1;
+		index = 1;
     }
 
     public void NextPage()
     {
         // Hide child of Facts at current index
-        HideFact(i);
+        HideFact(index);
 
         // Increment the index
-        if (i < numPages)
+        if (index < numPages)
         {
-            i++;
+            index++;
         }
         else
         {
-            i = 1;
+            index = 1;
         }
 
         // Update the currentPage text
-        UpdateCurrentPage(i);
+        UpdateCurrentPage(index);
 
         // Show the child of Facts at new index
-        ShowFact(i);
+        ShowFact(index);
     }
 	
 	public void PageCount(int num)
 	{
 		numPages = num;
-		Text totalPagesText = totalPages.gameObject.GetComponent<Text>();
-        //totalPagesText.text = numPages.ToString();
-        totalPagesText.text = facts.transform.childCount.ToString();
     }
+	
+	public void SetTotalPages(int num)
+	{
+		Text totalPagesText = totalPages.gameObject.GetComponent<Text>();
+        totalPagesText.text = num.ToString();
+	}
 
     public void PrevPage()
     {
         // Hide child of Facts at current index
-        HideFact(i);
+        HideFact(index);
 
         // Decrement the index
-        if (i > 1)
+        if (index > 1)
         {
-            i--;
+            index--;
         }
         else
         {
-            i = numPages;
+            index = numPages;
         }
 
         // Update the currentPage text
-        UpdateCurrentPage(i);
+        UpdateCurrentPage(index);
 
         // Show the child of Facts at new index
-        ShowFact(i);
+        ShowFact(index);
     }
+	
+	public void GoToNewestPage()
+	{
+		foreach (Transform child in facts.transform) 
+		{
+			child.gameObject.SetActive(false);
+		}
+        facts.transform.GetChild(facts.transform.childCount - 1).gameObject.SetActive(true);
+		index = numPages;
+		UpdateCurrentPage(index);
+	}
 
     void UpdateCurrentPage(int iPage)
     {

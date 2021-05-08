@@ -28,4 +28,9 @@ public class WindsPages : IPages
 	{
 		return pages[pageNum];
 	}
+	
+	public int GetMaxPages()
+	{
+		return this.pages.Count;
+	}
 }

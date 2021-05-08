@@ -4,10 +4,11 @@ using UnityEngine;
 
 public interface IPages
 {
-	List<string> pages {get; set;}
-	int pagesFound {get; set;}
+	List<string> pages 	{get; set;}
+	int pagesFound 		{get; set;}
 
 	void CreatePages();
     string GetPageText(int pageNum);
 	void SetPagesFound(int num);
+	int GetMaxPages();
 }

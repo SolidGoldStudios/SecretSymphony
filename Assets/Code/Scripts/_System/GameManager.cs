@@ -62,7 +62,8 @@ public class GameManager : Singleton<GameManager>
 	
 	void Start()
 	{
-		if (SceneManager.GetActiveScene().name != "TitleScreen")
+		if (   SceneManager.GetActiveScene().name != "TitleScreen"
+			&& SceneManager.GetActiveScene().name != "TownEarwormCutscene")
 		{
 			player = GameObject.Find("Player").gameObject;
 			playerMovement = player.GetComponent<PlayerMovement>();

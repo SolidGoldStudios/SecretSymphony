@@ -39,6 +39,7 @@ public class PageCreator : MonoBehaviour
 			}
 		}
 		bookPager.PageCount(activeBook.pagesFound);
+		bookPager.SetTotalPages(activeBook.GetMaxPages());
 	}
 	
 	public void SetBook(string key)
