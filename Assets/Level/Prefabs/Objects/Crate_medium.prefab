@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 7275113302720139343}
   - component: {fileID: 7275113302720139328}
   - component: {fileID: 7275113302720139329}
-  - component: {fileID: 7275113302720139330}
   - component: {fileID: 1434883214035971714}
+  - component: {fileID: 7631439912683999567}
   m_Layer: 0
   m_Name: Crate_medium
   m_TagString: Untagged
@@ -246,22 +246,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7275113302720139330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7275113302720139334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 1.9700947, y: 1.4385357, z: 4}
-  m_Center: {x: -0.026024818, y: 2.0930243, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!114 &1434883214035971714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,3 +262,19 @@ MonoBehaviour:
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
   blockedBy: {fileID: 0}
+--- !u!208 &7631439912683999567
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275113302720139334}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.6250001, y: 1.312, z: 0.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.312, z: 0}
+  m_TimeToStationary: 0.5

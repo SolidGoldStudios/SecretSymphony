@@ -104,17 +104,9 @@ public class Trivia : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
             audioSource.Play();
-            HideTrivia();
+            StartCoroutine(DelayAndHideTrivia());
 
-            if (successKnot != null)
-            {
-                GameObject uiCanvas = GameObject.Find("UICanvas");
-                GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
-                NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
-                npcDialogue.ShowDialog(successKnot);
-
-                return;
-            }
+            
         }
 
         currentQuestion += 1;
@@ -140,6 +132,20 @@ public class Trivia : MonoBehaviour
         }
     }
 
+    private IEnumerator DelayAndHideTrivia()
+    {
+        yield return new WaitForSeconds(3.9f);
+        HideTrivia();
+        if (successKnot != null)
+        {
+            GameObject uiCanvas = GameObject.Find("UICanvas");
+            GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+            NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+            npcDialogue.ShowDialog(successKnot);
+        }
+        yield return null;
+    }
+
     public void ShowTrivia(string name, Sprite portrait, string questionFile, string toSuccessKnot, string toFailKnot)
     {
         Debug.Log("show trivia: " + name);
@@ -148,7 +154,7 @@ public class Trivia : MonoBehaviour
 
         transform.gameObject.SetActive(true);
 
-        nameplateText.text = name;
+        nameplateText.text = name.Replace("+", " ");
         topPortrait.sprite = portrait;
 
         string triviaJson = Resources.Load<TextAsset>("Trivia/" + questionFile).ToString();

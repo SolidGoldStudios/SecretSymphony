@@ -190,7 +190,7 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("trivia"))
             {
                 Debug.Log("trivia tag!  args: " + tag.Substring(7));
-                string[] args = tag.Substring(7).Replace("+", " ").Split(',');
+                string[] args = tag.Substring(7).Split(',');
 
                 Trivia trivia = triviaBox.GetComponent<Trivia>();
 
@@ -232,6 +232,12 @@ public class NPCDialogue : MonoBehaviour
                 timelineManager = GameObject.Find(timelineObject).gameObject;
                 timeline = timelineManager.GetComponent<PlayableDirector>();
                 timeline.Play();
+            }
+            if(tag.StartsWith("victory"))
+            {
+                // Show the victory pose and show the tooltip
+                GameObject player = GameObject.Find("Player").gameObject;
+                GameManager.Instance.playerMovement.RunRaiseArms(null);
             }
         }
     }

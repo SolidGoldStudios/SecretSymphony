@@ -46,8 +46,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 3
   m_FalloffIntensity: 0.474
-  m_Color: {r: 0.9245283, g: 0.10902455, b: 0.10902455, a: 1}
-  m_Intensity: 1.78
+  m_Color: {r: 0.8867924, g: 0.283129, b: 0.27189392, a: 1}
+  m_Intensity: 1.36
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca844f41c656b72b8b72d346f3c8472983b8
   m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
@@ -59,8 +59,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.48
+  m_PointLightInnerRadius: 0.32
+  m_PointLightOuterRadius: 0.58
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -83,6 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4889020961692607151}
   - component: {fileID: 4889020961692607150}
+  - component: {fileID: 2655693827487591859}
   m_Layer: 0
   m_Name: Candle_Red_Small
   m_TagString: Untagged
@@ -98,7 +99,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4889020961692607149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8059034, y: 17.496264, z: 10.749814}
+  m_LocalPosition: {x: -1.8059034, y: 17.496264, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2341287011298202268}
@@ -156,3 +157,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2655693827487591859
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889020961692607149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1d5b176315160f439c223ac4f1a9aab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

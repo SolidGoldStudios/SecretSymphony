@@ -7,7 +7,7 @@
         I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_long_1
         ->END
     - has_piano_quest && !has_scythe:
-        The <b>scythe</b> is outside by the barn. #name:Father #audio:male_speak_short_1
+        The <b>scythe</b> is just outside the house. #name:Father #audio:male_speak_short_1
         ->END
     - has_piano_quest && has_scythe && !completed_piano_quest:
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy #audio:male_speak_long_1
@@ -36,7 +36,6 @@
         But it's all stuck together. Can you chop it into smaller pieces? #name:Mother #mood:sad  #audio:female_speak_long_2
         I'll get to it. #name:Melody #mood:happy 
         Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #audio:male_speak_medium_1 #quest:InstrumentPianoPartOne #audio:quest_added
-        ~ tooltip = "Added to Quest Log!"
         ~ has_piano_quest = true
         ->END
     - completed_piano_quest && !has_trombone_quest:
@@ -113,7 +112,7 @@
 
 ==pianoquest_scythe==
 I finally get to use the scythe! Father never let me because it's sharp. #name:Melody #mood:happy
-I had better see if I can use it on that pile of kindling in the house. #name:Melody 
+I had better see if I can use it on that pile of kindling in the house. #name:Melody #scene:LivingRoom|-5.9,-15.48|-4.6,-11.68,-10|0,1 
 ~ has_scythe = true
 ->END
 
@@ -138,7 +137,7 @@ Good work! You passed. Here you go. #name:Scarecrow #item:Piano+Key #audio:scare
 ~ has_piano_key = true
 ~ tooltip = "Got the piano key!"
 Hooray! Thanks, scarecrow! #name:Melody #mood:happy  
-I should go back to the house and try this on that "piano" thing. #name:Melody #mood:thinking  
+I should go back to the house and try this on that "piano" thing. #name:Melody #mood:thinking #scene:LivingRoom|-5.9,-15.48|-4.6,-11.68,-10|0,1  
 ->DONE
 
 ==pianoquest_trivia_fail==
@@ -155,8 +154,9 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     Yes! And this is a piano, not firewood. #name:Melody #mood:happy 
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy #audio:male_speak_medium_2
     Hooray! We saved the piano! #name:Melody #mood:happy 
-    We sure did. Nice work, Melody. But there's still a lot of work left to do! Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #audio:fairy_speak_long_1 
-    You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles 
+    We sure did. Nice work, Melody. But there's still a lot of work left to do! #name:Spirit+of+Music #audio:fairy_speak_long_2 
+    Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1 
+    You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles #victory
     ~ tooltip = "You saved the piano!"
     ~ completed_piano_quest = true
     ~ ready_for_trombone_quest = true

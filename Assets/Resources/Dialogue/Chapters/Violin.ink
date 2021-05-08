@@ -1,7 +1,7 @@
 ==violinquest_joan==
 
  {
-	- !has_violin_quest && ready_for_violin_quest:
+	- !has_violin_quest && ready_for_violin_quest && !completed_violin_quest:
 		Hello down there! #name:Joan #audio:female_speak_short_1
 		Is that you, Joan? #name:Melody #mood:concerned
 		Yep! It's me, Joan the Village Goof! #name:Joan #mood:happy #audio:female_speak_medium_1
@@ -30,15 +30,16 @@
 		->violinquest_trivia_success
 		
 ==violinquest_trivia_success==
-	Oops! I hope that didn't hurt, Chucky! #name:Joan #mood:sad #audio:female_speak_medium_1
+	Oops! I hope that didn't hurt, Chucky! #name:Joan #mood:sad #audio:female_speak_medium_1 #timeline:ViolinTimeline  #victory
+	~ tooltip = "You saved the violin!"
     He's okay! Thanks, Joan! #name:Melody #mood:happy
     You bet! Have a nice day. I'll be here comforting the remaining apples. #name:Joan #audio:female_speak_long_1
-	~ tooltip = "You saved the violin!"
 	~ completed_violin_quest = true
 	-> END
 		
 ==violinquest_trivia_fail==
-		YOU FAILED AND I NEED DIALOG, TRY AGAIN #name:Joan #mood:sad #audio:female_speak_medium_1
+		See? Chucky's no "musible instrumob!"  #name:Joan #mood:sad #audio:female_speak_medium_1
+		But that was a fun game! Want to play again? #name:Joan #mood:happy #audio:female_speak_medium_2
 		+ [Yes] Let's do it! #name:Melody #mood:happy
 				-> violinquest_trivia
 		+ [No] I need more time to study. #name:Melody #mood:thinking
