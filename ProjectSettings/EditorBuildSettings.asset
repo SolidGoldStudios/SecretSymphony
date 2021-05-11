@@ -53,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/FarmToTownCutscene.unity
     guid: e50da78ecad4740c39652728775c7450
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Credits.unity
+    guid: 4fe2f1bbc8df8c44bab87a57dcaa5aca
+  - enabled: 1
+    path: Assets/FinalScore.unity
+    guid: 0b52d72faa1071847a88277bf1220071
   m_configObjects: {}
