@@ -1198,8 +1198,8 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 1455886185}
   knotName: drumquest_blacksmith
-  questGiver: 0
-  questName: 
+  questGiver: 1
+  questName: drum_quest
 --- !u!95 &155315920
 Animator:
   serializedVersion: 3
