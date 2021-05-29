@@ -6,7 +6,6 @@ public class MenuButtons : MonoBehaviour
 {	
 	public GameObject MainMenu;
 	public GameObject Inventory;
-	public GameObject QuestLog;
 	public GameObject BookView;
 	public GameObject Backdrop;
 	
@@ -31,12 +30,6 @@ public class MenuButtons : MonoBehaviour
 		MenuHideAll();
         Inventory.SetActive(true);
     }
-
-    public void MenuToggleQuestLog()
-    {
-		MenuHideAll();
-        QuestLog.SetActive(true);
-    }
 	
 	public void MenuToggleBook()
 	{
@@ -48,7 +41,6 @@ public class MenuButtons : MonoBehaviour
 	{
 		MainMenu.SetActive(false);
 		Inventory.SetActive(false);
-		QuestLog.SetActive(false);
 		BookView.SetActive(false);
 	}
 
