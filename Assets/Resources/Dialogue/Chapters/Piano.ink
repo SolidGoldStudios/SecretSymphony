@@ -160,6 +160,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     ~ tooltip = "You saved the piano!"
     ~ completed_piano_quest = true
     ~ ready_for_trombone_quest = true
+    ~ ready_for_fishing_quest = true
     /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
 -> DONE
 
