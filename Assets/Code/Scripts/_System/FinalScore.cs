@@ -6,7 +6,6 @@ public class finalscore : MonoBehaviour
 {
 	public GameObject MainMenu;
 	public GameObject Inventory;
-	public GameObject QuestLog;
 	public GameObject BookView;
 	public GameObject Backdrop;
 
@@ -32,12 +31,6 @@ public class finalscore : MonoBehaviour
 		Inventory.SetActive(true);
 	}
 
-	public void MenuToggleQuestLog()
-	{
-		MenuHideAll();
-		QuestLog.SetActive(true);
-	}
-
 	public void MenuToggleBook()
 	{
 		MenuHideAll();
@@ -48,7 +41,6 @@ public class finalscore : MonoBehaviour
 	{
 		MainMenu.SetActive(false);
 		Inventory.SetActive(false);
-		QuestLog.SetActive(false);
 		BookView.SetActive(false);
 	}
 
