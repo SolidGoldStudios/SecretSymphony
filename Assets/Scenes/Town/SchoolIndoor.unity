@@ -4023,8 +4023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Size: {x: 3.031845, y: 1.0127392, z: 4}
-  m_Center: {x: -0.3312111, y: -0.85987186, z: 0}
+  m_Size: {x: 3.031845, y: 0.9536352, z: 4}
+  m_Center: {x: -0.3312111, y: 0.56848764, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
 --- !u!1 &573260952
@@ -6625,7 +6625,7 @@ MonoBehaviour:
   dialogBox: {fileID: 197158570}
   knotName: flutequest_professor
   questGiver: 1
-  questName: 
+  questName: flute_quest
 --- !u!61 &1270513109
 BoxCollider2D:
   m_ObjectHideFlags: 0
