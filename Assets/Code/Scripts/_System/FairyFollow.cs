@@ -17,7 +17,7 @@ public class FairyFollow : MonoBehaviour
         foreach (Transform pointOfInterest in pointsOfInterest)
         {
             StartDialogue dialogue = pointOfInterest.gameObject.GetComponent<StartDialogue>();
-            if (dialogue != null && dialogue.questGiver)
+            if (dialogue != null && dialogue.questGiver && (int)GameManager.Instance.inkStory.variablesState["has_" + dialogue.questName] == 0)
             {
                 // Float above and to the left of NPCs with StartDialogue and questGiver
                 pointOfInterestPositions.Add(pointOfInterest.TransformPoint(new Vector3(-1f, 3f, 0f)));
@@ -38,8 +38,10 @@ public class FairyFollow : MonoBehaviour
         for (int i = 0; i < pointsOfInterest.Length; i++)
         {
             Transform pointOfInterest = pointsOfInterest[i];
-
             if (!pointOfInterest.gameObject.activeInHierarchy) continue;
+
+            StartDialogue dialogue = pointOfInterest.gameObject.GetComponent<StartDialogue>();
+            if (dialogue != null && dialogue.questGiver && (int)GameManager.Instance.inkStory.variablesState["has_" + dialogue.questName] == 1) continue;
 
             Vector3 distance = target.position - pointOfInterest.position;
             if (distance.magnitude < minDistance)
