@@ -63,7 +63,14 @@ public class Trivia : MonoBehaviour
         GameObject score = transform.Find("Score").gameObject;
         scoreText = score.GetComponent<Text>();
 
-        //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "Trivia/piano", null, null);
+        //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
+    }
+
+    private void OnDisable()
+    {
+        choiceOneButton.onClick.RemoveListener(ClickedChoiceOne);
+        choiceTwoButton.onClick.RemoveListener(ClickedChoiceTwo);
+        choiceThreeButton.onClick.RemoveListener(ClickedChoiceThree);
     }
 
     void ClickedChoiceOne()
@@ -106,10 +113,11 @@ public class Trivia : MonoBehaviour
             audioSource.Play();
             StartCoroutine(DelayAndHideTrivia());
 
-            
+            return;
         }
 
         currentQuestion += 1;
+        Debug.Log("currentQuestion " + currentQuestion);
 
         if (currentQuestion == 5 || currentQuestion == triviaQuestions.Count)
         {
@@ -164,6 +172,7 @@ public class Trivia : MonoBehaviour
 
         currentQuestion = 0;
         score = 0;
+        scoreText.text = "Score: " + score;
         successKnot = toSuccessKnot;
         failKnot = toFailKnot;
 
