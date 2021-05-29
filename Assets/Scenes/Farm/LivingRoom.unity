@@ -411,7 +411,7 @@ BoxCollider2D:
   m_Offset: {x: -0.0002219677, y: -0.8749992}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5120065, y: 0.044217672}
     oldSize: {x: 2.4375, y: 3.6875}
     newSize: {x: 2, y: 3}
     adaptiveTilingThreshold: 0.5
@@ -6497,8 +6497,8 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_brother
-  questGiver: 0
-  questName: 
+  questGiver: 1
+  questName: fishing_quest
 --- !u!212 &452259447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13755,8 +13755,8 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_father
-  questGiver: 0
-  questName: 
+  questGiver: 1
+  questName: trombone_quest
 --- !u!212 &628461827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17386,12 +17386,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1498230206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3560264305100390352, guid: 59a222df298964682a8ab1f42945c798,
-    type: 3}
-  m_PrefabInstance: {fileID: 2257383733766677170}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1525629266
 GameObject:
   m_ObjectHideFlags: 0
@@ -30084,7 +30078,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BookView
       value: 
-      objectReference: {fileID: 1498230206}
+      objectReference: {fileID: 0}
     - target: {fileID: 3653300660375307121, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Enabled
