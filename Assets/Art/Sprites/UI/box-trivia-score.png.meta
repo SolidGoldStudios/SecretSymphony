@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c5d0da69f705d4e88b3d7ae87e105f0b
+guid: 95d2a2e65b4864f70a2acecf0fa07a29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1555053110851596056
-    second: trivia-button-b-hover_0
+      213: -6085331022625993256
+    second: box-trivia-score_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,22 +102,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trivia-button-b-hover_0
+      name: box-trivia-score_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
-        height: 26
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 22, y: 5, z: 5, w: 5}
+      border: {x: 6, y: 1, z: 6, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e013d84f675b6ae0800000000000000
-      internalID: -1555053110851596056
+      spriteID: 8dd86b72daf8c8ba0800000000000000
+      internalID: -6085331022625993256
       vertices: []
       indices: 
       edges: []
