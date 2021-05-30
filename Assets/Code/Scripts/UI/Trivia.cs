@@ -8,8 +8,6 @@ public class Trivia : MonoBehaviour
     PlayerMovement playerMovement;
     Image topPortrait;
     Image bottomPortrait;
-    GameObject nameplate;
-    Text nameplateText;
     Text dialogueText;
     GameObject choiceOne;
     GameObject choiceTwo;
@@ -21,6 +19,9 @@ public class Trivia : MonoBehaviour
     Button choiceTwoButton;
     Button choiceThreeButton;
     Text scoreText;
+    Image check1;
+    Image check2;
+    Image check3;
     AudioSource audioSource;
 
     List<TriviaQuestion> triviaQuestions;
@@ -36,11 +37,7 @@ public class Trivia : MonoBehaviour
         //HideTrivia();
 
         topPortrait = transform.Find("TopPortrait").gameObject.GetComponent<Image>();
-        bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>();
-
-        nameplate = transform.Find("Nameplate").gameObject;
-        nameplateText = nameplate.transform.Find("NameLabel").gameObject.GetComponent<Text>();
-
+        bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>(); 
         dialogueText = transform.Find("Dialogue").gameObject.GetComponent<Text>();
 
         choiceOne = transform.Find("ChoiceOne").gameObject;
@@ -60,8 +57,12 @@ public class Trivia : MonoBehaviour
         choiceThreeButton = choiceThree.GetComponent<Button>();
         choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
 
-        GameObject score = transform.Find("Score").gameObject;
+        GameObject scorePanel = transform.Find("ScorePanel").gameObject;
+        GameObject score = scorePanel.transform.Find("Score").gameObject;
         scoreText = score.GetComponent<Text>();
+        check1 = scorePanel.transform.Find("Check1").gameObject.GetComponent<Image>();
+        check2 = scorePanel.transform.Find("Check2").gameObject.GetComponent<Image>();
+        check3 = scorePanel.transform.Find("Check3").gameObject.GetComponent<Image>();
 
         //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
     }
@@ -105,9 +106,20 @@ public class Trivia : MonoBehaviour
         }
 
         scoreText.text = "Score: " + score;
-
-        if (score == 3)
+        if (score == 1)
         {
+            check1.enabled = true;
+        }
+        else if (score == 2)
+        {
+            check1.enabled = true;
+            check2.enabled = true;
+        }
+        else if (score == 3)
+        {
+            check1.enabled = true;
+            check2.enabled = true;
+            check3.enabled = true;
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
             audioSource.Play();
@@ -162,7 +174,6 @@ public class Trivia : MonoBehaviour
 
         transform.gameObject.SetActive(true);
 
-        nameplateText.text = name.Replace("+", " ");
         topPortrait.sprite = portrait;
 
         string triviaJson = Resources.Load<TextAsset>("Trivia/" + questionFile).ToString();
