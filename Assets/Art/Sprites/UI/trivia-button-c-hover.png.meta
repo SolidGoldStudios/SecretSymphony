@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 28a0fb427021046638a727adc269b3cf
+guid: 41d1bd7e9ca664fb5bdf094f39e8a163
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4648283612990402187
-    second: ui_quest_log_failed_0
+      213: 2550299060000144779
+    second: trivia-button-c-hover_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -102,22 +102,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_quest_log_failed_0
+      name: trivia-button-c-hover_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 23
+        width: 37
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 15, y: 6, z: 4, w: 5}
+      border: {x: 22, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8eef8f7155028040800000000000000
-      internalID: 4648283612990402187
+      spriteID: b8d3256ab7b746320800000000000000
+      internalID: 2550299060000144779
       vertices: []
       indices: 
       edges: []
