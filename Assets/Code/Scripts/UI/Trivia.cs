@@ -18,7 +18,6 @@ public class Trivia : MonoBehaviour
     Button choiceOneButton;
     Button choiceTwoButton;
     Button choiceThreeButton;
-    Text scoreText;
     Image check1;
     Image check2;
     Image check3;
@@ -58,11 +57,14 @@ public class Trivia : MonoBehaviour
         choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
 
         GameObject scorePanel = transform.Find("ScorePanel").gameObject;
-        GameObject score = scorePanel.transform.Find("Score").gameObject;
-        scoreText = score.GetComponent<Text>();
         check1 = scorePanel.transform.Find("Check1").gameObject.GetComponent<Image>();
         check2 = scorePanel.transform.Find("Check2").gameObject.GetComponent<Image>();
         check3 = scorePanel.transform.Find("Check3").gameObject.GetComponent<Image>();
+
+        // Enable the backdrop
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+        backdrop.SetActive(true);
 
         //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
     }
@@ -72,6 +74,11 @@ public class Trivia : MonoBehaviour
         choiceOneButton.onClick.RemoveListener(ClickedChoiceOne);
         choiceTwoButton.onClick.RemoveListener(ClickedChoiceTwo);
         choiceThreeButton.onClick.RemoveListener(ClickedChoiceThree);
+
+        // Disable the backdrop
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+        backdrop.SetActive(false);
     }
 
     void ClickedChoiceOne()
@@ -94,18 +101,21 @@ public class Trivia : MonoBehaviour
         if (i == correctAnswer)
         {
             score += 1;
+            bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_happy");
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_correct");
             audioSource.Play();
         }
         else
         {
+            bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_sad");
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_wrong");
             audioSource.Play();
         }
 
-        scoreText.text = "Score: " + score;
+        Debug.Log("Score: " + score);
+
         if (score == 1)
         {
             check1.enabled = true;
@@ -120,6 +130,9 @@ public class Trivia : MonoBehaviour
             check1.enabled = true;
             check2.enabled = true;
             check3.enabled = true;
+            choiceOne.SetActive(false);
+            choiceTwo.SetActive(false);
+            choiceThree.SetActive(false);
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
             audioSource.Play();
@@ -148,6 +161,7 @@ public class Trivia : MonoBehaviour
         }
         else
         {
+            bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
             ShowQuestion();
         }
     }
@@ -183,7 +197,7 @@ public class Trivia : MonoBehaviour
 
         currentQuestion = 0;
         score = 0;
-        scoreText.text = "Score: " + score;
+        Debug.Log("Score: " + score);
         successKnot = toSuccessKnot;
         failKnot = toFailKnot;
 
