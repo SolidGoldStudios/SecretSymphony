@@ -373,7 +373,6 @@ GameObject:
   m_Component:
   - component: {fileID: 80515191}
   - component: {fileID: 80515194}
-  - component: {fileID: 80515193}
   m_Layer: 0
   m_Name: Stove
   m_TagString: Untagged
@@ -395,32 +394,6 @@ Transform:
   m_Father: {fileID: 1621330894}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &80515193
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80515190}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0002219677, y: -0.8749992}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5120065, y: 0.044217672}
-    oldSize: {x: 2.4375, y: 3.6875}
-    newSize: {x: 2, y: 3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.2297268, y: 1.0284945}
-  m_EdgeRadius: 0
 --- !u!212 &80515194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5981,7 +5954,6 @@ GameObject:
   m_Component:
   - component: {fileID: 337696964}
   - component: {fileID: 337696965}
-  - component: {fileID: 337696966}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -6053,32 +6025,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!61 &337696966
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337696963}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.50322485}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5021315, y: 0.100110054}
-    oldSize: {x: 1, y: 1.9375}
-    newSize: {x: 5.125, y: 3.375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9847269}
-  m_EdgeRadius: 0
 --- !u!4 &358249275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7382453760375254834, guid: 23ed83585680e904686438d5be71cb9b,
@@ -6493,7 +6439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
   interactionIconActive: {fileID: 0}
-  moveToTarget: 0
+  moveToTarget: 1
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 1745254813}
   knotName: pianoquest_brother
@@ -22470,8 +22416,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1584834990}
   - component: {fileID: 1584834989}
-  - component: {fileID: 1584834988}
-  - component: {fileID: 1584834991}
   - component: {fileID: 1584834992}
   m_Layer: 0
   m_Name: Dining Room Table
@@ -22480,32 +22424,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1584834988
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834987}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.016364098, y: -0.334923}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 1.9375}
-    newSize: {x: 3, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7349625, y: 0.29223484}
-  m_EdgeRadius: 0.2
 --- !u!212 &1584834989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22570,32 +22488,6 @@ Transform:
   m_Father: {fileID: 1621330894}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1584834991
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834987}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.013419151, y: 0.2829488}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 1.9375}
-    newSize: {x: 3, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.364687, y: 0.5521809}
-  m_EdgeRadius: 0.2
 --- !u!114 &1584834992
 MonoBehaviour:
   m_ObjectHideFlags: 0

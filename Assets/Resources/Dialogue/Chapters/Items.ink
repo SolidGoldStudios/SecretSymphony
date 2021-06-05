@@ -1,3 +1,7 @@
+==scythe_destroy_prompt==
+    You can break these boxes with your scythe. Try clicking on them! #name:Spirit+of+Music
+->DONE
+
 ==book_brass==
     Another book with missing pages... #name:Melody #mood:thinking #audio:female_speak_short_2 #book:brass
 ->DONE
