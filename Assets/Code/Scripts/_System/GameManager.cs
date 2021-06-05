@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
 {
     // Defining the state at game start
     public bool wearingNightgown = true;
+	public bool hasPromptedDestruction = false;
 
     // Ink story
     public TextAsset inkAsset;
