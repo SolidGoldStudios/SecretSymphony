@@ -7,4 +7,6 @@ public struct TriviaQuestion
     public string correctAnswer;
     public string wrongAnswer1;
     public string wrongAnswer2;
+    public string hint;
+    public string followupFact;
 }

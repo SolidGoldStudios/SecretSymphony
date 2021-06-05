@@ -12,12 +12,14 @@ public class Trivia : MonoBehaviour
     GameObject choiceOne;
     GameObject choiceTwo;
     GameObject choiceThree;
+    GameObject okButtonObject;
     Text choiceOneText;
     Text choiceTwoText;
     Text choiceThreeText;
     Button choiceOneButton;
     Button choiceTwoButton;
     Button choiceThreeButton;
+    Button okButton;
     Image check1;
     Image check2;
     Image check3;
@@ -36,12 +38,14 @@ public class Trivia : MonoBehaviour
         //HideTrivia();
 
         topPortrait = transform.Find("TopPortrait").gameObject.GetComponent<Image>();
-        bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>(); 
+        bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>();
+        bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
         dialogueText = transform.Find("Dialogue").gameObject.GetComponent<Text>();
 
         choiceOne = transform.Find("ChoiceOne").gameObject;
         choiceTwo = transform.Find("ChoiceTwo").gameObject;
         choiceThree = transform.Find("ChoiceThree").gameObject;
+        okButtonObject = transform.Find("OkButton").gameObject;
 
         choiceOneText = choiceOne.transform.Find("Text").gameObject.GetComponent<Text>();
         choiceTwoText = choiceTwo.transform.Find("Text").gameObject.GetComponent<Text>();
@@ -56,10 +60,22 @@ public class Trivia : MonoBehaviour
         choiceThreeButton = choiceThree.GetComponent<Button>();
         choiceThreeButton.onClick.AddListener(ClickedChoiceThree);
 
+        okButton = okButtonObject.GetComponent<Button>();
+        okButton.onClick.AddListener(ClickedOk);
+
+        choiceOne.SetActive(true);
+        choiceTwo.SetActive(true);
+        choiceThree.SetActive(true);
+        okButtonObject.SetActive(false);
+
         GameObject scorePanel = transform.Find("ScorePanel").gameObject;
         check1 = scorePanel.transform.Find("Check1").gameObject.GetComponent<Image>();
         check2 = scorePanel.transform.Find("Check2").gameObject.GetComponent<Image>();
         check3 = scorePanel.transform.Find("Check3").gameObject.GetComponent<Image>();
+
+        check1.enabled = false;
+        check2.enabled = false;
+        check3.enabled = false;
 
         // Enable the backdrop
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
@@ -74,6 +90,7 @@ public class Trivia : MonoBehaviour
         choiceOneButton.onClick.RemoveListener(ClickedChoiceOne);
         choiceTwoButton.onClick.RemoveListener(ClickedChoiceTwo);
         choiceThreeButton.onClick.RemoveListener(ClickedChoiceThree);
+        okButton.onClick.RemoveListener(ClickedOk);
 
         // Disable the backdrop
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
@@ -106,6 +123,8 @@ public class Trivia : MonoBehaviour
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_correct");
             audioSource.Play();
             StartCoroutine(DelayAndShowThinking());
+
+            ShowFollowupFact();
         }
         else
         {
@@ -114,6 +133,8 @@ public class Trivia : MonoBehaviour
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_wrong");
             audioSource.Play();
             StartCoroutine(DelayAndShowThinking());
+
+            ShowHint();
         }
 
         Debug.Log("Score: " + score);
@@ -132,9 +153,19 @@ public class Trivia : MonoBehaviour
             check1.enabled = true;
             check2.enabled = true;
             check3.enabled = true;
+        }
+    }
+
+    void ClickedOk()
+    {
+        if (score == 3)
+        {
+            dialogueText.text = "Great job!";
             choiceOne.SetActive(false);
             choiceTwo.SetActive(false);
             choiceThree.SetActive(false);
+            bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_happy");
+
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_game_success");
             audioSource.Play();
@@ -163,11 +194,6 @@ public class Trivia : MonoBehaviour
         }
 
         ShowQuestion();
-    }
-
-    void ClickedOk()
-    {
-
     }
 
     private IEnumerator DelayAndShowThinking()
@@ -228,6 +254,11 @@ public class Trivia : MonoBehaviour
         TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
         dialogueText.text = triviaQuestion.question;
 
+        choiceOne.SetActive(true);
+        choiceTwo.SetActive(true);
+        choiceThree.SetActive(true);
+        okButtonObject.SetActive(false);
+
         switch (Random.Range(0, 3))
         {
             case 0:
@@ -249,6 +280,28 @@ public class Trivia : MonoBehaviour
                 choiceThreeText.text = triviaQuestion.correctAnswer;
                 break;
         }
+    }
+
+    private void ShowHint()
+    {
+        TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
+        dialogueText.text = triviaQuestion.hint;
+
+        choiceOne.SetActive(false);
+        choiceTwo.SetActive(false);
+        choiceThree.SetActive(false);
+        okButtonObject.SetActive(true);
+    }
+
+    private void ShowFollowupFact()
+    {
+        TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
+        dialogueText.text = triviaQuestion.followupFact;
+
+        choiceOne.SetActive(false);
+        choiceTwo.SetActive(false);
+        choiceThree.SetActive(false);
+        okButtonObject.SetActive(true);
     }
 }
 
