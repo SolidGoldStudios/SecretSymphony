@@ -105,6 +105,7 @@ public class Trivia : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_correct");
             audioSource.Play();
+            StartCoroutine(DelayAndShowThinking());
         }
         else
         {
@@ -112,6 +113,7 @@ public class Trivia : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
             audioSource.clip = Resources.Load<AudioClip>("Audio/trivia_answer_wrong");
             audioSource.Play();
+            StartCoroutine(DelayAndShowThinking());
         }
 
         Debug.Log("Score: " + score);
@@ -155,15 +157,24 @@ public class Trivia : MonoBehaviour
                 NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
 
                 npcDialogue.ShowDialog(failKnot);
-
-                return;
             }
+
+            return;
         }
-        else
-        {
-            bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
-            ShowQuestion();
-        }
+
+        ShowQuestion();
+    }
+
+    void ClickedOk()
+    {
+
+    }
+
+    private IEnumerator DelayAndShowThinking()
+    {
+        yield return new WaitForSeconds(1.0f);
+        bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
+        yield return null;
     }
 
     private IEnumerator DelayAndHideTrivia()
