@@ -29,6 +29,8 @@ public class MusicPlayer : MonoBehaviour
         resumeKnot = selectedKnot;
 
         Populate();
+
+        GameManager.Instance.backgroundMusic.GetComponent<BackgroundMusic>().MuteTracks();
     }
 
     public void PressKey(string key)
@@ -157,6 +159,7 @@ public class MusicPlayer : MonoBehaviour
     IEnumerator ResumeDialog()
     {
         yield return new WaitForSeconds(7.5f);
+        GameManager.Instance.backgroundMusic.GetComponent<BackgroundMusic>().UnmuteTracks();
         npcDialogue.ShowDialog(resumeKnot);
     }
 
