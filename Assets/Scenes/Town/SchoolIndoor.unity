@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1037,8 +1037,8 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   toScene: TownAfternoon
-  toPosition: {x: -16, y: 31.785}
-  toCameraPosition: {x: -16, y: 31.785, z: -10}
+  toPosition: {x: -25, y: 27}
+  toCameraPosition: {x: -25, y: 27, z: -10}
   toDirection: {x: 0, y: -1}
   fadeSceneScript: {fileID: 197158569}
 --- !u!61 &211675723
