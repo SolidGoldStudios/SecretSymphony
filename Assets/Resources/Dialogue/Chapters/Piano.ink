@@ -117,7 +117,7 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
 ->END
 
 ==pianoquest_scarecrow==
-    Ha-ha! #name:Scarecrow  #audio:scarecrow_speak_short_1  #item:Piano+Key
+    Ha-ha! #name:Scarecrow  #audio:scarecrow_speak_short_1
     Who said that? #name:Melody #mood:sad  
     Me! The scarecrow! Looking for something? #name:scarecrow #audio:scarecrow_speak_long_1
     My key! #name:Melody #mood:sad  
