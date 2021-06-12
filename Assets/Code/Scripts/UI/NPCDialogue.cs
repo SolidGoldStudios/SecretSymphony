@@ -236,8 +236,18 @@ public class NPCDialogue : MonoBehaviour
             if(tag.StartsWith("victory"))
             {
                 // Show the victory pose and show the tooltip
+                string victoryItem = tag.Substring(7);
+
                 GameObject player = GameObject.Find("Player").gameObject;
-                GameManager.Instance.playerMovement.RunRaiseArms(null);
+                if (victoryItem != null)
+                {
+                    GameManager.Instance.playerMovement.RunRaiseArms(Resources.Load<Sprite>("Items/" + victoryItem));
+                }
+                else
+                {
+                    GameManager.Instance.playerMovement.RunRaiseArms(null);
+                }
+                
             }
         }
     }
