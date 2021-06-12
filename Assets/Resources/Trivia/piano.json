@@ -2,6 +2,7 @@
     "triviaQuestions": [
         {
             "question": "The piano is generally considered to a member of what two instrument families?",
+            "image": "Items/piano",
             "correctAnswer": "Strings & Percussion",
             "wrongAnswer1": "Woodwinds & Brass",
             "wrongAnswer2": "Brass & Percussion",
@@ -10,6 +11,7 @@
         },
         {
             "question": "The \"buttons\" you press on a piano to make music are called what?",
+            "audio": "Audio/ode_to_joy",
             "correctAnswer": "Keys",
             "wrongAnswer1": "Hammers",
             "wrongAnswer2": "Sticks",

@@ -9,6 +9,9 @@ public class Trivia : MonoBehaviour
     Image topPortrait;
     Image bottomPortrait;
     Text dialogueText;
+    Text sideDialogueText;
+    GameObject imageClue;
+    GameObject audioClue;
     GameObject choiceOne;
     GameObject choiceTwo;
     GameObject choiceThree;
@@ -41,6 +44,16 @@ public class Trivia : MonoBehaviour
         bottomPortrait = transform.Find("BottomPortrait").gameObject.GetComponent<Image>();
         bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
         dialogueText = transform.Find("Dialogue").gameObject.GetComponent<Text>();
+        sideDialogueText = transform.Find("SideDialogue").gameObject.GetComponent<Text>();
+
+        dialogueText.enabled = false;
+        sideDialogueText.enabled = false;
+
+        imageClue = transform.Find("ImageClue").gameObject;
+        audioClue = transform.Find("AudioClue").gameObject;
+
+        imageClue.SetActive(false);
+        audioClue.SetActive(false);
 
         choiceOne = transform.Find("ChoiceOne").gameObject;
         choiceTwo = transform.Find("ChoiceTwo").gameObject;
@@ -82,7 +95,7 @@ public class Trivia : MonoBehaviour
         GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
         backdrop.SetActive(true);
 
-        //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
+        ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
     }
 
     private void OnDisable()
@@ -164,6 +177,7 @@ public class Trivia : MonoBehaviour
             choiceOne.SetActive(false);
             choiceTwo.SetActive(false);
             choiceThree.SetActive(false);
+            okButtonObject.SetActive(false);
             bottomPortrait.sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_happy");
 
             audioSource = GetComponent<AudioSource>();
@@ -252,7 +266,46 @@ public class Trivia : MonoBehaviour
     private void ShowQuestion()
     {
         TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
-        dialogueText.text = triviaQuestion.question;
+
+        if (triviaQuestion.image != null)
+        {
+            sideDialogueText.text = triviaQuestion.question;
+
+            dialogueText.enabled = false;
+            sideDialogueText.enabled = true;
+
+            imageClue.SetActive(true);
+            audioClue.SetActive(false);
+
+            imageClue.GetComponent<Image>().sprite = Resources.Load<Sprite>(triviaQuestion.image);
+        }
+        else if (triviaQuestion.audio != null)
+        {
+            sideDialogueText.text = triviaQuestion.question;
+
+            dialogueText.enabled = false;
+            sideDialogueText.enabled = true;
+
+            imageClue.SetActive(false);
+            audioClue.SetActive(true);
+
+            audioClue.GetComponent<Button>().onClick.RemoveAllListeners();
+            audioClue.GetComponent<Button>().onClick.AddListener(() => {
+                audioSource = GetComponent<AudioSource>();
+                audioSource.clip = Resources.Load<AudioClip>(triviaQuestion.audio);
+                audioSource.Play();
+            });
+        }
+        else
+        {
+            dialogueText.text = triviaQuestion.question;
+
+            dialogueText.enabled = true;
+            sideDialogueText.enabled = false;
+
+            imageClue.SetActive(false);
+            audioClue.SetActive(false);
+        }
 
         choiceOne.SetActive(true);
         choiceTwo.SetActive(true);
