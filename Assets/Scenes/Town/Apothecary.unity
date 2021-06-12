@@ -8941,20 +8941,20 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
   m_Color: {r: 0, g: 0.94509804, b: 0.09605795, a: 1}
-  m_Intensity: 0.26
-  m_LightVolumeOpacity: 0.43
+  m_Intensity: 0.06
+  m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
   m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
     type: 3}
   m_UseNormalMap: 0
   m_LightOrder: 10
   m_AlphaBlendOnOverlap: 1
-  m_ShadowIntensity: 0.19
+  m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.62
-  m_PointLightOuterRadius: 1.37
+  m_PointLightInnerRadius: 0.12
+  m_PointLightOuterRadius: 3.27
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
