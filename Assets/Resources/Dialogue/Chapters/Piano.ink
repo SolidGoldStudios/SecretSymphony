@@ -133,10 +133,11 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
 
 
 ==pianoquest_trivia_success==
-Good work! You passed. Here you go. #name:Scarecrow #item:Piano+Key #audio:scarecrow_speak_medium_1
+Good work! You passed. Here you go. #name:Scarecrow #audio:scarecrow_speak_medium_1
+~ has_scarecrow_piano_quest = true
 ~ has_piano_key = true
 ~ tooltip = "Got the piano key!"
-Hooray! Thanks, scarecrow! #name:Melody #mood:happy  
+Hooray! Thanks, scarecrow! #name:Melody #mood:happy #item:Piano+Key
 I should go back to the house and try this on that "piano" thing. #name:Melody #mood:thinking #scene:LivingRoom|-5.9,-15.48|-4.6,-11.68,-10|0,1  
 ->DONE
 

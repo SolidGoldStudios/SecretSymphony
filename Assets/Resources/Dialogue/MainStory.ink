@@ -27,6 +27,8 @@ VAR completed_piano_quest = false
 VAR has_hit_piano = false
 VAR has_spoken_to_spirit_piano = false
 VAR has_read_piano_book = false
+VAR ready_for_scarecrow_piano_quest = true
+VAR has_scarecrow_piano_quest = false
 VAR has_piano_key = false
 VAR has_played_piano = false
 
