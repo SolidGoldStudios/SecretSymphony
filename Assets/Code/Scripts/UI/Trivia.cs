@@ -95,7 +95,7 @@ public class Trivia : MonoBehaviour
         GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
         backdrop.SetActive(true);
 
-        ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
+        //ShowTrivia("Scarecrow", Resources.Load<Sprite>("Portraits_Characters/Scarecrow/Scarecrow_neutral"), "piano", null, null);
     }
 
     private void OnDisable()
