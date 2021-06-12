@@ -8720,12 +8720,12 @@ PrefabInstance:
     - target: {fileID: 2479394853975999762, guid: d6e516134e1544aeb84a173b8105ae96,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6342478
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 2479394853975999762, guid: d6e516134e1544aeb84a173b8105ae96,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.7701836
+      value: -7.19
       objectReference: {fileID: 0}
     - target: {fileID: 2479394853975999762, guid: d6e516134e1544aeb84a173b8105ae96,
         type: 3}
@@ -11530,8 +11530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Size: {x: 0.47773325, y: 0.92074585, z: 4}
-  m_Center: {x: 0.00000023841858, y: 0.31706047, z: 0}
+  m_Size: {x: 0.47773325, y: 0.23226166, z: 4}
+  m_Center: {x: 0.00000023841858, y: 0.27703285, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
 --- !u!212 &1270513112
