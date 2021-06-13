@@ -9,6 +9,12 @@ public class ChangeScene : Interaction
 	
 	public SceneTransitionFade fadeSceneScript;
 
+    public void Start()
+    {
+        interactionIcon = Resources.Load<Sprite>("UI/cursor_exit");
+        interactionIconActive = Resources.Load<Sprite>("UI/cursor_exit_active");
+    }
+
     public override void Interact()
     {
     }
