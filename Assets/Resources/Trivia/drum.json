@@ -1,28 +1,38 @@
 {
-    "triviaQuestions": [
-        {
-            "question": "To which family does the bass drum belong?",
-            "correctAnswer": "Percussion",
-            "wrongAnswer1": "Wind",
-            "wrongAnswer2": "Brass",
-            "hint": "Here's a hint: percuss in Latin, meaning \"to strike\"...",
-            "followupFact": "The head of a bass drum can be struck with either mallets, sticks or brushes, depending on what kind of sounds you want. "
-        },
-        {
-            "question": "What is the name of the part of the Bass Drum which you're meant to hit?",
-            "correctAnswer": "The head",
-            "wrongAnswer1": "The foot",
-            "wrongAnswer2": "The arm",
-            "hint": "Close! Try using your noggin to figure this one out...",
-            "followupFact": "Snare drum heads were originally made from animal skins, but not so much these days."
-        },
-        {
-            "question": "Instruments in the Percussion family typically have what job in the Orchestra?",
-            "correctAnswer": "Keeping time",
-            "wrongAnswer1": "Staying super quiet",
-            "wrongAnswer2": "Bossing the other instruments around",
-            "hint": "Here's a hint: playing with the rhythm means keeping what?",
-            "followupFact": "While the conductor is in charge of it all, percussion instruments help everyone to play at the same speed!"
-        }
-    ]
+	"triviaQuestions": [
+		{
+			"question": "To which family does the bass drum belong?",
+			"image": "Trivia/Photos/trivia_photo_drums",
+			"correctAnswer": "Percussion",
+			"wrongAnswer1": "Wind",
+			"wrongAnswer2": "Brass",
+			"hint": "Here's a hint: percuss in Latin, meaning \"to strike\"...",
+			"followupFact": "The head of a bass drum can be struck with either mallets, sticks or brushes, depending on what kind of sounds you want. "
+		},
+		{
+			"question": "Press the Play button. What instrument do you hear?",
+			"audio": "Audio/jangle_bass_drum",
+			"correctAnswer": "Bass drum",
+			"wrongAnswer1": "Cello",
+			"wrongAnswer2": "Tuba",
+			"hint": "Try again! You just heard a percussion instrument.",
+			"followupFact": "Correct! The bass drum is the deepest-sounding member of the percussion family."
+		},
+		{
+			"question": "What is the name of the part of the bass drum which you're meant to hit?",
+			"correctAnswer": "The head",
+			"wrongAnswer1": "The foot",
+			"wrongAnswer2": "The arm",
+			"hint": "Close! Try using your noggin to figure this one out...",
+			"followupFact": "Snare drum heads were originally made from animal skins, but not so much these days."
+		},
+		{
+			"question": "Instruments in the percussion family typically have what job in the orchestra?",
+			"correctAnswer": "Keeping time",
+			"wrongAnswer1": "Staying super quiet",
+			"wrongAnswer2": "Bossing the other instruments around",
+			"hint": "Here's a hint: playing with the rhythm means keeping what?",
+			"followupFact": "While the conductor is in charge of it all, percussion instruments help everyone to play at the same speed!"
+		}
+	]
 }

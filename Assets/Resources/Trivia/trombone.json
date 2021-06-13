@@ -1,52 +1,62 @@
 {
-    "triviaQuestions": [
-        {
-            "question": "The trombone is a member of what family of musical instruments?",
-            "correctAnswer": "Brass",
-            "wrongAnswer1": "Woodwind",
-            "wrongAnswer2": "Percussion",
-            "hint": "Here's a hint: it's named after the metal it's made from...",
-            "followupFact": "Because of their construction and shape, brass instruments are some of the loudest in the orchestra!"
-        },
-        {
-            "question": "Because a trombone looks like a larger version of another instrument, the name \"trombone\" means big WHAT?",
-            "correctAnswer": "Trumpet",
-            "wrongAnswer1": "French Horn",
-            "wrongAnswer2": "Tuba",
-            "hint": "Here's a hint:  \"tromba\" is the Italian word for trumpet.",
-            "followupFact": "The words we use for musical instruments are often in the language of the country where they were created."
-        },
-        {
-            "question": "Which part of the trombone do you move when making sounds?",
-            "correctAnswer": "Slide",
-            "wrongAnswer1": "Swing",
-            "wrongAnswer2": "Monkey Bar",
-            "hint": "Here's a hint: it can be scary going down these at the playground...",
-            "followupFact": "Moving the slide on the trombone actually changes the size of the instrument, allowing for different tones."
-        },
-        {
-            "question": "What is the word for the big, wide end piece of a trombone, where the sound comes out?",
-            "correctAnswer": "Bell",
-            "wrongAnswer1": "Hat",
-            "wrongAnswer2": "Cone",
-            "hint": "Ding dong!  Try again!",
-            "followupFact": "Many members of the brass and woodwind families of instruments have a \"bell\" at the end to project their sound."
-        },
-        {
-            "question": "A trombone's slide can be moved away from the player into how many \"positions\"?",
-            "correctAnswer": "Seven",
-            "wrongAnswer1": "Three",
-            "wrongAnswer2": "Ten",
-            "hint": "Here's a hint: it's the same number as days in the week",
-            "followupFact": "The positions are counted in order from the 1st position (slide pulled toward the player) to the 7th position (slide fully extended)."
-        },
-        {
-            "question": "Embouchure is the fancy word for the shape of what body part against the trombone?",
-            "correctAnswer": "Mouth",
-            "wrongAnswer1": "Hands",
-            "wrongAnswer2": "Chin",
-            "hint": "Here's a hint:  It's where the sound orginates!",
-            "followupFact": "The more a trombone player tightens his or her lips, the higher the pitch produced."
-        }
-    ]
+	"triviaQuestions": [
+		{
+			"question": "The trombone is a member of what family of musical instruments?",
+			"image": "Trivia/Photos/trivia_photo_brass",
+			"correctAnswer": "Brass",
+			"wrongAnswer1": "Woodwind",
+			"wrongAnswer2": "Percussion",
+			"hint": "Here's a hint: it's named after the metal it's made from...",
+			"followupFact": "Because of their construction and shape, brass instruments are some of the loudest in the orchestra!"
+		},
+		{
+			"question": "Press the Play button. What instrument do you hear?",
+			"audio": "Audio/jangle_tuba",
+			"correctAnswer": "Tuba",
+			"wrongAnswer1": "Flute",
+			"wrongAnswer2": "Clarinet",
+			"hint": "Close! The instrument you heard is a member of the brass family, not the woodwinds.",
+			"followupFact": "The tuba is the lowest-pitched musical instrument in the brass family."
+		},
+		{
+			"question": "Because a trombone looks like a larger version of another instrument, the name \"trombone\" means big WHAT?",
+			"correctAnswer": "Trumpet",
+			"wrongAnswer1": "French Horn",
+			"wrongAnswer2": "Tuba",
+			"hint": "Here's a hint:  \"tromba\" is the Italian word for trumpet.",
+			"followupFact": "The words we use for musical instruments are often in the language of the country where they were created."
+		},
+		{
+			"question": "Which part of the trombone do you move when making sounds?",
+			"correctAnswer": "Slide",
+			"wrongAnswer1": "Swing",
+			"wrongAnswer2": "Monkey Bar",
+			"hint": "Here's a hint: it can be scary going down these at the playground...",
+			"followupFact": "Moving the slide on the trombone actually changes the size of the instrument, allowing for different tones."
+		},
+		{
+			"question": "What is the word for the big, wide end piece of a trombone, where the sound comes out?",
+			"correctAnswer": "Bell",
+			"wrongAnswer1": "Hat",
+			"wrongAnswer2": "Cone",
+			"hint": "Ding dong!  Try again!",
+			"followupFact": "Many members of the brass and woodwind families of instruments have a \"bell\" at the end to project their sound."
+		},
+		{
+			"question": "A trombone's slide can be moved away from the player into how many \"positions\"?",
+			"correctAnswer": "Seven",
+			"wrongAnswer1": "Three",
+			"wrongAnswer2": "Ten",
+			"hint": "Here's a hint: it's the same number as days in the week",
+			"followupFact": "The positions are counted in order from the 1st position (slide pulled toward the player) to the 7th position (slide fully extended)."
+		},
+		{
+			"question": "Embouchure is the fancy word for the shape of what body part against the trombone?",
+			"correctAnswer": "Mouth",
+			"wrongAnswer1": "Hands",
+			"wrongAnswer2": "Chin",
+			"hint": "Here's a hint:  It's where the sound orginates!",
+			"followupFact": "The more a trombone player tightens his or her lips, the higher the pitch produced."
+		}
+	]
 }
