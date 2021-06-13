@@ -30,14 +30,14 @@
 ==drumquest_trivia_success==
     Well, I'll be! It really is a musical instrument! Thank you! #name:Blacksmith+Whitney #mood:happy #audio:male_speak_medium_1
     You're welcome! Now, may I please borrow the bass drum for a bit? #name:Melody #mood:happy
-    Okay! Please don't hurt me, you maniac! #name:Blacksmith+Whitney #audio:male_speak_medium_2 :victory
+    Sure thing! Have fun! #name:Blacksmith+Whitney #audio:male_speak_medium_2 :victory
     ~ tooltip = "You saved the bass drum!"
     ~ completed_drum_quest = true
     Thanks! Bye! #name:Melody #mood:happy
     -> END
     
 ==drumquest_trivia_fail==
-    YOU FAILED AND I NEED DIALOG, TRY AGAIN #name:Blacksmith+Whitney #mood:sad #audio:male_speak_medium_1
+    It's okay to make mistakes, as long as you learn from them! Try again? #name:Blacksmith+Whitney #mood:sad #audio:male_speak_medium_1
     + [Yes] Let's do it! #name:Melody #mood:happy
         -> drumquest_trivia
     + [No] I need more time to study. #name:Melody #mood:thinking
