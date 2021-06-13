@@ -5012,7 +5012,7 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   toScene: TownAfternoon
   toPosition: {x: -14.5, y: 22}
-  toCameraPosition: {x: -14.5, y: 22, z: 0}
+  toCameraPosition: {x: 21, y: 26, z: -44}
   toDirection: {x: 0, y: -1}
   fadeSceneScript: {fileID: 578056682}
 --- !u!61 &910466639
