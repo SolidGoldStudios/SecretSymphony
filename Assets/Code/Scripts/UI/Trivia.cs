@@ -340,6 +340,12 @@ public class Trivia : MonoBehaviour
         TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
         dialogueText.text = triviaQuestion.hint;
 
+        dialogueText.enabled = true;
+        sideDialogueText.enabled = false;
+
+        imageClue.SetActive(false);
+        audioClue.SetActive(false);
+
         choiceOne.SetActive(false);
         choiceTwo.SetActive(false);
         choiceThree.SetActive(false);
@@ -350,6 +356,12 @@ public class Trivia : MonoBehaviour
     {
         TriviaQuestion triviaQuestion = triviaQuestions[currentQuestion];
         dialogueText.text = triviaQuestion.followupFact;
+
+        dialogueText.enabled = true;
+        sideDialogueText.enabled = false;
+
+        imageClue.SetActive(false);
+        audioClue.SetActive(false);
 
         choiceOne.SetActive(false);
         choiceTwo.SetActive(false);
