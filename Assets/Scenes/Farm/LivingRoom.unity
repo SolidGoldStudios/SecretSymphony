@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2461,6 +2461,11 @@ PrefabInstance:
       propertyPath: icon
       value: Items/books/book_keyboards
       objectReference: {fileID: 0}
+    - target: {fileID: 1065678356586356341, guid: 97ccdf99caea48b489eb4dd2974584e8,
+        type: 3}
+      propertyPath: sparkleParticles
+      value: 
+      objectReference: {fileID: 2100525160}
     - target: {fileID: 1608948016567069176, guid: 97ccdf99caea48b489eb4dd2974584e8,
         type: 3}
       propertyPath: m_RootOrder
@@ -5322,7 +5327,7 @@ PrefabInstance:
     - target: {fileID: 7667053510494386988, guid: 23ed83585680e904686438d5be71cb9b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9145461289045243508, guid: 23ed83585680e904686438d5be71cb9b,
         type: 3}
@@ -10828,7 +10833,7 @@ PrefabInstance:
     - target: {fileID: 7667053510494386988, guid: 23ed83585680e904686438d5be71cb9b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9145461289045243508, guid: 23ed83585680e904686438d5be71cb9b,
         type: 3}
