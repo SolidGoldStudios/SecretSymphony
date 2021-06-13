@@ -5,7 +5,7 @@
         Good morning, father! #name:Melody #mood:happy 
         How are you? #name:Melody 
         I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_long_1
-        ->END
+        -> END
     - has_piano_quest && !has_scythe:
         The <b>scythe</b> is just outside the house. #name:Father #audio:male_speak_short_1
         ->END

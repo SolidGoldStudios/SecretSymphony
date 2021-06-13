@@ -1,52 +1,62 @@
 {
-    "triviaQuestions": [
-        {
-            "question": "To what instrument family does the violin belong?",
-            "correctAnswer": "Strings",
-            "wrongAnswer1": "Brass",
-            "wrongAnswer2": "Woodwinds",
-            "hint": "Can't remember?  Maybe you should have tied some string around your finger!",
-            "followupFact": "Other members of the String family include the viola, the cello, the double bass, and the harp."
-        },
-        {
-            "question": "The violin is the __________ member of the string family.",
-            "correctAnswer": "Smallest",
-            "wrongAnswer1": "Largest",
-            "wrongAnswer2": "Mid-sized",
-            "hint": "Hint: Instruments with 'ino' or 'in' at the end of their names are the small ones",
-            "followupFact": "The violin's name means \"little viola.\""
-        },
-        {
-            "question": "The part of the violin that keeps the strings from touching the wooden body is called WHAT?",
-            "correctAnswer": "Bridge",
-            "wrongAnswer1": "Hand",
-            "wrongAnswer2": "Ladder",
-            "hint": "Hint: Often in fairy tales you have to answers riddles to cross one of these...",
-            "followupFact": "The bridge is not attached to the violin, but is held right in place because the strings are so tight!"
-        },
-        {
-            "question": "What to you call the stick you use to play a violin?",
-            "correctAnswer": "Bow",
-            "wrongAnswer1": "Rod",
-            "wrongAnswer2": "Baton",
-            "hint": "Hint:  Sounds more like something Robin Hood or Katniss Everdeen would use!",
-            "followupFact": "The bow makes the four strings vibrate, and the body of the instrument vibrates too!"
-        },
-        {
-            "question": "Changing the finger position on this part of the violin changes the notes played:",
-            "correctAnswer": "Neck",
-            "wrongAnswer1": "Bow",
-            "wrongAnswer2": "Scroll",
-            "hint": "Hint:  My friend, the giraffe, just loves this question!",
-            "followupFact": "Usually, a player will hold the violin's neck with the left hand and bow with the right hand."
-        },
-        {
-            "question": "The way the bow is moved is called WHAT?",
-            "correctAnswer": "Bowing",
-            "wrongAnswer1": "Sawing",
-            "wrongAnswer2": "Sliding",
-            "hint": "It's right there in the name, champ!",
-            "followupFact": "Bowing determines the length, volume, tone, and other characteristics of the note."
-        }
-    ]
+	"triviaQuestions": [
+		{
+			"question": "To what instrument family does the violin belong?",
+			"image": "Trivia/Photos/trivia_photo_strings",
+			"correctAnswer": "Strings",
+			"wrongAnswer1": "Brass",
+			"wrongAnswer2": "Woodwinds",
+			"hint": "Can't remember?  Maybe you should have tied some string around your finger!",
+			"followupFact": "Other members of the String family include the viola, the cello, the double bass, and the harp."
+		},
+		{
+			"question": "Press the Play button. What instrument do you hear?",
+			"audio": "Audio/jangle_harp",
+			"correctAnswer": "Harp",
+			"wrongAnswer1": "Violin",
+			"wrongAnswer2": "Xylophone",
+			"hint": "Try again! You'd play this instrument by plucking the strings with your fingers.",
+			"followupFact": "Harps are large stringed instruments – some are over six feet tall!"
+		},
+		{
+			"question": "The violin is the __________ member of the string family.",
+			"correctAnswer": "Smallest",
+			"wrongAnswer1": "Largest",
+			"wrongAnswer2": "Mid-sized",
+			"hint": "Hint: Instruments with 'ino' or 'in' at the end of their names are the small ones.",
+			"followupFact": "The violin's name means \"little viola.\""
+		},
+		{
+			"question": "The part of the violin that keeps the strings from touching the wooden body is called WHAT?",
+			"correctAnswer": "Bridge",
+			"wrongAnswer1": "Hand",
+			"wrongAnswer2": "Ladder",
+			"hint": "Hint: Often in fairy tales you have to answers riddles to cross one of these...",
+			"followupFact": "The bridge is not attached to the violin, but is held right in place because the strings are so tight!"
+		},
+		{
+			"question": "What to you call the stick you use to play a violin?",
+			"correctAnswer": "Bow",
+			"wrongAnswer1": "Rod",
+			"wrongAnswer2": "Baton",
+			"hint": "Hint:  Sounds more like something Robin Hood or Katniss Everdeen would use!",
+			"followupFact": "The bow makes the four strings vibrate, and the body of the instrument vibrates too!"
+		},
+		{
+			"question": "Changing the finger position on this part of the violin changes the notes played:",
+			"correctAnswer": "Neck",
+			"wrongAnswer1": "Bow",
+			"wrongAnswer2": "Scroll",
+			"hint": "Hint:  My friend, the giraffe, just loves this question!",
+			"followupFact": "Usually, a player will hold the violin's neck with the left hand and bow with the right hand."
+		},
+		{
+			"question": "The way the bow is moved is called WHAT?",
+			"correctAnswer": "Bowing",
+			"wrongAnswer1": "Sawing",
+			"wrongAnswer2": "Sliding",
+			"hint": "It's right there in the name, champ!",
+			"followupFact": "Bowing determines the length, volume, tone, and other characteristics of the note."
+		}
+	]
 }

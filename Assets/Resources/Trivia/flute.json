@@ -1,44 +1,54 @@
 {
-    "triviaQuestions": [
-        {
-            "question": "What instrument family does the flute belong to?",
-            "correctAnswer": "Woodwinds",
-            "wrongAnswer1": "Percussion",
-            "wrongAnswer2": "Brass",
-            "hint": "Here's a hint: not all flutes are made of wood, but they all use wind!",
-            "followupFact": "In the orchestra, flutes normally sit closest to the conductor."
-        },
-        {
-            "question": "Just like the piano, the \"buttons\" you use to change the sound of a flute are called what?",
-            "correctAnswer": "Keys",
-            "wrongAnswer1": "Clickers",
-            "wrongAnswer2": "Switches",
-            "hint": "Not quite! Here's a hint: you need these to get into your house...",
-            "followupFact": "Western concert flutes usually have between 16 and 20 keys on them!"
-        },
-        {
-            "question": "What are the three main parts of a flute called?",
-            "correctAnswer": "Head Joint, Body Joint, & Foot Joint",
-            "wrongAnswer1": "Nose Joint, Mouth Joint, Eye Joint",
-            "wrongAnswer2": "Shoulder Joint, Elbow Joint, Wrist Joint",
-            "hint": "So close! Here's a hint: it's your top, middle, and bottom...",
-            "followupFact": "Piano pedals can enrich the sound in various ways, such as causing a note to play softer, or be held longer."
-        },
-        {
-            "question": "How should I produce sound from a flute?",
-            "correctAnswer": "By blowing air across the top of the mouth hole",
-            "wrongAnswer1": "By tapping the flute against different surfaces",
-            "wrongAnswer2": "By whistling into the bottom of the flute",
-            "hint": "Well I've never seen it played that way... Imagine you were playing the flute and let's try that again...",
-            "followupFact": "Flute players take a deep breath and breathe out while slightly smiling and making a \"too\" sound.  Try it!"
-        },
-        {
-            "question": "What part of the mouth is used to create separations between notes on a flute?",
-            "correctAnswer": "Tongue",
-            "wrongAnswer1": "Lips",
-            "wrongAnswer2": "Teeth",
-            "hint": "Hint:  It can move, and it doesn't touch the flute.",
-            "followupFact": "Using the tongue to change the air coming out of the mouth is called \"articulation\""
-        }
-    ]
+	"triviaQuestions": [
+		{
+			"question": "What instrument family does the flute belong to?",
+			"correctAnswer": "Woodwinds",
+			"wrongAnswer1": "Percussion",
+			"wrongAnswer2": "Brass",
+			"hint": "Here's a hint: not all flutes are made of wood, but they all use wind!",
+			"followupFact": "In the orchestra, flutes normally sit closest to the conductor."
+		},
+		{
+			"question": "Just like the piano, the \"buttons\" you use to change the sound of a flute are called what?",
+			"image": "Trivia/Photos/trivia_photo_winds",
+			"correctAnswer": "Keys",
+			"wrongAnswer1": "Clickers",
+			"wrongAnswer2": "Switches",
+			"hint": "Not quite! Here's a hint: you need these to get into your house...",
+			"followupFact": "Western concert flutes usually have between 16 and 20 keys on them!"
+		},
+		{
+			"question": "Press the Play button. What instrument do you hear?",
+			"audio": "Audio/jangle_clarinet",
+			"correctAnswer": "Clarinet",
+			"wrongAnswer1": "Viola",
+			"wrongAnswer2": "French horn",
+			"hint": "Try again! You just heard a woodwind instrument.",
+			"followupFact": "Correct! The clarinet is a member of the woodwinds family, just like the flute and the oboe."
+		},
+		{
+			"question": "What are the three main parts of a flute called?",
+			"correctAnswer": "Head Joint, Body Joint, & Foot Joint",
+			"wrongAnswer1": "Nose Joint, Mouth Joint, Eye Joint",
+			"wrongAnswer2": "Shoulder Joint, Elbow Joint, Wrist Joint",
+			"hint": "So close! Here's a hint: it's your top, middle, and bottom...",
+			"followupFact": "Flutes can be made out of brass, nickel silver, sterling silver, gold, and even platinum!"
+		},
+		{
+			"question": "How should I produce sound from a flute?",
+			"correctAnswer": "By blowing air across the top of the mouth hole",
+			"wrongAnswer1": "By tapping the flute against different surfaces",
+			"wrongAnswer2": "By whistling into the bottom of the flute",
+			"hint": "Well I've never seen it played that way... Imagine you were playing the flute and let's try that again...",
+			"followupFact": "Flute players take a deep breath and breathe out while slightly smiling and making a \"too\" sound.  Try it!"
+		},
+		{
+			"question": "What part of the mouth is used to create separations between notes on a flute?",
+			"correctAnswer": "Tongue",
+			"wrongAnswer1": "Lips",
+			"wrongAnswer2": "Teeth",
+			"hint": "Hint:  It can move, and it doesn't touch the flute.",
+			"followupFact": "Using the tongue to change the air coming out of the mouth is called \"articulation\"."
+		}
+	]
 }
