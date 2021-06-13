@@ -1041,7 +1041,7 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   toScene: TownAfternoon
   toPosition: {x: -25, y: 27}
-  toCameraPosition: {x: -25, y: 27, z: -10}
+  toCameraPosition: {x: 22, y: 26, z: -44}
   toDirection: {x: 0, y: -1}
   fadeSceneScript: {fileID: 197158569}
 --- !u!61 &211675723

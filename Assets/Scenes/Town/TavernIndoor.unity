@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -956,6 +956,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+--- !u!114 &245841919 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8898164536183165596, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 245841918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab297bfdca0ecf4bb4d4ae58aff8de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &283330214
 GameObject:
   m_ObjectHideFlags: 0
@@ -9483,7 +9495,6 @@ GameObject:
   - component: {fileID: 972351543}
   - component: {fileID: 972351542}
   - component: {fileID: 972351541}
-  - component: {fileID: 972351540}
   m_Layer: 0
   m_Name: ToNextScene
   m_TagString: Untagged
@@ -9491,21 +9502,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &972351540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972351539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9029bab2eb9242f28904a5575092cdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toSunny: 0
-  toCloudy: 1
-  toRainStorm: 0
 --- !u!114 &972351541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9524,9 +9520,9 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   toScene: TownAfternoon
   toPosition: {x: 11.5, y: 21}
-  toCameraPosition: {x: 11.5, y: 21, z: 0}
+  toCameraPosition: {x: 22, y: 26, z: -44}
   toDirection: {x: 0, y: 0}
-  fadeSceneScript: {fileID: 0}
+  fadeSceneScript: {fileID: 245841919}
 --- !u!61 &972351542
 BoxCollider2D:
   m_ObjectHideFlags: 0
