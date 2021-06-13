@@ -1747,6 +1747,7 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   interactionSwitch: 0
   interactLight: {fileID: 1774629049}
+  sparkleParticles: {fileID: 1472769773}
 --- !u!82 &608962023
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7280,6 +7281,7 @@ MonoBehaviour:
   blockedBy: {fileID: 0}
   interactionSwitch: 0
   interactLight: {fileID: 2029057827}
+  sparkleParticles: {fileID: 617799446}
 --- !u!61 &889554012
 BoxCollider2D:
   m_ObjectHideFlags: 0

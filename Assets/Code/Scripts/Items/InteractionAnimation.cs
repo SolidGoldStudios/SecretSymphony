@@ -6,6 +6,7 @@ public class InteractionAnimation : Interaction
 {
     public bool interactionSwitch;
 	public GameObject interactLight;
+    public GameObject sparkleParticles;
     private Animator animator;
     AudioSource audioSource;
 
@@ -33,5 +34,10 @@ public class InteractionAnimation : Interaction
 		{
 			interactLight.SetActive(false);
 		}
+
+        if (sparkleParticles != null)
+        {
+            sparkleParticles.SetActive(false);
+        }
     }
 }

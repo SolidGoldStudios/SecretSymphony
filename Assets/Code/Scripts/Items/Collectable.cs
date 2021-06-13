@@ -14,6 +14,7 @@ public class Collectable : Interaction
 	public bool unique;
 	public bool book;
     public string clickAction;
+    public GameObject sparkleParticles;
 	
     AudioSource audioSource;
 
@@ -42,6 +43,11 @@ public class Collectable : Interaction
             if (audioSource != null)
             {
                 audioSource.Play();
+            }
+
+            if (sparkleParticles != null)
+            {
+                sparkleParticles.SetActive(false);
             }
 			
             InventoryItem item = ItemCreator.CreateInventoryItem(itemName, description, icon, weight, value, unique, clickAction);
