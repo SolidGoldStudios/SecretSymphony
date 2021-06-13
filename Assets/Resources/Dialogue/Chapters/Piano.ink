@@ -12,11 +12,12 @@
     - has_piano_quest && has_scythe && !completed_piano_quest:
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy #audio:male_speak_long_1
         ->END
-    - completed_piano_quest && !has_cow_quest:
-        Melody, would you mind checking on the cows? #name:Father #audio:male_speak_medium_1
+     - completed_piano_quest && !has_trombone_quest:
+       Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Father #audio:male_speak_long_2
+        Sure! #name:Melody #mood:happy 
         ->END
-    - completed_piano_quest && has_cow_quest && !completed_cow_quest:
-        Did you check on the cows? #name:Father #audio:male_speak_short_1
+    - completed_piano_quest && has_trombone_quest && !completed_trombone_quest:
+        Did you speak to your uncle? #name:Father  #audio:male_speak_short_1
         ->END
     - else: 
         Looks like it'll be a sunny one today. #name:Father #mood:happy #audio:male_speak_short_2
@@ -38,12 +39,11 @@
         Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #audio:male_speak_medium_1 #quest:InstrumentPianoPartOne #audio:quest_added
         ~ has_piano_quest = true
         ->END
-    - completed_piano_quest && !has_trombone_quest:
-       Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Mother #audio:female_speak_long_2
-        Sure! #name:Melody #mood:happy 
+    - completed_piano_quest && !has_cow_quest:
+        Melody, would you mind checking on the cows? #name:Mother #audio:female_speak_medium_1
         ->END
-    - completed_piano_quest && has_trombone_quest && !completed_trombone_quest:
-        Did you speak to your uncle? #name:Mother  #audio:female_speak_short_1
+    - completed_piano_quest && has_cow_quest && !completed_cow_quest:
+        Did you check on the cows? #name:Mother #audio:female_speak_short_1
         ->END
     - else:
         Thanks for doing your chores, Melody! #name:Mother #mood:happy  #audio:female_speak_short_2
