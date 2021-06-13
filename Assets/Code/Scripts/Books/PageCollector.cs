@@ -6,7 +6,8 @@ public class PageCollector : Interaction
 {
 	public string bookName;
 	public int pageNum;
-	
+	public GameObject sparkleParticles;
+
 	void OnEnable()
 	{
 		if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
@@ -43,6 +44,11 @@ public class PageCollector : Interaction
 			bool[] pagesCollected = (bool[])GameManager.Instance.pages[bookName];
 			pagesCollected[pageNum] = true;
 			GameManager.Instance.pages[bookName] = pagesCollected;
+
+			if (sparkleParticles != null)
+			{
+				sparkleParticles.SetActive(false);
+			}
 
 			gameObject.SetActive(false);
 
