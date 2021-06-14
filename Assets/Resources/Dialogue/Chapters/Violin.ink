@@ -3,6 +3,7 @@
  {
 	- !has_violin_quest && ready_for_violin_quest && !completed_violin_quest:
 		Hello down there! #name:Joan #audio:female_speak_short_1
+		~ has_violin_quest = true
 		Is that you, Joan? #name:Melody #mood:concerned
 		Yep! It's me, Joan the Village Goof! #name:Joan #mood:happy #audio:female_speak_medium_1
         Why are you up in that tree? #name:Melody #mood:happy
@@ -30,11 +31,10 @@
 		->violinquest_trivia_success
 		
 ==violinquest_trivia_success==
-	Oops! I hope that didn't hurt, Chucky! #name:Joan #mood:sad #audio:female_speak_medium_1 #timeline:ViolinTimeline  #victory:scroll-instruments_violin
+	Oops! I hope that didn't hurt, Chucky! #name:Joan #mood:sad #audio:female_speak_medium_1 #timeline:ViolinTimeline 
 	~ tooltip = "You saved the violin!"
     ~ has_violin = true
-    ~ completed_violin_quest = true
-    He's okay! Thanks, Joan! #name:Melody #mood:happy
+    He's okay! Thanks, Joan! #name:Melody #mood:happy  #victory:scroll-instruments_violin
     You bet! Have a nice day. I'll be here comforting the remaining apples. #name:Joan #audio:female_speak_long_1
 	~ completed_violin_quest = true
 	-> END

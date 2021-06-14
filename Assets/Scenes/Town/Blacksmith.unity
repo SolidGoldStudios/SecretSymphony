@@ -10442,6 +10442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500307797}
   - component: {fileID: 1500307796}
+  - component: {fileID: 1500307798}
   m_Layer: 0
   m_Name: Bass Drum
   m_TagString: Untagged
@@ -10515,6 +10516,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 91.212006}
+--- !u!114 &1500307798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500307795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc35d32a3b0294f24b8c165880864d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_bass_drum
+  sparkleParticles: {fileID: 2026690763}
+  itemLight: {fileID: 0}
 --- !u!1 &1554424561
 GameObject:
   m_ObjectHideFlags: 0

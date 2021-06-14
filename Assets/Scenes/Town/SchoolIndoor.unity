@@ -12607,6 +12607,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1306840895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1541997063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3386666559416378203, guid: e4c6e618765879b4a919c950a10ad1a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3386666559527109445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1546444898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4107728046035719312, guid: 857a9bc4af6ea421bbd4b4b9fee37693,
@@ -13959,6 +13965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085308033}
   - component: {fileID: 2085308035}
+  - component: {fileID: 2085308034}
   m_Layer: 0
   m_Name: Flute
   m_TagString: Untagged
@@ -13982,6 +13989,21 @@ Transform:
   m_Father: {fileID: 149320322}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2085308034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085308032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc35d32a3b0294f24b8c165880864d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_flute
+  sparkleParticles: {fileID: 430503424}
+  itemLight: {fileID: 1541997063}
 --- !u!212 &2085308035
 SpriteRenderer:
   m_ObjectHideFlags: 0
