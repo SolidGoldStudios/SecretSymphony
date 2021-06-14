@@ -30,8 +30,9 @@
 ==drumquest_trivia_success==
     Well, I'll be! It really is a musical instrument! Thank you! #name:Blacksmith+Whitney #mood:happy #audio:male_speak_medium_1
     You're welcome! Now, may I please borrow the bass drum for a bit? #name:Melody #mood:happy
-    Sure thing! Have fun! #name:Blacksmith+Whitney #audio:male_speak_medium_2 :victory
+    Sure thing! Have fun! #name:Blacksmith+Whitney #audio:male_speak_medium_2 #victory:scroll-instruments_bass_drum
     ~ tooltip = "You saved the bass drum!"
+    ~ has_bass_drum = true
     ~ completed_drum_quest = true
     Thanks! Bye! #name:Melody #mood:happy
     -> END

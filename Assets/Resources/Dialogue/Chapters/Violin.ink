@@ -30,8 +30,10 @@
 		->violinquest_trivia_success
 		
 ==violinquest_trivia_success==
-	Oops! I hope that didn't hurt, Chucky! #name:Joan #mood:sad #audio:female_speak_medium_1 #timeline:ViolinTimeline  #victory
+	Oops! I hope that didn't hurt, Chucky! #name:Joan #mood:sad #audio:female_speak_medium_1 #timeline:ViolinTimeline  #victory:scroll-instruments_violin
 	~ tooltip = "You saved the violin!"
+    ~ has_violin = true
+    ~ completed_violin_quest = true
     He's okay! Thanks, Joan! #name:Melody #mood:happy
     You bet! Have a nice day. I'll be here comforting the remaining apples. #name:Joan #audio:female_speak_long_1
 	~ completed_violin_quest = true

@@ -235,12 +235,13 @@ public class NPCDialogue : MonoBehaviour
             }
             if(tag.StartsWith("victory"))
             {
-                // Show the victory pose and show the tooltip
-                string victoryItem = tag.Substring(7);
+                string victoryItem = tag.Substring(8);
+                Debug.Log("Victory item: " + victoryItem);
 
                 GameObject player = GameObject.Find("Player").gameObject;
                 if (victoryItem != null)
                 {
+                    
                     GameManager.Instance.playerMovement.RunRaiseArms(Resources.Load<Sprite>("Items/" + victoryItem));
                 }
                 else

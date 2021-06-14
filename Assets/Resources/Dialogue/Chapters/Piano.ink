@@ -1,7 +1,7 @@
 ==pianoquest_father==
 {
     - !has_piano_quest:
-        Good morning, Melody! #name:Father #mood:happy #audio:male_speak_short_1
+        Good morning, Melody! #name:Father #mood:happy #audio:male_speak_short_1 
         Good morning, father! #name:Melody #mood:happy 
         How are you? #name:Melody 
         I feel kind of strange today, can't quite put my finger on it. #name:Father #mood:sad #audio:male_speak_long_1
@@ -154,15 +154,15 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy #audio:male_speak_medium_1
     Yes! And this is a piano, not firewood. #name:Melody #mood:happy 
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy #audio:male_speak_medium_2
-    Hooray! We saved the piano! #name:Melody #mood:happy 
+    ~ tooltip = "You saved the piano!"
+    ~ has_piano = true
+    ~ completed_piano_quest = true
+    Hooray! We saved the piano! #name:Melody #mood:happy #victory:scroll-instruments_piano #hideSparkles
     We sure did. Nice work, Melody. But there's still a lot of work left to do! #name:Spirit+of+Music #audio:fairy_speak_long_2 
     Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1 
-    You can count on me! #name:Melody #mood:happy #audio:quest_added #hideSparkles #victory
-    ~ tooltip = "You saved the piano!"
-    ~ completed_piano_quest = true
+    You can count on me! #name:Melody #mood:happy #audio:quest_added 
     ~ ready_for_trombone_quest = true
     ~ ready_for_fishing_quest = true
-    /*on completion, cue the following text with "victory" animation: "Contratulations! You got the keyboard instruments: piano, and celeste!"*/
 -> DONE
 
 
