@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpInstrument : MonoBehaviour
 {
     public string inkVar;
+    public GameObject sparkleParticles;
+    public GameObject itemLight;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +28,16 @@ public class PickUpInstrument : MonoBehaviour
 
     private void HideInstrument()
     {
-        enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+
+        if (sparkleParticles != null)
+        {
+            sparkleParticles.SetActive(false);
+        }
+
+        if (itemLight != null)
+        {
+            itemLight.SetActive(false);
+        }
     }
 }
