@@ -20,6 +20,22 @@ VAR tooltip = ""
 /* Items */
 VAR has_scythe = false
 
+/* Instruments */
+VAR has_piano = false
+VAR has_violin = false
+VAR has_viola = false
+VAR has_harp = false
+VAR has_bass_drum = false
+VAR has_snare_drum = false
+VAR has_marimba = false
+VAR has_tuba = false
+VAR has_trombone = false
+VAR has_french_horn = false
+VAR has_trumpet = false
+VAR has_oboe = false
+VAR has_clarinet = false
+VAR has_flute = false
+
 /* Piano quest */
 VAR ready_for_piano_quest = true
 VAR has_piano_quest = false
