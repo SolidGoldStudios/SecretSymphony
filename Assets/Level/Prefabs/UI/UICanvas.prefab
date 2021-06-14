@@ -1296,6 +1296,7 @@ GameObject:
   - component: {fileID: 7675597378614824260}
   - component: {fileID: 107119650683064122}
   - component: {fileID: 2431088164276367097}
+  - component: {fileID: 6280374909604235792}
   m_Layer: 5
   m_Name: Viola
   m_TagString: Untagged
@@ -1343,7 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1403,6 +1404,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6280374909604235792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327449956919593528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_viola
 --- !u!1 &370371103367191163
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,6 +3763,7 @@ GameObject:
   - component: {fileID: 6873909547068818986}
   - component: {fileID: 787671416620342753}
   - component: {fileID: 8324952194942887991}
+  - component: {fileID: 1698102340132226761}
   m_Layer: 5
   m_Name: Harp
   m_TagString: Untagged
@@ -3796,7 +3811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3856,6 +3871,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1698102340132226761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072915640771913806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_harp
 --- !u!1 &2100356317738360759
 GameObject:
   m_ObjectHideFlags: 0
@@ -3868,6 +3896,7 @@ GameObject:
   - component: {fileID: 5822987971333354108}
   - component: {fileID: 3505262953682647110}
   - component: {fileID: 375601836286985385}
+  - component: {fileID: 5709995929401848260}
   m_Layer: 5
   m_Name: Bass Drum
   m_TagString: Untagged
@@ -3915,7 +3944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3975,6 +4004,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5709995929401848260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100356317738360759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_bass_drum
 --- !u!1 &2189180756367206909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,6 +6905,7 @@ GameObject:
   - component: {fileID: 1575923278623717462}
   - component: {fileID: 692343398116088283}
   - component: {fileID: 4479676776936076637}
+  - component: {fileID: 9006751061275067327}
   m_Layer: 5
   m_Name: Bass
   m_TagString: Untagged
@@ -6910,7 +6953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9921569, g: 0.9921569, b: 0.9921569, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6970,6 +7013,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9006751061275067327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382044632126413299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_bass
 --- !u!1 &3420816714714367880
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,6 +7956,7 @@ GameObject:
   - component: {fileID: 4887276742378651766}
   - component: {fileID: 7525344180893795445}
   - component: {fileID: 8484594552662378066}
+  - component: {fileID: 3270853377200761401}
   m_Layer: 5
   m_Name: Piano
   m_TagString: Untagged
@@ -7947,7 +8004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8007,6 +8064,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3270853377200761401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133748581435809511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_piano
 --- !u!1 &4147253401845210290
 GameObject:
   m_ObjectHideFlags: 0
@@ -8829,6 +8899,7 @@ GameObject:
   - component: {fileID: 1048946933918551745}
   - component: {fileID: 8348813285160639674}
   - component: {fileID: 1487983539624419382}
+  - component: {fileID: 6625358299164681289}
   m_Layer: 5
   m_Name: Marimba
   m_TagString: Untagged
@@ -8876,7 +8947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8936,6 +9007,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6625358299164681289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943391545744519106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_marimba
 --- !u!1 &4995218606592947940
 GameObject:
   m_ObjectHideFlags: 0
@@ -9022,6 +9106,7 @@ GameObject:
   - component: {fileID: 6797020601379015182}
   - component: {fileID: 7431855115489821167}
   - component: {fileID: 6094064495470129912}
+  - component: {fileID: 6069625457856491843}
   m_Layer: 5
   m_Name: Trombone
   m_TagString: Untagged
@@ -9069,7 +9154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9129,6 +9214,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6069625457856491843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4999793426056256470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_trombone
 --- !u!1 &5113249068302312081
 GameObject:
   m_ObjectHideFlags: 0
@@ -9141,6 +9239,7 @@ GameObject:
   - component: {fileID: 3362243598338587859}
   - component: {fileID: 2814093154415309265}
   - component: {fileID: 1671571773296853114}
+  - component: {fileID: 9032929534347153825}
   m_Layer: 5
   m_Name: Clarinet
   m_TagString: Untagged
@@ -9188,7 +9287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9248,6 +9347,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9032929534347153825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113249068302312081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_clarinet
 --- !u!1 &5367024138120671812
 GameObject:
   m_ObjectHideFlags: 0
@@ -9429,6 +9541,7 @@ GameObject:
   - component: {fileID: 5466724630608134779}
   - component: {fileID: 3214195940945305521}
   - component: {fileID: 7232631413186507801}
+  - component: {fileID: 7958906169200812668}
   m_Layer: 5
   m_Name: Trumpet
   m_TagString: Untagged
@@ -9476,7 +9589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9536,6 +9649,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7958906169200812668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5488567262458307284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_trumpet
 --- !u!1 &5507305412596221292
 GameObject:
   m_ObjectHideFlags: 0
@@ -9680,6 +9806,7 @@ GameObject:
   - component: {fileID: 3910162641696497180}
   - component: {fileID: 1552000608012470951}
   - component: {fileID: 2931782863142588812}
+  - component: {fileID: 2581228028055410163}
   m_Layer: 5
   m_Name: Oboe
   m_TagString: Untagged
@@ -9727,7 +9854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9787,6 +9914,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2581228028055410163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623527835616514007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_oboe
 --- !u!1 &5651501077837638551
 GameObject:
   m_ObjectHideFlags: 0
@@ -10712,6 +10852,7 @@ GameObject:
   - component: {fileID: 7584372827912391082}
   - component: {fileID: 2214787553493995350}
   - component: {fileID: 8015235843219367797}
+  - component: {fileID: 8804804821927219193}
   m_Layer: 5
   m_Name: ScrollButton
   m_TagString: Untagged
@@ -10820,7 +10961,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7584372827912391082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8804804821927219193}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8015235843219367797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10837,6 +10989,102 @@ MonoBehaviour:
   scrollClosedBG: {fileID: 3640020383902343424}
   menuButton: {fileID: 8597659841374529754}
   InstrumentContainer: {fileID: 3019184860999060529}
+--- !u!82 &8804804821927219193
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6539951769918671633}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f067a7ced2fe848f28e4f2bc53475d25, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6595173636809240762
 GameObject:
   m_ObjectHideFlags: 0
@@ -10849,6 +11097,7 @@ GameObject:
   - component: {fileID: 6857451707068180545}
   - component: {fileID: 8456389104091610262}
   - component: {fileID: 2054508860394669277}
+  - component: {fileID: 8460976447482195897}
   m_Layer: 5
   m_Name: Horn
   m_TagString: Untagged
@@ -10896,7 +11145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10956,6 +11205,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8460976447482195897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595173636809240762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_french_horn
 --- !u!1 &6619995704925929974
 GameObject:
   m_ObjectHideFlags: 0
@@ -11114,6 +11376,7 @@ GameObject:
   - component: {fileID: 1058454969310285528}
   - component: {fileID: 3615993286855075915}
   - component: {fileID: 5932854561044547483}
+  - component: {fileID: 7716282955805731302}
   m_Layer: 5
   m_Name: Violin
   m_TagString: Untagged
@@ -11161,7 +11424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -11221,6 +11484,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7716282955805731302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6744061506947173975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_violin
 --- !u!1 &6847631113269000130
 GameObject:
   m_ObjectHideFlags: 0
@@ -12407,6 +12683,7 @@ GameObject:
   - component: {fileID: 7794783935185249436}
   - component: {fileID: 6060408936474135505}
   - component: {fileID: 8436614050637271677}
+  - component: {fileID: 1428299621617753006}
   m_Layer: 5
   m_Name: Snare Drum
   m_TagString: Untagged
@@ -12454,7 +12731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12514,6 +12791,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1428299621617753006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545253486570294596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_snare_drum
 --- !u!1 &7611508969773868964
 GameObject:
   m_ObjectHideFlags: 0
@@ -12904,6 +13194,7 @@ GameObject:
   - component: {fileID: 690894597815525443}
   - component: {fileID: 4647457876738561003}
   - component: {fileID: 8564578911672437828}
+  - component: {fileID: 804808837198666904}
   m_Layer: 5
   m_Name: Tuba
   m_TagString: Untagged
@@ -12951,7 +13242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13011,6 +13302,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &804808837198666904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8113555979458360725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_tuba
 --- !u!1 &8191766764338342790
 GameObject:
   m_ObjectHideFlags: 0
@@ -13545,6 +13849,7 @@ GameObject:
   - component: {fileID: 2238498930325722883}
   - component: {fileID: 284823174358796259}
   - component: {fileID: 1804129845288698532}
+  - component: {fileID: 8102734927496504425}
   m_Layer: 5
   m_Name: Flute
   m_TagString: Untagged
@@ -13592,7 +13897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41051087, b: 0.41051087, a: 0.3137255}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13652,6 +13957,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8102734927496504425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598637379293108546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699976166193543988caa7181484630d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_flute
 --- !u!1 &8652170572263797909
 GameObject:
   m_ObjectHideFlags: 0

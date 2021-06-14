@@ -37,7 +37,7 @@ public class ToggleInstrumentScroll : MonoBehaviour
             scrollClosedBG.enabled = false;
             menuButton.SetActive(false);
             InstrumentContainer.SetActive(true);
-            rect.anchoredPosition3D = new Vector3(-306f, 0f, 0f);
+            rect.anchoredPosition3D = new Vector3(-312f, 0f, 0f);
         }
     }
 
