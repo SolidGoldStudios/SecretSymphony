@@ -10,6 +10,9 @@ public class BackgroundMusic : MonoBehaviour
     private bool pianoActive = false;
     private bool tromboneActive = false;
 
+    private float pianoVolume;
+    private float tromboneVolume;
+
     void Awake()
     {
         GameManager.Instance.inkStory.ObserveVariable("completed_piano_quest", (string varName, object newValue) =>
@@ -41,12 +44,45 @@ public class BackgroundMusic : MonoBehaviour
 
     public void MuteTracks()
     {
-        pianoTrack.mute = true;
-        tromboneTrack.mute = true;
+        pianoVolume = pianoTrack.volume;
+        tromboneVolume = tromboneTrack.volume;
+
+        if (pianoActive) StartCoroutine(AudioFade.FadeOut(pianoTrack, 1.0f));
+        if (tromboneActive) StartCoroutine(AudioFade.FadeOut(tromboneTrack, 1.0f));
+        //pianoTrack.mute = true;
+        //tromboneTrack.mute = true;
     }
+
     public void UnmuteTracks()
     {
-        pianoTrack.mute = !pianoActive;
-        tromboneTrack.mute = !tromboneActive;
+        if (pianoActive) StartCoroutine(AudioFade.FadeIn(pianoTrack, pianoVolume, 1.0f));
+        if (tromboneActive) StartCoroutine(AudioFade.FadeIn(tromboneTrack, tromboneVolume, 1.0f));
+        //pianoTrack.mute = !pianoActive;
+        //tromboneTrack.mute = !tromboneActive;
+    }
+}
+
+public static class AudioFade
+{
+    public static IEnumerator FadeIn(AudioSource audioSource, float targetVolume, float FadeTime)
+    {
+        while (audioSource.volume < targetVolume)
+        {
+            audioSource.volume += targetVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+    }
+
+    public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
     }
 }
