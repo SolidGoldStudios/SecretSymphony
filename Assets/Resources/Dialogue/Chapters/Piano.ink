@@ -13,8 +13,9 @@
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy #audio:male_speak_long_1
         ->END
      - completed_piano_quest && !has_trombone_quest:
-       Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Father #audio:male_speak_long_2
+        Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Father #audio:male_speak_long_2
         Sure! #name:Melody #mood:happy 
+        Just walk south down the path, you'll see him. #name:Father #mood:happy #audio:male_speak_short_2 
         ->END
     - completed_piano_quest && has_trombone_quest && !completed_trombone_quest:
         Did you speak to your uncle? #name:Father  #audio:male_speak_short_1
@@ -151,7 +152,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
 
 ==pianoquest_played_song==
     Beautiful! #name:Spirit+of+Music #mood:happy #audio:fairy_speak_short_1
-    I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy #audio:male_speak_medium_1
+    I... I remember that sound! That was <i>Ode to Joy!</i> by my favorite composer, Beethoven! #name:Father #mood:happy #audio:male_speak_medium_1
     Yes! And this is a piano, not firewood. #name:Melody #mood:happy 
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy #audio:male_speak_medium_2
     ~ tooltip = "You saved the piano!"
