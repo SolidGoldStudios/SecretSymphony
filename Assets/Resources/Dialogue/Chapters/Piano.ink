@@ -13,8 +13,9 @@
         Good, you found the scythe! Give this big lumber pile a whack. #name:Father #mood:happy #audio:male_speak_long_1
         ->END
      - completed_piano_quest && !has_trombone_quest:
-       Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Father #audio:male_speak_long_2
+        Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Father #audio:male_speak_long_2
         Sure! #name:Melody #mood:happy 
+        Just walk south down the path, you'll see him. #name:Father #mood:happy #audio:male_speak_short_2 
         ->END
     - completed_piano_quest && has_trombone_quest && !completed_trombone_quest:
         Did you speak to your uncle? #name:Father  #audio:male_speak_short_1
