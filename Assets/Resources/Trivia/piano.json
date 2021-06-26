@@ -34,13 +34,5 @@
 			"hint": "Here's a hint: you also use these when riding a bike!",
 			"followupFact": "Piano pedals can enrich the sound in various ways, such as causing a note to play softer, or be held longer."
 		},
-		{
-			"question": "What kind of piano plays songs all by itself off of a big roll of paper?",
-			"correctAnswer": "Player Piano",
-			"wrongAnswer1": "Paper Piano",
-			"wrongAnswer2": "Smart Piano",
-			"hint": "Here's a hint:  Dont hate THIS, hate the game.",
-			"followupFact": "When a player piano is running, the keys still move up and down - even though there isn't a person pressing them!"
-		}
 	]
 }
