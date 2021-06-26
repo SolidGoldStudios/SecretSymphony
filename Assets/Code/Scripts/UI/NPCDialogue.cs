@@ -229,9 +229,13 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("timeline"))
             {
                 string timelineObject = tag.Substring(9);
-                timelineManager = GameObject.Find(timelineObject).gameObject;
-                timeline = timelineManager.GetComponent<PlayableDirector>();
-                timeline.Play();
+                timelineManager = GameObject.Find(timelineObject);
+
+                if (timelineManager != null)
+                {
+                    timeline = timelineManager.GetComponent<PlayableDirector>();
+                    timeline.Play();
+                }
             }
             if(tag.StartsWith("victory"))
             {
@@ -242,11 +246,11 @@ public class NPCDialogue : MonoBehaviour
                 if (victoryItem != null)
                 {
                     
-                    GameManager.Instance.playerMovement.RunRaiseArms(Resources.Load<Sprite>("Items/" + victoryItem));
+                    GameManager.Instance.RunRaiseArms(Resources.Load<Sprite>("Items/" + victoryItem));
                 }
                 else
                 {
-                    GameManager.Instance.playerMovement.RunRaiseArms(null);
+                    GameManager.Instance.RunRaiseArms(null);
                 }
                 
             }

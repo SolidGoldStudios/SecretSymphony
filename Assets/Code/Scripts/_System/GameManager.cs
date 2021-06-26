@@ -181,8 +181,41 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(5);
         HideTooltip();
     }
+	public void RunRaiseArms(Sprite icon)
+	{
+		StartCoroutine(RaiseArms(icon));
+	}
 
-    public int GetInventoryCount(string itemName)
+	public IEnumerator RaiseArms(Sprite icon)
+	{
+		player = GameObject.Find("Player").gameObject;
+		playerMovement = player.GetComponent<PlayerMovement>();
+		GameObject itemSprite = player.transform.Find("ItemSprite").gameObject;
+		SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
+		Animator animator = player.GetComponent<Animator>();
+
+		playerMovement.immobilized = true;
+		animator.SetBool("collecting", true);
+
+		if (icon != null)
+		{
+			itemIcon.sprite = icon;
+			itemSprite.SetActive(true);
+		}
+
+		yield return new WaitForSeconds(1.5f);
+
+		if (icon != null)
+		{
+			itemSprite.SetActive(false);
+		}
+
+		animator.SetBool("collecting", false);
+		playerMovement.immobilized = false;
+		yield return null;
+	}
+
+	public int GetInventoryCount(string itemName)
     {
         return inventory.Exists(i => i.itemName == itemName) ? inventory.Find(i => i.itemName == itemName).count : 0;
     }

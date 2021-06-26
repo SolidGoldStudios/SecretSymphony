@@ -14,7 +14,7 @@ public static class InventoryController
         {
             GameManager.Instance.inventory.Add(item);
         }
-        GameManager.Instance.playerMovement.RunRaiseArms(Resources.Load<Sprite>(item.icon));
+        GameManager.Instance.RunRaiseArms(Resources.Load<Sprite>(item.icon));
     }
 	
 	public static bool CheckForInventoryItem(string itemName)

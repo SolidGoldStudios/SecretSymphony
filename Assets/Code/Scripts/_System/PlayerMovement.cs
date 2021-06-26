@@ -196,36 +196,4 @@ public class PlayerMovement : MonoBehaviour
 
         yield return null;
     }
-	
-	public void RunRaiseArms(Sprite icon)
-	{
-		StartCoroutine(RaiseArms(icon));
-	}
-	
-	public IEnumerator RaiseArms(Sprite icon)
-    {
-        PlayerMovement playerMovement = this.GetComponent<PlayerMovement>();
-        GameObject itemSprite = this.transform.Find("ItemSprite").gameObject;
-        SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
-
-        playerMovement.immobilized = true;
-        animator.SetBool("collecting", true);
-
-        if (icon != null)
-        {
-            itemIcon.sprite = icon;
-            itemSprite.SetActive(true);
-        }
-
-        yield return new WaitForSeconds(1.5f);
-
-        if (icon != null)
-        {
-            itemSprite.SetActive(false);
-        }
-
-        animator.SetBool("collecting", false);
-        playerMovement.immobilized = false;
-        yield return null;
-    }
 }
