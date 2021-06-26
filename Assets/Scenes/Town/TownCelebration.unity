@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -27901,8 +27901,8 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 826543788}
-  npcPortrait: {fileID: 0}
-  npcName: 
+  npcPortrait: {fileID: 21300000, guid: 568640ab187ce7946aec6edcd9161326, type: 3}
+  npcName: Crow
   dialogue: Wow kid, I can't believe you actually did it!
   playerInRange: 0
 --- !u!61 &908699235
@@ -38246,6 +38246,8 @@ GameObject:
   - component: {fileID: 1085385834}
   - component: {fileID: 1085385836}
   - component: {fileID: 1085385835}
+  - component: {fileID: 1085385838}
+  - component: {fileID: 1085385837}
   m_Layer: 0
   m_Name: gucci
   m_TagString: Untagged
@@ -38337,6 +38339,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!61 &1085385837
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085385833}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.34375}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.6875, y: 0.6875}
+    newSize: {x: 0.6875, y: 0.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6875, y: 0.6875}
+  m_EdgeRadius: 0
+--- !u!114 &1085385838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085385833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  dialogBox: {fileID: 826543788}
+  npcPortrait: {fileID: 21300000, guid: f31be882890198a4c9b0d49d94160d1f, type: 3}
+  npcName: Gucci
+  dialogue: I'm so happy we can make music together again!!
+  playerInRange: 0
 --- !u!1 &1086596083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7048098377923991156, guid: 22fdf3b2ca1444dcbbe9448e2de6892d,
