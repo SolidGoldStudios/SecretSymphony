@@ -16,6 +16,7 @@
         Uncle is still trying to fix his carriage. I'm sure he would appreciate some help... #name:Father #audio:male_speak_long_2
         Sure! #name:Melody #mood:happy 
         Just walk south down the path, you'll see him. #name:Father #mood:happy #audio:male_speak_short_2 
+        ~ has_talk_to_uncle_quest = true
         ->END
     - completed_piano_quest && has_trombone_quest && !completed_trombone_quest:
         Did you speak to your uncle? #name:Father  #audio:male_speak_short_1
@@ -162,6 +163,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     We sure did. Nice work, Melody. But there's still a lot of work left to do! #name:Spirit+of+Music #audio:fairy_speak_long_2 
     Will you find the rest of the musical instruments and save them? #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1 
     You can count on me! #name:Melody #mood:happy #audio:quest_added 
+    ~ ready_for_talk_to_uncle_quest = true
     ~ ready_for_trombone_quest = true
     ~ ready_for_fishing_quest = true
 -> DONE
