@@ -151,7 +151,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
 
 ==pianoquest_played_song==
     Beautiful! #name:Spirit+of+Music #mood:happy #audio:fairy_speak_short_1
-    I... I remember that sound! That was <i>Ode to Joy!</i> #name:Father #mood:happy #audio:male_speak_medium_1
+    I... I remember that sound! That was <i>Ode to Joy!</i> by my favorite composer, Beethoven! #name:Father #mood:happy #audio:male_speak_medium_1
     Yes! And this is a piano, not firewood. #name:Melody #mood:happy 
     I can't believe I forgot! I must have been out of my mind. Hooray! #name:Father #mood:happy #audio:male_speak_medium_2
     ~ tooltip = "You saved the piano!"
