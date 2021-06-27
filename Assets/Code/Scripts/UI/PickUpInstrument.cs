@@ -15,12 +15,15 @@ public class PickUpInstrument : MonoBehaviour
         if ((int)GameManager.Instance.inkStory.variablesState[inkVar] == 1)
         {
             HideInstrument();
+            return;
         }
 
+        Debug.Log("*************** observing " + inkVar );
         GameManager.Instance.inkStory.ObserveVariable(inkVar, (string varName, object newValue) =>
         {
             if ((int)newValue == 1)
             {
+                Debug.Log("*************** calling HideInstrument");
                 HideInstrument();
             }
         });
