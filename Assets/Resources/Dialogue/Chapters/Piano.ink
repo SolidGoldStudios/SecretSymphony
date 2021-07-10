@@ -121,7 +121,7 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
 ==pianoquest_scarecrow==
     Ha-ha! #name:Scarecrow  #audio:scarecrow_speak_short_1
     Who said that? #name:Melody #mood:sad  
-    Me! The scarecrow! Looking for something? #name:scarecrow #audio:scarecrow_speak_long_1
+    Me! The scarecrow! Looking for something? #name:Scarecrow #audio:scarecrow_speak_long_1
     My key! #name:Melody #mood:sad  
     If you want it back, you'll have to answer my questions! Are you ready? #name:Scarecrow #audio:scarecrow_speak_long_2
     + [Yes] Let's do it! #name:Melody #mood:happy 
