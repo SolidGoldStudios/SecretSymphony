@@ -668,6 +668,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.0040441477
       objectReference: {fileID: 0}
+    - target: {fileID: 4859671577774440162, guid: 3a0a586322f682f419ef051127efbf39,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_RootOrder
@@ -11950,7 +11955,6 @@ MonoBehaviour:
   sparkleParticles: {fileID: 277227953}
   dialogBox: {fileID: 322951456}
   knotName: tutorial_bedroom_lamp
-  sparkleParticles: {fileID: 277227953}
 --- !u!61 &785528724
 BoxCollider2D:
   m_ObjectHideFlags: 0
