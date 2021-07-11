@@ -15,7 +15,7 @@ public class OutfitCheck : MonoBehaviour
         {
             if (GameManager.Instance.wearingNightgown)
             {
-                dialogueText.text = "Wouldn't want to leave without getting dressed first!";
+                dialogueText.text = "This isn’t a job for pajamas!";
                 dialogBox.SetActive(true);
             }
             else

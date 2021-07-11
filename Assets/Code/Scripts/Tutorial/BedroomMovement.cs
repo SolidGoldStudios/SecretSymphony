@@ -6,7 +6,8 @@ public class BedroomMovement : MonoBehaviour
 {
     public GameObject dialogBox;
     public string knotName;
-
+    public GameObject player;
+    public PlayerMovement playerMovement;
 
     void Update()
     {
@@ -19,9 +20,13 @@ public class BedroomMovement : MonoBehaviour
 
     IEnumerator waitAndShowDialog()
     {
+        player = GameObject.Find("Player").gameObject;
+        playerMovement = player.GetComponent<PlayerMovement>();
         yield return new WaitForSeconds(1.5f);
+        playerMovement.immobilized = true;
         GameManager.Instance.hasFinishedTutorialMovement = true;
         NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
         npcDialogue.ShowDialog(knotName);
+        this.enabled = false;
     }
 }

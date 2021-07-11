@@ -38,5 +38,18 @@
 -> END
 
 ==tutorial_bedroom_movement==
-    Great work! Now try opening those curtains! Just tap them or click on them. #name:Spirit+of+Music #mood:happy #audio:fairy_speak_medium_1
+    Great work! Now try opening those curtains! Just tap them or click on them. #name:Spirit+of+Music #mood:happy #audio:fairy_speak_medium_1 #showSparkles
+-> END
+
+==tutorial_bedroom_curtains==
+   Ah, what a pretty morning! #name:Spirit+of+Music #mood:happy #audio:fairy_speak_short_1 #showSparkles
+   Some important objects will stand out. Try turning on the blue lamp. #name:Spirit+of+Music #audio:fairy_speak_medium_2 
+-> END
+
+==tutorial_bedroom_lamp==
+    Finally, you’ll want to get dressed before heading downstairs. #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1 #showSparkles
+-> END
+
+==tutorial_bedroom_wardrobe==
+    Nice outfit! Now you’re ready. Let’s go!  #name:Spirit+of+Music #mood:happy #audio:fairy_speak_short_2
 -> END

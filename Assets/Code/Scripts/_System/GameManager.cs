@@ -12,9 +12,12 @@ public class GameManager : Singleton<GameManager>
     public bool wearingNightgown = true;
 	public bool hasPromptedDestruction = false;
 	public bool hasFinishedTutorialMovement = false;
+	public bool hasFinishedTutorialCurtains = false;
+	public bool hasFinishedTutorialLamp = false;
+	public bool hasFinishedTutorialWardrobe = false;
 
-    // Ink story
-    public TextAsset inkAsset;
+	// Ink story
+	public TextAsset inkAsset;
     public Story inkStory;
 
     // Our persistent inventory
