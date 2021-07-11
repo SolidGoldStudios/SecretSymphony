@@ -21,7 +21,18 @@
 -> END
 
 ==end_fairy_cutscene==
-    Wow, what a weird dream. #name:Melody #mood:nightgown1
-    I guess I had better get dressed and see what chores I need to do this morning for the farm. #name:Melody #mood:nightgown
+    Oh dear, oh dear, oh dear… Ah, here she is. #name:Spirit+of+Music #mood:right #audio:fairy_speak_short_2 #showSparkles
+    Yawn… #name:Melody #mood:nightgown1
+    Melody, wake up! #name:Spirit+of+Music #audio:fairy_speak_short_1
+    Hmm… oh! Who are you? #name:Melody #mood:nightgown2
+    I’m sorry to wake you, but I need your help! #name:Spirit+of+Music #mood:mad #audio:fairy_speak_medium_1
+    What’s wrong? I’ll help if I can! #name:Melody #mood:nightgown1
+    Everyone has lost their memory of music. #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_2
+    Music? What’s that? #name:Melody #mood:nightgown2
+    Oh no! The ear worm has stolen your memory too? But you were the best musician of all… #name:Spirit+of+Music #mood:cry #audio:fairy_speak_long_1
+    I… I was? #name:Melody #mood:nightgown2
+    You sure were! So can you help me restore the townspeople’s memory of music? #name:Spirit+of+Music #mood:happy #audio:fairy_speak_long_2
+    I’ll try my best! How should I start? #name:Melody #mood:nightgown1
+    First of all, let’s explore your controls. Tap the screen or click your mouse to move. #name:Spirit+of+Music #audio:fairy_speak_long_1
 
 -> END
