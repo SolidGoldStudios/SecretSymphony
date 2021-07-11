@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5786,8 +5786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 323.82, y: -166.2}
-  m_SizeDelta: {x: 24.994492, y: 50.729797}
+  m_AnchoredPosition: {x: 314, y: -137.2}
+  m_SizeDelta: {x: 24, y: 54}
   m_Pivot: {x: 0.8924073, y: 0.5500752}
 --- !u!95 &691926043
 Animator:
@@ -5821,7 +5821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.98823535, g: 0.9921569, b: 0.9921569, a: 0.5019608}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6023,8 +6023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93, y: -164.25}
-  m_SizeDelta: {x: 35.166824, y: 54.281265}
+  m_AnchoredPosition: {x: 103, y: -129.2}
+  m_SizeDelta: {x: 32, y: 64}
   m_Pivot: {x: 0.8924073, y: 0.5500752}
 --- !u!95 &870547945
 Animator:
@@ -15884,8 +15884,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1719740449, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -110
+      objectReference: {fileID: 0}
+    - target: {fileID: 1719740449, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75.9
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 1967483147, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_Name
@@ -15908,20 +15912,36 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 257
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 140
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 300.05
+      value: 92.21571
       objectReference: {fileID: 0}
     - target: {fileID: 1967483148, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -62.989
+      value: 56.4
       objectReference: {fileID: 0}
     - target: {fileID: 1967483149, guid: 59a222df298964682a8ab1f42945c798, type: 3}
       propertyPath: m_Sprite
@@ -16140,7 +16160,7 @@ PrefabInstance:
     - target: {fileID: 4124928608456335616, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
@@ -21157,11 +21177,11 @@ RectTransform:
   m_Children:
   - {fileID: 1250462487}
   m_Father: {fileID: 159626374}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114.6, y: -75.9}
+  m_AnchoredPosition: {x: 104, y: -50}
   m_SizeDelta: {x: 120, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620807464
@@ -21171,7 +21191,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620807462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -21232,7 +21252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9921569, g: 0.9921569, b: 0.9921569, a: 0.5019608}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
