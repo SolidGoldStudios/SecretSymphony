@@ -6,11 +6,11 @@
 ->END
 
 ==bard_earworm_scene==
-    What's that awful sound? #name:Bard
+    What's that awful sound? #name:Bard #audio:lake_monster
 -> END
 
 ==earworm_earworm_scene==
-    Give me that delicious MUSIC! #name:Earworm
+    Give me that delicious MUSIC! #name:Earworm #audio_earworm_speak_short_1
 -> END
 
 ==fairy_earworm_scene==
