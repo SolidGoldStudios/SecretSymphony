@@ -1259,7 +1259,7 @@ ParticleSystem:
   m_GameObject: {fileID: 277227953}
   serializedVersion: 6
   lengthInSec: 0.1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -1273,7 +1273,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 3.3
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -1333,7 +1333,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5.5
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1386,7 +1386,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1502,7 +1502,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.05
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1818,7 +1818,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 15
+    maxNumParticles: 10
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -6788,7 +6788,7 @@ ParticleSystem:
   m_GameObject: {fileID: 617799446}
   serializedVersion: 6
   lengthInSec: 0.1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -6802,7 +6802,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 3.3
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -6915,7 +6915,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -11933,7 +11933,6 @@ MonoBehaviour:
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
   blockedBy: {fileID: 0}
-  interactionSwitch: 0
   interactLight: {fileID: 574940716}
   sparkleParticles: {fileID: 277227953}
   dialogBox: {fileID: 322951456}
@@ -14366,7 +14365,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1472769773}
   serializedVersion: 6
   lengthInSec: 0.1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -14380,7 +14379,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 3.3
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -14493,7 +14492,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2

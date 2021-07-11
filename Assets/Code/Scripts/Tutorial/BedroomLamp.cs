@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BedroomLamp : InteractionAnimation
+public class BedroomLamp : Interaction
 {
-
+    public GameObject interactLight;
+    public GameObject sparkleParticles;
     public GameObject dialogBox;
     public string knotName;
 
     private void Start()
     {
-
         if (sparkleParticles != null)
         {
             sparkleParticles.SetActive(false);
@@ -39,9 +39,16 @@ public class BedroomLamp : InteractionAnimation
             {
                 sparkleParticles.SetActive(false);
             }
+
+            if (interactLight != null)
+            {
+                interactLight.SetActive(true);
+            }
+
             GameManager.Instance.hasFinishedTutorialLamp = true;
             NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
             npcDialogue.ShowDialog(knotName);
+
             this.enabled = false;
         }
     }
