@@ -6697,7 +6697,7 @@ MonoBehaviour:
   interactionSwitch: 0
   interactLight: {fileID: 1774629049}
   sparkleParticles: {fileID: 1472769773}
-  animator: {fileID: 1726730430}
+  animator: {fileID: 608962025}
   dialogBox: {fileID: 322951456}
   knotName: tutorial_bedroom_wardrobe
 --- !u!1 &617799446
@@ -11968,7 +11968,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.041025043, y: -0.11200845}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11979,7 +11979,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5317452, y: 0.7759831}
   m_EdgeRadius: 0
 --- !u!4 &846700591 stripped
 Transform:
@@ -14083,7 +14083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405031455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.97, y: -5.06, z: -0.46196648}
+  m_LocalPosition: {x: -2.97, y: -4.42, z: -0.46196648}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14158,7 +14158,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.63953364, y: 0.8261794}
+  m_Offset: {x: 0.63953364, y: 1.2752277}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14169,7 +14169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9539843, y: 1.1206374}
+  m_Size: {x: 1.9539843, y: 2.0187337}
   m_EdgeRadius: 0
 --- !u!114 &1409645886
 MonoBehaviour:
@@ -19344,7 +19344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611613871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.34, y: -4.74, z: 0}
+  m_LocalPosition: {x: -1.34, y: -4.47, z: 0}
   m_LocalScale: {x: 1.48727, y: 0.6875, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19672,12 +19672,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1726730430 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8705268416411252315, guid: a67f5587a56c39c4c9ea8d059677ae36,
-    type: 3}
-  m_PrefabInstance: {fileID: 403037949}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1727994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -22272,6 +22266,26 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 846700591}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
         type: 3}
       propertyPath: m_RootOrder

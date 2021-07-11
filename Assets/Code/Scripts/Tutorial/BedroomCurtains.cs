@@ -32,7 +32,7 @@ public class BedroomCurtains : InteractionAnimation
     }
 
     public override void Interact()
-    {;
+    {
         if (!GameManager.Instance.hasFinishedTutorialCurtains && GameManager.Instance.hasFinishedTutorialMovement)
         {
             if (sparkleParticles != null)

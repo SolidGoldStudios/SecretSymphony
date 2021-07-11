@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class BedroomWardrobe : InteractionAnimation
 {
-    public Animator animator;
+    private Animator animator;
+    AudioSource audioSource;
     public GameObject dialogBox;
     public string knotName;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
 
         if (sparkleParticles != null)
         {
@@ -44,6 +46,16 @@ public class BedroomWardrobe : InteractionAnimation
             {
                 sparkleParticles.SetActive(false);
             }
+
+            interactionSwitch = !interactionSwitch;
+            animator.SetBool("interactionSwitch", interactionSwitch);
+
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
+
             GameManager.Instance.hasFinishedTutorialWardrobe = true;
             GameManager.Instance.wearingNightgown = false;
             animator.SetBool("wearingNightgown", false);

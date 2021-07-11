@@ -39,6 +39,7 @@
         But it's all stuck together. Can you chop it into smaller pieces? #name:Mother #mood:sad  #audio:female_speak_long_2
         I'll get to it. #name:Melody #mood:happy 
         Thanks, Melody! You can just use the <b>scythe</b>, out in front of the house. #name:Father #mood:happy #audio:male_speak_medium_1 #audio:quest_added
+        Firewood!? Your parents forgot all about music, too! #name:Spirit+of+Music #mood:left #audio:fairy_speak_short_2
         ~ has_piano_quest = true
         ->END
     - completed_piano_quest && !has_cow_quest:
@@ -75,18 +76,13 @@
         ->END
         
     - has_scythe && !has_spoken_to_spirit_piano:
-        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1 #showSparkles #timeline:FairyEntersTimeline
-        Who's that? #name:Melody #mood:concerned 
-        I'm the Spirit of Music. Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
+        Stop! Wait! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_1 #showSparkles
+        Whatever you do, don't hurt that piano! #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
         ~ has_hit_piano = true
         ~ has_spoken_to_spirit_piano = true
         Don't hurt what? This kindling? #name:Melody 
         That's no kindling. It's a piano! A piano is a musical instrument. #name:Spirit+of+Music #mood:right #audio:fairy_speak_long_1
-        Musical instrument? What's that? #name:Melody #mood:concerned  
-        Oh no! It seems the Ear Worm has erased your memory too. /*crying sound and animation?*/ #name:Spirit+of+Music #mood: #mood:cry #audio:fairy_speak_medium_2
-        Don't cry. I won't hurt this piano if it means that much to you. #name:Melody #mood:sad
-        Oh, thank you! Can you help me save the rest of the musical instruments? #name:Spirit+of+Music #mood:happy #audio:fairy_speak_medium_1
-        Yes! Let's do it. #name:Melody #mood:happy  
+        Don't cry. I won't hurt this... "piano" if it means that much to you. #name:Melody #mood:sad
         Great! Hooray! The lid of the piano is closed and locked right now. #name:Spirit+of+Music #mood:right  #audio:fairy_speak_medium_2
         I was going to open it up, but I dropped the key in your wheat field. #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1
         Will you find it? #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_2
