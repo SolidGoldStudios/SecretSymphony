@@ -12,10 +12,10 @@ public class BookCollected : MonoBehaviour
 		if (!GameManager.Instance.pages.ContainsKey(bookName))
 		{
 			GameManager.Instance.pages.Add(bookName, new bool[pages.Length]);
-		}
-		if (GameManager.Instance.books.ContainsKey(bookName))
-		{
 			ActivePages();
+		}
+		else
+		{
 			gameObject.SetActive(false);
 		}
 	}
@@ -23,6 +23,7 @@ public class BookCollected : MonoBehaviour
     public void ActivePages()
 	{
 		bool[] state = (bool[])GameManager.Instance.pages[bookName];
+		Debug.Log("ActivePages called " + pages.Length);
 		for (int i = 0; i < pages.Length; i++)
 		{
 			pages[i].GetComponent<PageCollector>().bookName = bookName;
