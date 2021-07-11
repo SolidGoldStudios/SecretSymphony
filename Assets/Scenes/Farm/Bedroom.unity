@@ -6449,6 +6449,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &574940716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4859671577297554951, guid: 3a0a586322f682f419ef051127efbf39,
+    type: 3}
+  m_PrefabInstance: {fileID: 1856631583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &608962019
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,7 +6467,6 @@ GameObject:
   - component: {fileID: 608962024}
   - component: {fileID: 608962021}
   - component: {fileID: 608962025}
-  - component: {fileID: 608962026}
   - component: {fileID: 608962023}
   m_Layer: 0
   m_Name: Wardrobe
@@ -6678,28 +6683,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &608962026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608962019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d9c8bddf83844c3fad09d31112621e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionIcon: {fileID: 0}
-  interactionIconActive: {fileID: 0}
-  moveToTarget: 0
-  blockedBy: {fileID: 0}
-  interactionSwitch: 0
-  interactLight: {fileID: 1774629049}
-  sparkleParticles: {fileID: 1472769773}
-  animator: {fileID: 608962025}
-  dialogBox: {fileID: 322951456}
-  knotName: tutorial_bedroom_wardrobe
 --- !u!1 &617799446
 GameObject:
   m_ObjectHideFlags: 0
@@ -11951,7 +11934,7 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   interactionSwitch: 0
-  interactLight: {fileID: 0}
+  interactLight: {fileID: 574940716}
   sparkleParticles: {fileID: 277227953}
   dialogBox: {fileID: 322951456}
   knotName: tutorial_bedroom_lamp
@@ -12005,8 +11988,8 @@ GameObject:
   - component: {fileID: 889554010}
   - component: {fileID: 889554012}
   - component: {fileID: 889554014}
-  - component: {fileID: 889554013}
   - component: {fileID: 889554015}
+  - component: {fileID: 889554013}
   m_Layer: 0
   m_Name: Curtains
   m_TagString: Untagged
@@ -12241,7 +12224,6 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   interactionSwitch: 0
-  interactLight: {fileID: 2029057827}
   sparkleParticles: {fileID: 617799446}
   dialogBox: {fileID: 322951456}
   knotName: tutorial_bedroom_curtains
@@ -14216,7 +14198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1467493965
 Transform:
   m_ObjectHideFlags: 0
@@ -20338,12 +20320,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1774629049 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4859671577297554951, guid: 3a0a586322f682f419ef051127efbf39,
-    type: 3}
-  m_PrefabInstance: {fileID: 722044284}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1856631583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20384,7 +20360,7 @@ PrefabInstance:
     - target: {fileID: 4859671577297554951, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -20809,12 +20785,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0.0050000004, y: -0.377, z: 0.768}
---- !u!1 &2029057827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4859671577297554951, guid: 3a0a586322f682f419ef051127efbf39,
-    type: 3}
-  m_PrefabInstance: {fileID: 95121549}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2041193159
 GameObject:
   m_ObjectHideFlags: 0
