@@ -15,10 +15,13 @@ VAR tooltip = ""
 
 /**
  * States
+ * Everything in here should start out false,
+ * except ready_for_piano_quest
+ * (and the three town quests, for the time being)
  **/
  
 /* Items */
-VAR has_scythe = true
+VAR has_scythe = false
 
 /* Instruments */
 VAR has_piano = false
@@ -38,18 +41,18 @@ VAR has_flute = false
 
 /* Piano quest */
 VAR ready_for_piano_quest = true
-VAR has_piano_quest = true
-VAR completed_piano_quest = true
-VAR has_hit_piano = true
-VAR has_spoken_to_spirit_piano = true
-VAR has_read_piano_book = true
-VAR ready_for_scarecrow_piano_quest = true
-VAR has_scarecrow_piano_quest = true
-VAR has_piano_key = true
-VAR has_played_piano = true
+VAR has_piano_quest = false
+VAR completed_piano_quest = false
+VAR has_hit_piano = false
+VAR has_spoken_to_spirit_piano = false
+VAR has_read_piano_book = false
+VAR ready_for_scarecrow_piano_quest = false
+VAR has_scarecrow_piano_quest = false
+VAR has_piano_key = false
+VAR has_played_piano = false
 
 /* Trombone quest */
-VAR ready_for_talk_to_uncle_quest = true
+VAR ready_for_talk_to_uncle_quest = false
 VAR has_talk_to_uncle_quest = false
 VAR ready_for_trombone_quest = false
 VAR has_trombone_quest = false

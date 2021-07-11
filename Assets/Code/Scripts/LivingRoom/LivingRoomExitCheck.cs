@@ -16,7 +16,7 @@ public class LivingRoomExitCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (!GameManager.Instance.HaveQuest("InstrumentPianoPartOne"))
+            if ((int)GameManager.Instance.inkStory.variablesState["has_piano_quest"] != 1)
             {
 				dialogueText.text = "I should talk to Mother before I head out.";
 				dialogueText.rectTransform.offsetMin = new Vector2(16, 16);

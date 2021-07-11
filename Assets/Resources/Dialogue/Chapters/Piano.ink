@@ -38,7 +38,7 @@
         We found this big pile of firewood in the living room. #name:Father  #audio:male_speak_long_1
         But it's all stuck together. Can you chop it into smaller pieces? #name:Mother #mood:sad  #audio:female_speak_long_2
         I'll get to it. #name:Melody #mood:happy 
-        Thanks, Melody! You can just use the <b>scythe</b>. #name:Father #mood:happy #audio:male_speak_medium_1 #quest:InstrumentPianoPartOne #audio:quest_added
+        Thanks, Melody! You can just use the <b>scythe</b>, out in front of the house. #name:Father #mood:happy #audio:male_speak_medium_1 #audio:quest_added
         ~ has_piano_quest = true
         ->END
     - completed_piano_quest && !has_cow_quest:
