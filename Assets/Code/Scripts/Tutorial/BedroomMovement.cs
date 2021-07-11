@@ -12,7 +12,6 @@ public class BedroomMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !dialogBox.activeInHierarchy && !GameManager.Instance.hasFinishedTutorialMovement)
         {
-            Debug.Log("********** First movement");
             StartCoroutine(waitAndShowDialog());
             
         }
@@ -20,7 +19,6 @@ public class BedroomMovement : MonoBehaviour
 
     IEnumerator waitAndShowDialog()
     {
-        Debug.Log("********** Showing dialog in just a moment");
         yield return new WaitForSeconds(1.5f);
         GameManager.Instance.hasFinishedTutorialMovement = true;
         NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
