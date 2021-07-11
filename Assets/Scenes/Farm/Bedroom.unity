@@ -1149,6 +1149,26 @@ MonoBehaviour:
   - {x: 0.7292316, y: -0.8315679, z: 0}
   - {x: 0.5826402, y: 0.8955183, z: 0}
   - {x: -0.6638565, y: 0.8916638, z: 0}
+--- !u!1 &314786397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 44688918, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 2048496466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &314786403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314786397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636a734193d124df49645ae15924afdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 322951456}
+  knotName: tutorial_bedroom_movement
 --- !u!1 &319180145
 GameObject:
   m_ObjectHideFlags: 0
@@ -16180,6 +16200,11 @@ PrefabInstance:
       propertyPath: fairySparkleParticles
       value: 
       objectReference: {fileID: 880223332}
+    - target: {fileID: 8634161654521312154, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}
 --- !u!114 &2048496467 stripped
@@ -17438,7 +17463,7 @@ PrefabInstance:
     - target: {fileID: 8859102699093097930, guid: e2c7d8c09ec4197409dbfe94774da61c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
         type: 3}

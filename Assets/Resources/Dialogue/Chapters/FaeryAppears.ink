@@ -36,3 +36,7 @@
     First of all, let’s explore your controls. Tap the screen or click your mouse to move. #name:Spirit+of+Music #audio:fairy_speak_long_1
 
 -> END
+
+==tutorial_bedroom_movement==
+    Great work! Now try opening those curtains! Just tap them or click on them. #name:Spirit+of+Music #mood:happy #audio:fairy_speak_medium_1
+-> END
