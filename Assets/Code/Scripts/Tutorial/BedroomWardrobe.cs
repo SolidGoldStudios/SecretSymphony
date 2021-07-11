@@ -5,10 +5,10 @@ using UnityEngine;
 public class BedroomWardrobe : Interaction
 {
     public bool interactionSwitch;
+    public GameObject sparkleParticles;
     public Animator playerAnimator;
     public GameObject dialogBox;
     public string knotName;
-    public GameObject sparkleParticles;
     private Animator animator;
     AudioSource audioSource;
 
@@ -61,9 +61,11 @@ public class BedroomWardrobe : Interaction
 
             GameManager.Instance.hasFinishedTutorialWardrobe = true;
             GameManager.Instance.wearingNightgown = false;
+
             playerAnimator.SetBool("wearingNightgown", false);
             NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
             npcDialogue.ShowDialog(knotName);
+
             this.enabled = false;
         }
     }

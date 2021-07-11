@@ -6468,6 +6468,7 @@ GameObject:
   - component: {fileID: 608962021}
   - component: {fileID: 608962025}
   - component: {fileID: 608962023}
+  - component: {fileID: 608962022}
   m_Layer: 0
   m_Name: Wardrobe
   m_TagString: Untagged
@@ -6517,6 +6518,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.810313, y: 2.3893166}
   m_EdgeRadius: 0
+--- !u!114 &608962022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608962019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9c8bddf83844c3fad09d31112621e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  interactionSwitch: 0
+  sparkleParticles: {fileID: 1472769773}
+  playerAnimator: {fileID: 1860077987}
+  dialogBox: {fileID: 322951456}
+  knotName: tutorial_bedroom_wardrobe
 --- !u!82 &608962023
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20560,6 +20582,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0a586322f682f419ef051127efbf39, type: 3}
+--- !u!95 &1860077987 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8705268416411252315, guid: a67f5587a56c39c4c9ea8d059677ae36,
+    type: 3}
+  m_PrefabInstance: {fileID: 403037949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1911070694
 GameObject:
   m_ObjectHideFlags: 0
