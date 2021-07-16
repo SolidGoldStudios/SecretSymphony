@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4022,7 +4022,7 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 1339294615}
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 1d662fa3d8c538d4ba5a2b29441a021e, type: 3}
   npcName: Patron
   dialogue: I'm a bit busy here, kid.
   playerInRange: 0
