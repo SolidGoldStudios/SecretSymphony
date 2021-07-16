@@ -123811,7 +123811,7 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 826543788}
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 1d662fa3d8c538d4ba5a2b29441a021e, type: 3}
   npcName: Bob
   dialogue: Can't you see I'm busy here?
   playerInRange: 0
