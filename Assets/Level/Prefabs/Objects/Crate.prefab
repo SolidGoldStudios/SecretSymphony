@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8412430396042507687}
   - component: {fileID: 8412430396042507686}
   - component: {fileID: 8412430396042507692}
-  - component: {fileID: 8412430396042507683}
   - component: {fileID: 8412430396042507682}
   - component: {fileID: 8412430396042507681}
   - component: {fileID: 1345039729055924503}
@@ -131,22 +130,7 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   removeAfterDestroy: 1
---- !u!114 &8412430396042507683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8412430396042507684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b0692b61d843b445901064466459a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionIcon: {fileID: 0}
-  interactionIconActive: {fileID: 0}
-  moveToTarget: 0
-  blockedBy: {fileID: 0}
+  audioSource: {fileID: 8412430396042507682}
 --- !u!82 &8412430396042507682
 AudioSource:
   m_ObjectHideFlags: 0

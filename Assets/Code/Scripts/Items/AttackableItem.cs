@@ -8,6 +8,7 @@ public class AttackableItem : Interaction
     private Animator playerAnimator;
     private bool interacted = false;
     public bool removeAfterDestroy = false;
+    public AudioSource audioSource;
 
     public void Start()
     {
@@ -29,6 +30,8 @@ public class AttackableItem : Interaction
         if (!interacted && ((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1))
         {
             animator.SetBool("interactionSwitch", true);
+
+            if (audioSource) audioSource.Play();
 
             StartCoroutine(AttackCo());
 
