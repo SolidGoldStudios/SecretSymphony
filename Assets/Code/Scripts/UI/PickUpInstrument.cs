@@ -13,10 +13,29 @@ public class PickUpInstrument : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //if ((int)GameManager.Instance.inkStory.variablesState[inkVar] == 1)
-        //{
-        //    HideInstrument();
-        //}
+        if ((int)GameManager.Instance.inkStory.variablesState[inkVar] == 1)
+        {
+            HideInstrument();
+        } 
+        else
+        {
+            Debug.Log("*************** observing " + inkVar);
+            GameManager.Instance.inkStory.RemoveVariableObserver(null, inkVar);
+            GameManager.Instance.inkStory.ObserveVariable(inkVar, (string varName, object newValue) =>
+            {
+                Debug.Log("*************** has_trombone var changed!");
+                if ((int)newValue == 1)
+                {
+                    Debug.Log("*************** has_trombone is true");
+                    Debug.Log("*************** calling HideInstrument");
+                    HideInstrument();
+                }
+                else
+                {
+                    Debug.Log("*************** has_trombone is false");
+                }
+            });
+        }
     }
 
     private void OnDestroy()
@@ -26,25 +45,13 @@ public class PickUpInstrument : MonoBehaviour
 
     void Update()
     { 
-        Debug.Log("*************** observing " + inkVar );
-        GameManager.Instance.inkStory.ObserveVariable(inkVar, (string varName, object newValue) =>
-        {
-            Debug.Log("*************** has_trombone var changed!");
-            if ((int)newValue == 1)
-            {
-                Debug.Log("*************** has_trombone is true");
-                Debug.Log("*************** calling HideInstrument");
-                HideInstrument();
-            } else
-            {
-                Debug.Log("*************** has_trombone is false");
-            }
-        });
     }
 
     private void HideInstrument()
     {
         Debug.Log("*************** hiding instrument!");
+
+        GameManager.Instance.inkStory.RemoveVariableObserver(null, inkVar);
 
         if (this != null)
         {

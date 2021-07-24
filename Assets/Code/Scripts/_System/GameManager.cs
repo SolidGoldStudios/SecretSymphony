@@ -185,12 +185,12 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(5);
         HideTooltip();
     }
-	public void RunRaiseArms(Sprite icon)
+	public void RunRaiseArms(Sprite icon, bool immobilize = true)
 	{
-		StartCoroutine(RaiseArms(icon));
+		StartCoroutine(RaiseArms(icon, immobilize));
 	}
 
-	public IEnumerator RaiseArms(Sprite icon)
+	public IEnumerator RaiseArms(Sprite icon, bool immobilize)
 	{
 		player = GameObject.Find("Player").gameObject;
 		playerMovement = player.GetComponent<PlayerMovement>();
@@ -198,7 +198,7 @@ public class GameManager : Singleton<GameManager>
 		SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
 		Animator animator = player.GetComponent<Animator>();
 
-		playerMovement.immobilized = true;
+		if (immobilize) playerMovement.immobilized = true;
 		animator.SetBool("collecting", true);
 
 		if (icon != null)
@@ -215,7 +215,7 @@ public class GameManager : Singleton<GameManager>
 		}
 
 		animator.SetBool("collecting", false);
-		playerMovement.immobilized = false;
+		if (immobilize) playerMovement.immobilized = false;
 		yield return null;
 	}
 

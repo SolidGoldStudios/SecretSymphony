@@ -43,6 +43,8 @@ public class MusicPlayer : MonoBehaviour
             // Get the current note in the prefab and make it opaque
             Image noteImage = musicSheetContent.transform.GetChild(songInProgress.Length - 1).Find("Note" + songInProgress.Substring(songInProgress.Length - 1)).GetComponent<Image>();
             noteImage.color = new Color(255, 255, 255, 1);
+            
+            GameManager.Instance.SetPlayerImmobilized(true);
 
             // Play the full song 
             StartCoroutine(PlayFullSong());
@@ -152,7 +154,7 @@ public class MusicPlayer : MonoBehaviour
 
         // Show the victory pose and show the tooltip
         GameObject player = GameObject.Find("Player").gameObject;
-        GameManager.Instance.RunRaiseArms(null);
+        GameManager.Instance.RunRaiseArms(null, false);
         GameManager.Instance.ShowTooltipWithTimeout("You played the song!");
 	}
 

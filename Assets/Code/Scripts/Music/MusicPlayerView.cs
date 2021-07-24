@@ -19,7 +19,5 @@ public class MusicPlayerView : MonoBehaviour
     public void HideMusicPlayer()
     {
 		musicPlayerViewer.SetActive(false);
-
-		GameManager.Instance.SetPlayerImmobilized(false);
     }
 }
