@@ -4692,8 +4692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Police and the public hold sharply different views about key aspects of
-    policing as well as on some major policy issues facing the country...
+  m_Text: Dialog goes here!
 --- !u!1 &2257383734306363170
 GameObject:
   m_ObjectHideFlags: 0

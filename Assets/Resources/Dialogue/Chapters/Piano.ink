@@ -53,22 +53,6 @@
         ->END 
 }
 
-==pianoquest_brother==
-{
-    - has_piano_quest && !completed_piano_quest:
-        Aww, Father let you use the scythe? #name:Thomas #mood:sad  #audio:female_speak_medium_1
-        ->END
-    - completed_piano_quest && !has_fishing_quest:
-        Could you catch a trumpetfish from the pond? Let's have fish for dinner tonight! #name:Thomas #mood:happy  #audio:female_speak_long_2
-        ->END
-    - completed_piano_quest && has_fishing_quest && !completed_fishing_quest:
-        Well? Did you get the trumpetfish? #name:Thomas #mood:sad  #audio:female_speak_short_1
-        ->END
-    - else:
-        Hey Sis... I feel like there's something important that I'm forgetting to do... #name:Thomas #mood_sad  #audio:female_speak_long_2
-        ->END
-}
-
 ==pianoquest_piano==
 {
     - has_piano_quest && !has_scythe:
@@ -161,7 +145,7 @@ I should go back to the house and try this on that "piano" thing. #name:Melody #
     You can count on me! #name:Melody #mood:happy #audio:quest_added 
     ~ ready_for_talk_to_uncle_quest = true
     ~ ready_for_trombone_quest = true
-    ~ ready_for_fishing_quest = true
+    ~ ready_for_trumpet_quest = true
 -> DONE
 
 
