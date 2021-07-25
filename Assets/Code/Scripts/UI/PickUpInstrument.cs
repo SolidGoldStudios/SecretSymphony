@@ -21,7 +21,7 @@ public class PickUpInstrument : MonoBehaviour
 
     private void OnDestroy()
     {
-        Debug.Log("*********** Creator, why hast thou forsen me??");
+        Debug.Log("*********** Instrument destroyed");
     }
 
     void Update()

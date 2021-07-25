@@ -38,7 +38,7 @@ public class Collectable : Interaction
     {
         if (!disabled)
         {
-            GameManager.Instance.ShowTooltipWithTimeout("Collected " + itemName + "!");
+            GameManager.Instance.ShowTooltipWithTimeout("Collected " + itemName.Replace("+", " ") + "!");
             audioSource = GetComponent<AudioSource>();
             if (audioSource != null)
             {
