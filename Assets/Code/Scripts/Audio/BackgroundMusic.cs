@@ -59,6 +59,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 bassTrack.mute = false;
                 bassActive = true;
             }
@@ -68,6 +69,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 bassDrumTrack.mute = false;
                 bassDrumActive = true;
             }
@@ -77,6 +79,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 clarinetTrack.mute = false;
                 clarinetActive = true;
             }
@@ -86,6 +89,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 fluteTrack.mute = false;
                 fluteActive = true;
             }
@@ -95,6 +99,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 frenchHornTrack.mute = false;
                 frenchHornActive = true;
             }
@@ -104,6 +109,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 harpTrack.mute = false;
                 harpActive = true;
             }
@@ -113,6 +119,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 marimbaTrack.mute = false;
                 marimbaActive = true;
             }
@@ -122,6 +129,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 oboeTrack.mute = false;
                 oboeActive = true;
             }
@@ -129,16 +137,11 @@ public class BackgroundMusic : MonoBehaviour
 
         GameManager.Instance.inkStory.ObserveVariable("completed_piano_quest", (string varName, object newValue) =>
         {
-//            pianoTrack = GameObject.Find("PianoTrack").GetComponent<AudioSource>();
-//            tromboneTrack = GameObject.Find("TromboneTrack").GetComponent<AudioSource>();
-
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 pianoTrack.mute = false;
                 pianoActive = true;
-
-                pianoTrack.Play();
-                tromboneTrack.Play();
             }
         });
 
@@ -146,6 +149,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 snareDrumTrack.mute = false;
                 snareDrumActive = true;
             }
@@ -153,10 +157,9 @@ public class BackgroundMusic : MonoBehaviour
 
         GameManager.Instance.inkStory.ObserveVariable("completed_trombone_quest", (string varName, object newValue) =>
         {
-//            tromboneTrack = GameObject.Find("TromboneTrack").GetComponent<AudioSource>();
-
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 tromboneTrack.mute = false;
                 tromboneActive = true;
             }
@@ -166,6 +169,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 trumpetTrack.mute = false;
                 trumpetActive = true;
             }
@@ -175,6 +179,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 tubaTrack.mute = false;
                 tubaActive = true;
             }
@@ -184,6 +189,7 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 violaTrack.mute = false;
                 violaActive = true;
             }
@@ -193,10 +199,31 @@ public class BackgroundMusic : MonoBehaviour
         {
             if ((int)newValue == 1)
             {
+                StartAllTracks();
                 violinTrack.mute = false;
                 violinActive = true;
             }
         });
+    }
+
+    private void StartAllTracks()
+    {
+        Debug.Log("starting all background music tracks");
+        bassTrack.Play();
+        bassDrumTrack.Play();
+        clarinetTrack.Play();
+        fluteTrack.Play();
+        frenchHornTrack.Play();
+        harpTrack.Play();
+        marimbaTrack.Play();
+        oboeTrack.Play();
+        pianoTrack.Play();
+        snareDrumTrack.Play();
+        tromboneTrack.Play();
+        trumpetTrack.Play();
+        tubaTrack.Play();
+        violaTrack.Play();
+        violinTrack.Play();
     }
 
     public void MuteTracks()
@@ -247,11 +274,11 @@ public class BackgroundMusic : MonoBehaviour
         if (clarinetActive) StartCoroutine(AudioFade.FadeIn(clarinetTrack, clarinetVolume, 1.0f));
         if (fluteActive) StartCoroutine(AudioFade.FadeIn(fluteTrack, fluteVolume, 1.0f));
         if (frenchHornActive) StartCoroutine(AudioFade.FadeIn(frenchHornTrack, frenchHornVolume, 1.0f));
-        if (harpActive) StartCoroutine(AudioFade.FadeIn(harpTrack, trumpetVolume, 1.0f));
-        if (marimbaActive) StartCoroutine(AudioFade.FadeIn(marimbaTrack, trumpetVolume, 1.0f));
-        if (oboeActive) StartCoroutine(AudioFade.FadeIn(oboeTrack, trumpetVolume, 1.0f));
-        if (snareDrumActive) StartCoroutine(AudioFade.FadeIn(snareDrumTrack, trumpetVolume, 1.0f));
-        if (tubaActive) StartCoroutine(AudioFade.FadeIn(tubaTrack, trumpetVolume, 1.0f));
+        if (harpActive) StartCoroutine(AudioFade.FadeIn(harpTrack, harpVolume, 1.0f));
+        if (marimbaActive) StartCoroutine(AudioFade.FadeIn(marimbaTrack, marimbaVolume, 1.0f));
+        if (oboeActive) StartCoroutine(AudioFade.FadeIn(oboeTrack, oboeVolume, 1.0f));
+        if (snareDrumActive) StartCoroutine(AudioFade.FadeIn(snareDrumTrack, snareDrumVolume, 1.0f));
+        if (tubaActive) StartCoroutine(AudioFade.FadeIn(tubaTrack, tubaVolume, 1.0f));
         if (violaActive) StartCoroutine(AudioFade.FadeIn(violaTrack, violaVolume, 1.0f));
         if (violinActive) StartCoroutine(AudioFade.FadeIn(violinTrack, violinVolume, 1.0f));
         //pianoTrack.mute = !pianoActive;
