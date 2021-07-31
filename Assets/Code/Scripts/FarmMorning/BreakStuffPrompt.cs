@@ -14,7 +14,7 @@ public class BreakStuffPrompt : MonoBehaviour
 
         // Check to see if we have the scythe
         // and whether the fairy has told us to destroy stuff
-        if (((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1) && !GameManager.Instance.hasPromptedDestruction)
+        if (((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1) && ((int)GameManager.Instance.inkStory.variablesState["has_piano_key"] == 1) && !GameManager.Instance.hasPromptedDestruction)
         { 
             dialogBox.SetActive(true);
             NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();

@@ -70,7 +70,7 @@
         Great! Hooray! The lid of the piano is closed and locked right now. #name:Spirit+of+Music #mood:right  #audio:fairy_speak_medium_2
         I was going to open it up, but I dropped the key in your wheat field. #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_1
         Will you find it? #name:Spirit+of+Music #mood:sad #audio:fairy_speak_short_2
-        Here goes nothing! #name:Melody #mood:happy #hideSparkles  
+        Here goes nothing! #name:Melody #mood:happy #hideSparkles #scene:FarmOutdoor|22,-4|22,-2,-10|0,-1
         ->END
         
     - has_spoken_to_spirit_piano && !has_piano_key:
