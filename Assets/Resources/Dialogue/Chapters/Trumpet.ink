@@ -42,7 +42,7 @@ Wait, song?! Did I forget about music? #name:Thomas #mood:sad #audio:female_spea
 You sure did, silly! #name:Melody #mood:happy
 Will you help me fix things? I need to borrow your trumpet to beat a monster. #name:Melody
 Yes! Stealing music is bad - teach that monster a lesson! #name:Thomas #mood:mad #audio:female_speak_medium_1 #victory:scroll-instruments_trumpet
- ~ tooltip = "You saved the trumpet!"
+~ tooltip = "You saved the trumpet!"
 ~ has_trumpet = true
 ~ completed_trumpet_quest = true
 ->END
