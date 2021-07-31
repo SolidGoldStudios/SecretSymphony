@@ -41,6 +41,46 @@ VAR has_oboe = false
 VAR has_clarinet = false
 VAR has_flute = false
 
+/* Bass quest */
+VAR ready_for_bass_quest = true
+VAR has_bass_quest = false
+VAR completed_bass_quest = false
+
+/* Bass drum quest */
+VAR ready_for_bass_drum_quest = true
+VAR has_bass_drum_quest = false
+VAR completed_bass_drum_quest = false
+
+/* Clarinet quest */
+VAR ready_for_clarinet_quest = true
+VAR has_clarinet_quest = false
+VAR completed_clarinet_quest = false
+
+/* Flute quest */
+VAR ready_for_flute_quest = true
+VAR has_flute_quest = false
+VAR completed_flute_quest = false
+
+/* French horn quest */
+VAR ready_for_french_horn_quest = true
+VAR has_french_horn_quest = false
+VAR completed_french_horn_quest = false
+
+/* Harp quest */
+VAR ready_for_harp_quest = true
+VAR has_harp_quest = false
+VAR completed_harp_quest = false
+
+/* Marimba quest */
+VAR ready_for_marimba_quest = true
+VAR has_marimba_quest = false
+VAR completed_marimba_quest = false
+
+/* Oboe quest */
+VAR ready_for_oboe_quest = true
+VAR has_oboe_quest = false
+VAR completed_oboe_quest = false
+
 /* Piano quest */
 VAR ready_for_piano_quest = true
 VAR has_piano_quest = false
@@ -52,6 +92,11 @@ VAR ready_for_scarecrow_piano_quest = false
 VAR has_scarecrow_piano_quest = false
 VAR has_piano_key = false
 VAR has_played_piano = false
+
+/* Oboe quest */
+VAR ready_for_snare_drum_quest = true
+VAR has_snare_drum_quest = false
+VAR completed_snare_drum_quest = false
 
 /* Trombone quest */
 VAR ready_for_talk_to_uncle_quest = false
@@ -67,20 +112,12 @@ VAR has_trumpet_quest = false
 VAR completed_trumpet_quest = false 
 VAR has_fished_trumpet = false
 
-/* Flute quest */
-VAR ready_for_flute_quest = false
-VAR has_flute_quest = false
-VAR completed_flute_quest = false
-
 /* Violin quest */
 VAR ready_for_violin_quest = false
 VAR has_violin_quest = false
 VAR completed_violin_quest = false
 
-/* Drum quest */
-VAR ready_for_drum_quest = false
-VAR has_drum_quest = false
-VAR completed_drum_quest = false
+
 
 /* Cow quest */
 VAR ready_for_cow_quest = false

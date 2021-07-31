@@ -1,16 +1,21 @@
 ==trombonequest_uncle==
 {
-    - completed_trombone_quest:
-        Quick, kid! The fuzz is hot on my tail! #name:Uncle #mood:mad  #audio:male_speak_short_1
-        Get in the carriage if you want to live! #name:Uncle #mood:mad   #audio:male_speak_short_1 #scene:FarmToTownCutscene|8.6,-25.9|15.8,-24.1,-2.2|0,-1
+    - completed_trombone_quest && completed_piano_quest && completed_trumpet_quest:
+        Are you looking for more instruments to save? #name:Uncle #audio:male_speak_short_1
+        We sure are! #name:Melody #mood:happy
+        I bet there are more in town! Hop in, I'll give you a ride! #name:Uncle #mood:happy #audio:male_speak_medium_2 #timeline:ToTownTimeline
         ->END
+    - (completed_trombone_quest && completed_piano_quest) || (completed_trombone_quest && completed_trumpet_quest):
+        I can't believe the Ear Worm tried to steal our memories of music! #name:Uncle #mood:mad #audio:male_speak_long_1
+        If you want to fight him, you'll need more musical power! #name:Uncle #audio:male_speak_medium_1
+        I think there's one more instrument on this farm... #name:Melody
+        Let's find it! #name:Spirit+of+Music #mood:happy #audio:fairy_speak_short_1
     - has_trombone_quest && has_played_trombone_song && !completed_trombone_quest:
         Are you here to try my trivia again? #name:Uncle   #audio:male_speak_short_1
         ->trombonequest_trivia
     - else:
-        This dang carriage wheel! Why won't this spoke fit? #name:Uncle   #audio:male_speak_short_2
+        This dang carriage wheel! Why won't this spoke fit? #name:Uncle #audio:male_speak_short_2
         ->END
-        
 }
 
 ==trombonequest_horse==
@@ -57,9 +62,6 @@
     ~ tooltip = "You saved the trombone!"
     ~ has_trombone = true
     ~ completed_trombone_quest = true
-    ~ ready_for_flute_quest = true
-    ~ ready_for_violin_quest = true
-    ~ ready_for_drum_quest = true
     -> END
     
 ==trombonequest_trivia_fail==
