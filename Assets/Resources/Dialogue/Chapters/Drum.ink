@@ -1,9 +1,9 @@
 ==drumquest_blacksmith==
 
  {
-    - !has_drum_quest && ready_for_drum_quest:
+    - !has_bass_drum_quest && ready_for_bass_drum_quest:
         Whew... toasty in here! #name:Blacksmith+Whitney #mood:happy #audio:male_speak_short_1
-        ~ has_drum_quest = true
+        ~ has_bass_drum_quest = true
         How are you, Blacksmith? #name:Melody #mood:happy
         Tired! What can I help you with? #name:Blacksmith+Whitney #audio:male_speak_medium_2
         What's that? #name:Melody 
@@ -12,7 +12,7 @@
         What's a bass drum? Let's see what you know. #name:Blacksmith+Whitney #mood:sad #audio:male_speak_medium_1
         ->drumquest_trivia
      
-    - has_drum_quest && !completed_drum_quest:
+    - has_bass_drum_quest && !completed_bass_drum_quest:
         My table's loud. #name:Blacksmith+Whitney #audio:male_speak_short_1
         That's because it's a bass drum! #name:Melody #mood:happy
         Tell me more! #name:Blacksmith+Whitney #audio:male_speak_short_2
@@ -33,7 +33,7 @@
     ~ tooltip = "You saved the bass drum!"
     ~ has_bass_drum = true
     Sure thing! Have fun! #name:Blacksmith+Whitney #audio:male_speak_medium_2 #victory:scroll-instruments_bass_drum
-    ~ completed_drum_quest = true
+    ~ completed_bass_drum_quest = true
     Thanks! Bye! #name:Melody #mood:happy
     -> END
     
