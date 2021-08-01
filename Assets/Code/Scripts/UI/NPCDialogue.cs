@@ -228,13 +228,17 @@ public class NPCDialogue : MonoBehaviour
             }
             if (tag.StartsWith("timeline"))
             {
+                Debug.Log("Kicking off a timeline!");
                 string timelineObject = tag.Substring(9);
                 timelineManager = GameObject.Find(timelineObject);
 
                 if (timelineManager != null)
                 {
+                    Debug.Log("Found timeline");
                     timeline = timelineManager.GetComponent<PlayableDirector>();
                     timeline.Play();
+                } else {
+                    Debug.Log("Couldn't find timeline");
                 }
             }
             if(tag.StartsWith("victory"))

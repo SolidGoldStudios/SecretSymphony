@@ -98,6 +98,10 @@ I had better see if I can use it on that pile of kindling in the house. #name:Me
 ~ has_scythe = true
 ->END
 
+==pianoquest_scarecrow_inanimate==
+The scarecrow stares blankly into the distance.
+->END
+
 ==pianoquest_scarecrow==
     Ha-ha! #name:Scarecrow  #audio:scarecrow_speak_short_1
     Who said that? #name:Melody #mood:sad  

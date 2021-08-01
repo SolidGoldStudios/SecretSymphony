@@ -5,7 +5,7 @@
         We sure are! #name:Melody #mood:happy
         I bet there are more in town! Hop in, I'll give you a ride! #name:Uncle #mood:happy #audio:male_speak_medium_2 #timeline:ToTownTimeline
         ->END
-    - (completed_trombone_quest && completed_piano_quest) || (completed_trombone_quest && completed_trumpet_quest):
+    - completed_trombone_quest && completed_piano_quest && !completed_trumpet_quest:
         I can't believe the Ear Worm tried to steal our memories of music! #name:Uncle #mood:mad #audio:male_speak_long_1
         If you want to fight him, you'll need more musical power! #name:Uncle #audio:male_speak_medium_1
         I think there's one more instrument on this farm... #name:Melody
