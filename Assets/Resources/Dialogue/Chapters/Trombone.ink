@@ -26,7 +26,7 @@
         ...wait a minute. You can talk? #name:Melody #mood:skeptical
         Of course I can. Say, could you do me a favor? #name:Horace
         What do you need me to do? #name:Melody #mood:concerned
-        Can you help your Uncle remember this tune? ... #name:Horace #audio:horse_hot_cross_buns
+        Can you help your Uncle remember his favorite song? ... #name:Horace 
         ~ has_trombone_quest = true
         I remember that! It's... Hot Cross Buns, of course! #name:Melody #mood:happy
         Yep! Uncle used to play it on his trombone all the time. #name:Horace
