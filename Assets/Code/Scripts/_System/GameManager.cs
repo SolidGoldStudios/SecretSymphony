@@ -207,14 +207,14 @@ public class GameManager : Singleton<GameManager>
 			itemSprite.SetActive(true);
 		}
 
-		yield return new WaitForSeconds(1.5f);
-
+		yield return new WaitForSeconds(3f);
+		animator.SetBool("collecting", false);
 		if (icon != null)
 		{
 			itemSprite.SetActive(false);
 		}
 
-		animator.SetBool("collecting", false);
+		
 		if (immobilize) playerMovement.immobilized = false;
 		yield return null;
 	}
