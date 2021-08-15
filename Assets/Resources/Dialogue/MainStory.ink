@@ -6,6 +6,7 @@ INCLUDE Chapters/Flute.ink
 INCLUDE Chapters/Violin.ink
 INCLUDE Chapters/Drum.ink
 INCLUDE Chapters/Items.ink
+INCLUDE Chapters/FrenchHorn.ink
 
 
 /** 
@@ -23,7 +24,7 @@ VAR tooltip = ""
  
 /* Items */
 VAR has_scythe = false
-VAR has_pole = false
+VAR has_pole = true
 
 /* Instruments */
 VAR has_piano = false
@@ -65,6 +66,7 @@ VAR completed_flute_quest = false
 VAR ready_for_french_horn_quest = true // Always true!
 VAR has_french_horn_quest = false
 VAR completed_french_horn_quest = false
+VAR has_fished_french_horn = false
 
 /* Harp quest */
 VAR ready_for_harp_quest = true // Always true!
@@ -126,7 +128,6 @@ VAR completed_violin_quest = false
 VAR ready_for_viola_quest = true // Always true!
 VAR has_viola_quest = false
 VAR completed_viola_quest = false
-
 
 
 /* Cow quest */
