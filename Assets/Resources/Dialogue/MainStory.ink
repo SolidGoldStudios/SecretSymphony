@@ -27,7 +27,7 @@ VAR tooltip = ""
  
 /* Items */
 VAR has_scythe = false
-VAR has_pole = true
+VAR has_pole = false
 
 /* Instruments */
 VAR has_piano = false
