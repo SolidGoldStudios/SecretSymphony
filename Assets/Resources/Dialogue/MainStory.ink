@@ -7,6 +7,9 @@ INCLUDE Chapters/Violin.ink
 INCLUDE Chapters/Drum.ink
 INCLUDE Chapters/Items.ink
 INCLUDE Chapters/FrenchHorn.ink
+INCLUDE Chapters/Tuba.ink
+INCLUDE Chapters/Oboe.ink
+INCLUDE Chapters/SnareDrum.ink
 
 
 /** 
@@ -63,7 +66,7 @@ VAR has_flute_quest = false
 VAR completed_flute_quest = false
 
 /* French horn quest */
-VAR ready_for_french_horn_quest = true // Always true!
+VAR ready_for_french_horn_quest = false
 VAR has_french_horn_quest = false
 VAR completed_french_horn_quest = false
 VAR has_fished_french_horn = false
@@ -115,7 +118,7 @@ VAR completed_trumpet_quest = false
 VAR has_fished_trumpet = false
 
 /* Tuba quest */
-VAR ready_for_tuba_quest = true // Always true!
+VAR ready_for_tuba_quest = false
 VAR has_tuba_quest = false
 VAR completed_tuba_quest = false
 

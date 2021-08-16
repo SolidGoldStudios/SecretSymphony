@@ -30,8 +30,9 @@ My fishing pole! Maybe I can use it on that sparkly spot over there... #name:Mel
 ->END
 
 ==trumpetquest_fished==
-This doesn't look like a fish... #name:Melody #mood:thinking 
-That's your brother's trumpet! He's quite a talented player! #name:Spirit+of+Music #mood:happy #victory:scroll-instruments_trumpet
+What could that sparkly thing be? #name:Melody #mood:skeptical #audio:fishing_throw
+This doesn't look like a fish... #name:Melody #mood:thinking #audio:fishing_reel #victory:scroll-instruments_trumpet
+That's your brother's trumpet! He's quite a talented player! #name:Spirit+of+Music #mood:happy 
 Really? I had better take it back to him! #name:Melody #mood:happy #scene:LivingRoom|-5.9,-15.48|-4.6,-11.68,-10|0,1
 ~ has_fished_trumpet = true
 ->END
