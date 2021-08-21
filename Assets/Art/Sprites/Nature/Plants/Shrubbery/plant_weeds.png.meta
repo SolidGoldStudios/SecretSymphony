@@ -56,6 +56,33 @@ TextureImporter:
   - first:
       213: -2968397240111324252
     second: weeds_fat_red_flowers
+  - first:
+      213: 6778495245976265488
+    second: plant_weeds_0
+  - first:
+      213: -7393097217881374661
+    second: plant_weeds_1
+  - first:
+      213: -3502615073443743541
+    second: plant_weeds_2
+  - first:
+      213: 8358490011083181529
+    second: plant_weeds_3
+  - first:
+      213: -4659557500596368714
+    second: plant_weeds_4
+  - first:
+      213: -489618827799900593
+    second: plant_weeds_5
+  - first:
+      213: 2548369295723559344
+    second: plant_weeds_6
+  - first:
+      213: 4812625407097836122
+    second: plant_weeds_7
+  - first:
+      213: 7921102101922847946
+    second: plant_weeds_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,53 +168,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: weeds_tall_yellow_flowers
+      name: plant_weeds_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 45
-        width: 19
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 6
+        y: 72
+        width: 21
+        height: 40
+      alignment: 9
+      pivot: {x: 0.46649, y: 0.24091029}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18b993b1bc39dec30800000000000000
-      internalID: 4390327712300505985
+      spriteID: 013e610238d021e50800000000000000
+      internalID: 6778495245976265488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_tall_purple_flowers
+      name: plant_weeds_1
       rect:
         serializedVersion: 2
         x: 44
-        y: 45
+        y: 72
         width: 19
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49329796, y: 0.23746862}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44eb322e8bd7024b0800000000000000
-      internalID: -5467231714606334396
+      spriteID: b30804a2041766990800000000000000
+      internalID: -7393097217881374661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_fat_dark_blue_flowers
+      name: plant_weeds_2
       rect:
         serializedVersion: 2
         x: 70
-        y: 45
+        y: 79
         width: 32
         height: 31
       alignment: 7
@@ -197,18 +224,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d300a80ee0a8ec400800000000000000
-      internalID: 346366017855422525
+      spriteID: bc8f47af526346fc0800000000000000
+      internalID: -3502615073443743541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_fat_purple_flowers
+      name: plant_weeds_3
       rect:
         serializedVersion: 2
         x: 106
-        y: 45
+        y: 79
         width: 32
         height: 31
       alignment: 7
@@ -218,18 +245,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d320722223aefb3b0800000000000000
-      internalID: -5494415519326469571
+      spriteID: 9dd834141625ff370800000000000000
+      internalID: 8358490011083181529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_fat_yellow_flowers
+      name: plant_weeds_4
       rect:
         serializedVersion: 2
         x: 144
-        y: 46
+        y: 80
         width: 32
         height: 30
       alignment: 7
@@ -239,60 +266,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 832fc53ad7093fae0800000000000000
-      internalID: -1516709780207635912
+      spriteID: 6ba427ef32de55fb0800000000000000
+      internalID: -4659557500596368714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_tall_red_flowers
+      name: plant_weeds_5
       rect:
         serializedVersion: 2
         x: 9
-        y: 0
+        y: 27
         width: 19
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 37
+      alignment: 9
+      pivot: {x: 0.46648988, y: 0.24091029}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a4948da716053b80800000000000000
-      internalID: -8415813629906742111
+      spriteID: f4ec4ad25468439f0800000000000000
+      internalID: -489618827799900593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_tall_blue_flowers
+      name: plant_weeds_6
       rect:
         serializedVersion: 2
         x: 37
-        y: 1
+        y: 27
         width: 19
-        height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 37
+      alignment: 9
+      pivot: {x: 0.47989392, y: 0.24779345}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05b00f5d217c44990800000000000000
-      internalID: -7402573003777635504
+      spriteID: 0b97d146f50ad5320800000000000000
+      internalID: 2548369295723559344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_fat_light_blue_flowers
+      name: plant_weeds_7
       rect:
         serializedVersion: 2
         x: 64
-        y: 1
+        y: 35
         width: 32
         height: 30
       alignment: 7
@@ -302,18 +329,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b3d0c88f31d45840800000000000000
-      internalID: 5212020739581989812
+      spriteID: a5216133f41e9c240800000000000000
+      internalID: 4812625407097836122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weeds_fat_red_flowers
+      name: plant_weeds_8
       rect:
         serializedVersion: 2
         x: 112
-        y: 1
+        y: 35
         width: 32
         height: 30
       alignment: 7
@@ -323,8 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a32ae6ff622ec6d0800000000000000
-      internalID: -2968397240111324252
+      spriteID: acc16b6d4686ded60800000000000000
+      internalID: 7921102101922847946
       vertices: []
       indices: 
       edges: []
