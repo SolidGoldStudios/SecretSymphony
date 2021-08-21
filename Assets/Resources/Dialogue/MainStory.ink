@@ -10,6 +10,8 @@ INCLUDE Chapters/FrenchHorn.ink
 INCLUDE Chapters/Tuba.ink
 INCLUDE Chapters/Oboe.ink
 INCLUDE Chapters/SnareDrum.ink
+INCLUDE Chapters/Bass.ink
+INCLUDE Chapters/Viola.ink
 
 
 /** 
@@ -34,6 +36,7 @@ VAR has_piano = false
 VAR has_violin = false
 VAR has_viola = false
 VAR has_harp = false
+VAR has_bass = false
 VAR has_bass_drum = false
 VAR has_snare_drum = false
 VAR has_marimba = false
@@ -131,7 +134,6 @@ VAR completed_violin_quest = false
 VAR ready_for_viola_quest = true // Always true!
 VAR has_viola_quest = false
 VAR completed_viola_quest = false
-
 
 /* Cow quest */
 VAR ready_for_cow_quest = false

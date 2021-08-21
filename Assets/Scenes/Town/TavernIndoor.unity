@@ -506,8 +506,8 @@ GameObject:
   - component: {fileID: 69167635}
   - component: {fileID: 69167637}
   - component: {fileID: 69167640}
-  - component: {fileID: 69167639}
   - component: {fileID: 69167634}
+  - component: {fileID: 69167638}
   m_Layer: 0
   m_Name: InnKeeper
   m_TagString: Untagged
@@ -615,7 +615,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &69167639
+--- !u!114 &69167638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 69167633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
@@ -632,10 +632,9 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 1339294615}
-  npcPortrait: {fileID: 21300000, guid: c1d7b2ebc5595bd4a9332f1eeca9cfb5, type: 3}
-  npcName: Theophilius
-  dialogue: Check out this huge dustpan I found!
-  playerInRange: 0
+  knotName: bass_innkeeper
+  questGiver: 1
+  questName: bass_quest
 --- !u!61 &69167640
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1148,6 +1147,7 @@ GameObject:
   - component: {fileID: 234703244}
   - component: {fileID: 234703243}
   - component: {fileID: 234703245}
+  - component: {fileID: 234703246}
   m_Layer: 0
   m_Name: Bass
   m_TagString: Untagged
@@ -1236,6 +1236,21 @@ MonoBehaviour:
   m_Center: {x: 0.0080804825, y: 1.01616, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &234703246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234703242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc35d32a3b0294f24b8c165880864d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_bass
+  sparkleParticles: {fileID: 1159652319}
+  itemLight: {fileID: 0}
 --- !u!1001 &245841918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23987,6 +24002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1556302884}
   - component: {fileID: 1556302883}
+  - component: {fileID: 1556302885}
   m_Layer: 0
   m_Name: Viola
   m_TagString: Untagged
@@ -24060,6 +24076,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1556302885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556302882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc35d32a3b0294f24b8c165880864d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_viola
+  sparkleParticles: {fileID: 1411004848}
+  itemLight: {fileID: 0}
 --- !u!4 &1605641429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2346369221121825362, guid: bd81c0ee61668624e984365331c4e987,
@@ -24718,10 +24749,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1944611108}
   - component: {fileID: 1944611107}
-  - component: {fileID: 1944611110}
   - component: {fileID: 1944611111}
   - component: {fileID: 1944611106}
   - component: {fileID: 1944611109}
+  - component: {fileID: 1944611112}
   m_Layer: 0
   m_Name: Bard
   m_TagString: Plantlife
@@ -24829,27 +24860,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1944611110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944611105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionIcon: {fileID: 0}
-  interactionIconActive: {fileID: 0}
-  moveToTarget: 0
-  blockedBy: {fileID: 0}
-  dialogBox: {fileID: 1339294615}
-  npcPortrait: {fileID: 21300000, guid: 19d372da596a1ab40923470f515dfa19, type: 3}
-  npcName: "Guilh\xE8m "
-  dialogue: I feel like a piece of me has been ripped away!
-  playerInRange: 0
 --- !u!61 &1944611111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24876,6 +24886,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7253375, y: 2.7052994}
   m_EdgeRadius: 0
+--- !u!114 &1944611112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944611105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  dialogBox: {fileID: 1339294615}
+  knotName: violaquest_bard
+  questGiver: 1
+  questName: viola_quest
 --- !u!1 &1956613148
 GameObject:
   m_ObjectHideFlags: 0
