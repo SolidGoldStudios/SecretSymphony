@@ -2185,7 +2185,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &284106982
@@ -2749,6 +2749,7 @@ GameObject:
   - component: {fileID: 431823179}
   - component: {fileID: 431823178}
   - component: {fileID: 431823175}
+  - component: {fileID: 431823180}
   m_Layer: 0
   m_Name: Kitty
   m_TagString: Untagged
@@ -2859,7 +2860,7 @@ MonoBehaviour:
   dialogBox: {fileID: 664630783}
   npcPortrait: {fileID: 21300000, guid: 808420ebecf9e394fb51eac4d9c2b433, type: 3}
   npcName: Kitty
-  dialogue: Oh no, help save the clarinet quest!!
+  dialogue: Healer Leonora has been acting so strangely lately...
   playerInRange: 0
 --- !u!61 &431823179
 BoxCollider2D:
@@ -2887,6 +2888,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1875, y: 1.4539585}
   m_EdgeRadius: 0
+--- !u!114 &431823180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431823174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  dialogBox: {fileID: 664630783}
+  knotName: clarinetquest_cat
+  questGiver: 0
+  questName: 
 --- !u!1 &454914348
 GameObject:
   m_ObjectHideFlags: 0
@@ -9553,6 +9574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 810645285}
   - component: {fileID: 810645284}
+  - component: {fileID: 810645283}
   m_Layer: 0
   m_Name: Clarinet
   m_TagString: Untagged
@@ -9560,6 +9582,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &810645283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810645282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc35d32a3b0294f24b8c165880864d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkVar: has_clarinet
+  sparkleParticles: {fileID: 483148357}
+  itemLight: {fileID: 0}
 --- !u!212 &810645284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12960,8 +12997,8 @@ GameObject:
   - component: {fileID: 1830209764}
   - component: {fileID: 1830209767}
   - component: {fileID: 1830209770}
-  - component: {fileID: 1830209769}
   - component: {fileID: 1830209768}
+  - component: {fileID: 1830209769}
   m_Layer: 0
   m_Name: Healer Lenora
   m_TagString: Plantlife
@@ -13184,7 +13221,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830209763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionIcon: {fileID: 0}
@@ -13192,10 +13229,9 @@ MonoBehaviour:
   moveToTarget: 0
   blockedBy: {fileID: 0}
   dialogBox: {fileID: 664630783}
-  npcPortrait: {fileID: 21300000, guid: 4393840f9bb77d94c94e1213648b524b, type: 3}
-  npcName: Healer Lenora
-  dialogue: Can I interest you in a tincture of somesort?
-  playerInRange: 0
+  knotName: clarinetquest_healer
+  questGiver: 1
+  questName: clarinet_quest
 --- !u!61 &1830209770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13383,7 +13419,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1988496919

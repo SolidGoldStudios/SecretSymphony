@@ -12,6 +12,9 @@ INCLUDE Chapters/Oboe.ink
 INCLUDE Chapters/SnareDrum.ink
 INCLUDE Chapters/Bass.ink
 INCLUDE Chapters/Viola.ink
+INCLUDE Chapters/Clarinet.ink
+INCLUDE Chapters/Harp.ink
+INCLUDE Chapters/Marimba.ink
 
 
 /** 
@@ -134,6 +137,7 @@ VAR completed_violin_quest = false
 VAR ready_for_viola_quest = true // Always true!
 VAR has_viola_quest = false
 VAR completed_viola_quest = false
+VAR bard_stop_crying = false
 
 /* Cow quest */
 VAR ready_for_cow_quest = false

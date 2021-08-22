@@ -19,37 +19,19 @@ public class PickUpInstrument : MonoBehaviour
         } 
         else
         {
-            Debug.Log("*************** observing " + inkVar);
             GameManager.Instance.inkStory.RemoveVariableObserver(null, inkVar);
             GameManager.Instance.inkStory.ObserveVariable(inkVar, (string varName, object newValue) =>
             {
-                Debug.Log("*************** has_trombone var changed!");
                 if ((int)newValue == 1)
                 {
-                    Debug.Log("*************** has_trombone is true");
-                    Debug.Log("*************** calling HideInstrument");
                     HideInstrument();
-                }
-                else
-                {
-                    Debug.Log("*************** has_trombone is false");
                 }
             });
         }
     }
 
-    private void OnDestroy()
-    {
-        Debug.Log("*********** Instrument destroyed");
-    }
-
-    void Update()
-    { 
-    }
-
     private void HideInstrument()
     {
-        Debug.Log("*************** hiding instrument!");
 
         GameManager.Instance.inkStory.RemoveVariableObserver(null, inkVar);
 
