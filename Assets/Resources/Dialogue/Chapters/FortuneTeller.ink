@@ -24,13 +24,13 @@ Look deep into my crystal ball... #name:Fortune+Teller #audio:female_speak_short
     -!has_bass:
         A shiny bearded head appears to me from the orb... #name:Fortune+Teller #audio:female_speak_medium_2
         ->fortune_weird
-    -has_clarinet:
+    -!has_clarinet:
         A wise woman to the north has the object you seek. #name:Fortune+Teller #audio:female_speak_medium_2
         ->fortune_weird
     -!has_viola:
         Tears fall near a flickering fireplace... #name:Fortune+Teller #audio:female_speak_short_2
         ->fortune_weird
-    -has_flute:
+    -!has_flute:
         Seek the house of learning... #name:Fortune+Teller #audio:female_speak_short_2
         ->fortune_weird
     -!has_french_horn:
