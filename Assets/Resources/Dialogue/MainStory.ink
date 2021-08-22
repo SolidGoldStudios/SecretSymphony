@@ -15,6 +15,7 @@ INCLUDE Chapters/Viola.ink
 INCLUDE Chapters/Clarinet.ink
 INCLUDE Chapters/Harp.ink
 INCLUDE Chapters/Marimba.ink
+INCLUDE Chapters/FortuneTeller.ink
 
 
 /** 

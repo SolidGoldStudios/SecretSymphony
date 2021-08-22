@@ -25660,6 +25660,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 216993922}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.data[0]
+      value: 
+      objectReference: {fileID: 69167636}
+    - target: {fileID: 8859102699093097931, guid: e2c7d8c09ec4197409dbfe94774da61c,
+        type: 3}
+      propertyPath: pointsOfInterest.Array.data[1]
+      value: 
+      objectReference: {fileID: 1944611108}
     - target: {fileID: 8859102699093097935, guid: e2c7d8c09ec4197409dbfe94774da61c,
         type: 3}
       propertyPath: m_RootOrder
