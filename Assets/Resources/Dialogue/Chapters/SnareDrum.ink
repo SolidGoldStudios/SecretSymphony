@@ -1,7 +1,7 @@
 ==snarequest_mayor==
 {
     - completed_snare_drum_quest:
-        Tempo Town – what a great name I came up with! #name:Gucci
+        Tempo Town – what a great name I came up with! #name:Mayor #audio:male_speak_medium_2
     -> END
     - !completed_snare_drum_quest: 
         Melody, it's you! Maybe you can help me with something. #name:Mayor #audio:male_speak_medium_2

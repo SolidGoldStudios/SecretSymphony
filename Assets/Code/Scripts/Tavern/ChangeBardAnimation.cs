@@ -11,7 +11,6 @@ public class ChangeBardAnimation : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Starting bard script!");
 
         if ((int)GameManager.Instance.inkStory.variablesState[inkVar] == 1)
         {
@@ -24,7 +23,6 @@ public class ChangeBardAnimation : MonoBehaviour
             {
                 if ((int)newValue == 1)
                 {
-                    Debug.Log("Var changed!");
                     SetIdleAnimation();
                 }
             });
@@ -33,17 +31,6 @@ public class ChangeBardAnimation : MonoBehaviour
 
     private void SetIdleAnimation()
     {
-        //GameManager.Instance.inkStory.RemoveVariableObserver(null, inkVar);
-
-        // if (this != null)
-        // {
-        //     Animator animator = GetComponent<Animator>();
-
-        //     if (animator != null)
-        //     {
-        //         animator.runtimeAnimatorController = Resources.Load("Animation/Bard 1") as RuntimeAnimatorController;
-        //     }
-        // }
 
         // Hide the crying bard
         bardSprite = GetComponent<SpriteRenderer>();
