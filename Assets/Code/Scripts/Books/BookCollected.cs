@@ -12,23 +12,37 @@ public class BookCollected : MonoBehaviour
 		if (!GameManager.Instance.pages.ContainsKey(bookName))
 		{
 			GameManager.Instance.pages.Add(bookName, new bool[pages.Length]);
-			ActivePages();
 		}
 		else
 		{
+			ActivePages();
 			gameObject.SetActive(false);
 		}
 	}
 	
     public void ActivePages()
 	{
-		bool[] state = (bool[])GameManager.Instance.pages[bookName];
+		bool[] collected = (bool[])GameManager.Instance.pages[bookName];
 		Debug.Log("ActivePages called " + pages.Length);
 		for (int i = 0; i < pages.Length; i++)
 		{
 			pages[i].GetComponent<PageCollector>().bookName = bookName;
 			pages[i].GetComponent<PageCollector>().pageNum = i;
-			pages[i].SetActive(!state[i]);
+
+			if (collected[i])
+            {
+				pages[i].SetActive(false);
+            }
+            else
+            {
+				SpriteRenderer renderer = pages[i].GetComponent<SpriteRenderer>();
+				Color color = new Color(1f, 1f, 1f, 0f);
+
+				renderer.color = color;
+
+				pages[i].SetActive(true);
+				pages[i].GetComponent<PageCollector>().FadeIn();
+            }
 		}
 	}
 }

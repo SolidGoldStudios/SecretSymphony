@@ -17,17 +17,17 @@ public class PageCollector : Interaction
 		}
 	}
 
-	public void Update()
-	{
-		if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
-		{
-			interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
-			interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
-		}
-	}
+    //public void Update()
+    //{
+    //    if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
+    //    {
+    //        interactionIcon = Resources.Load<Sprite>("UI/cursor_interact");
+    //        interactionIconActive = Resources.Load<Sprite>("UI/cursor_interact_active");
+    //    }
+    //}
 
 
-	public override void Interact()
+    public override void Interact()
     {
 		if ((blockedBy == null) || (!blockedBy.activeInHierarchy))
 		{
@@ -67,4 +67,23 @@ public class PageCollector : Interaction
 			books.GetComponent<PageCreator>().bookPager.GoToNewestPage();
 		}
 	}
+
+	public void FadeIn()
+    {
+		StartCoroutine(FadeInCo());
+    }
+
+	public IEnumerator FadeInCo()
+	{
+		SpriteRenderer renderer = transform.GetComponent<SpriteRenderer>();
+		Color color = new Color(1f, 1f, 1f, 0f);
+		for (float f = 0f; f < 1f; f += 0.1f)
+		{
+			color.a = f;
+			renderer.color = color;
+			yield return new WaitForSeconds(0.1f);
+		}
+        color.a = 1;
+        renderer.material.color = color;
+    }
 }
