@@ -17,6 +17,7 @@ INCLUDE Chapters/Harp.ink
 INCLUDE Chapters/Marimba.ink
 INCLUDE Chapters/FortuneTeller.ink
 INCLUDE Chapters/Portal.ink
+INCLUDE Chapters/FinalExam.ink
 
 
 /** 
@@ -145,4 +146,7 @@ VAR bard_stop_crying = false
 VAR ready_for_cow_quest = false
 VAR has_cow_quest = false
 VAR completed_cow_quest = false
+
+/* Portal exam */
+VAR has_placed_first_instrument = false
 
