@@ -63,6 +63,9 @@ public class BedroomWardrobe : Interaction
             GameManager.Instance.wearingNightgown = false;
 
             playerAnimator.SetBool("wearingNightgown", false);
+
+            GameManager.Instance.RunRaiseArms(null, false);
+
             NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
             npcDialogue.ShowDialog(knotName);
 
