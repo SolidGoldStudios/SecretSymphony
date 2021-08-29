@@ -23,6 +23,16 @@ public class LivingRoomExitCheck : MonoBehaviour
 				portraitObject.SetActive(false);
 				nameplate.SetActive(false);
 				dialogBox.SetActive(true);
+            } if (
+                (int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1 && 
+                (int)GameManager.Instance.inkStory.variablesState["has_hit_piano"] != 1
+                )
+            {
+                dialogueText.text = "I should use my scythe to break up that strange wood pile.";
+				dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
+				portraitObject.SetActive(false);
+				nameplate.SetActive(false);
+				dialogBox.SetActive(true);
             }
             else
             {
