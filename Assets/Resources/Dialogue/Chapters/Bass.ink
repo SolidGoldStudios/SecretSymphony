@@ -21,7 +21,7 @@ It's music! An evil worm stole it from us, and I intend to get it back! #name:Me
 Could I borrow your bass? I promise I'll return it! #name:Melody 
 ~ has_bass = true
 A "bass," you say? Well, sure – take it! #name:Innkeeper+Theophilius #mood:happy #audio:male_speak_medium_2 #victory:scroll-instruments_bass
-We've almost got them all! #name:Spirit+of+music #mood:happy #showSparkles
+We've almost got them all! #name:Spirit+of+music #mood:happy #showSparkles #audio:fairy_speak_short_2
 ~ tooltip = "You saved the bass!"
 ~ completed_bass_quest = true
 ->END

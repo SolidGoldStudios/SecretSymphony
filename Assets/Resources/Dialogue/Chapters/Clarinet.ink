@@ -23,7 +23,7 @@ That was music! Everyone forgot about it, but I'm going to fix that. #name:Melod
 I couldn't possibly use such a fine thing to stir potions. #name:Healer+Leonora #mood:sad #audio:female_speak_medium_1
 ~ has_clarinet = true
 You should have it, Melody! #name:Healer+Leonora #mood:happy #audio:female_speak_short_2 #victory:scroll-instruments_clarinet
-You're getting so good at this, Melody! #name:Spirit+of+music #mood:happy
+You're getting so good at this, Melody! #name:Spirit+of+music #mood:happy #audio:fairy_speak_medium_1
 ~ tooltip = "You saved the clarinet!"
 ~ completed_clarinet_quest = true
 ->END

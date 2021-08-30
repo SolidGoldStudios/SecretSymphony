@@ -26,7 +26,7 @@ That sad song! It makes me so happy! #name:Coach+Driver+Philip #audio:male_speak
 Philip, you're so strange! But you've been such a big help. #name:Melody #mood:happy
 May I borrow your tuba? I need to make sure nobody else forgets! #name:Melody
 I'm in such a good mood, I'll let you hang on to it! #name:Coach+Driver+Philip #audio:male_speak_short_2 #victory:scroll-instruments_tuba
-He's not so cranky after all! #name:Spirit+of+music #mood:happy
+He's not so cranky after all! #name:Spirit+of+music #mood:happy #audio:fairy_speak_short_1
 ~ tooltip = "You saved the tuba!"
 ~ has_tuba = true
 ~ completed_tuba_quest = true
