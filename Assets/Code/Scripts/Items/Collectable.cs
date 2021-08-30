@@ -55,8 +55,13 @@ public class Collectable : Interaction
 			
 			if (book)
 			{
-				gameObject.GetComponent<BookCollected>().ActivePages();
-			}
+                BookCollected bookCollected = gameObject.GetComponent<BookCollected>();
+                if (!GameManager.Instance.pages.ContainsKey(bookCollected.bookName))
+                {
+                    GameManager.Instance.pages.Add(bookCollected.bookName, new bool[bookCollected.pages.Length]);
+                    bookCollected.ActivePages();
+                }
+            }
 			
             gameObject.SetActive(false);
 

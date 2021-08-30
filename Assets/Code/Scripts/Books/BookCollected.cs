@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,23 +8,15 @@ public class BookCollected : MonoBehaviour
 	public GameObject[] pages;
 	public string bookName;
 	
-	void Start()
-	{
-		if (!GameManager.Instance.pages.ContainsKey(bookName))
-		{
-			GameManager.Instance.pages.Add(bookName, new bool[pages.Length]);
-		}
-		else
-		{
-			ActivePages();
-			gameObject.SetActive(false);
-		}
-	}
-	
     public void ActivePages()
 	{
 		bool[] collected = (bool[])GameManager.Instance.pages[bookName];
 		Debug.Log("ActivePages called " + pages.Length);
+		Debug.Log("GameManager.Instance.pages:");
+		foreach (string key in GameManager.Instance.pages.Keys)
+		{
+			Debug.Log(String.Format("{0}: {1}", key, GameManager.Instance.pages[key]));
+		}
 		for (int i = 0; i < pages.Length; i++)
 		{
 			pages[i].GetComponent<PageCollector>().bookName = bookName;
