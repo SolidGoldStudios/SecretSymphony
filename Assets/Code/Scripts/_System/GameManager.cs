@@ -84,14 +84,17 @@ public class GameManager : Singleton<GameManager>
         nextPosition = toPosition;
         nextCameraPosition = toCameraPosition;
         nextDirection = toDirection;
-        //nextKnot = toKnot;
+		//nextKnot = toKnot;
 
+		StopAllCoroutines();
         SceneManager.LoadScene(scene);
     }
 	
 	public void LoadScene(string scene)
 	{
 		setDefaultPos = true;
+
+		StopAllCoroutines();
 		SceneManager.LoadScene(scene);
 	}
 
