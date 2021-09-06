@@ -176,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (velocity == Vector3.zero && !navMeshAgent.pathPending)
         {
-            Debug.Log("clicked same spot twice i think");
+            //Debug.Log("clicked same spot twice i think");
 
             interactionIcon.sprite = null;
             interactionIcon.enabled = false;
