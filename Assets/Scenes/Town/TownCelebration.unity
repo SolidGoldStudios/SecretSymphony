@@ -1858,7 +1858,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &83690865
@@ -4077,7 +4077,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1001 &200544450
@@ -5304,7 +5304,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1001 &245172555
@@ -8472,7 +8472,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1001 &409041063
@@ -8619,7 +8619,7 @@ MonoBehaviour:
   interactionIconActive: {fileID: 0}
   moveToTarget: 0
   blockedBy: {fileID: 0}
-  dialogBox: {fileID: 0}
+  dialogBox: {fileID: 826543788}
   npcPortrait: {fileID: 0}
   npcName: 
   dialogue: You don't have any mail.
@@ -9591,7 +9591,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &429486228
@@ -9921,7 +9921,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &430641682
@@ -25477,7 +25477,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &754408490 stripped
@@ -26765,7 +26765,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1001 &844784917
@@ -27878,7 +27878,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &895501703
@@ -46088,6 +46088,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1308553212}
     m_Modifications:
+    - target: {fileID: 2180476768127609385, guid: 0e69a94b5324d4144aed51bcfc5fab72,
+        type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 826543788}
     - target: {fileID: 4646778015339584039, guid: 0e69a94b5324d4144aed51bcfc5fab72,
         type: 3}
       propertyPath: m_RootOrder
@@ -47956,7 +47961,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &1332982865
@@ -50886,7 +50891,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &1554098171
@@ -52099,6 +52104,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1815998349}
     m_Modifications:
+    - target: {fileID: 2180476768127609385, guid: 0e69a94b5324d4144aed51bcfc5fab72,
+        type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 826543788}
     - target: {fileID: 4646778015339584039, guid: 0e69a94b5324d4144aed51bcfc5fab72,
         type: 3}
       propertyPath: m_RootOrder
@@ -53285,7 +53295,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &1651718102
@@ -123679,7 +123689,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &1961211643
@@ -125234,7 +125244,7 @@ SpriteRenderer:
   m_Size: {x: 1.1875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &2080385839

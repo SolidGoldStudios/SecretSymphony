@@ -54,6 +54,32 @@ VAR has_oboe = false
 VAR has_clarinet = false
 VAR has_flute = false
 
+/* Endgame */
+VAR worm_state_1 = false
+VAR worm_state_2 = false
+VAR worm_state_3 = false
+VAR worm_state_4 = false
+VAR has_shown_worm_state_1 = false
+VAR has_shown_worm_state_2 = false
+VAR has_shown_worm_state_3 = false
+VAR has_shown_worm_state_4 = false
+VAR has_placed_piano = false
+VAR has_placed_violin = false
+VAR has_placed_viola = false
+VAR has_placed_harp = false
+VAR has_placed_bass = false
+VAR has_placed_bass_drum = false
+VAR has_placed_snare_drum = false
+VAR has_placed_marimba = false
+VAR has_placed_tuba = false
+VAR has_placed_trombone = false
+VAR has_placed_french_horn = false
+VAR has_placed_trumpet = false
+VAR has_placed_oboe = false
+VAR has_placed_clarinet = false
+VAR has_placed_flute = false
+
+
 /* Bass quest */
 VAR ready_for_bass_quest = true // Always true!
 VAR has_bass_quest = false
