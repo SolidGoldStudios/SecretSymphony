@@ -5,10 +5,8 @@ using UnityEngine;
 public class MenuButtons : MonoBehaviour
 {	
 	public GameObject MainMenu;
-	public GameObject Inventory;
 	public GameObject BookView;
 	public GameObject Backdrop;
-	
 	
 	private PlayerMovement playerMovement;
 	
@@ -20,43 +18,37 @@ public class MenuButtons : MonoBehaviour
 	
 	public void MainMenuOpen()
 	{
-        playerMovement.immobilized = true;
+		playerMovement.immobilized = true;
 		MainMenu.SetActive(true);
 		Backdrop.SetActive(true);
 	}
 	
-    public void MenuToggleInventory()
-    {
-		MenuHideAll();
-        Inventory.SetActive(true);
-    }
-	
 	public void MenuToggleBook()
 	{
 		MenuHideAll();
-        BookView.SetActive(true);
+    BookView.SetActive(true);
 	}
 	
 	public void MenuHideAll()
 	{
 		MainMenu.SetActive(false);
-		Inventory.SetActive(false);
 		BookView.SetActive(false);
 	}
 
-	public void MenuQuit()
+		public void MenuQuit()
     {
-		MenuHideAll();
-		Backdrop.SetActive(false);
+			MenuHideAll();
+			Backdrop.SetActive(false);
 
-		Debug.Log("I should be returning to the Title Screen now");
-		GameManager.Instance.LoadScene("TitleScreen", new Vector2(-1.98f, -9.79f), new Vector3(-8.09f, -8.17f, -10f), new Vector2(1f, 1f));
-	}
+			Debug.Log("I should be returning to the Title Screen now");
+			GameManager.Instance.LoadScene("TitleScreen", new Vector2(-1.98f, -9.79f), new Vector3(-8.09f, -8.17f, -10f), new Vector2(1f, 1f));
+		}
+	
     
     public void MenuClose()
     {
-		MenuHideAll();
-		Backdrop.SetActive(false);
-		playerMovement.immobilized = false;
+			MenuHideAll();
+			Backdrop.SetActive(false);
+			playerMovement.immobilized = false;
     }
 }
