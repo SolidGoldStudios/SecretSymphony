@@ -21,5 +21,19 @@ public class BreakStuffPrompt : MonoBehaviour
             npcDialogue.ShowDialog("scythe_destroy_prompt");
             GameManager.Instance.hasPromptedDestruction = true;
         }
+        else if (((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1) && ((int)GameManager.Instance.inkStory.variablesState["has_piano_key"] == 0) && !GameManager.Instance.hasPromptedWheat)
+        { 
+            dialogBox.SetActive(true);
+            NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+            npcDialogue.ShowDialog("scythe_wheat_prompt");
+            GameManager.Instance.hasPromptedWheat = true;
+        }
+        else if (((int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 0) && !GameManager.Instance.hasPromptedScythe) 
+        {
+            dialogBox.SetActive(true);
+            NPCDialogue npcDialogue = dialogBox.GetComponent<NPCDialogue>();
+            npcDialogue.ShowDialog("scythe_pickup_prompt");
+            GameManager.Instance.hasPromptedScythe = true;
+        }
     }
 }

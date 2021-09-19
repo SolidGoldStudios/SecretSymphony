@@ -11,6 +11,7 @@ public class LivingRoomExitCheck : MonoBehaviour
 
     public GameObject portraitObject;
     public GameObject nameplate;
+    public Text nameplateText;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,9 +20,11 @@ public class LivingRoomExitCheck : MonoBehaviour
             if ((int)GameManager.Instance.inkStory.variablesState["has_piano_quest"] != 1)
             {
 				dialogueText.text = "I should talk to Mother before I head out.";
-				dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
-				portraitObject.SetActive(false);
-				nameplate.SetActive(false);
+				dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+				portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
+                portraitObject.SetActive(true);
+                nameplateText.text = "Melody";
+                nameplate.SetActive(true);
 				dialogBox.SetActive(true);
             } if (
                 (int)GameManager.Instance.inkStory.variablesState["has_scythe"] == 1 && 
@@ -29,9 +32,11 @@ public class LivingRoomExitCheck : MonoBehaviour
                 )
             {
                 dialogueText.text = "I should use my scythe to break up that strange wood pile.";
-				dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
-				portraitObject.SetActive(false);
-				nameplate.SetActive(false);
+				dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+				portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Melody/Melody_thinking");
+                portraitObject.SetActive(true);
+                nameplateText.text = "Melody";
+                nameplate.SetActive(true);
 				dialogBox.SetActive(true);
             }
             else
