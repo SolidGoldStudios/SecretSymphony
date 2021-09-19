@@ -10,6 +10,8 @@ public class GameManager : Singleton<GameManager>
 {
   // Defining the state at game start
   public bool wearingNightgown = true;
+	public bool hasPromptedScythe = false;
+	public bool hasPromptedWheat = false;
 	public bool hasPromptedDestruction = false;
 	public bool hasFinishedTutorialMovement = false;
 	public bool hasFinishedTutorialCurtains = false;
@@ -19,7 +21,7 @@ public class GameManager : Singleton<GameManager>
 
 	// Ink story
 	public TextAsset inkAsset;
-    public Story inkStory;
+  public Story inkStory;
 
     // Our persistent inventory
     public List<InventoryItem> inventory = new List<InventoryItem>();

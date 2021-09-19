@@ -2,6 +2,14 @@
     You can break these boxes with your scythe. Try clicking on them! #name:Spirit+of+Music #audio:fairy_speak_medium_2
 ->DONE
 
+==scythe_pickup_prompt==
+    Look! Isn't that the scythe? You should pick it up! #name:Spirit+of+Music #audio:fairy_speak_medium_1
+->DONE
+
+==scythe_wheat_prompt==
+    I know I dropped the key in here somewhere... will you use your scythe to find it? #name:Spirit+of+Music #audio:fairy_speak_long_1
+->DONE
+
 ==book_brass==
     Another book with missing pages... #name:Melody #mood:thinking #audio:female_speak_short_2 #book:brass
 ->DONE
