@@ -10382,6 +10382,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb935ec1462dc0c429b01e99ca70ccf0, type: 3}
+--- !u!114 &1724674656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2257383733625903500, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 2257383733766677170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1745254813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2257383734438140719, guid: 59a222df298964682a8ab1f42945c798,
@@ -10809,6 +10821,7 @@ MonoBehaviour:
   dialogueText: {fileID: 916098810}
   portraitObject: {fileID: 73994804}
   nameplate: {fileID: 1879602559}
+  nameplateText: {fileID: 1724674656}
 --- !u!61 &1936602956
 BoxCollider2D:
   m_ObjectHideFlags: 0

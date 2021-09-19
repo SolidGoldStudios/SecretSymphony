@@ -6,7 +6,7 @@
 ->END
 
 ==bard_earworm_scene==
-    What's that awful sound? #name:Bard #audio:lake_monster
+    What's that awful sound? #name:Guilhem #audio:lake_monster
 -> END
 
 ==earworm_earworm_scene==
