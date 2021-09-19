@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 86045187}
   - component: {fileID: 86045186}
   - component: {fileID: 86045185}
+  - component: {fileID: 86045190}
   m_Layer: 0
   m_Name: Trombone
   m_TagString: Untagged
@@ -561,6 +562,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86045190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86045184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.83671474, y: 2.3948517, z: 4}
+  m_Center: {x: -0.013753414, y: 1.3025742, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &95407557
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +672,7 @@ GameObject:
   - component: {fileID: 106454255}
   - component: {fileID: 106454254}
   - component: {fileID: 106454253}
+  - component: {fileID: 106454258}
   m_Layer: 0
   m_Name: Clarinet
   m_TagString: Untagged
@@ -787,6 +805,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &106454258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106454252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.5891547, y: 1.3220825, z: 4}
+  m_Center: {x: -0.027507067, y: 0.6561661, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &128916951 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 111994939434672343, guid: 8e632f87084d0424f80d9c53634b0a5b,
@@ -1337,6 +1371,7 @@ GameObject:
   - component: {fileID: 247635388}
   - component: {fileID: 247635387}
   - component: {fileID: 247635391}
+  - component: {fileID: 247635392}
   m_Layer: 0
   m_Name: Piano
   m_TagString: Untagged
@@ -1456,7 +1491,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.625}
+  m_Offset: {x: 0, y: 1.6387539}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -1467,8 +1502,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4375, y: 3.25}
+  m_Size: {x: 3.4375, y: 3.2775078}
   m_EdgeRadius: 0
+--- !u!114 &247635392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247635386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 1, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &293740833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1592,6 +1643,7 @@ GameObject:
   - component: {fileID: 304392130}
   - component: {fileID: 304392129}
   - component: {fileID: 304392128}
+  - component: {fileID: 304392133}
   m_Layer: 0
   m_Name: Bass Drum
   m_TagString: Untagged
@@ -1724,6 +1776,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &304392133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304392127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.2768252, y: 2.5048752, z: 4}
+  m_Center: {x: -0.20630085, y: 1.2475624, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &324501008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1805,7 @@ GameObject:
   - component: {fileID: 324501011}
   - component: {fileID: 324501010}
   - component: {fileID: 324501009}
+  - component: {fileID: 324501014}
   m_Layer: 0
   m_Name: Snare Drum
   m_TagString: Untagged
@@ -1869,6 +1938,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324501014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324501008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.80921316, y: 0.6344223, z: 4}
+  m_Center: {x: -0.02750659, y: 0.28482437, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &369596390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,6 +2009,7 @@ GameObject:
   - component: {fileID: 414986312}
   - component: {fileID: 414986311}
   - component: {fileID: 414986310}
+  - component: {fileID: 414986315}
   m_Layer: 0
   m_Name: Violin
   m_TagString: Untagged
@@ -2056,6 +2142,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &414986315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414986309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.8092098, y: 0.9920044, z: 4}
+  m_Center: {x: -0.027506351, y: 0.6011505, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &420113574
 GameObject:
   m_ObjectHideFlags: 0
@@ -19291,6 +19393,7 @@ GameObject:
   - component: {fileID: 701984032}
   - component: {fileID: 701984031}
   - component: {fileID: 701984030}
+  - component: {fileID: 701984035}
   m_Layer: 0
   m_Name: Marimba
   m_TagString: Untagged
@@ -19423,6 +19526,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701984035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701984029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 3.2023022, y: 2.4498634, z: 4}
+  m_Center: {x: -0.0137530565, y: 1.2750683, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &714201180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26170,6 +26289,7 @@ GameObject:
   - component: {fileID: 964819821}
   - component: {fileID: 964819820}
   - component: {fileID: 964819819}
+  - component: {fileID: 964819824}
   m_Layer: 0
   m_Name: Bass
   m_TagString: Untagged
@@ -26302,6 +26422,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &964819824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964819818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.2768269, y: 1.8997269, z: 4}
+  m_Center: {x: -0.041258812, y: 0.94498825, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &967811321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 111994939434672343, guid: 8e632f87084d0424f80d9c53634b0a5b,
@@ -26321,6 +26457,7 @@ GameObject:
   - component: {fileID: 971716763}
   - component: {fileID: 971716762}
   - component: {fileID: 971716761}
+  - component: {fileID: 971716766}
   m_Layer: 0
   m_Name: Flute
   m_TagString: Untagged
@@ -26453,6 +26590,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &971716766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971716760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.1392908, y: 0.30433655, z: 4}
+  m_Center: {x: -0.027506351, y: 0.17479706, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &985270989
 GameObject:
   m_ObjectHideFlags: 0
@@ -26466,6 +26619,7 @@ GameObject:
   - component: {fileID: 985270992}
   - component: {fileID: 985270991}
   - component: {fileID: 985270990}
+  - component: {fileID: 985270995}
   m_Layer: 0
   m_Name: Viola
   m_TagString: Untagged
@@ -26598,6 +26752,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &985270995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985270989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.2218132, y: 1.3220825, z: 4}
+  m_Center: {x: -0.041261673, y: 0.7386856, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1020264557
 GameObject:
   m_ObjectHideFlags: 0
@@ -31959,6 +32129,7 @@ GameObject:
   - component: {fileID: 1089301933}
   - component: {fileID: 1089301932}
   - component: {fileID: 1089301931}
+  - component: {fileID: 1089301936}
   m_Layer: 0
   m_Name: Harp
   m_TagString: Untagged
@@ -32091,6 +32262,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089301936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089301930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.7444415, y: 2.6424065, z: 4}
+  m_Center: {x: 0.05501342, y: 1.8664646, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1101511277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32686,6 +32873,7 @@ GameObject:
   - component: {fileID: 1295403332}
   - component: {fileID: 1295403331}
   - component: {fileID: 1295403330}
+  - component: {fileID: 1295403335}
   m_Layer: 0
   m_Name: French Horn
   m_TagString: Untagged
@@ -32818,6 +33006,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1295403335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295403329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.6619205, y: 1.0470123, z: 4}
+  m_Center: {x: 0.013754845, y: 0.7111778, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1318157676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34580,6 +34784,7 @@ GameObject:
   - component: {fileID: 1669653285}
   - component: {fileID: 1669653284}
   - component: {fileID: 1669653283}
+  - component: {fileID: 1669653288}
   m_Layer: 0
   m_Name: Oboe
   m_TagString: Untagged
@@ -34712,6 +34917,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669653288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669653282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 0.45161653, y: 0.9920044, z: 4}
+  m_Center: {x: 0.041258693, y: 0.57364655, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1717001493
 GameObject:
   m_ObjectHideFlags: 0
@@ -63160,6 +63381,7 @@ GameObject:
   - component: {fileID: 1850576383}
   - component: {fileID: 1850576382}
   - component: {fileID: 1850576381}
+  - component: {fileID: 1850576386}
   m_Layer: 0
   m_Name: Tuba
   m_TagString: Untagged
@@ -63292,6 +63514,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850576386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850576380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.4693689, y: 2.2573166, z: 4}
+  m_Center: {x: 0.19254637, y: 1.3713417, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1854539380
 GameObject:
   m_ObjectHideFlags: 0
@@ -63780,6 +64018,7 @@ GameObject:
   - component: {fileID: 1881165288}
   - component: {fileID: 1881165287}
   - component: {fileID: 1881165286}
+  - component: {fileID: 1881165291}
   m_Layer: 0
   m_Name: Trumpet
   m_TagString: Untagged
@@ -63912,6 +64151,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881165291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881165285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.0842791, y: 2.5048752, z: 4}
+  m_Center: {x: -0.0000014305115, y: 1.2475624, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1884858253
 PrefabInstance:
   m_ObjectHideFlags: 0
