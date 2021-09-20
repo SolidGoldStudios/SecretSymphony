@@ -114,19 +114,19 @@ TextureImporter:
       name: flag_town_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 0
-        width: 27
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 13
+        y: 3
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0439cdd385b1f5e0800000000000000
-      internalID: -1877519991670492146
+      spriteID: cdca671b42dcc6890800000000000000
+      internalID: -7463364924979893028
       vertices: []
       indices: 
       edges: []
@@ -135,19 +135,19 @@ TextureImporter:
       name: flag_town_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 0
-        width: 27
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 61
+        y: 3
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1ac33c92edad180800000000000000
-      internalID: -9089708626943368770
+      spriteID: dbd512a61166edbb0800000000000000
+      internalID: -4909374318806213187
       vertices: []
       indices: 
       edges: []
@@ -156,19 +156,19 @@ TextureImporter:
       name: flag_town_2
       rect:
         serializedVersion: 2
-        x: 110
-        y: 0
-        width: 27
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 109
+        y: 3
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f85834fb90c3bc280800000000000000
-      internalID: -9022051415945411185
+      spriteID: 61da506dfba8c5860800000000000000
+      internalID: 7520038034335968534
       vertices: []
       indices: 
       edges: []
@@ -177,19 +177,19 @@ TextureImporter:
       name: flag_town_3
       rect:
         serializedVersion: 2
-        x: 158
-        y: 0
-        width: 27
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 157
+        y: 3
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010fcda59493da640800000000000000
-      internalID: 5092789740845723664
+      spriteID: b30440dc17c7a09f0800000000000000
+      internalID: -501451580285632453
       vertices: []
       indices: 
       edges: []
