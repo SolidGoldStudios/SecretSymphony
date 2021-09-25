@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4350,7 +4350,7 @@ GameObject:
   - component: {fileID: 219802176}
   - component: {fileID: 219802179}
   - component: {fileID: 219802181}
-  - component: {fileID: 219802180}
+  - component: {fileID: 219802182}
   m_Layer: 0
   m_Name: Mayor
   m_TagString: Plantlife
@@ -4468,28 +4468,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &219802180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219802175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionIcon: {fileID: 0}
-  interactionIconActive: {fileID: 0}
-  moveToTarget: 0
-  blockedBy: {fileID: 0}
-  dialogBox: {fileID: 826543788}
-  npcPortrait: {fileID: 21300000, guid: d9332a98fce82a8449ff6ad13f09696e, type: 3}
-  npcName: Mayor
-  dialogue: It's our hero! Say goodbye to your friends here and when you're ready
-    for your final score come talk to me!
-  playerInRange: 0
 --- !u!61 &219802181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4503,7 +4481,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25531626, y: 0.111917496}
+  m_Offset: {x: -0.0077923536, y: 0.9369974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -4514,8 +4492,28 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8409262, y: 2.423481}
+  m_Size: {x: 0.8838341, y: 1.8294239}
   m_EdgeRadius: 0
+--- !u!114 &219802182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219802175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614669f0d32bd4765aae2349f9b6ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 0}
+  interactionIconActive: {fileID: 0}
+  moveToTarget: 0
+  blockedBy: {fileID: 0}
+  dialogBox: {fileID: 826543788}
+  knotName: celebration_mayor
+  questGiver: 0
+  questName: 
 --- !u!4 &220678112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3185277038051049167, guid: a9d4e4eb6d52bd1498a1f53bd1f6eea3,

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class StartDialogue : Interaction
 {
-    public GameObject dialogBox;
-    public string knotName;
+	public GameObject dialogBox;
+	public string knotName;
 	public bool questGiver = false;
 	public string questName;
 	
@@ -13,34 +13,34 @@ public class StartDialogue : Interaction
 
     public void Start()
     {
-        interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
-        interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
-        moveToTarget = true;
+			interactionIcon = Resources.Load<Sprite>("UI/cursor_speak");
+			interactionIconActive = Resources.Load<Sprite>("UI/cursor_speak_active");
+			moveToTarget = true;
 		
-		if (questGiver)
-		{
-			SetQuestIcon();
-			SetQuestObservers();
-		}
-	}
-
-	public void SetQuestIcon()
-	{
-		if (questGiver)
-		{
-			if ((int)GameManager.Instance.inkStory.variablesState["has_" + questName] == 1)
+			if (questGiver)
 			{
-				foreach (Transform child in gameObject.transform) 
+				SetQuestIcon();
+				SetQuestObservers();
+			}
+		}
+
+		public void SetQuestIcon()
+		{
+			if (questGiver)
+			{
+				if ((int)GameManager.Instance.inkStory.variablesState["has_" + questName] == 1)
 				{
-					GameObject.Destroy(child.gameObject);
+					foreach (Transform child in gameObject.transform) 
+					{
+						GameObject.Destroy(child.gameObject);
+					}
+				}
+				else if ((int)GameManager.Instance.inkStory.variablesState["ready_for_" + questName] == 1)
+				{
+					CreateQuestIcon("Quest Icon");
 				}
 			}
-			else if ((int)GameManager.Instance.inkStory.variablesState["ready_for_" + questName] == 1)
-			{
-				CreateQuestIcon("Quest Icon");
-			}
 		}
-	}
 	
 	public void CreateQuestIcon(string type)
 	{

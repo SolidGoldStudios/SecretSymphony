@@ -18,6 +18,7 @@ INCLUDE Chapters/Marimba.ink
 INCLUDE Chapters/FortuneTeller.ink
 INCLUDE Chapters/Portal.ink
 INCLUDE Chapters/FinalExam.ink
+INCLUDE Chapters/Celebration.ink
 
 
 /** 
@@ -78,6 +79,9 @@ VAR has_placed_trumpet = false
 VAR has_placed_oboe = false
 VAR has_placed_clarinet = false
 VAR has_placed_flute = false
+
+/* Celebration & Credits */
+VAR has_talked_to_mayor = false
 
 
 /* Bass quest */

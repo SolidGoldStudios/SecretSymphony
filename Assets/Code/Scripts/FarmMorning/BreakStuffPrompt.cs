@@ -10,7 +10,6 @@ public class BreakStuffPrompt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Starting scythe check");
 
         // Check to see if we have the scythe
         // and whether the fairy has told us to destroy stuff
