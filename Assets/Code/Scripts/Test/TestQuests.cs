@@ -22,7 +22,7 @@ public class TestQuests : MonoBehaviour
 	public void SetTestLoad()
 	{
 		testData.SetNightGown(false);
-		testData.SetInventory(inventory);
+		//testData.SetInventory(inventory);
 		testData.SetQuests(questsData);
 		testData.SetBooks(books);
 		testData.SetPages(pages);

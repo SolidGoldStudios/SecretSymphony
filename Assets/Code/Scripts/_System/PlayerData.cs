@@ -67,7 +67,7 @@ public class PlayerData : MonoBehaviour
 		data.SetSceneName(SceneManager.GetActiveScene().path);
 		data.SetInkJson(GameManager.Instance.inkStory.state.ToJson());
 		data.SetNightGown(GameManager.Instance.wearingNightgown);
-		data.SetInventory(GameManager.Instance.GetInventory());
+		//data.SetInventory(GameManager.Instance.GetInventory());
 		data.SetQuests(GameManager.Instance.GetQuests());
 		data.SetBooks(GameManager.Instance.GetBooks());
 		data.SetPages(GameManager.Instance.GetPages());
@@ -94,7 +94,7 @@ public class PlayerData : MonoBehaviour
 		//Load();
 		GameManager.Instance.inkStory.state.LoadJson(saveData.GetInkJson());
 		GameManager.Instance.wearingNightgown = saveData.GetNightGown();
-		GameManager.Instance.SetInventory(saveData.GetInventory());
+		//GameManager.Instance.SetInventory(saveData.GetInventory());
 		GameManager.Instance.SetQuests(saveData.GetQuests());
 		GameManager.Instance.SetBooks(saveData.GetBooks());
 		GameManager.Instance.SetPages(saveData.GetPages());
