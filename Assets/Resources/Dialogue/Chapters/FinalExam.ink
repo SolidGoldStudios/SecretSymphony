@@ -365,7 +365,7 @@
 
 /* Viola trivia */
 ==finalexam_viola==
-    If you know so much about instruments, tell me: What do you call the stick you use to play this viola? #name:Earworm #audio:earworm_speak_long_1
+    Tell me this, smarty: What do you call the stick you use to play this viola? #name:Earworm #audio:earworm_speak_long_1
     Piece of cake! That's called a... #name:Melody #mood:thinking 
         + [Bow] -> finalexam_viola_right
         + [Baton] -> finalexam_viola_wrong
