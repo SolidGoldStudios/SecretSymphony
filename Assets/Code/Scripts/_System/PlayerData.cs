@@ -148,15 +148,15 @@ public class PlayerSaveData
 		return this.nightGown;
 	}
 	
-	public void SetInventory(List<InventoryItem> inventory)
-	{
-		this.inventory = inventory;
-	}
+	// public void SetInventory(List<InventoryItem> inventory)
+	// {
+	// 	this.inventory = inventory;
+	// }
 	
-	public List<InventoryItem> GetInventory()
-	{
-		return this.inventory;
-	}
+	// public List<InventoryItem> GetInventory()
+	// {
+	// 	return this.inventory;
+	// }
 	
 	public void SetQuests(List<QuestData> quests)
 	{
