@@ -3,7 +3,7 @@
     - !completed_marimba_quest:
         Grocer Wayne, how are you today? #name:Melody
         ~ has_marimba_quest = true
-        I feel strage, truth be told. Like something's missing... #name:Grocer+Wayne #audio:male_speak_medium_1
+        I feel strange, truth be told. Like something's missing... #name:Grocer+Wayne #audio:male_speak_medium_1
         Psst! Look behind him - that's a marimba! #name:Spirit+of+Music #mood:left #audio:fairy_speak_medium_2
         Why do you have all those fruits piled on that marimba? #name:Melody #mood:thinking
         Marimba? Ah, that must be a fancy name for my new produce table! #name:Grocer+Wayne #audio:male_speak_long_1
