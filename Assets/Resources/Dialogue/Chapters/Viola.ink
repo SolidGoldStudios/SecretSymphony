@@ -4,7 +4,7 @@
         I feel like a piece of me has been ripped away! #name:Guilhem #mood:sad #audio:male_speak_medium_1
         ~ has_viola_quest = true
         But... I can't remember exactly why. #name:Guilhem #mood:sad #audio:male_speak_short_1
-        I saw the Earm Worm steal his beloved guitar last night... #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
+        I saw the Earm Worm steal his beloved lute last night... #name:Spirit+of+Music #mood:sad #audio:fairy_speak_medium_1
         Maybe that viola on the shelf would make him feel better! #name:Spirit+of+Music #mood:right #audio:fairy_speak_medium_2
         Why don't you play a song with that viola over there? #name:Melody #mood:thinking
         "Play"? A... "song"? #name:Guilhem #audio:male_speak_short_1
