@@ -17,7 +17,7 @@ Maybe that cranky coach driver Philip knows something about it... #name:Melody #
         ~ has_tuba_quest = true
         Philip, don't you remember this? It's a tuba! #name:Melody #mood:concerned
         A tube of what? Get out of here! #name:Coach+Driver+Philip #audio:male_speak_short_1
-        I just know this tuba belongs to him! Can you convince him with music? #name:Spirit+of+Music #audio:fairy_speak_long_1 #play:piano|Funky+Town|GGFGDDGBAG|funkytown|tubaquest_played_song
+        I just know this tuba belongs to him! Can you convince him with music? #name:Spirit+of+Music #audio:fairy_speak_long_1 #play:piano|Hall+of+the+Mountain+King|DEFGAFA|philip_tuba|tubaquest_played_song
 }
 ->END
 

@@ -19,7 +19,7 @@ Better hang on to it until you find out who it belongs to... #name:Spirit+of+Mus
         Say now, what's that shiny squiggle you've got there? #name:Ezekiel #audio:male_speak_medium_1
         You recognize this French horn? #name:Melody #mood:thinking
         French bread? That's no French bread I ever saw! #name:Ezekiel #audio:male_speak_medium_2
-        You know the drill – play a song he'll like! #name:Spirit+of+Music #mood:right #audio:fairy_speak_medium_1 #play:piano|Funky+Town|GGFGDDGBAG|funkytown|hornquest_played_song
+        You know the drill – play a song he'll like! #name:Spirit+of+Music #mood:right #audio:fairy_speak_medium_1 #play:piano|New+World+Symphony|EGGEDC|ezekial_horn|hornquest_played_song
 }
 ->END
 

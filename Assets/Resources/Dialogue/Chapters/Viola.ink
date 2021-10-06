@@ -8,7 +8,7 @@
         Maybe that viola on the shelf would make him feel better! #name:Spirit+of+Music #mood:right #audio:fairy_speak_medium_2
         Why don't you play a song with that viola over there? #name:Melody #mood:thinking
         "Play"? A... "song"? #name:Guilhem #audio:male_speak_short_1
-        Here, I'll show you! #name:Melody #mood:happy #play:piano|Funky+Town|GGFGDDGBAG|funkytown|violaquest_played_song
+        Here, I'll show you! #name:Melody #mood:happy #play:piano|The+Elephant|CFFFEFG|bard_viola|violaquest_played_song
     -completed_viola_quest:
         I shall put on a musical concert, oui oui! #name:Guilhem #mood:happy #audio:male_speak_medium_2
     ->END

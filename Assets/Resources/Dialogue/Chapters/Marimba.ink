@@ -8,7 +8,7 @@
         Why do you have all those fruits piled on that marimba? #name:Melody #mood:thinking
         Marimba? Ah, that must be a fancy name for my new produce table! #name:Grocer+Wayne #audio:male_speak_long_1
         That's no table – that's a musical instrument! #name:Melody #mood:concerned
-        Here, I'll play you a song! #name:Melody #mood:happy #play:piano|Funky+Town|GGFGDDGBAG|funkytown|marimbaquest_played_song
+        Here, I'll play you a song! #name:Melody #mood:happy #play:piano|Minuet+in+G|GCDEFGCC|grocer_marimba|marimbaquest_played_song
     - completed_marimba_quest:
         A good song is like a juicy fresh fruit, don't you think? #name:Grocer+Wayne #audio:male_speak_medium_1
     ->END

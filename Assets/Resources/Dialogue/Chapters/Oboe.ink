@@ -9,7 +9,7 @@
         I just look at this magic wand, and it makes me so upset! #name:Lady+Alley #mood:sad #audio:female_speak_medium_1
         That's not a magic wand! It's an oboe, a musical instrument! #name:Melody
         I wish I knew what any of that meant! #name:Lady+Alley #audio:female_speak_short_2
-        See what I mean? Can you help my lady sing with me again? #name:Gucci #play:piano|Funky+Town|GGFGDDGBAG|funkytown|oboequest_played_song
+        See what I mean? Can you help my lady sing with me again? #name:Gucci #play:piano|Clair+de+lune|CCAGAG|birdlady_oboe|oboequest_played_song
 }
 ->END
 

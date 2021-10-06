@@ -8,7 +8,7 @@
         Well, what else could it be? #name:Innkeeper+Theophilius #mood:sad #audio:male_speak_short_1
         It's a musical instrument – it makes a beautiful sound! #name:Melody #mood:happy
         Now you're talking nonsense! I have to get back to my cleaning. #name:Innkeeper+Theophilius  #audio:male_speak_long_1
-        I'll prove it to you! #name:Melody #play:piano|Funky+Town|GGFGDDGBAG|funkytown|bassquest_played_song
+        I'll prove it to you! #name:Melody #play:piano|Summertime|AFAFD|innkeeper_bass|bassquest_played_song
     - completed_bass_quest:
         Melody! Can I get you some apple cider? #name:Innkeeper+Theophilius #mood:happy #audio:male_speak_medium_2
     ->END

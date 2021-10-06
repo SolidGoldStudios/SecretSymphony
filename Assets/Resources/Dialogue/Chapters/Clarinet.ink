@@ -10,7 +10,7 @@
         At least this new stirring-stick I found helps me mix faster! #name:Healer+Leonora #mood:happy #audio:female_speak_long_2
         That's no stirring-stick – that's a musical instrument! #name:Melody #mood:happy
         May I show you how it works? #name:Melody
-        Well, I suppose. But don't take too long with your game, I'm very busy! #name:Healer+Leonora #audio:female_speak_long_1 #play:piano|Funky+Town|GGFGDDGBAG|funkytown|clarinetquest_played_song
+        Well, I suppose. But don't take too long with your game, I'm very busy! #name:Healer+Leonora #audio:female_speak_long_1 #play:piano|Rhapsody+in+Blue|FGACDEFG|apothecary_clarinet|clarinetquest_played_song
     - completed_clarinet_quest: 
         Can I interest you in a tincture of some sort? #name:Healer+Leonora #mood:happy #audio:female_speak_medium_1
     ->END
