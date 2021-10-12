@@ -14,7 +14,7 @@
         I'm so hungry! Did you bring a trumpetfish? It's my favorite! #name:Thomas #mood:mad #audio:female_speak_medium_2
         No fish – but I did bring your trumpet back! It's a musical instrument! #name:Melody #mood:happy
         My... trumpet? Musical... what? #name:Thomas #mood:sad #audio:female_speak_short_2
-        Maybe if you play something, he'll remember! #name:Spirit+of+Music #mood:right #audio:fairy_speak_short_2 #play:piano|Funky+Town|GGFGDDGBAG|funkytown|trumpetquest_played_song
+        Maybe if you play something, he'll remember! #name:Spirit+of+Music #mood:right #audio:fairy_speak_short_2 #play:piano|William+Tell|CCCCCFGA|brother_trumpet|trumpetquest_played_song
         -> END
     - completed_trumpet_quest:
         I'm still hungry for fish... #name:Thomas #mood:sad
