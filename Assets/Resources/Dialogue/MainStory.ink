@@ -35,11 +35,11 @@ VAR tooltip = ""
  **/
  
 /* Items */
-VAR has_scythe = true
+VAR has_scythe = false
 VAR has_pole = false
 
 /* Instruments */
-VAR has_piano = true
+VAR has_piano = false
 VAR has_violin = false
 VAR has_viola = false
 VAR has_harp = false
@@ -127,9 +127,9 @@ VAR completed_oboe_quest = false
 
 /* Piano quest */
 VAR ready_for_piano_quest = true // Always true!
-VAR has_piano_quest = true
-VAR completed_piano_quest = true
-VAR has_hit_piano = true
+VAR has_piano_quest = false
+VAR completed_piano_quest = false
+VAR has_hit_piano = false
 VAR has_spoken_to_spirit_piano = false
 VAR has_read_piano_book = false
 VAR ready_for_scarecrow_piano_quest = true // Always true!
