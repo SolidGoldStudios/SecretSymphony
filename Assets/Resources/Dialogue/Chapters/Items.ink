@@ -10,6 +10,10 @@
     I know I dropped the key in here somewhere... will you use your scythe to find it? #name:Spirit+of+Music #audio:fairy_speak_long_1
 ->DONE
 
+==outhouse_prompt==
+    Um, do you really have to do this right now? #name:Spirit+of+Music #mood:mad #timeline:OuthouseTimeline
+->DONE
+
 ==book_brass==
     Another book with missing pages... #name:Melody #mood:thinking #audio:female_speak_short_2 #book:brass
 ->DONE
