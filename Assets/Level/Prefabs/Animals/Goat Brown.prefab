@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2018888418721026069}
   - component: {fileID: 2018888418721026070}
   - component: {fileID: 2018888418721026071}
-  - component: {fileID: 2018888418721026064}
+  - component: {fileID: 3977130723222298622}
   m_Layer: 0
-  m_Name: Goat 2
+  m_Name: Goat Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,7 +243,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &2018888418721026064
+--- !u!61 &3977130723222298622
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,19 +253,19 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.051893234, y: 0.098701745}
+  m_Offset: {x: -0.09377289, y: 0.8317785}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.9375, y: 1.625}
+    oldSize: {x: 1.9375, y: 1.75}
     newSize: {x: 1.25, y: 1.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7702522, y: 0.1975035}
+  m_Size: {x: 1.8422089, y: 1.5555935}
   m_EdgeRadius: 0
