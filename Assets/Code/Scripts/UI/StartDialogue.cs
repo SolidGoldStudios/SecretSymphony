@@ -50,7 +50,7 @@ public class StartDialogue : Interaction
 		}
 		GameObject questIconPrefab = Resources.Load("Prefabs/" + type) as GameObject;
 		questIcon = Instantiate(questIconPrefab);
-		Vector3 pos = questIcon.transform.position;
+		Vector3 pos = new Vector3(0,this.gameObject.GetComponent<BoxCollider2D>().size.y + 1, 0);
 		questIcon.transform.parent = this.gameObject.transform;
 		questIcon.transform.localPosition = pos;
 	}

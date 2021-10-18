@@ -19,6 +19,7 @@ public class NPCOneLiner : Interaction
 	bool OneLinerActive = false;
 	
     private AudioSource source;
+    private GameObject talkIcon;
 
     void Start()
     {
@@ -36,7 +37,8 @@ public class NPCOneLiner : Interaction
 		moveToTarget = true;
 		
         source = GetComponent<AudioSource>();
-    }
+        CreateTalkIcon("Talk Icon");
+  }
 
     void Update()
     {
@@ -48,6 +50,19 @@ public class NPCOneLiner : Interaction
             }
         }
     }
+
+    public void CreateTalkIcon(string type)
+	{
+		foreach (Transform child in gameObject.transform) 
+		{
+			GameObject.Destroy(child.gameObject);
+		}
+		GameObject talkIconPrefab = Resources.Load("Prefabs/" + type) as GameObject;
+		talkIcon = Instantiate(talkIconPrefab);
+		Vector3 pos = new Vector3(0,this.gameObject.GetComponent<BoxCollider2D>().size.y + 1, 0);
+		talkIcon.transform.parent = this.gameObject.transform;
+		talkIcon.transform.localPosition = pos;
+	}
 
     private void ShowDialog()
     {
@@ -81,6 +96,11 @@ public class NPCOneLiner : Interaction
         dialogBox.SetActive(true);
 
         if (source) source.Play();
+
+        foreach (Transform child in gameObject.transform) 
+        {
+            GameObject.Destroy(child.gameObject);
+        }
     }
 
     private void HideDialog()
