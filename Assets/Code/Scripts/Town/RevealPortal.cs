@@ -31,7 +31,7 @@ public class RevealPortal : MonoBehaviour
             EnablePortal();
         }
     }
-
+    
     // Update is called once per frame
     void Update()
     {
